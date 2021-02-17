@@ -7,11 +7,10 @@ const NavBar = () => {
     return (
         <div className="navbar-container">
             <div className="navbar-items">
-                <Link to="all"><div>All</div></Link>
-                <div>Painting</div>
-                <div>Drawing</div>
-                <div>Color</div>
-                <div>3D</div>
+                <Link to="/"><div>MAGGIE SHAFRAN</div></Link>
+                <div>PROJECTS</div>
+                <div>PRESS</div>
+                <div>SHOWS & C.V.</div>
             </div>
         </div>
     )

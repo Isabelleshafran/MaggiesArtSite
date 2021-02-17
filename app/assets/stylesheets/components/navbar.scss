@@ -3,12 +3,33 @@
     justify-content: center;
     border-bottom: 1px solid lightgray;
     padding: 20px;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    
 }
 
 .navbar-items {
-    width: 80%;
+    margin-top: 10px;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: rgba(219, 219, 219, 0.911);
 
+}
+
+.navbar-items {
+
+    div {
+        padding: 15px;
+        // border: 1px solid green;
+    }
+
+    div:hover {
+        color: black;
+        cursor: pointer;
+        border-top: 3px solid rgba(247, 208, 218, 1);
+    }
 }
