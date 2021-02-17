@@ -1,3 +1,17 @@
 .splash-image {
     // margin-top: 50px;
+    height: 100vh;
+}
+
+.maggie-splash {
+    position: absolute;
+    margin-top: 350px;
+    color: white;
+    font-family: marzo-w00-regular;
+    font-size: 44px;
+}
+
+.splash-container {
+    display: flex;
+    justify-content: center;
 }
