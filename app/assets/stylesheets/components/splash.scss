@@ -17,13 +17,53 @@
     flex-direction: column;
 }
 
-.about-section {
-    border: 1px solid green;
+.about-text {
+    font-family: 'Raleway';
+    color: rgb(219, 219, 219);
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-top: 40px;
+       margin-left: 5%;
 
-    
+       .about{
+            font-family: 'Raleway';
+           font-size: 36px;
+       }
+
+       .lives, .bio {
+           font-family: 'Raleway';
+           font-size: 14px;
+       }
+}
+
+.about-section {
+      margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.headshot {
+    height: 500px; 
+    width: 350px;
+
+}
+
+.contact-container {
+    font-family: 'Raleway';
+    color: rgb(219, 219, 219);
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    .contact {
+        font-size: 36px;
+    }
+
+    .email {
+        font-size: 20px;
+    }
 }
