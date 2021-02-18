@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/1e6ec96c95301fa73aa1d026f161a269?family=MarzoW00-Regular);
+
 .splash-image {
     margin-top: 50px;
     height: 100vh;
@@ -7,7 +9,7 @@
     position: absolute;
     margin-top: 350px;
     color: white;
-    font-family: 'Raleway';
+    font-family: 'MarzoW00-Regular';
     font-size: 44px;
 }
 
@@ -15,7 +17,8 @@
     position: absolute;
     margin-top: 410px;
     color: white;
-    font-family: 'Raleway';
+    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Raleway';
     font-size: 20px;
 }
 
@@ -23,7 +26,9 @@
     position: absolute;
     margin-top: 438px;
     color: white;
-    font-family: 'Raleway';
+    // font-family: 'Raleway';
+    font-family: 'Open Sans', sans-serif;
+
     font-size: 20px;
     font-style: italic;
 }
@@ -32,11 +37,19 @@
 .splash-container {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; 
+
+    .splash-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    // background-image: url('splash.png');
 }
 
 .about-text {
-    font-family: 'Raleway';
+    // font-family: 'Raleway';
     color: rgb(219, 219, 219);
     width: 30%;
     display: flex;
@@ -46,13 +59,17 @@
        margin-left: 5%;
 
        .about{
-            font-family: 'Raleway';
+           font-family: 'MarzoW00-Regular';
            font-size: 36px;
        }
 
        .lives, .bio {
-           font-family: 'Raleway';
+           font-family: 'Open Sans', sans-serif;
            font-size: 14px;
+       }
+
+       .lives {
+           font-style: italic;
        }
 }
 
@@ -71,7 +88,7 @@
 .contact-container {
     margin-top: 100px;
     margin-bottom: 100px;
-    font-family: 'Raleway';
+    font-family: 'MarzoW00-Regular';
     color: rgb(219, 219, 219);
     display: flex;
     align-items: center;
@@ -84,5 +101,6 @@
 
     .email {
         font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
     }
 }

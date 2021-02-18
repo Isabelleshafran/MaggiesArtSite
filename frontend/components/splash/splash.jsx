@@ -4,12 +4,15 @@ import React from 'react';
 const Splash = () => {
     return (
         <div className="splash-container">
-            <span className="maggie-splash">MAGGIE SHAFRAN</span>
-            <span className='artist-type'>Lorem ipsum dolor sit amet</span>
-            <span className="artist-work"> Lorem ipsum dolor</span>
+            
+            <div className="splash-text">
+                <span className="maggie-splash">MAGGIE SHAFRAN</span>
+                <span className='artist-type'>Lorem ipsum dolor sit amet</span>
+                <span className="artist-work"> Lorem ipsum dolor</span>
+            </div>
+
              <img className="splash-image" src={window.splash} />
              <br/>
-
             <div className="about-section">
                 <img className="headshot" src={window.headshot} />
                 <div className="about-text">
