@@ -5,6 +5,8 @@ const Splash = () => {
     return (
         <div className="splash-container">
             <span className="maggie-splash">MAGGIE SHAFRAN</span>
+            <span className='artist-type'>Lorem ipsum dolor sit amet</span>
+            <span className="artist-work"> Lorem ipsum dolor</span>
              <img className="splash-image" src={window.splash} />
              <br/>
 
@@ -33,7 +35,7 @@ const Splash = () => {
                     </span>
                 </div>
             </div>
-               <br/>
+              <br/>
               <br/>
 
               <div className="contact-container">

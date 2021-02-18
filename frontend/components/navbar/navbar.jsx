@@ -2,18 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 
-const NavBar = () => {
+class NavBar extends React.Component {
+    constructor(props) {
+        super(props);  
+    }
 
-    return (
-        <div className="navbar-container">
+    render() { 
+        const url = this.props.location.pathname
+        // console.log(url)
+        return ( 
+            <div className="navbar-container">
             <div className="navbar-items">
-                <Link to="/"><div>MAGGIE SHAFRAN</div></Link>
-                <Link to="/projects"><div>PROJECTS</div></Link>
-                <div>PRESS</div>
-                <div>SHOWS & C.V.</div>
+                <Link to="/"><div className={url === "/" ? "selected" : "item"}>MAGGIE SHAFRAN</div></Link>
+                <Link to="/projects"><div className={url === "/projects" ? "selected" : "item"}>PROJECTS</div></Link>
+                <div className={url === "/press" ? "selected" : "item"}>PRESS</div>
+                <div className={url === "/shows" ? "selected" : "item"}>SHOWS & C.V.</div>
             </div>
         </div>
-    )
+      )
+    }
 }
-
-export default NavBar
+ 
+export default NavBar;

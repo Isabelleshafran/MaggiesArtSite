@@ -7,9 +7,27 @@
     position: absolute;
     margin-top: 350px;
     color: white;
-    font-family: marzo-w00-regular;
+    font-family: 'Raleway';
     font-size: 44px;
 }
+
+.artist-type {
+    position: absolute;
+    margin-top: 410px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 20px;
+}
+
+.artist-work {
+    position: absolute;
+    margin-top: 438px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-style: italic;
+}
+
 
 .splash-container {
     display: flex;
@@ -51,9 +69,10 @@
 }
 
 .contact-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
     font-family: 'Raleway';
     color: rgb(219, 219, 219);
-    border: 1px solid green;
     display: flex;
     align-items: center;
     flex-direction: column;
