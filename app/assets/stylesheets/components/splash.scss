@@ -6,16 +6,16 @@
 }
 
 .maggie-splash {
-    position: absolute;
-    margin-top: 350px;
+    // position: absolute;
+    // margin-top: 350px;
     color: white;
     font-family: 'MarzoW00-Regular';
     font-size: 44px;
 }
 
 .artist-type {
-    position: absolute;
-    margin-top: 410px;
+    // position: absolute;
+    // margin-top: 410px;
     color: white;
     font-family: 'Open Sans', sans-serif;
     // font-family: 'Raleway';
@@ -23,8 +23,8 @@
 }
 
 .artist-work {
-    position: absolute;
-    margin-top: 438px;
+    // position: absolute;
+    // margin-top: 438px;
     color: white;
     // font-family: 'Raleway';
     font-family: 'Open Sans', sans-serif;
@@ -43,19 +43,30 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-top: 350px;
 
     }
-    // background-image: url('splash.png');
+
+    background-image: url('splash.png');
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    object-position: 50% 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+
 }
 
 .about-text {
-    // font-family: 'Raleway';
     color: rgb(219, 219, 219);
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 10px;
        margin-left: 5%;
 
        .about{
@@ -74,9 +85,11 @@
 }
 
 .about-section {
-      margin-top: 100px;
+
+      margin-top: 400px;
     display: flex;
     justify-content: center;
+    background-color: white;
 }
 
 .headshot {

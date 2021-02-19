@@ -8,6 +8,7 @@
     top: 0; 
     width: 100%;
     background-color: white;
+    z-index: 1;
     
 }
 
@@ -22,9 +23,11 @@
 }
 
 .navbar-items {
-
     div {
         padding: 15px;
+        border-top: 1px solid green;
+        //  border: 3px solid transparent;
+
     }
 
     .selected {
@@ -32,12 +35,14 @@
     }
 
     .item {
-        border-top: none;
+        // border-top: none;
+        border-top: 3px solid transparent;
     }
 
     div:hover {
         color: black;
         cursor: pointer;
+        // height: 3px;
         border-top: 3px solid rgb(208, 222, 247);
     }
 }
