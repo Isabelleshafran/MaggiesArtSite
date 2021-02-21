@@ -39,7 +39,7 @@
 
     }
 
-    background-image: url('spash.jpg');
+    background-image: url('rand.jpg');
     position: absolute;
     top: 0px;
     width: 100%;
@@ -53,7 +53,7 @@
 }
 
 .about-text {
-    color: rgb(219, 219, 219);
+    color: rgba(168, 168, 168, 0.856);
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,7 @@
     margin-top: 50px;
     margin-bottom: 100px;
     font-family: 'MarzoW00-Regular';
-    color: rgb(219, 219, 219);
+        color: rgba(168, 168, 168, 0.856);
     display: flex;
     align-items: center;
     flex-direction: column;

@@ -15,8 +15,7 @@ class NavBar extends React.Component {
             <div className="navbar-items">
                 <Link to="/"><div className={url === "/" ? "selected" : "item"}>MAGGIE SHAFRAN</div></Link>
                 <Link to="/projects"><div className={url === "/projects" ? "selected" : "item"}>PROJECTS</div></Link>
-                <div className={url === "/press" ? "selected" : "item"}>PRESS</div>
-                <div className={url === "/shows" ? "selected" : "item"}>SHOWS & C.V.</div>
+                <div className={url === "/shows" ? "selected" : "item"}>C.V.</div>
             </div>
         </div>
       )

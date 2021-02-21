@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: rgba(219, 219, 219, 0.911);
+    color: rgba(168, 168, 168, 0.856);
 
 }
 
@@ -31,7 +31,7 @@
     }
 
     .selected {
-        border-top: 3px solid rgb(208, 222, 247);
+        border-top: 3px solid rgb(153, 153, 153);
     }
 
     .item {
@@ -43,6 +43,6 @@
         color: black;
         cursor: pointer;
         // height: 3px;
-        border-top: 3px solid rgb(208, 222, 247);
+        border-top: 3px solid rgb(153, 153, 153);
     }
 }

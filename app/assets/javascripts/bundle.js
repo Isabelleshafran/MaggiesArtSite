@@ -246,10 +246,8 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: url === "/projects" ? "selected" : "item"
       }, "PROJECTS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: url === "/press" ? "selected" : "item"
-      }, "PRESS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: url === "/shows" ? "selected" : "item"
-      }, "SHOWS & C.V.")));
+      }, "C.V.")));
     }
   }]);
 
