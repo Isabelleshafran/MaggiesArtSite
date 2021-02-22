@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-// import { fetchPaintings } from "../../actions/painting_actions";
+import { fetchPaintings } from "../../actions/painting_actions";
 import FriendshipWorship from "./friendship_worship";
 
 const msp = (state) => {

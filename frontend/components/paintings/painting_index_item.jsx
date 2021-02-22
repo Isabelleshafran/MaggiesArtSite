@@ -11,12 +11,7 @@ class PaintingIndexItem extends React.Component {
             <div>
                 {this.props.painting.title}
                 <br/>
-                {this.props.painting.year}
-                <br/>
-                {this.props.painting.size}
-                <br/>
-                {this.props.painting.medium}
-                <br/>
+                <img src={this.props.painting.imgUrl}/>
             </div>
          );
     }

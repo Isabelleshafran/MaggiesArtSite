@@ -1,11 +1,27 @@
 import React from 'react';
+import PaintingIndexItem from '../paintings/painting_index_item'
 
 
 class FriendshipWorship extends React.Component {
     constructor(props) {
         super(props);
     }
+
+    componentDidMount(){
+        this.props.fetchPaintings()
+    }
+
     render() { 
+        console.log(this.props.paintings)
+
+        const paintingRender = () => {
+            return this.props.paintings.map((painting) => {
+                if(painting.category === "friendship_worship"){
+                    return <PaintingIndexItem painting={painting} key={painting.id}/>
+                }
+            })
+        }
+
         return ( 
             <div className="friendship_container">
                 <div className="project-index-header">Friendship Worship</div>
@@ -15,6 +31,10 @@ class FriendshipWorship extends React.Component {
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
                     dolore eu fugiat nulla pariatur. 
+                </div>
+
+                <div>
+                    {paintingRender()}
                 </div>
             </div>
          );
