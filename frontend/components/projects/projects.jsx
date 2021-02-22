@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 
 const Projects = () => {
@@ -6,10 +7,12 @@ const Projects = () => {
         <div className="projects-container">
             
             <div className="proj1-container">
-                <img className="" src={window.project1} />
-                <div className="middle1">
-                    <div class="text">PROJECT 1</div>
-                </div>
+                <Link to="/friendship_worship">
+                    <img className="" src={window.project1} />
+                    <div className="middle1">
+                        <div class="text">FRIENDSHIP WORSHIP</div>
+                    </div>
+                </Link>
             </div>
   
             <div className="proj2-container">
