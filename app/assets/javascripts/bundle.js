@@ -197,7 +197,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../paintings/painting_index_item */ "./frontend/components/paintings/painting_index_item.jsx");
+/* harmony import */ var _paintings_painting_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../paintings/painting_index */ "./frontend/components/paintings/painting_index.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -244,12 +244,10 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this = this;
 
-      console.log(this.props.paintings);
-
       var paintingRender = function paintingRender() {
         return _this.props.paintings.map(function (painting) {
           if (painting.category === "friendship_worship") {
-            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_1__.default, {
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index__WEBPACK_IMPORTED_MODULE_1__.default, {
               painting: painting,
               key: painting.id
             });
@@ -419,10 +417,10 @@ var mdp = function mdp(dispatch) {};
 
 /***/ }),
 
-/***/ "./frontend/components/paintings/painting_index_item.jsx":
-/*!***************************************************************!*\
-  !*** ./frontend/components/paintings/painting_index_item.jsx ***!
-  \***************************************************************/
+/***/ "./frontend/components/paintings/painting_index.jsx":
+/*!**********************************************************!*\
+  !*** ./frontend/components/paintings/painting_index.jsx ***!
+  \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -455,30 +453,35 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var PaintingIndexItem = /*#__PURE__*/function (_React$Component) {
-  _inherits(PaintingIndexItem, _React$Component);
+var PaintingIndex = /*#__PURE__*/function (_React$Component) {
+  _inherits(PaintingIndex, _React$Component);
 
-  var _super = _createSuper(PaintingIndexItem);
+  var _super = _createSuper(PaintingIndex);
 
-  function PaintingIndexItem(props) {
-    _classCallCheck(this, PaintingIndexItem);
+  function PaintingIndex(props) {
+    _classCallCheck(this, PaintingIndex);
 
     return _super.call(this, props);
   }
 
-  _createClass(PaintingIndexItem, [{
+  _createClass(PaintingIndex, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "painting-index-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "painting-index"
+      }, this.props.painting.title, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "painting-index-image",
         src: this.props.painting.imgUrl
-      }));
+      })));
     }
   }]);
 
-  return PaintingIndexItem;
+  return PaintingIndex;
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PaintingIndexItem);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PaintingIndex);
 
 /***/ }),
 

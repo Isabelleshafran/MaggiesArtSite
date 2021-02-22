@@ -1,5 +1,5 @@
 import React from 'react';
-import PaintingIndexItem from '../paintings/painting_index_item'
+import PaintingIndex from '../paintings/painting_index'
 
 
 class FriendshipWorship extends React.Component {
@@ -12,12 +12,11 @@ class FriendshipWorship extends React.Component {
     }
 
     render() { 
-        console.log(this.props.paintings)
 
         const paintingRender = () => {
             return this.props.paintings.map((painting) => {
                 if(painting.category === "friendship_worship"){
-                    return <PaintingIndexItem painting={painting} key={painting.id}/>
+                    return <PaintingIndex painting={painting} key={painting.id}/>
                 }
             })
         }
