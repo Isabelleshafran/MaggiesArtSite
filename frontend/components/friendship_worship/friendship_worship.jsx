@@ -32,7 +32,7 @@ class FriendshipWorship extends React.Component {
                     dolore eu fugiat nulla pariatur. 
                 </div>
 
-                <div>
+                <div className="painting-render">
                     {paintingRender()}
                 </div>
             </div>

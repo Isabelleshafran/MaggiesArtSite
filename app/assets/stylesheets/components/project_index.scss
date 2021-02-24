@@ -21,16 +21,34 @@
 }
 
 .painting-index-image {
-    width: 500px;
-    height: 500px;
+    // width: 500px;
+    // height: 500px;
 }
 
 .painting-index-container {
-    //  display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // justify-items: center;
-    // margin-left: 8%;
-    // margin-right: 8%;
+    // border: 1px solid blue;
+    width: 420px;
+    height: 420px;
+    // display: inline;
+    // margin-left: 30px;
+    // margin-bottom: 240px;
+}
 
-   
+.painting-index-container:hover{
+    cursor: pointer;
+}
+
+.painting-render {
+    // border: 5px solid green;
+    margin-top: 15px;
+
+    display: grid;
+    // grid-template-columns: repeat(auto-fill, 1fr);
+    // grid-template-rows: masonry;
+
+
+    // grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 2%;
+    margin-right: 2%;
 }

@@ -1,7 +1,11 @@
 class Api::PaintingsController < ApplicationController
 
      def index 
-        @paintings = Painting.all
+        @paintings = Painting.order("year DESC").all
+
+        # @paintings = Painting.where(:title => ["Maia"])
+       
+        # User.order(email: :desc)
         render "api/paintings/index"
     end
 
