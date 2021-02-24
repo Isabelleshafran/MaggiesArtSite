@@ -245,7 +245,9 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
       var _this = this;
 
       var paintingRender = function paintingRender() {
-        return _this.props.paintings.map(function (painting) {
+        return _this.props.paintings.sort(function (a, b) {
+          return b.year - a.year;
+        }).map(function (painting) {
           if (painting.category === "friendship_worship") {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index__WEBPACK_IMPORTED_MODULE_1__.default, {
               painting: painting,

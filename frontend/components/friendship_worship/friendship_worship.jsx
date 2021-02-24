@@ -14,12 +14,14 @@ class FriendshipWorship extends React.Component {
     render() { 
 
         const paintingRender = () => {
-            return this.props.paintings.map((painting) => {
+
+            return this.props.paintings.sort((a,b) => b.year-a.year).map((painting) => {
                 if(painting.category === "friendship_worship"){
                     return <PaintingIndex painting={painting} key={painting.id}/>
                 }
             })
         }
+         
 
         return ( 
             <div className="friendship_container">
