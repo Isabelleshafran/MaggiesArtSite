@@ -335,6 +335,144 @@ p36 = Painting.create!(
     year: 2020,
     medium: "Print", 
     size: '18" x 18"',
-    img_url: "camo_whitney.JPG",
-    category: "friendship_worship"
+    img_url: "lighter.JPG",
+    category: "little_pieces"
 )
+
+p37 = Painting.create!(
+    title: "Blue 7",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 18"',
+    img_url: "Lighter7.JPG",
+    category: "little_pieces"
+)
+
+p38 = Painting.create!(
+    title: "Blue 2",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 18"',
+    img_url: "Lighter5.JPG",
+    category: "little_pieces"
+)
+
+p39 = Painting.create!(
+    title: "Blue 4",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 18"',
+    img_url: "Lighter2.JPG",
+    category: "little_pieces"
+)
+
+p40 = Painting.create!(
+    title: "Blue 5",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 18"',
+    img_url: "Lighter1.JPG",
+    category: "little_pieces"
+)
+
+
+p50 = Painting.create!(
+    title: "Blue 3",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 18"',
+    img_url: "Lighter4.JPG",
+    category: "little_pieces"
+)
+
+p41 = Painting.create!(
+    title: "Blue 6",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 18"',
+    img_url: "Ligher6.JPG",
+    category: "little_pieces"
+)
+
+p42 = Painting.create!(
+    title: "Layered Blue Death",
+    year: 2020,
+    medium: "Print", 
+    size: '22" x 24"',
+    img_url: "layered_blue.JPG",
+    category: "little_pieces"
+)
+
+p43 = Painting.create!(
+    title: "Red",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 18"',
+    img_url: "red.JPG",
+    category: "little_pieces"
+)
+
+p44 = Painting.create!(
+    title: "Fleshy Flowers",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 24"',
+    img_url: "fleshy.JPG",
+    category: "little_pieces"
+)
+
+p45 = Painting.create!(
+    title: "Residual Death, Installation Shot",
+    year: 2020,
+    medium: "Plaster, Cupcake Cosmo", 
+    size: '18" x 18"',
+    img_url: "residual.JPG",
+    category: "little_pieces"
+)
+
+p46 = Painting.create!(
+    title: "Brown Flower",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 18"',
+    img_url: "brown.jpg",
+    category: "little_pieces"
+)
+
+p47 = Painting.create!(
+    title: "Delft Blue Death",
+    year: 2020,
+    medium: "Photographic Print", 
+    size: '44" x 64"',
+    img_url: "delft.jpg",
+    category: "little_pieces"
+)
+
+p49 = Painting.create!(
+    title: "Skin Flowers, Installation Shot",
+    year: 2020,
+    medium: "Latex and Pins", 
+    size: '44" x 64"',
+    img_url: "skin_flowers.JPG",
+    category: "little_pieces"
+)
+
+p51 = Painting.create!(
+    title: "Specimen, Installation Shot",
+    year: 2020,
+    medium: "Latex and Pins", 
+    size: 'n/a',
+    img_url: "specimen.JPG",
+    category: "little_pieces"
+)
+
+p48 = Painting.create!(
+    title: "Vanishing, Installation Shot",
+    year: 2020,
+    medium: "Light, Mirrors, Lenses and Cellophane", 
+    size: 'n/a',
+    img_url: "vanishing.JPG",
+    category: "little_pieces"
+)
+
+

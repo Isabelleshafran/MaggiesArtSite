@@ -379,7 +379,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
 
       var paintingRender = function paintingRender() {
         return _this.props.paintings.sort(function (a, b) {
-          return b.year - a.year;
+          return a.id - b.id;
         }).map(function (painting) {
           if (painting.category === "little_pieces") {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -394,7 +394,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
         className: "friendship_container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-header"
-      }, "Little Pieces"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "Little Pieces Of Death"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-description"
       }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
