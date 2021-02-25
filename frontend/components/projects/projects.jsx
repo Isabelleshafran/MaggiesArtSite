@@ -16,10 +16,12 @@ const Projects = () => {
             </div>
   
             <div className="proj2-container">
-                <img className="" src={window.project2} />
-                <div className="middle2">
-                    <div class="text">PROJECT 2</div>
-                </div>
+                <Link to="/little_pieces_of_death">
+                    <img className="" src={window.project2} />
+                    <div className="middle2">
+                        <div class="text">LITTLE PIECES OF DEATH</div>
+                    </div>
+                </Link>
             </div>
           
           <div className="proj3-container">

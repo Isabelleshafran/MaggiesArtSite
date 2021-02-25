@@ -329,3 +329,12 @@ p35 = Painting.create!(
 )
 
 
+
+p36 = Painting.create!(
+    title: "Blue 1",
+    year: 2020,
+    medium: "Print", 
+    size: '18" x 18"',
+    img_url: "camo_whitney.JPG",
+    category: "friendship_worship"
+)
