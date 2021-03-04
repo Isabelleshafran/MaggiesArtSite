@@ -11,7 +11,6 @@ class PaintingIndex extends React.Component {
             <div className="painting-index-container">
                 
                 <div className="painting-index">
-                    {/* {this.props.painting.title} */}
                     <img className="painting-index-image" src={this.props.painting.imgUrl}/>
                 </div>
             </div>

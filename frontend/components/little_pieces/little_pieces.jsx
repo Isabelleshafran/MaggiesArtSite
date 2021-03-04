@@ -14,7 +14,7 @@ class LittlePieces extends React.Component {
     render() { 
 
         const paintingRender = () => {
-            return this.props.paintings.sort((a,b) => a.id-b.id).map((painting) => {
+            return this.props.paintings.sort((a,b) => a.year-b.year).map((painting) => {
                 if(painting.category === "little_pieces"){
                     return <PaintingIndex painting={painting} key={painting.id}/>
                 }

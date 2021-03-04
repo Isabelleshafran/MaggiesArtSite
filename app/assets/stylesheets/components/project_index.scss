@@ -23,7 +23,10 @@
 
 
 .painting-index-container {
-    // border: 1px solid green;
+    // border: 1px solid blue;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
 }
 
 .painting-index-image {
@@ -36,12 +39,17 @@
 }
 
 .painting-render {
-    margin-top: 15px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    // border: 5px solid green;
+    // margin-top: 15px;
+    // display: grid;
+    // gap: 20px;
+    // grid-template-columns: repeat(3, 1fr);
     width: 1000px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+
+    column-count: 3;
+    column-gap: 1em;
+
 
 }
 

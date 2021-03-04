@@ -385,7 +385,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
 
       var paintingRender = function paintingRender() {
         return _this.props.paintings.sort(function (a, b) {
-          return a.id - b.id;
+          return a.year - b.year;
         }).map(function (painting) {
           if (painting.category === "little_pieces") {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index__WEBPACK_IMPORTED_MODULE_1__.default, {
