@@ -25,10 +25,12 @@ const Projects = () => {
             </div>
           
           <div className="proj3-container">
+              <Link to={"/uninhabited_spaces"}>
                 <img className="" src={window.project3} />
                 <div className="middle3">
-                    <div class="text">PROJECT 3</div>
+                    <div class="text">UNINHABITED SPACES</div>
                 </div>
+              </Link>
             </div>
 
             <div className="proj4-container">

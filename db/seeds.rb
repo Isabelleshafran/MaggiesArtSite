@@ -476,3 +476,60 @@ p48 = Painting.create!(
 )
 
 
+p52 = Painting.create!(
+    title: "Can't See Me",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '12" x 18"',
+    img_url: "cant_see_me.JPG",
+    category: "uninhabited"
+)
+
+p52 = Painting.create!(
+    title: "Return",
+    year: 2020,
+    medium: "Projection || Light, Mirrors, Lenses, Acetate", 
+    size: 'n/a',
+    img_url: "return1.JPG",
+    category: "uninhabited"
+)
+p52 = Painting.create!(
+    title: "Shroud",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '12" x 18"',
+    img_url: "shroud.JPG",
+    category: "uninhabited"
+)
+p52 = Painting.create!(
+    title: "Acension",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '12" x 18"',
+    img_url: "acension.JPG",
+    category: "uninhabited"
+)
+p52 = Painting.create!(
+    title: "Collapse",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '12" x 18"',
+    img_url: "collapse.JPG",
+    category: "uninhabited"
+)
+p52 = Painting.create!(
+    title: "Return",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '12" x 18"',
+    img_url: "return2.JPG",
+    category: "uninhabited"
+)
+p52 = Painting.create!(
+    title: "Running Away",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '12" x 18"',
+    img_url: "running_away.JPG",
+    category: "uninhabited"
+)

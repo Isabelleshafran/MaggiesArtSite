@@ -6,6 +6,7 @@ import Splash from './splash/splash'
 import Projects from './projects/projects'
 import FriendshipWorshipContainer from './friendship_worship/friendship_worship_contianer'
 import LittlePiecesContainer from './little_pieces/little_pieces_container'
+import UninhabitedContainer from './uninhabited_spaces/uninhabited_container';
 
 
 
@@ -17,7 +18,7 @@ const App = () => (
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/friendship_worship" component={FriendshipWorshipContainer} />
             <Route exact path="/little_pieces_of_death" component={LittlePiecesContainer} />
-
+            <Route exact path="/uninhabited_spaces" component={UninhabitedContainer} />
         </Switch>
     </div>
 )
