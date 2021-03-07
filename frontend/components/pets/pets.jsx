@@ -2,7 +2,7 @@ import React from 'react';
 import PaintingIndex from '../paintings/painting_index'
 
 
-class Uninhabited extends React.Component {
+class Pets extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -11,15 +11,11 @@ class Uninhabited extends React.Component {
         this.props.fetchPaintings()
     }
 
-    handleClick(){
-
-    }
-
     render() { 
 
         const paintingRender = () => {
             return this.props.paintings.sort((a,b) => a.year-b.year).map((painting) => {
-                if(painting.category === "uninhabited"){
+                if(painting.category === "nature"){
                     return <PaintingIndex painting={painting} key={painting.id}/>
                 }
             })
@@ -27,7 +23,7 @@ class Uninhabited extends React.Component {
          
         return ( 
             <div className="friendship_container">
-                <div className="project-index-header">Uninhabited Spaces</div>
+                <div className="project-index-header">Pets</div>
                 <div className="project-index-description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -44,4 +40,4 @@ class Uninhabited extends React.Component {
     }
 }
  
-export default Uninhabited;
+export default Pets;

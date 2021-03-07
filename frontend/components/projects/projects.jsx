@@ -34,10 +34,12 @@ const Projects = () => {
             </div>
 
             <div className="proj4-container">
-                <img className="" src={window.project4} />
-                <div className="middle4">
-                    <div class="text">PROJECT 4</div>
-                </div>
+                <Link to={"/pets"}>
+                    <img className="" src={window.project4} />
+                    <div className="middle4">
+                        <div class="text">PETS</div>
+                    </div>
+                </Link>
             </div>
     
         </div>

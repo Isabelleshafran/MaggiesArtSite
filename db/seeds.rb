@@ -16,6 +16,7 @@ p1 = Painting.create!(
     size: '32" x 42"',
     img_url: "maia.jpg",
     category: "friendship_worship"
+    
 )
 
 
@@ -532,4 +533,13 @@ p52 = Painting.create!(
     size: '12" x 18"',
     img_url: "running_away.JPG",
     category: "uninhabited"
+)
+
+p53 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '12" x 18"',
+    img_url: "",
+    category: "nature"
 )
