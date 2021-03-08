@@ -1,5 +1,5 @@
 import React from 'react';
-import PaintingIndex from '../paintings/painting_index'
+import PaintingIndexItem from '../paintings/painting_index_item'
 
 
 class LittlePieces extends React.Component {
@@ -16,7 +16,7 @@ class LittlePieces extends React.Component {
         const paintingRender = () => {
             return this.props.paintings.sort((a,b) => a.year-b.year).map((painting) => {
                 if(painting.category === "little_pieces"){
-                    return <PaintingIndex painting={painting} key={painting.id}/>
+                    return <PaintingIndexItem painting={painting} key={painting.id}/>
                 }
             })
         }

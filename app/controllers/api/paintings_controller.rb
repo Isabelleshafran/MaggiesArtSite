@@ -6,10 +6,10 @@ class Api::PaintingsController < ApplicationController
         render "api/paintings/index"
     end
 
-    #   def show
-    #     @painting = Painting.find_by(id: params[:id])
-    #     if @painting 
-    #         render "api/paintings/show"
-    #     end
-    # end
+      def show
+        @painting = Painting.find_by(id: params[:id])
+        if @painting 
+            render "api/paintings/show"
+        end
+    end
 end

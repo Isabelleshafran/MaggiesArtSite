@@ -1,1 +1,1 @@
-json.extract! @product, :id, :title, :size, :medium, :year
+json.extract! @painting, :id, :title, :size, :medium, :year, :category, :img_url

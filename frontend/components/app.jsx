@@ -9,6 +9,7 @@ import LittlePiecesContainer from './little_pieces/little_pieces_container'
 import UninhabitedContainer from './uninhabited_spaces/uninhabited_container';
 import PetsContainer from './pets/pets_container'
 import OtherContainer from './other/other_container'
+import PaintingShowContainer from './paintings/painting_show_container'
 
 
 
@@ -23,6 +24,7 @@ const App = () => (
             <Route exact path="/uninhabited_spaces" component={UninhabitedContainer} />
             <Route exact path="/pets" component={PetsContainer} />
             <Route exact path="/other" component={OtherContainer} />
+            <Route exact path="/:category/:paintingId" component={PaintingShowContainer} />
 
         </Switch>
     </div>
