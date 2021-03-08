@@ -1,7 +1,6 @@
 .painting-show-image {
-    margin-top: 20px;
-    max-width: 500px; 
-    max-height: 500px;
+    margin-bottom: 50px;
+
 }
 
 .painting-show-container {
@@ -10,10 +9,26 @@
     color: rgba(168, 168, 168, 0.856);
     font-family: 'Open Sans', sans-serif;
     margin-top: 120px;
+
+
+     
 }
+
 
 .painting-show {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    object-fit: contain;
+    transform: none;
+    width: 480px;
+    height: 680px;
+}
+
+.painting-show-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

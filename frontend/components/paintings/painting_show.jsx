@@ -19,8 +19,11 @@ class PaintingShow extends React.Component {
             return (
                 <div className="painting-show-container">
                     <div className="painting-show">
-                        {this.props.painting.title}
-                        <br/>
+                        <div className="painting-show-text">
+                            <div>{this.props.painting.title}</div>
+                            <div>{this.props.painting.medium}</div>
+                            <div>{this.props.painting.size}</div>
+                        </div>
                         <img className="painting-show-image" src={this.props.painting.imgUrl}/>
                     </div>
                 </div>

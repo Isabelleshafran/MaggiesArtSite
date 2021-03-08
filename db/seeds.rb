@@ -10,467 +10,659 @@ require 'open-uri'
 
 Painting.delete_all
 
+# FRIENSHIP WORSHIP
 
-# p1 = Painting.create!(
-#     title: "Maia",
-#     year: 2020,
-#     medium: "Pencil on Paper", 
-#     size: '32" x 42"',
-#     category: "friendship_worship"
-    
-# )
+p1 = Painting.create!(
+    title: "Maia",
+    year: 2020,
+    medium: "Pencil on Paper", 
+    size: '32" x 42"',
+    category: "friendship_worship"
+)
 
+file1 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/maia.JPG')
+p1.photo.attach(io: file1, filename: 'maia.JPG')
 
+p2 = Painting.create!(
+    title: "Neil",
+    year: 2017,
+    medium: "Oil on Linen", 
+    size: '24" x 30"',
+    category: "friendship_worship"
+)
 
-# p2 = Painting.create!(
-#     title: "Neil",
-#     year: 2017,
-#     medium: "Oil on Linen", 
-#     size: '24" x 30"',
-#     category: "friendship_worship"
-# )
+file2 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/Neil.JPG')
+p2.photo.attach(io: file2, filename: 'neil.JPG')
 
-# p3 = Painting.create!(
-#     title: "Left Hand Whitney",
-#     year: 2015,
-#     medium: "Pen and Ink on Paper", 
-#     size: 'n/a',
-#     category: "friendship_worship"
-# )
+p3 = Painting.create!(
+    title: "Left Hand Whitney",
+    year: 2015,
+    medium: "Pen and Ink on Paper", 
+    category: "friendship_worship"
+)
 
-# p4 = Painting.create!(
-#     title: "Whitney and Billie",
-#     year: 2015,
-#     medium: "Pen and Ink on Paper", 
-#     size: 'n/a',
-#     category: "friendship_worship"
-# )
+file3 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_7517_1.JPG')
+p3.photo.attach(io: file3, filename: 'lefthandwhiney.JPG')
 
-# p5 = Painting.create!(
-#     title: "Whitney in Chair",
-#     year: 2015,
-#     medium: "Pen and Pencil on Paper", 
-#     size: 'n/a',
-#     category: "friendship_worship"
-# )
+p4 = Painting.create!(
+    title: "Whitney and Billie",
+    year: 2015,
+    medium: "Pen and Ink on Paper", 
+    category: "friendship_worship"
+)
 
-# p6 = Painting.create!(
-#     title: "Whitney in our House",
-#     year: 2015,
-#     medium: "Mixed Media on Paper", 
-#     size: 'n/a',
-#     category: "friendship_worship"
-# )
+file4 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_7410_1.JPG')
+p4.photo.attach(io: file4, filename: 'whitneybillie.JPG')
 
-# p7 = Painting.create!(
-#     title: "Biz",
-#     year: 2016,
-#     medium: "Oil on Linen", 
-#     size: '24" x 35"',
-#     img_url: "biz_2.JPG",
-#     category: "friendship_worship"
-# )
+p5 = Painting.create!(
+    title: "Whitney in Chair",
+    year: 2015,
+    medium: "Pen and Pencil on Paper", 
+    category: "friendship_worship"
+)
 
-# p8 = Painting.create!(
-#     title: "Josie 2",
-#     year: 2016,
-#     medium: "Oil on Linen", 
-#     size: '24" x 30"',
-#     img_url: "josie_2.JPG",
-#     category: "friendship_worship"
-# )
+file5 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_7085_1.JPG')
+p5.photo.attach(io: file5, filename: 'whitneychair.JPG')
 
-# p9 = Painting.create!(
-#     title: "Josie",
-#     year: 2016,
-#     medium: "Oil on Linen", 
-#     size: '36" x 60"',
-#     img_url: "josie.jpg",
-#     category: "friendship_worship"
-# )
+p6 = Painting.create!(
+    title: "Whitney in our House",
+    year: 2015,
+    medium: "Mixed Media on Paper", 
+    category: "friendship_worship"
+)
 
-# p10 = Painting.create!(
-#     title: "Josie on my Bed",
-#     year: 2016,
-#     medium: "Oil on Linen", 
-#     size: '48" x 60"',
-#     img_url: "josie_bed.JPG",
-#     category: "friendship_worship"
-# )
+file6 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_6879_1.JPG')
+p6.photo.attach(io: file6, filename: 'whitneyhouse.JPG')
 
-# p11 = Painting.create!(
-#     title: "Jaya Strawberry",
-#     year: 2016,
-#     medium: "n/a", 
-#     size: 'n/a',
-#     img_url: "jay_strawberry.JPG",
-#     category: "friendship_worship"
-# )
+p7 = Painting.create!(
+    title: "Biz",
+    year: 2016,
+    medium: "Oil on Linen", 
+    size: '24" x 35"',
+    category: "friendship_worship"
+)
 
-# p12 = Painting.create!(
-#     title: "Josie Study",
-#     year: 2016,
-#     medium: "Watercolor", 
-#     size: 'na',
-#     img_url: "josie_study.JPG",
-#     category: "friendship_worship"
-# )
+file7 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_3350.JPG')
+p7.photo.attach(io: file7, filename: 'biz.JPG')
 
-# p13 = Painting.create!(
-#     title: "Big Headed Emma",
-#     year: 2013,
-#     medium: "Oil on Canvas", 
-#     size: '42" x 60"',
-#     img_url: "big_headed_emma.JPG",
-#     category: "friendship_worship"
-# )
+p8 = Painting.create!(
+    title: "Josie 2",
+    year: 2016,
+    medium: "Oil on Linen", 
+    size: '24" x 30"',
+    category: "friendship_worship"
+)
 
-# p14 = Painting.create!(
-#     title: "Cuyler",
-#     year: 2013,
-#     medium: "Oil on Canvas", 
-#     size: '48" x 72"',
-#     img_url: "cuyler.JPG",
-#     category: "friendship_worship"
-# )
+file8 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_3164.JPG')
+p8.photo.attach(io: file8, filename: 'josie2.JPG')
 
-# p15 = Painting.create!(
-#     title: "Me",
-#     year: 2013,
-#     medium: "Oil on Canvas", 
-#     size: '48" x 48"',
-#     img_url: "me.JPG",
-#     category: "friendship_worship"
-# )
+p9 = Painting.create!(
+    title: "Josie",
+    year: 2016,
+    medium: "Oil on Linen", 
+    size: '36" x 60"',
+    category: "friendship_worship"
+)
 
-# p16 = Painting.create!(
-#     title: "Jay with Flowers",
-#     year: 2019,
-#     medium: "Colored Pencil on Paper", 
-#     size: '8" x 10"',
-#     img_url: "jay_flowers.JPG",
-#     category: "friendship_worship"
-# )
+file9 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_2608.jpg')
+p9.photo.attach(io: file9, filename: 'josie.JPG')
 
-# p17 = Painting.create!(
-#     title: "Family Portrait",
-#     year: 2019,
-#     medium: "Pencil on Paper", 
-#     size: '42" x 56"',
-#     img_url: "family_portait.JPG",
-#     category: "friendship_worship"
-# )
+p10 = Painting.create!(
+    title: "Josie on my Bed",
+    year: 2016,
+    medium: "Oil on Linen", 
+    size: '48" x 60"',
+    category: "friendship_worship"
+)
 
-# p18 = Painting.create!(
-#     title: "Roommate Love (Neil and Cody)",
-#     year: 2017,
-#     medium: "Oil on Linen", 
-#     size: '36" x 48"',
-#     img_url: "roomate_love.JPG",
-#     category: "friendship_worship"
-# )
+file10 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_2060.JPG')
+p10.photo.attach(io: file10, filename: 'josiebed.JPG')
 
+p11 = Painting.create!(
+    title: "Jaya Strawberry",
+    year: 2016,
+    medium: "n/a", 
+    size: 'n/a',
+    category: "friendship_worship"
+)
 
-# p19 = Painting.create!(
-#     title: "Biz",
-#     year: 2017,
-#     medium: "Oil on Linen", 
-#     size: '24" x 30"',
-#     img_url: "biz.JPG",
-#     category: "friendship_worship"
-# )
+file11 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_1698.JPG')
+p11.photo.attach(io: file11, filename: 'strawberry.JPG')
 
-# p20 = Painting.create!(
-#     title: "Cam at Angelo's",
-#     year: 2012,
-#     medium: "Pencil on paper", 
-#     size: '36" x 42"',
-#     img_url: "cam_angelos.JPG",
-#     category: "friendship_worship"
-# )
+p12 = Painting.create!(
+    title: "Josie Study",
+    year: 2016,
+    medium: "Watercolor", 
+    size: 'na',
+    category: "friendship_worship"
+)
 
-# p21 = Painting.create!(
-#     title: "Ari in her Element",
-#     year: 2014,
-#     medium: "Pencil on paper", 
-#     size: '24" x 42"',
-#     img_url: "ari_element.JPG",
-#     category: "friendship_worship"
-# )
+file12 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_1682.JPG')
+p12.photo.attach(io: file12, filename: 'josie_study.JPG')
 
-# p22 = Painting.create!(
-#     title: "Whitney in her Element",
-#     year: 2014,
-#     medium: "Pencil on paper", 
-#     size: '42" x 63"',
-#     img_url: "whitney_element.JPG",
-#     category: "friendship_worship"
-# )
+p13 = Painting.create!(
+    title: "Big Headed Emma",
+    year: 2013,
+    medium: "Oil on Canvas", 
+    size: '42" x 60"',
+    category: "friendship_worship"
+)
 
-# p23 = Painting.create!(
-#     title: "Biz in her Element",
-#     year: 2014,
-#     medium: "Pencil on paper", 
-#     size: '42" x 63"',
-#     img_url: "biz_element.JPG",
-#     category: "friendship_worship"
-# )
+file13 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_0747.JPG')
+p13.photo.attach(io: file13, filename: 'bigheadedemma.JPG')
+
+p14 = Painting.create!(
+    title: "Cuyler",
+    year: 2013,
+    medium: "Oil on Canvas", 
+    size: '48" x 72"',
+    category: "friendship_worship"
+)
+
+file14 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_0746.JPG')
+p14.photo.attach(io: file14, filename: 'cuyler.JPG')
+
+p15 = Painting.create!(
+    title: "Me",
+    year: 2013,
+    medium: "Oil on Canvas", 
+    size: '48" x 48"',
+    category: "friendship_worship"
+)
+
+file15 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_0744.JPG')
+p15.photo.attach(io: file15, filename: 'me.JPG')
+
+p16 = Painting.create!(
+    title: "Jay with Flowers",
+    year: 2019,
+    medium: "Colored Pencil on Paper", 
+    size: '8" x 10"',
+    category: "friendship_worship"
+)
+
+file16 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_0260.JPG')
+p16.photo.attach(io: file16, filename: 'jayflowers.JPG')
+
+p17 = Painting.create!(
+    title: "Family Portrait",
+    year: 2019,
+    medium: "Pencil on Paper", 
+    size: '42" x 56"',
+    category: "friendship_worship"
+)
+
+file17 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/famedited.JPG')
+p17.photo.attach(io: file17, filename: 'familyportrait.JPG')
 
 
-# p24 = Painting.create!(
-#     title: "Ingrid with Flowers 1",
-#     year: 2018,
-#     medium: "Oil on Linen", 
-#     size: '24" x 36"',
-#     img_url: "ingrid_flowers_1.jpg",
-#     category: "friendship_worship"
-# )
+p18 = Painting.create!(
+    title: "Roommate Love (Neil and Cody)",
+    year: 2017,
+    medium: "Oil on Linen", 
+    size: '36" x 48"',
+    category: "friendship_worship"
+)
 
-# p25 = Painting.create!(
-#     title: "Katie and Camera",
-#     year: 2018,
-#     medium: "Oil on Linen", 
-#     size: '24" x 36"',
-#     img_url: "katie_camera.JPG",
-#     category: "friendship_worship"
-# )
-
-# p26 = Painting.create!(
-#     title: "Chimes with Plants",
-#     year: 2017,
-#     medium: "Oil on Linen", 
-#     size: '24" x 36"',
-#     img_url: "chimes_plants.JPG",
-#     category: "friendship_worship"
-# )
-
-# p27 = Painting.create!(
-#     title: "Josie 1",
-#     year: 2016,
-#     medium: "Oil on Linen", 
-#     size: '24" x 30"',
-#     img_url: "josie_1.JPG",
-#     category: "friendship_worship"
-# )
-
-# p28 = Painting.create!(
-#     title: "Chimes with Plant",
-#     year: 2017,
-#     medium: "Oil on Linen", 
-#     size: '24" x 30"',
-#     img_url: "chimes_plant.jpg",
-#     category: "friendship_worship"
-# )
-
-# p29 = Painting.create!(
-#     title: "Whitney's Hands",
-#     year: 2017,
-#     medium: "Oil on Linen", 
-#     size: '24" x 36"',
-#     img_url: "whitney_hands.JPG",
-#     category: "friendship_worship"
-# )
-
-# p30 = Painting.create!(
-#     title: "Steph with Wine",
-#     year: 2018,
-#     medium: "Oil on Linen", 
-#     size: '24" x 30"',
-#     img_url: "steph_wine.JPG",
-#     category: "friendship_worship"
-# )
-
-# p31 = Painting.create!(
-#     title: "Yellow Dani (pt 1)",
-#     year: 2013,
-#     medium: "Oil on Canvas", 
-#     size: '30" x 72"',
-#     img_url: "yellow_dani_1.jpg",
-#     category: "friendship_worship"
-# )
-
-# p32 = Painting.create!(
-#     title: "Yellow Dani (pt 2)",
-#     year: 2013,
-#     medium: "Oil on Canvas", 
-#     size: '30" x 72"',
-#     img_url: "yellow_dani_2.jpg",
-#     category: "friendship_worship"
-# )
-
-# p33 = Painting.create!(
-#     title: "Whitney with Flamingos (pt 2)",
-#     year: 2015,
-#     medium: "Colored Pencil on Paper", 
-#     size: '11" x 14"',
-#     img_url: "whitney_flamingo_2.JPG",
-#     category: "friendship_worship"
-# )
-
-# p34 = Painting.create!(
-#     title: "Whitney with Flamingos (pt 1)",
-#     year: 2015,
-#     medium: "Colored Pencil on Paper", 
-#     size: '11" x 14"',
-#     img_url: "whitney_flamingos_1.jpg",
-#     category: "friendship_worship"
-# )
-
-# p35 = Painting.create!(
-#     title: "Camouflage Whitney",
-#     year: 2013,
-#     medium: "Oil on Canvas", 
-#     size: 'n/a"',
-#     img_url: "camo_whitney.JPG",
-#     category: "friendship_worship"
-# )
+file18 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1919.JPG')
+p18.photo.attach(io: file18, filename: 'roomatelove.JPG')
 
 
+p19 = Painting.create!(
+    title: "Biz",
+    year: 2017,
+    medium: "Oil on Linen", 
+    size: '24" x 30"',
+    category: "friendship_worship"
+)
 
-# p36 = Painting.create!(
-#     title: "Blue 1",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 18"',
-#     img_url: "lighter.JPG",
-#     category: "little_pieces"
-# )
+file19 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1619.JPG')
+p19.photo.attach(io: file19, filename: 'biz.JPG')
 
-# p37 = Painting.create!(
-#     title: "Blue 7",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 18"',
-#     img_url: "Lighter7.JPG",
-#     category: "little_pieces"
-# )
+p20 = Painting.create!(
+    title: "Cam at Angelo's",
+    year: 2012,
+    medium: "Pencil on paper", 
+    size: '36" x 42"',
+    category: "friendship_worship"
+)
 
-# p38 = Painting.create!(
-#     title: "Blue 2",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 18"',
-#     img_url: "Lighter5.JPG",
-#     category: "little_pieces"
-# )
-
-# p39 = Painting.create!(
-#     title: "Blue 4",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 18"',
-#     img_url: "Lighter2.JPG",
-#     category: "little_pieces"
-# )
-
-# p40 = Painting.create!(
-#     title: "Blue 5",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 18"',
-#     img_url: "Lighter1.JPG",
-#     category: "little_pieces"
-# )
+file20 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1227_1.JPG')
+p20.photo.attach(io: file20, filename: 'camatangelos.JPG')
 
 
-# p50 = Painting.create!(
-#     title: "Blue 3",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 18"',
-#     img_url: "Lighter4.JPG",
-#     category: "little_pieces"
-# )
+p21 = Painting.create!(
+    title: "Ari in her Element",
+    year: 2014,
+    medium: "Pencil on paper", 
+    size: '24" x 42"',
+    category: "friendship_worship"
+)
 
-# p41 = Painting.create!(
-#     title: "Blue 6",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 18"',
-#     img_url: "Ligher6.JPG",
-#     category: "little_pieces"
-# )
+file21 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1226_2.JPG')
+p21.photo.attach(io: file21, filename: 'arielement.JPG')
 
-# p42 = Painting.create!(
-#     title: "Layered Blue Death",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '22" x 24"',
-#     img_url: "layered_blue.JPG",
-#     category: "little_pieces"
-# )
+p22 = Painting.create!(
+    title: "Whitney in her Element",
+    year: 2014,
+    medium: "Pencil on paper", 
+    size: '42" x 63"',
+    category: "friendship_worship"
+)
 
-# p43 = Painting.create!(
-#     title: "Red",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 18"',
-#     img_url: "red.JPG",
-#     category: "little_pieces"
-# )
+file22 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1222_2.JPG')
+p22.photo.attach(io: file22, filename: 'whitneyelement.JPG')
 
-# p44 = Painting.create!(
-#     title: "Fleshy Flowers",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 24"',
-#     img_url: "fleshy.JPG",
-#     category: "little_pieces"
-# )
+p23 = Painting.create!(
+    title: "Biz in her Element",
+    year: 2014,
+    medium: "Pencil on paper", 
+    size: '42" x 63"',
+    category: "friendship_worship"
+)
 
-# p45 = Painting.create!(
-#     title: "Residual Death, Installation Shot",
-#     year: 2020,
-#     medium: "Plaster, Cupcake Cosmo", 
-#     size: '18" x 18"',
-#     img_url: "residual.JPG",
-#     category: "little_pieces"
-# )
+file23 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1214+2_1.JPG')
+p23.photo.attach(io: file23, filename: 'bizelement.JPG')
 
-# p46 = Painting.create!(
-#     title: "Brown Flower",
-#     year: 2020,
-#     medium: "Print", 
-#     size: '18" x 18"',
-#     img_url: "brown.jpg",
-#     category: "little_pieces"
-# )
 
-# p47 = Painting.create!(
-#     title: "Delft Blue Death",
-#     year: 2020,
-#     medium: "Photographic Print", 
-#     size: '44" x 64"',
-#     img_url: "delft.jpg",
-#     category: "little_pieces"
-# )
+p24 = Painting.create!(
+    title: "Ingrid with Flowers 1",
+    year: 2018,
+    medium: "Oil on Linen", 
+    size: '24" x 36"',
+    category: "friendship_worship"
+)
 
-# p49 = Painting.create!(
-#     title: "Skin Flowers, Installation Shot",
-#     year: 2020,
-#     medium: "Latex and Pins", 
-#     size: '44" x 64"',
-#     img_url: "skin_flowers.JPG",
-#     category: "little_pieces"
-# )
+file24 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1193.jpg')
+p24.photo.attach(io: file24, filename: 'ingridflowers1.JPG')
 
-# p51 = Painting.create!(
-#     title: "Specimen, Installation Shot",
-#     year: 2020,
-#     medium: "Latex and Pins", 
-#     size: 'n/a',
-#     img_url: "specimen.JPG",
-#     category: "little_pieces"
-# )
 
-# p48 = Painting.create!(
-#     title: "Vanishing, Installation Shot",
-#     year: 2020,
-#     medium: "Light, Mirrors, Lenses and Cellophane", 
-#     size: 'n/a',
-#     img_url: "vanishing.JPG",
-#     category: "little_pieces"
-# )
+p25 = Painting.create!(
+    title: "Katie and Camera",
+    year: 2018,
+    medium: "Oil on Linen", 
+    size: '24" x 36"',
+    category: "friendship_worship"
+)
+
+file25 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0938.JPG')
+p25.photo.attach(io: file25, filename: 'camera.JPG')
+
+p26 = Painting.create!(
+    title: "Chimes with Plants",
+    year: 2017,
+    medium: "Oil on Linen", 
+    size: '24" x 36"',
+    category: "friendship_worship"
+)
+
+file26 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0921.JPG')
+p26.photo.attach(io: file26, filename: 'plants.JPG')
+
+
+p27 = Painting.create!(
+    title: "Josie 1",
+    year: 2016,
+    medium: "Oil on Linen", 
+    size: '24" x 30"',
+    category: "friendship_worship"
+)
+
+file27 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0687_1.JPG')
+p27.photo.attach(io: file27, filename: 'josie1.JPG')
+
+p28 = Painting.create!(
+    title: "Chimes with Plant",
+    year: 2017,
+    medium: "Oil on Linen", 
+    size: '24" x 30"',
+    category: "friendship_worship"
+)
+
+file28 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0503.jpg')
+p28.photo.attach(io: file28, filename: 'chimesplant.JPG')
+
+p29 = Painting.create!(
+    title: "Whitney's Hands",
+    year: 2017,
+    medium: "Oil on Linen", 
+    size: '24" x 36"',
+    category: "friendship_worship"
+)
+
+file29 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0490.JPG')
+p29.photo.attach(io: file29, filename: 'whitneyhands.JPG')
+
+
+p30 = Painting.create!(
+    title: "Steph with Wine",
+    year: 2018,
+    medium: "Oil on Linen", 
+    size: '24" x 30"',
+    category: "friendship_worship"
+)
+
+file30 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0424.JPG')
+p30.photo.attach(io: file30, filename: 'stephwine.JPG')
+
+
+p31 = Painting.create!(
+    title: "Yellow Dani (pt 1)",
+    year: 2013,
+    medium: "Oil on Canvas", 
+    size: '30" x 72"',
+    category: "friendship_worship"
+)
+
+file31 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0020.jpg')
+p31.photo.attach(io: file31, filename: 'dani1.JPG')
+
+p32 = Painting.create!(
+    title: "Yellow Dani (pt 2)",
+    year: 2013,
+    medium: "Oil on Canvas", 
+    size: '30" x 72"',
+    category: "friendship_worship"
+)
+
+file32 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0008.jpg')
+p32.photo.attach(io: file32, filename: 'dani2.JPG')
+
+p33 = Painting.create!(
+    title: "Whitney with Flamingos (pt 2)",
+    year: 2015,
+    medium: "Colored Pencil on Paper", 
+    size: '11" x 14"',
+    category: "friendship_worship"
+)
+
+file33 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/1001_1.JPG')
+p33.photo.attach(io: file33, filename: 'whitneyflamingo2.JPG')
+
+p34 = Painting.create!(
+    title: "Whitney with Flamingos (pt 1)",
+    year: 2015,
+    medium: "Colored Pencil on Paper", 
+    size: '11" x 14"',
+    category: "friendship_worship"
+)
+
+file34 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_9094.jpg')
+p34.photo.attach(io: file34, filename: 'whitneyflamingo1.JPG')
+
+p35 = Painting.create!(
+    title: "Camouflage Whitney",
+    year: 2013,
+    medium: "Oil on Canvas", 
+    size: 'n/a"',
+    category: "friendship_worship"
+)
+
+file35 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/877.JPG')
+p35.photo.attach(io: file35, filename: 'whitneycamo.JPG')
+
+
+# LITTLE PIECES
+
+
+p36 = Painting.create!(
+    title: "Blue 1",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file36 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/lighter.JPG')
+p36.photo.attach(io: file36, filename: 'blue1.JPG')
+
+
+p37 = Painting.create!(
+    title: "Blue 7",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file37 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter7.JPG')
+p37.photo.attach(io: file37, filename: 'blue7.JPG')
+
+p38 = Painting.create!(
+    title: "Blue 2",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file38 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter5.JPG')
+p38.photo.attach(io: file38, filename: 'blue2.JPG')
+
+
+p39 = Painting.create!(
+    title: "Blue 4",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file39 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter2.JPG')
+p39.photo.attach(io: file39, filename: 'blue4.JPG')
+
+p40 = Painting.create!(
+    title: "Blue 5",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file40 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter1.JPG')
+p40.photo.attach(io: file40, filename: 'blue5.JPG')
+
+
+
+p50 = Painting.create!(
+    title: "Blue 3",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file50 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter4.JPG')
+p50.photo.attach(io: file50, filename: 'blue3.JPG')
+
+p41 = Painting.create!(
+    title: "Blue 6",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file41 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Ligher6.JPG')
+p41.photo.attach(io: file41, filename: 'blue6.JPG')
+
+p66 = Painting.create!(
+    title: "Red 8",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file66 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4391+copy.JPG')
+p66.photo.attach(io: file66, filename: 'red8.JPG')
+
+p65 = Painting.create!(
+    title: "Red 7",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file65 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4390.JPG')
+p65.photo.attach(io: file65, filename: 'red7.JPG')
+
+p64 = Painting.create!(
+    title: "Red 6",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file64 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4389+copy.JPG')
+p64.photo.attach(io: file64, filename: 'red6.JPG')
+
+
+p63 = Painting.create!(
+    title: "Red 5",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file63 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4388+copy.JPG')
+p63.photo.attach(io: file63, filename: 'red5.JPG')
+
+
+p62 = Painting.create!(
+    title: "Red 4",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file62 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4387+copy.JPG')
+p62.photo.attach(io: file62, filename: 'red4.JPG')
+
+p61 = Painting.create!(
+    title: "Red 3",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file61 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4385-2.JPG')
+p61.photo.attach(io: file61, filename: 'red3.JPG')
+
+p60 = Painting.create!(
+    title: "Red 2",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '22" x 24"',
+    category: "little_pieces"
+)
+
+file60 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4384+copy.JPG')
+p60.photo.attach(io: file60, filename: 'red2.JPG')
+
+p42 = Painting.create!(
+    title: "Layered Blue Death",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '22" x 24"',
+    category: "little_pieces"
+)
+
+file42 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4062.JPG')
+p42.photo.attach(io: file42, filename: 'layeredblue.JPG')
+
+p43 = Painting.create!(
+    title: "Red",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file43 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4383+copy.JPG')
+p43.photo.attach(io: file43, filename: 'red.JPG')
+
+p44 = Painting.create!(
+    title: "Fleshy Flowers",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 24"',
+    category: "little_pieces"
+)
+
+file44 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2947_1.JPG')
+p44.photo.attach(io: file44, filename: 'fleshy.JPG')
+
+p45 = Painting.create!(
+    title: "Residual Death, Installation Shot",
+    year: 2020,
+    medium: "Plaster, Cupcake Cosmo", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file45 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2907_1.JPG')
+p45.photo.attach(io: file45, filename: 'residualdeath.JPG')
+
+p46 = Painting.create!(
+    title: "Residue",
+    year: 2020,
+    medium: "Archival Pigment Print", 
+    size: '18" x 18"',
+    category: "little_pieces"
+)
+
+file46 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2881small.jpg')
+p46.photo.attach(io: file46, filename: 'residue.JPG')
+
+p47 = Painting.create!(
+    title: "Delft Blue Death",
+    year: 2020,
+    medium: "Photographic Print", 
+    size: '44" x 64"',
+    category: "little_pieces"
+)
+
+file47 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/FinalBig.jpg')
+p47.photo.attach(io: file47, filename: 'delft.JPG')
+
+p49 = Painting.create!(
+    title: "Skin Flowers, Installation Shot",
+    year: 2020,
+    medium: "Latex and Pins", 
+    size: '44" x 64"',
+    category: "little_pieces"
+)
+
+file49 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/DSC01346_2.JPG')
+p49.photo.attach(io: file49, filename: 'skinflowers.JPG')
+
+p51 = Painting.create!(
+    title: "Specimen, Installation Shot",
+    year: 2020,
+    medium: "Latex and Pins", 
+    category: "little_pieces"
+)
+
+file51 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/DSC01334.JPG')
+p51.photo.attach(io: file51, filename: 'specimen.JPG')
+
+p48 = Painting.create!(
+    title: "Vanishing, Installation Shot",
+    year: 2020,
+    medium: "Light, Mirrors, Lenses and Cellophane", 
+    category: "little_pieces"
+)
+
+file48 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_3932.JPG')
+p48.photo.attach(io: file48, filename: 'vanishing.JPG')
+
+
 
 # UNINHABITED
 
@@ -483,7 +675,7 @@ p52 = Painting.create!(
     category: "uninhabited"
 )
 
-file52 = open('https://maggieshafran-seeds.s3.amazonaws.com/DSC01204.JPG')
+file52 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC01204.JPG')
 p52.photo.attach(io: file52, filename: 'cantseeme.JPG')
 
 p53 = Painting.create!(
@@ -494,7 +686,7 @@ p53 = Painting.create!(
     category: "uninhabited"
 )
 
-file53 = open('https://maggieshafran-seeds.s3.amazonaws.com/IMG_3420_1.JPG')
+file53 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/IMG_3420_1.JPG')
 p53.photo.attach(io: file53, filename: 'return.JPG')
 
 p54 = Painting.create!(
@@ -505,7 +697,7 @@ p54 = Painting.create!(
     category: "uninhabited"
 )
 
-file54 = open('https://maggieshafran-seeds.s3.amazonaws.com/DSC01184_1.JPG')
+file54 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC01184_1.JPG')
 p54.photo.attach(io: file54, filename: 'shroud.jpg')
 
 p55 = Painting.create!(
@@ -516,7 +708,7 @@ p55 = Painting.create!(
     category: "uninhabited"
 )
 
-file55 = open('https://maggieshafran-seeds.s3.amazonaws.com/DSC00968.JPG')
+file55 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC00968.JPG')
 p55.photo.attach(io: file55, filename: 'acension.jpg')
 
 p56 = Painting.create!(
@@ -527,7 +719,7 @@ p56 = Painting.create!(
     category: "uninhabited"
 )
 
-file56 = open('https://maggieshafran-seeds.s3.amazonaws.com/DSC00938.JPG')
+file56 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC00938.JPG')
 p56.photo.attach(io: file56, filename: 'collapse.JPG')
 
 p57 = Painting.create!(
@@ -537,7 +729,7 @@ p57 = Painting.create!(
     size: '12" x 18"',
     category: "uninhabited"
 )
-file57 = open('https://maggieshafran-seeds.s3.amazonaws.com/DSC00928.JPG')
+file57 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC00928.JPG')
 p57.photo.attach(io: file57, filename: 'return2.JPG')
 
 p58 = Painting.create!(
@@ -548,7 +740,7 @@ p58 = Painting.create!(
     category: "uninhabited"
 )
 
-file58 = open('https://maggieshafran-seeds.s3.amazonaws.com/2020-05-19+11.27.01.JPG')
+file58 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/2020-05-19+11.27.01.JPG')
 p58.photo.attach(io: file58, filename: 'runningaway.jpg')
 
 

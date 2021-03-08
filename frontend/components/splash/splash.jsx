@@ -10,8 +10,6 @@ const Splash = () => {
                 <span className='artist-type'>Lorem ipsum dolor sit amet</span>
                 <span className="artist-work"> Lorem ipsum dolor</span>
             </div>
-
-             {/* <img className="splash-image" src={window.splash} /> */}
              <br/>
             <div className="about-section">
                 <img className="headshot" src={window.headshot} />

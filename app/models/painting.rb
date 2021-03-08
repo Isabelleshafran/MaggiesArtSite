@@ -1,5 +1,5 @@
 class Painting < ApplicationRecord
-    validates :title, :year, :medium, :size, presence: true
+    # validates :title, :year, :medium, presence: true
 
     has_one_attached :photo
 
