@@ -1,3 +1,12 @@
+.all-project-text {
+    // display: flex;
+    // justify-content: center;
+    // margin-top: 120px;
+    //      color: rgba(168, 168, 168, 0.856);
+    // font-family: 'Open Sans', sans-serif;
+    // font-size: 30px;
+}
+
 .projects-container {
     margin-top: 150px;
     display: grid;
@@ -8,6 +17,8 @@
 
     .text {
         font-size: 16px;
+        color: rgba(168, 168, 168, 0.856);
+        font-family: 'Open Sans', sans-serif;
     }
 
     .proj1-container:hover .middle1 {
@@ -29,8 +40,6 @@
       .proj5-container:hover .middle5 {
         opacity: 1;
     }
-
-
 
     .middle1 {
         opacity: 0;
@@ -91,11 +100,4 @@
     }
 }
 
-// .projects-container:hover img {
-//     opacity: 0.3;
-// }
-
-// .projects-container:hover .middle {
-//   opacity: 1;
-// }
 
