@@ -7,6 +7,8 @@ class PaintingIndex extends React.Component {
 
     }
 
+
+
     render() { 
         return ( 
             <div className="painting-index-container">
@@ -22,3 +24,4 @@ class PaintingIndex extends React.Component {
 }
  
 export default PaintingIndex;
+

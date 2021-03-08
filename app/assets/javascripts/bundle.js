@@ -830,16 +830,37 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   var _super = _createSuper(PaintingShow);
 
   function PaintingShow(props) {
+    var _this;
+
     _classCallCheck(this, PaintingShow);
 
-    return _super.call(this, props);
+    _this = _super.call(this, props);
+    _this.state = {
+      index: 0
+    };
+    _this.clickForward = _this.clickForward.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(PaintingShow, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       this.props.fetchPainting(this.props.match.params.paintingId);
+      this.props.fetchPaintings();
       window.scrollTo(0, 0);
+    }
+  }, {
+    key: "clickForward",
+    value: function clickForward() {
+      var _this2 = this;
+
+      var allPaintings = this.props.paintings;
+      var filtered = allPaintings.filter(function (painting) {
+        return painting.category === _this2.props.match.params.category;
+      }); // console.log(filtered)
+      // let currentIndex = filtered.indexOf(this.props.)
+      // this.history.push(`${this.props.match.params.category}/`)
+      //    <Route exact path="/:category/:paintingId" component={PaintingShowContainer} />
     }
   }, {
     key: "render",
@@ -847,13 +868,16 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       if (!this.props.painting) {
         return null;
       } else {
+        // console.log(this.props.match.params.category)
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "painting-show-container"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "painting-show"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "painting-show-text"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+          onClick: this.clickForward
+        }, "Next"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", null, "Previous"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
           className: "painting-show-image",
           src: this.props.painting.imgUrl
         })));
@@ -890,7 +914,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var msp = function msp(state, ownProps) {
   return {
-    painting: state.paintings[ownProps.match.params.paintingId]
+    painting: state.paintings[ownProps.match.params.paintingId],
+    paintings: Object.values(state.paintings)
   };
 };
 
@@ -898,6 +923,9 @@ var mdp = function mdp(dispatch) {
   return {
     fetchPainting: function fetchPainting(id) {
       return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPainting)(id));
+    },
+    fetchPaintings: function fetchPaintings() {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)());
     }
   };
 };
