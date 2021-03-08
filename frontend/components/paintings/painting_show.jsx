@@ -17,18 +17,12 @@ class PaintingShow extends React.Component {
             return null
         } else {
             return (
-                <div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    hello
-                    <br/>
-                    {this.props.painting.title}
-                    <br/>
-                    <img className="" src={this.props.painting.imgUrl}/>
+                <div className="painting-show-container">
+                    <div className="painting-show">
+                        {this.props.painting.title}
+                        <br/>
+                        <img className="painting-show-image" src={this.props.painting.imgUrl}/>
+                    </div>
                 </div>
             )
         }
