@@ -533,8 +533,7 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
   _createClass(NavBar, [{
     key: "render",
     value: function render() {
-      var url = this.props.location.pathname; // console.log(url)
-
+      var url = this.props.location.pathname;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "navbar-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -546,7 +545,7 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
       }, "MAGGIE SHAFRAN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/projects"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: url === "/projects" ? "selected" : "item"
+        className: url === "/projects" ? "project-selected" : "project-item"
       }, "PROJECTS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: url === "/shows" ? "selected" : "item"
       }, "C.V.")));

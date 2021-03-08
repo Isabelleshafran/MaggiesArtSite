@@ -19,15 +19,14 @@
     flex-direction: row;
     justify-content: space-between;
     color: rgba(168, 168, 168, 0.856);
+    // border: 1px solid blue;
 
 }
 
 .navbar-items {
+
     div {
         padding: 15px;
-        border-top: 1px solid green;
-        //  border: 3px solid transparent;
-
     }
 
     .selected {
@@ -39,10 +38,20 @@
         border-top: 3px solid transparent;
     }
 
+    .project-item {
+        border-top: 3px solid transparent;
+        margin-right: 63px;
+    }
+
+    .project-selected {
+         border-top: 3px solid rgb(153, 153, 153);
+          margin-right: 63px;
+    }
+
     div:hover {
         color: black;
         cursor: pointer;
-        // height: 3px;
+
         border-top: 3px solid rgb(153, 153, 153);
     }
 }
