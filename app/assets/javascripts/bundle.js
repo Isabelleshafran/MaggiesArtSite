@@ -697,7 +697,7 @@ var Pets = /*#__PURE__*/function (_React$Component) {
         return _this.props.paintings.sort(function (a, b) {
           return a.year - b.year;
         }).map(function (painting) {
-          if (painting.category === "nature") {
+          if (painting.category === "pets") {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index__WEBPACK_IMPORTED_MODULE_1__.default, {
               painting: painting,
               key: painting.id

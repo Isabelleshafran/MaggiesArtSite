@@ -15,7 +15,7 @@ class Pets extends React.Component {
 
         const paintingRender = () => {
             return this.props.paintings.sort((a,b) => a.year-b.year).map((painting) => {
-                if(painting.category === "nature"){
+                if(painting.category === "pets"){
                     return <PaintingIndex painting={painting} key={painting.id}/>
                 }
             })
