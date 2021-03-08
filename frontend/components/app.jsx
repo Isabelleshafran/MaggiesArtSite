@@ -8,6 +8,7 @@ import FriendshipWorshipContainer from './friendship_worship/friendship_worship_
 import LittlePiecesContainer from './little_pieces/little_pieces_container'
 import UninhabitedContainer from './uninhabited_spaces/uninhabited_container';
 import PetsContainer from './pets/pets_container'
+import OtherContainer from './other/other_container'
 
 
 
@@ -21,6 +22,8 @@ const App = () => (
             <Route exact path="/little_pieces_of_death" component={LittlePiecesContainer} />
             <Route exact path="/uninhabited_spaces" component={UninhabitedContainer} />
             <Route exact path="/pets" component={PetsContainer} />
+            <Route exact path="/other" component={OtherContainer} />
+
         </Switch>
     </div>
 )

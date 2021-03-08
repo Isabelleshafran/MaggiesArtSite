@@ -41,6 +41,15 @@ const Projects = () => {
                     </div>
                 </Link>
             </div>
+
+            <div className="proj5-container">
+                <Link to={"/other"}>
+                    <img className="" src={window.project5} />
+                    <div className="middle5">
+                        <div class="text">SKETCHBOOK & OTHER ACTIVITIES</div>
+                    </div>
+                </Link>
+            </div>
     
         </div>
 

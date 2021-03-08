@@ -1507,3 +1507,213 @@ p60 = Painting.create!(
     img_url: "117.JPG",
     category: "pets"
 )
+
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "1.JPG",
+    category: "other"
+)
+
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "2.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "4.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "5.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "6.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "7.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "8.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "9.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "10.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "11.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "12.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "13.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "14.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "15.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "16.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "17.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "18.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "19.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "20.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "21.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "22.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "23.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "24.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "25.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "26.JPG",
+    category: "other"
+)
+p60 = Painting.create!(
+    title: "na",
+    year: 2020,
+    medium: "na", 
+    size: 'na',
+    img_url: "27.JPG",
+    category: "other"
+)
