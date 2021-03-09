@@ -1,16 +1,10 @@
-.painting-show-image {
-    margin-bottom: 50px;
-
-}
 
 .painting-show-container {
     display: flex;
     justify-content: center;
     color: rgba(168, 168, 168, 0.856);
     font-family: 'Open Sans', sans-serif;
-    margin-top: 85px;
-
-    
+    margin-top: 85px;    
 }
 
 
@@ -35,3 +29,24 @@
 
         margin-top: 20px;
 }
+
+.icons-left, .icons-right > button > i{
+    font-size: 45px;
+}
+
+.show-image {
+    width: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+}
+
+

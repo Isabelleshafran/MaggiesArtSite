@@ -6,10 +6,14 @@ class PaintingShow extends React.Component {
         super(props);  
         
         this.state = {
+            artworks: [], 
+            activeProject: {}, 
             index: 0
         }
 
         this.clickForward = this.clickForward.bind(this)
+        this.clickBackward = this.clickBackward.bind(this)
+
     }
 
     componentDidMount(){
@@ -19,23 +23,44 @@ class PaintingShow extends React.Component {
     }
 
     clickForward(){
-        let allPaintings = this.props.paintings 
-        let filtered = allPaintings.filter(painting => painting.category === this.props.match.params.category)
+        // this.setState({
+        //     artworks: this.props.paintings.filter(painting => painting.category === this.props.match.params.category), 
+        //     activeProject: this.props.painting, 
+        //     index: this.state.artworks.indexOf(this.state.activeProject)
+        // })
 
-        // console.log(filtered)
+        let currentPainting = this.props.painting
+        let filtered = this.props.paintings.filter(painting => painting.category === this.props.match.params.category) 
+        let index = filtered.indexOf(currentPainting);
+        let newIndex = (index + 1) % filtered.length;
+        let newProj = filtered[newIndex]
 
-        // let currentIndex = filtered.indexOf(this.props.)
+        this.props.history.push(`/${newProj.category}/${newProj.id}`)
+    
+    }
+    
+    clickBackward(){
+        let currentPainting = this.props.painting
+        let filtered = this.props.paintings.filter(painting => painting.category === this.props.match.params.category) 
+        let index = filtered.indexOf(currentPainting);
+        let newIndex;
 
-        // this.history.push(`${this.props.match.params.category}/`)
+        if(index === 0){
+            newIndex = filtered.length - 1
+        } else {
+            newIndex = (index - 1)
+        }
 
-        //    <Route exact path="/:category/:paintingId" component={PaintingShowContainer} />
+        let newProj = filtered[newIndex]
+
+        this.props.history.push(`/${newProj.category}/${newProj.id}`)
+    
     }
 
     render() { 
         if(!this.props.painting){
             return null
         } else {
-            // console.log(this.props.match.params.category)
             return (
                 <div className="painting-show-container">
                     <div className="painting-show">
@@ -44,10 +69,18 @@ class PaintingShow extends React.Component {
                             <div>{this.props.painting.medium}</div>
                             <div>{this.props.painting.size}</div>
                         </div>
-                        <button onClick={this.clickForward}>Next</button>
-                        <button>Previous</button>
-                        <img className="painting-show-image" src={this.props.painting.imgUrl}/>
-                        
+
+                
+                        <div className="show-image">
+                            <div className="icons-left">
+                                <button onClick={this.clickBackward}><i class="fas fa-angle-left"></i></button>
+                            </div>
+                            <img className="painting-show-image" src={this.props.painting.imgUrl}/>
+                            <div className="icons-right">
+                            <button onClick={this.clickForward}><i class="fas fa-angle-right"></i></button> 
+                            </div>
+                        </div>
+    
                     </div>
                 </div>
             )

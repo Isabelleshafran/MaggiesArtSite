@@ -836,9 +836,12 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
+      artworks: [],
+      activeProject: {},
       index: 0
     };
     _this.clickForward = _this.clickForward.bind(_assertThisInitialized(_this));
+    _this.clickBackward = _this.clickBackward.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -854,13 +857,40 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
     value: function clickForward() {
       var _this2 = this;
 
-      var allPaintings = this.props.paintings;
-      var filtered = allPaintings.filter(function (painting) {
+      // this.setState({
+      //     artworks: this.props.paintings.filter(painting => painting.category === this.props.match.params.category), 
+      //     activeProject: this.props.painting, 
+      //     index: this.state.artworks.indexOf(this.state.activeProject)
+      // })
+      var currentPainting = this.props.painting;
+      var filtered = this.props.paintings.filter(function (painting) {
         return painting.category === _this2.props.match.params.category;
-      }); // console.log(filtered)
-      // let currentIndex = filtered.indexOf(this.props.)
-      // this.history.push(`${this.props.match.params.category}/`)
-      //    <Route exact path="/:category/:paintingId" component={PaintingShowContainer} />
+      });
+      var index = filtered.indexOf(currentPainting);
+      var newIndex = (index + 1) % filtered.length;
+      var newProj = filtered[newIndex];
+      this.props.history.push("/".concat(newProj.category, "/").concat(newProj.id));
+    }
+  }, {
+    key: "clickBackward",
+    value: function clickBackward() {
+      var _this3 = this;
+
+      var currentPainting = this.props.painting;
+      var filtered = this.props.paintings.filter(function (painting) {
+        return painting.category === _this3.props.match.params.category;
+      });
+      var index = filtered.indexOf(currentPainting);
+      var newIndex;
+
+      if (index === 0) {
+        newIndex = filtered.length - 1;
+      } else {
+        newIndex = index - 1;
+      }
+
+      var newProj = filtered[newIndex];
+      this.props.history.push("/".concat(newProj.category, "/").concat(newProj.id));
     }
   }, {
     key: "render",
@@ -868,19 +898,30 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       if (!this.props.painting) {
         return null;
       } else {
-        // console.log(this.props.match.params.category)
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "painting-show-container"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "painting-show"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "painting-show-text"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-          onClick: this.clickForward
-        }, "Next"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", null, "Previous"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "show-image"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "icons-left"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+          onClick: this.clickBackward
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+          "class": "fas fa-angle-left"
+        }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
           className: "painting-show-image",
           src: this.props.painting.imgUrl
-        })));
+        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "icons-right"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+          onClick: this.clickForward
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+          "class": "fas fa-angle-right"
+        }))))));
       }
     }
   }]);
