@@ -121,8 +121,6 @@ p10.photo.attach(io: file10, filename: 'josiebed.JPG')
 p11 = Painting.create!(
     title: "Jaya Strawberry",
     year: 2016,
-    medium: "n/a", 
-    size: 'n/a',
     category: "friendship_worship"
 )
 
@@ -133,7 +131,6 @@ p12 = Painting.create!(
     title: "Josie Study",
     year: 2016,
     medium: "Watercolor", 
-    size: 'na',
     category: "friendship_worship"
 )
 
@@ -394,7 +391,6 @@ p35 = Painting.create!(
     title: "Camouflage Whitney",
     year: 2013,
     medium: "Oil on Canvas", 
-    size: 'n/a"',
     category: "friendship_worship"
 )
 
@@ -682,7 +678,6 @@ p53 = Painting.create!(
     title: "Return",
     year: 2020,
     medium: "Projection || Light, Mirrors, Lenses, Acetate", 
-    size: 'n/a',
     category: "uninhabited"
 )
 
