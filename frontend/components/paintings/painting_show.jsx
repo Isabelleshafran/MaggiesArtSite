@@ -70,16 +70,21 @@ class PaintingShow extends React.Component {
                             <div>{this.props.painting.size}</div>
                         </div>
 
-                
-                        <div className="show-image">
+                        <div className="icons">
                             <div className="icons-left">
                                 <button onClick={this.clickBackward}><i class="fas fa-angle-left"></i></button>
                             </div>
-                            <img className="painting-show-image" src={this.props.painting.imgUrl}/>
+                    
                             <div className="icons-right">
-                            <button onClick={this.clickForward}><i class="fas fa-angle-right"></i></button> 
+                                <button onClick={this.clickForward}><i class="fas fa-angle-right"></i></button> 
                             </div>
+
                         </div>
+
+                     
+                        <img className="painting-show-image" src={this.props.painting.imgUrl}/>
+            
+
     
                     </div>
                 </div>

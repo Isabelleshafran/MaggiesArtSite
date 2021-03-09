@@ -30,23 +30,23 @@
         margin-top: 20px;
 }
 
+.icons {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-top: 200px;
+
+}
+
 .icons-left, .icons-right > button > i{
     font-size: 45px;
 }
 
-.show-image {
-    width: auto;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    img {
-        padding-left: 90px;
-        padding-right: 90px;
-    }
-
+.painting-show-image {
+        margin-bottom: 50px;
 }
 
 
