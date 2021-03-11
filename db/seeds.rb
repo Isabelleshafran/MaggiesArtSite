@@ -65,7 +65,7 @@ file5 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IM
 p5.photo.attach(io: file5, filename: 'whitneychair.JPG')
 
 p6 = Painting.create!(
-    title: "Whitney in our House",
+    title: "Whit in our House",
     year: 2015,
     medium: "Mixed Media on Paper", 
     category: "friendship_worship"
@@ -396,6 +396,39 @@ p35 = Painting.create!(
 
 file35 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/877.JPG')
 p35.photo.attach(io: file35, filename: 'whitneycamo.JPG')
+
+p67 = Painting.create!(
+    title: "Whitney",
+    year: 2017,
+    size: '24" x 36"',
+    medium: "Oil on Linen", 
+    category: "friendship_worship"
+)
+
+file67 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_5228.JPG')
+p67.photo.attach(io: file67, filename: 'whitney.JPG')
+
+p68 = Painting.create!(
+    title: "Reclining Nudes",
+    year: 2017,
+    size: '42" x 52"',
+    medium: "Graphite On Paper", 
+    category: "friendship_worship"
+)
+
+file68 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_4121-edited.jpg')
+p68.photo.attach(io: file68, filename: 'recliningnudes.JPG')
+
+p69 = Painting.create!(
+    title: "Jaya",
+    year: 2019,
+    size: '24" x 30"',
+    medium: "Oil On Linen", 
+    category: "friendship_worship"
+)
+
+file69 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_2633.jpg')
+p69.photo.attach(io: file69, filename: 'jaya.JPG')
 
 
 # LITTLE PIECES
