@@ -1,9 +1,19 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
+class Projects extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-const Projects = () => {
-    return (
+    componentDidMount(){
+        window.scrollTo(0, 0);
+    }
+
+
+    render() { 
+
+        return (
 
         <div>
             {/* <span className="all-project-text">ALL PROJECTS</span> */}
@@ -57,9 +67,10 @@ const Projects = () => {
         
             </div>
         </div>
-    
 
-    )
+        )
+
+    }
 }
-
-export default Projects
+ 
+export default Projects;
