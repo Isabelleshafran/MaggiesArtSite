@@ -15,7 +15,7 @@ class FriendshipWorship extends React.Component {
 
         const paintingRender = () => {
 
-            return this.props.paintings.sort((a,b) => b.year-a.year).map((painting) => {
+            return this.props.paintings.sort((a,b) => b.year - a.year).map((painting) => {
                 if(painting.category === "friendship_worship"){
                     return <PaintingIndexItem painting={painting} key={painting.id}/>
                 }

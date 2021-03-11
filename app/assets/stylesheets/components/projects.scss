@@ -16,8 +16,8 @@
     margin-right: 8%;
 
     .text {
-        font-size: 16px;
-        color: rgba(168, 168, 168, 0.856);
+        font-size: 28px;
+        color: rgba(168, 168, 168, 0.699);
         font-family: 'Open Sans', sans-serif;
     }
 
@@ -45,7 +45,7 @@
         opacity: 0;
         position: absolute;
         top: 50%;
-        left: 20%;
+        left: 28%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -62,8 +62,8 @@
      .middle3 {
         opacity: 0;
         position: absolute;
-        top: 140%;
-        left: 20%;
+        top: 130%;
+        left: 28%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -71,7 +71,7 @@
      .middle4 {
         opacity: 0;
         position: absolute;
-        top: 140%;
+        top: 130%;
         left: 70%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -80,8 +80,8 @@
     .middle5 {
         opacity: 0;
         position: absolute;
-        top: 180%;
-        left: 20%;
+        top: 200%;
+        left: 29%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -96,8 +96,9 @@
 
     img:hover {
         cursor: pointer;
-        opacity: 0.3;
-    }
+        opacity: 0.6;
+    } 
+
 }
 
 

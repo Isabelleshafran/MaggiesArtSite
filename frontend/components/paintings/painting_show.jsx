@@ -66,6 +66,7 @@ class PaintingShow extends React.Component {
                     <div className="painting-show">
                         <div className="painting-show-text">
                             <div>{this.props.painting.title}</div>
+                            <div>{this.props.painting.year}</div>
                             <div>{this.props.painting.medium}</div>
                             <div>{this.props.painting.size}</div>
                         </div>
