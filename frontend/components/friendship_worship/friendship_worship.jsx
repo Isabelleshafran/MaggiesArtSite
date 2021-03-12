@@ -27,11 +27,16 @@ class FriendshipWorship extends React.Component {
             <div className="friendship_container">
                 <div className="project-index-header">Friendship Worship</div>
                 <div className="project-index-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                    dolore eu fugiat nulla pariatur. 
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+                        Duis aute dolor in reprehenderit in reprehenderit in voluptate
+                    </div>
+                    <div>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                        dolore eu fugiat nulla pariatur. 
+                        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </div>
                 </div>
 
                 <div className="painting-render">

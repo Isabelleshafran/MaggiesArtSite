@@ -18,7 +18,7 @@ class Uninhabited extends React.Component {
     render() { 
 
         const paintingRender = () => {
-            return this.props.paintings.sort((a,b) => a.year-b.year).map((painting) => {
+            return this.props.paintings.map((painting) => {
                 if(painting.category === "uninhabited"){
                     return <PaintingIndexItem painting={painting} key={painting.id}/>
                 }
@@ -28,12 +28,17 @@ class Uninhabited extends React.Component {
         return ( 
             <div className="friendship_container">
                 <div className="project-index-header">Uninhabited Spaces</div>
-                <div className="project-index-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                    dolore eu fugiat nulla pariatur. 
+                 <div className="project-index-description">
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+                        Duis aute dolor in reprehenderit in reprehenderit in voluptate
+                    </div>
+                    <div>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                        dolore eu fugiat nulla pariatur. 
+                        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </div>
                 </div>
 
                 <div className="painting-render">
