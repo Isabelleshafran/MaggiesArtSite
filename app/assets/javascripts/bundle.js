@@ -117,7 +117,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "receivePaintings": () => (/* binding */ receivePaintings),
 /* harmony export */   "receivePainting": () => (/* binding */ receivePainting),
 /* harmony export */   "fetchPaintings": () => (/* binding */ fetchPaintings),
-/* harmony export */   "fetchPainting": () => (/* binding */ fetchPainting)
+/* harmony export */   "fetchPainting": () => (/* binding */ fetchPainting),
+/* harmony export */   "newPainting": () => (/* binding */ newPainting)
 /* harmony export */ });
 /* harmony import */ var _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/painting_api_util */ "./frontend/util/painting_api_util.js");
 
@@ -145,6 +146,13 @@ var fetchPaintings = function fetchPaintings() {
 var fetchPainting = function fetchPainting(paintingId) {
   return function (dispatch) {
     return _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__.fetchPainting(paintingId).then(function (painting) {
+      dispatch(receivePainting(painting));
+    });
+  };
+};
+var newPainting = function newPainting(painting) {
+  return function (dispatch) {
+    return _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__.createPainting(painting).then(function (painting) {
       dispatch(receivePainting(painting));
     });
   };
@@ -230,7 +238,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _other_other_container__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./other/other_container */ "./frontend/components/other/other_container.js");
 /* harmony import */ var _paintings_painting_show_container__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./paintings/painting_show_container */ "./frontend/components/paintings/painting_show_container.js");
 /* harmony import */ var _session_form_sign_in_container__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./session_form/sign_in_container */ "./frontend/components/session_form/sign_in_container.js");
-/* harmony import */ var _session_form_success__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./session_form/success */ "./frontend/components/session_form/success.jsx");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './session_form/success_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
  // import PaintingIndexContainer from './paintings/painting_index_container'
@@ -286,7 +294,7 @@ var App = function App() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     exact: true,
     path: "/success",
-    component: _session_form_success__WEBPACK_IMPORTED_MODULE_11__.default
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './session_form/success_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
   })));
 };
 
@@ -1502,28 +1510,6 @@ var mdp = function mdp(dispatch) {
 
 /***/ }),
 
-/***/ "./frontend/components/session_form/success.jsx":
-/*!******************************************************!*\
-  !*** ./frontend/components/session_form/success.jsx ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-var Success = function Success() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "welcome magus");
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Success);
-
-/***/ }),
-
 /***/ "./frontend/components/splash/splash.jsx":
 /*!***********************************************!*\
   !*** ./frontend/components/splash/splash.jsx ***!
@@ -1887,7 +1873,8 @@ var configureStore = function configureStore() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "fetchPaintings": () => (/* binding */ fetchPaintings),
-/* harmony export */   "fetchPainting": () => (/* binding */ fetchPainting)
+/* harmony export */   "fetchPainting": () => (/* binding */ fetchPainting),
+/* harmony export */   "createPainting": () => (/* binding */ createPainting)
 /* harmony export */ });
 var fetchPaintings = function fetchPaintings() {
   return $.ajax({
@@ -1899,6 +1886,15 @@ var fetchPainting = function fetchPainting(paintingId) {
   return $.ajax({
     method: "GET",
     url: "api/paintings/".concat(paintingId)
+  });
+};
+var createPainting = function createPainting(painting) {
+  return $.ajax({
+    method: "POST",
+    url: "api/paintings/",
+    data: {
+      painting: painting
+    }
   });
 };
 

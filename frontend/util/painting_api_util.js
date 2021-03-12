@@ -10,3 +10,11 @@ export const fetchPainting = (paintingId) =>
     method: "GET",
     url: `api/paintings/${paintingId}`,
   });
+
+
+export const createPainting = (painting) =>
+    $.ajax({
+      method: "POST",
+      url: `api/paintings/`,
+      data: { painting }
+    });

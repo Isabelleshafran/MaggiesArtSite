@@ -12,4 +12,19 @@ class Api::PaintingsController < ApplicationController
             render "api/paintings/show"
         end
     end
+
+    def create 
+        @painting = Painting.new(painting_params)
+
+        if @painting.save 
+            render "api/paintings/show"
+        else 
+            render @painting.errors.full_messages
+        end
+    end
+
+    def painting_params
+        params.require(:painting).permit(:title, :category, :size, :year, :medium)
+    end
+
 end
