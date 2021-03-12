@@ -10,6 +10,9 @@ import UninhabitedContainer from './uninhabited_spaces/uninhabited_container';
 import PetsContainer from './pets/pets_container'
 import OtherContainer from './other/other_container'
 import PaintingShowContainer from './paintings/painting_show_container'
+import SignInContainer from './session_form/sign_in_container';
+import Success from './session_form/success';
+
 
 
 
@@ -25,7 +28,8 @@ const App = () => (
             <Route exact path="/pets" component={PetsContainer} />
             <Route exact path="/other" component={OtherContainer} />
             <Route exact path="/:category/:paintingId" component={PaintingShowContainer} />
-
+            <Route exact path="/adminlogin" component={SignInContainer} />
+            <Route exact path="/success" component={Success} />
         </Switch>
     </div>
 )

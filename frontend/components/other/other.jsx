@@ -1,15 +1,23 @@
 import React from 'react';
 import PaintingIndexItem from '../paintings/painting_index_item'
+import {Link} from 'react-router-dom';
 
 
 class Other extends React.Component {
     constructor(props) {
         super(props);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidMount(){
         this.props.fetchPaintings()
     }
+
+
+    handleClick() {
+        this.props.logout()
+    }
+
 
     render() { 
 
@@ -38,6 +46,11 @@ class Other extends React.Component {
                 </div>
                 <div className="painting-render">
                     {paintingRender()}
+                </div>
+
+                <div>
+                       <Link to={"/adminlogin"}>log in</Link>
+                       <button onClick={() => this.handleClick()}>logout</button>
                 </div>
             </div>
          );

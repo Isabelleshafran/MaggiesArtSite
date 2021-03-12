@@ -45,6 +45,10 @@ const Splash = () => {
                     <br/>
                     <br/>
               </div>
+
+              <div>
+               
+              </div>
         </div>
     )
 }
