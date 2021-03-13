@@ -24,8 +24,10 @@ export const fetchPainting = (paintingId) => (dispatch) =>
     dispatch(receivePainting(painting));
   });
 
-  export const newPainting = (painting) => (dispatch) => 
-    APIUtil.createPainting(painting).then((painting) => {
-    dispatch(receivePainting(painting))
-  })
+  export const createPainting = (painting) => (dispatch) => {
+    return APIUtil.createPainting(painting).then((painting) => {
+      dispatch(receivePainting(painting));
+    });
+  };
+
 

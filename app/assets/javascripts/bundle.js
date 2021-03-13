@@ -118,7 +118,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "receivePainting": () => (/* binding */ receivePainting),
 /* harmony export */   "fetchPaintings": () => (/* binding */ fetchPaintings),
 /* harmony export */   "fetchPainting": () => (/* binding */ fetchPainting),
-/* harmony export */   "newPainting": () => (/* binding */ newPainting)
+/* harmony export */   "createPainting": () => (/* binding */ createPainting)
 /* harmony export */ });
 /* harmony import */ var _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/painting_api_util */ "./frontend/util/painting_api_util.js");
 
@@ -150,7 +150,7 @@ var fetchPainting = function fetchPainting(paintingId) {
     });
   };
 };
-var newPainting = function newPainting(painting) {
+var createPainting = function createPainting(painting) {
   return function (dispatch) {
     return _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__.createPainting(painting).then(function (painting) {
       dispatch(receivePainting(painting));
@@ -238,7 +238,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _other_other_container__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./other/other_container */ "./frontend/components/other/other_container.js");
 /* harmony import */ var _paintings_painting_show_container__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./paintings/painting_show_container */ "./frontend/components/paintings/painting_show_container.js");
 /* harmony import */ var _session_form_sign_in_container__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./session_form/sign_in_container */ "./frontend/components/session_form/sign_in_container.js");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './session_form/success_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _session_form_success_container__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./session_form/success_container */ "./frontend/components/session_form/success_container.js");
 
 
  // import PaintingIndexContainer from './paintings/painting_index_container'
@@ -294,7 +294,7 @@ var App = function App() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     exact: true,
     path: "/success",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './session_form/success_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _session_form_success_container__WEBPACK_IMPORTED_MODULE_11__.default
   })));
 };
 
@@ -1510,6 +1510,186 @@ var mdp = function mdp(dispatch) {
 
 /***/ }),
 
+/***/ "./frontend/components/session_form/success.jsx":
+/*!******************************************************!*\
+  !*** ./frontend/components/session_form/success.jsx ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+var Success = /*#__PURE__*/function (_React$Component) {
+  _inherits(Success, _React$Component);
+
+  var _super = _createSuper(Success);
+
+  function Success(props) {
+    var _this;
+
+    _classCallCheck(this, Success);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      title: "",
+      size: "",
+      medium: "",
+      category: "",
+      year: 0,
+      photoFile: null
+    };
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    _this.handleFile = _this.handleFile.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Success, [{
+    key: "handleChange",
+    value: function handleChange(field) {
+      var _this2 = this;
+
+      return function (e) {
+        return _this2.setState(_defineProperty({}, field, e.currentTarget.value));
+      };
+    }
+  }, {
+    key: "handleFile",
+    value: function handleFile(e) {
+      var img = e.currentTarget.files[0];
+      this.setState({
+        photoFile: img
+      });
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      e.preventDefault();
+      var formData = new FormData();
+      formData.append('painting[title]', this.state.title);
+      formData.append('painting[size]', this.state.size);
+      formData.append('painting[medium]', this.state.medium);
+      formData.append('painting[category]', this.state.category);
+      formData.append('painting[year]', this.state.year);
+      formData.append('painting[photo]', this.state.photoFile);
+      this.props.createPainting(formData);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "welcome magus", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+        onSubmit: this.handleSubmit
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "upload new artwork"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Title", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: this.state.title,
+        onChange: this.handleChange('title')
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Size", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: this.state.size,
+        onChange: this.handleChange('size')
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Year", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: this.state.year,
+        onChange: this.handleChange('year')
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Medium", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: this.state.medium,
+        onChange: this.handleChange('medium')
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Category", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("select", {
+        value: this.state.category,
+        onChange: this.handleChange('category')
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "friendship_worship"
+      }, "Friendship Worship"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "little_pieces"
+      }, "Little Pieces of Death"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "uninhabited"
+      }, "Uninhabited Spaces"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "pets"
+      }, "Pets"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "other"
+      }, "Sketchbook & Other")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Upload Image", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "file",
+        onChange: this.handleFile
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "submit",
+        value: "create"
+      })));
+    }
+  }]);
+
+  return Success;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Success);
+
+/***/ }),
+
+/***/ "./frontend/components/session_form/success_container.js":
+/*!***************************************************************!*\
+  !*** ./frontend/components/session_form/success_container.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../actions/painting_actions */ "./frontend/actions/painting_actions.js");
+/* harmony import */ var _success__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./success */ "./frontend/components/session_form/success.jsx");
+
+
+
+
+var msp = function msp(_ref) {
+  var session = _ref.session;
+  return {
+    currentUser: session.id
+  };
+};
+
+var mdp = function mdp(dispatch) {
+  return {
+    createPainting: function createPainting(painting) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.createPainting)(painting));
+    }
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_0__.connect)(msp, mdp)(_success__WEBPACK_IMPORTED_MODULE_2__.default));
+
+/***/ }),
+
 /***/ "./frontend/components/splash/splash.jsx":
 /*!***********************************************!*\
   !*** ./frontend/components/splash/splash.jsx ***!
@@ -1752,6 +1932,7 @@ var PaintingsReducer = function PaintingsReducer() {
     case _actions_painting_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_PAINTING:
       var newPainting = _defineProperty({}, action.painting.id, action.painting);
 
+      debugger;
       return Object.assign({}, state, newPainting);
 
     default:
@@ -1891,10 +2072,10 @@ var fetchPainting = function fetchPainting(paintingId) {
 var createPainting = function createPainting(painting) {
   return $.ajax({
     method: "POST",
-    url: "api/paintings/",
-    data: {
-      painting: painting
-    }
+    url: "/api/paintings/",
+    data: painting,
+    processData: false,
+    contentType: false
   });
 };
 

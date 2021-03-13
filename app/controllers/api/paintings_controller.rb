@@ -15,8 +15,7 @@ class Api::PaintingsController < ApplicationController
 
     def create 
         @painting = Painting.new(painting_params)
-
-        if @painting.save 
+        if @painting.save!
             render "api/paintings/show"
         else 
             render @painting.errors.full_messages
@@ -24,7 +23,7 @@ class Api::PaintingsController < ApplicationController
     end
 
     def painting_params
-        params.require(:painting).permit(:title, :category, :size, :year, :medium)
+        params.require(:painting).permit(:title, :category, :size, :year, :medium, :photo, :position)
     end
 
 end

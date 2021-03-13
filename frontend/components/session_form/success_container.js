@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { newPainting } from "../../actions/painting_actions";
+import { createPainting } from "../../actions/painting_actions";
 import Success from "./success";
 
 const msp = ({ session }) => {
@@ -10,7 +10,7 @@ const msp = ({ session }) => {
 
 const mdp = (dispatch) => {
   return {
-      newPainting: (painting) => dispatch(newPainting(painting))
+    createPainting: (painting) => dispatch(createPainting(painting)),
   };
 };
 

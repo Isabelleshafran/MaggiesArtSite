@@ -8,6 +8,7 @@ const PaintingsReducer = (state = {}, action) => {
       return action.paintings;
     case RECEIVE_PAINTING:
       const newPainting = { [action.painting.id]: action.painting };
+      debugger;
       return Object.assign({}, state, newPainting);
     default:
       return state;

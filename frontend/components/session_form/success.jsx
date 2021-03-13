@@ -10,19 +10,33 @@ class Success extends React.Component {
             size: "",
             medium: "", 
             category: "", 
-            year: 0
+            year: 0, 
+            photoFile: null
          }
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleFile = this.handleFile.bind(this);
     }
 
     handleChange(field){
         return e => this.setState({ [field]: e.currentTarget.value })
     }
 
+    handleFile(e){
+        const img = e.currentTarget.files[0]
+       this.setState({photoFile: img})
+    }
+
     handleSubmit(e) {
         e.preventDefault();
-        const painting = Object.assign({}, this.state)
-        this.props.newPainting(painting)
+        const formData = new FormData()
+        formData.append('painting[title]', this.state.title)
+        formData.append('painting[size]', this.state.size)
+        formData.append('painting[medium]', this.state.medium)
+        formData.append('painting[category]', this.state.category)
+        formData.append('painting[year]', this.state.year)
+        formData.append('painting[photo]', this.state.photoFile)
+
+        this.props.createPainting(formData)
     }   
 
     render() { 
@@ -35,7 +49,7 @@ class Success extends React.Component {
             <br/>
             <br/>
             welcome magus 
-            
+    
             <form onSubmit={this.handleSubmit}>
                 <span>upload new artwork</span>
                 <br/>
@@ -66,10 +80,13 @@ class Success extends React.Component {
                         <option value="other">Sketchbook & Other</option>
                     </select>
                     <br/>
-                    <input type="submit" value="create"/>
                 </label>
 
-               
+               <label>Upload Image
+                   <input type="file" onChange={this.handleFile} />
+               </label>
+               <br/>
+                <input type="submit" value="create"/>
             </form>
         </div>
 

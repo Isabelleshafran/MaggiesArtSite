@@ -12,9 +12,13 @@ export const fetchPainting = (paintingId) =>
   });
 
 
-export const createPainting = (painting) =>
-    $.ajax({
-      method: "POST",
-      url: `api/paintings/`,
-      data: { painting }
-    });
+  
+export const createPainting = (painting) => {
+  return $.ajax({
+    method: "POST",
+    url: `/api/paintings/`,
+    data: painting,
+    processData: false,
+    contentType: false,
+  });
+};
