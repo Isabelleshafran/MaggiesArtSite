@@ -36,7 +36,7 @@ class Success extends React.Component {
         formData.append('painting[year]', this.state.year)
         formData.append('painting[photo]', this.state.photoFile)
 
-        this.props.createPainting(formData)
+        this.props.createPainting(formData).then(() => this.props.history.push(`/${this.state.category}`))
     }   
 
     render() { 

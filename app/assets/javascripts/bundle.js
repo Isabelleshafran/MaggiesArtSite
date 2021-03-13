@@ -1592,6 +1592,8 @@ var Success = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
+      var _this3 = this;
+
       e.preventDefault();
       var formData = new FormData();
       formData.append('painting[title]', this.state.title);
@@ -1600,7 +1602,9 @@ var Success = /*#__PURE__*/function (_React$Component) {
       formData.append('painting[category]', this.state.category);
       formData.append('painting[year]', this.state.year);
       formData.append('painting[photo]', this.state.photoFile);
-      this.props.createPainting(formData);
+      this.props.createPainting(formData).then(function () {
+        return _this3.props.history.push("/".concat(_this3.state.category));
+      });
     }
   }, {
     key: "render",
@@ -1932,7 +1936,6 @@ var PaintingsReducer = function PaintingsReducer() {
     case _actions_painting_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_PAINTING:
       var newPainting = _defineProperty({}, action.painting.id, action.painting);
 
-      debugger;
       return Object.assign({}, state, newPainting);
 
     default:
