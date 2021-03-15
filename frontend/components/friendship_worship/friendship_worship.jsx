@@ -8,17 +8,14 @@ class FriendshipWorship extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchPaintings()
+        this.props.fetchPaintings(this.props.category)
     }
 
     render() { 
 
         const paintingRender = () => {
-
-            return this.props.paintings.sort((a,b) => b.year - a.year).map((painting) => {
-                if(painting.category === "friendship_worship"){
-                    return <PaintingIndexItem painting={painting} key={painting.id}/>
-                }
+            return this.props.paintings.map((painting) => {
+                return <PaintingIndexItem painting={painting} key={painting.id} paintings={this.props.paintings}/>
             })
         }
          

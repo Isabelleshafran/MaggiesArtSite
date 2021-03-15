@@ -6,6 +6,7 @@ import Other from "./other";
 const msp = (state) => {
   return {
     paintings: Object.values(state.paintings),
+    category: "other"
   };
 };
 

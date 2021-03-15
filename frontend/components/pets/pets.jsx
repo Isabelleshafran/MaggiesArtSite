@@ -8,16 +8,14 @@ class Pets extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchPaintings()
+        this.props.fetchPaintings(this.props.category)
     }
 
     render() { 
 
         const paintingRender = () => {
             return this.props.paintings.map((painting) => {
-                if(painting.category === "pets"){
-                    return <PaintingIndexItem painting={painting} key={painting.id}/>
-                }
+                return <PaintingIndexItem painting={painting} key={painting.id} paintings={this.props.paintings}/>
             })
         }
          

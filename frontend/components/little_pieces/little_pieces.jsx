@@ -1,9 +1,10 @@
 import React from 'react';
-import PaintingIndexItem from '../paintings/painting_index_item'
+import PaintingIndexItem from '../paintings/painting_index_item';
+
 
 
 class LittlePieces extends React.Component {
-    constructor(props) {
+        constructor(props) {
         super(props);
     }
 
@@ -15,15 +16,13 @@ class LittlePieces extends React.Component {
 
         const paintingRender = () => {
             return this.props.paintings.map((painting) => {
-                if(painting.category === "little_pieces"){
-                    return <PaintingIndexItem painting={painting} key={painting.id}/>
-                }
+                return <PaintingIndexItem painting={painting} key={painting.id} paintings={this.props.paintings}/>
             })
         }
-         
+        
         return ( 
             <div className="friendship_container">
-                <div className="project-index-header">Little Pieces Of Death</div>
+                <div className="project-index-header">Uninhabited Spaces</div>
                  <div className="project-index-description">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -43,6 +42,7 @@ class LittlePieces extends React.Component {
             </div>
          );
     }
+
 }
  
 export default LittlePieces;

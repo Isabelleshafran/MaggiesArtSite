@@ -5,6 +5,7 @@ import LittlePieces from "./little_pieces";
 const msp = (state) => {
   return {
     paintings: Object.values(state.paintings),
+    category: "little_pieces"
   };
 };
 

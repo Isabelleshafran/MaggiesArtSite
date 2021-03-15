@@ -1,5 +1,10 @@
+// import React from 'react';
+import PaintingIndexItem from '../paintings/painting_index_item';
+
 import React from 'react';
-import PaintingIndexItem from '../paintings/painting_index_item'
+import {Link} from 'react-router-dom';
+
+
 
 
 class Uninhabited extends React.Component {
@@ -8,20 +13,13 @@ class Uninhabited extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchPaintings()
+        this.props.fetchPaintings(this.props.category)
     }
 
-    handleClick(){
-
-    }
-
-    render() { 
-
+    render() {         
         const paintingRender = () => {
             return this.props.paintings.map((painting) => {
-                if(painting.category === "uninhabited"){
-                    return <PaintingIndexItem painting={painting} key={painting.id}/>
-                }
+                return <PaintingIndexItem painting={painting} key={painting.id} paintings={this.props.paintings}/>
             })
         }
          

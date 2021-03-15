@@ -2,15 +2,16 @@ import { connect } from "react-redux";
 import { fetchPaintings } from "../../actions/painting_actions";
 import Uninhabited from "./uninhabited";
 
-const msp = (state) => {
+const msp = (state, ownProps) => {
   return {
     paintings: Object.values(state.paintings),
+    category: "uninhabited",
   };
 };
 
 const mdp = (dispatch) => {
   return {
-    fetchPaintings: () => dispatch(fetchPaintings()),
+    fetchPaintings: (category) => dispatch(fetchPaintings(category)),
   };
 };
 

@@ -10,7 +10,7 @@ class Other extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchPaintings()
+        this.props.fetchPaintings(this.props.category)
     }
 
 
@@ -23,9 +23,7 @@ class Other extends React.Component {
 
         const paintingRender = () => {
             return this.props.paintings.map((painting) => {
-                if(painting.category === "other"){
-                    return <PaintingIndexItem painting={painting} key={painting.id}/>
-                }
+                return <PaintingIndexItem painting={painting} key={painting.id} paintings={this.props.paintings}/>
             })
         }
          

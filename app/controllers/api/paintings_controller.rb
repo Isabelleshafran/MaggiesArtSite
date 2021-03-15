@@ -1,8 +1,12 @@
 class Api::PaintingsController < ApplicationController
 
      def index 
-        @paintings = Painting.all
+        # @paintings = Painting.all
 
+        # render "api/paintings/index"
+        # debugger
+
+        @paintings = Painting.where("category = ?", "#{params[:category]}")
         render "api/paintings/index"
     end
 

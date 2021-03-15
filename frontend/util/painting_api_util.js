@@ -1,7 +1,8 @@
-export const fetchPaintings = () =>
+export const fetchPaintings = (category) =>
   $.ajax({
     method: "GET",
     url: "/api/paintings",
+    data: {category}
   });
 
 

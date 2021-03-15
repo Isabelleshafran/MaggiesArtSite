@@ -13,8 +13,8 @@ export const receivePainting = (painting) => ({
   painting,
 });
 
-export const fetchPaintings = () => (dispatch) => {
-  return APIUtil.fetchPaintings().then((content) =>
+export const fetchPaintings = (category) => (dispatch) => {
+  return APIUtil.fetchPaintings(category).then((content) =>
     dispatch(receivePaintings(content))
   );
 };
