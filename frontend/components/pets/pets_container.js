@@ -11,7 +11,7 @@ const msp = (state) => {
 
 const mdp = (dispatch) => {
   return {
-    fetchPaintings: () => dispatch(fetchPaintings()),
+    fetchPaintings: (category) => dispatch(fetchPaintings(category)),
   };
 };
 

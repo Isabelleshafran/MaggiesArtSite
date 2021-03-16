@@ -5,13 +5,13 @@ import FriendshipWorship from "./friendship_worship";
 const msp = (state) => {
   return {
     paintings: Object.values(state.paintings),
-    category: "friendship_worship"
+    category: "friendship_worship",
   };
 };
 
 const mdp = (dispatch) => {
   return {
-    fetchPaintings: () => dispatch(fetchPaintings()),
+    fetchPaintings: (category) => dispatch(fetchPaintings(category)),
   };
 };
 

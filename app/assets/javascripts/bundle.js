@@ -852,6 +852,8 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this = this;
 
+      console.log(this.props);
+
       var paintingRender = function paintingRender() {
         return _this.props.paintings.map(function (painting) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -908,8 +910,8 @@ var msp = function msp(state) {
 
 var mdp = function mdp(dispatch) {
   return {
-    fetchPaintings: function fetchPaintings() {
-      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)());
+    fetchPaintings: function fetchPaintings(category) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
     }
   };
 };
@@ -970,7 +972,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
   _createClass(LittlePieces, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.props.fetchPaintings();
+      this.props.fetchPaintings(this.props.category);
     }
   }, {
     key: "render",
@@ -991,7 +993,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
         className: "friendship_container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-header"
-      }, "Uninhabited Spaces"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "Little Pieces of Death"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-description"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
@@ -1033,8 +1035,8 @@ var msp = function msp(state) {
 
 var mdp = function mdp(dispatch) {
   return {
-    fetchPaintings: function fetchPaintings() {
-      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)());
+    fetchPaintings: function fetchPaintings(category) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
     }
   };
 };
@@ -1689,8 +1691,8 @@ var msp = function msp(state) {
 
 var mdp = function mdp(dispatch) {
   return {
-    fetchPaintings: function fetchPaintings() {
-      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)());
+    fetchPaintings: function fetchPaintings(category) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
     }
   };
 };

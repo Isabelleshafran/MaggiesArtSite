@@ -9,7 +9,7 @@ class LittlePieces extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchPaintings()
+        this.props.fetchPaintings(this.props.category)
     }
 
     render() { 
@@ -22,7 +22,7 @@ class LittlePieces extends React.Component {
         
         return ( 
             <div className="friendship_container">
-                <div className="project-index-header">Uninhabited Spaces</div>
+                <div className="project-index-header">Little Pieces of Death</div>
                  <div className="project-index-description">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
