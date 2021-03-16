@@ -853,7 +853,9 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
       var _this = this;
 
       var paintingRender = function paintingRender() {
-        return _this.props.paintings.map(function (painting) {
+        return _this.props.paintings.sort(function (a, b) {
+          return b.id - a.id;
+        }).map(function (painting) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_1__.default, {
             painting: painting,
             key: painting.id

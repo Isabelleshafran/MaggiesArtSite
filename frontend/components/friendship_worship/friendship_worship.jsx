@@ -13,7 +13,7 @@ class FriendshipWorship extends React.Component {
 
     render() { 
         const paintingRender = () => {
-            return this.props.paintings.map((painting) => {
+            return this.props.paintings.sort((a,b) => b.id-a.id).map((painting) => {
                 return <PaintingIndexItem painting={painting} key={painting.id}/>
             })
         }

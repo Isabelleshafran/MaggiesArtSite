@@ -13,11 +13,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
     object-fit: contain;
     transform: none;
-    max-width: 500px;
-    max-height: 700px;
+    max-width: 55%;
+
+
 
 }
 
@@ -27,13 +27,13 @@
     justify-content: center;
     align-items: center;
 
-        margin-top: 20px;
+    margin-top: 20px;
 }
 
 .icons {
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: 1300px;
     justify-content: space-between;
     align-items: center;
     position: absolute;
@@ -43,6 +43,11 @@
 
 .icons-left, .icons-right > button > i{
     font-size: 45px;
+    
+}
+
+i:hover {
+     color: rgba(78, 78, 78, 0.856);
 }
 
 .painting-show-image {
