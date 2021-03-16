@@ -5,60 +5,68 @@ import Gallery from 'react-photo-gallery';
 import arrayMove from 'array-move';
 import { SortableContainer, SortableElement } from 'react-sortable-hoc';
 
-// class PaintingIndex extends React.Component {
-//     constructor(props) {
-//         super(props);
-//     }
+class PaintingIndex extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-//     render() { 
-//         return ( 
-//             <div className="painting-index-container">
+    render() { 
+        return ( 
+            <div className="painting-index-container">
                 
-//                 <div className="painting-index">
-//                     <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
-//                         <img className="painting-index-image" src={this.props.painting.imgUrl}/>
-//                     </Link>
-//                 </div>
-//             </div>
-//          );
-//     }
-// }
-
-const SortablePhoto = SortableElement((item) => {
-    // debugger
-    return <img className="painting-index-image" src={item.photo.imgUrl}/>
-});
-
-const SortableGallery = SortableContainer(({ items }) => (
-  <Gallery
-    photos={items}
-    renderImage={(props) => <SortablePhoto {...props} />}
-  />
-));
-
-
-export default function PaintingIndex({paintings}){
-    const [items, setItems] = useState(paintings);
-
-    const onSortEnd = ({ oldIndex, newIndex }) => {
-        setItems(arrayMove(items, oldIndex, newIndex));
-    };
-
-
-    return (
-        <div>
-           <SortableGallery
-                // style={{ maxHeight: 800 }}
-                items={items}
-                onSortEnd={onSortEnd}
-                axis={'xy'}
-            /> 
-        </div>
-    )
-
+                <div className="painting-index">
+                    <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
+                        <img className="painting-index-image" src={this.props.painting.imgUrl}/>
+                    </Link>
+                </div>
+            </div>
+         );
+    }
 }
 
+export default PaintingIndex;
 
-// export default PaintingIndex;
+// const SortablePhoto = SortableElement((item) => {
+//     return (
+//         <div className="painting-index-container">
+//             <div className="painting-index">
+//                 <Link to={`/${item.photo.category}/${item.photo.id}`}>
+//                     <img className="painting-index-image" src={item.photo.imgUrl}/>
+//                 </Link>
+//             </div>
+//         </div>
+//     )
+// });
+
+// const SortableGallery = SortableContainer(({ items }) => (
+//   <Gallery
+//     photos={items}
+//     renderImage={(props) => <SortablePhoto {...props} />}
+//   />
+// ));
+
+
+// export default function PaintingIndex({paintings}){
+//     const [items, setItems] = useState(paintings);
+
+//     const onSortEnd = ({ oldIndex, newIndex }) => {
+//         setItems(arrayMove(items, oldIndex, newIndex));
+//     };
+
+
+//     return (
+//         <div>
+//            <SortableGallery
+//                 items={items}
+//                 onSortEnd={onSortEnd}
+//                 axis={'xy'}
+//             /> 
+//         </div>
+//     )
+
+// }
+
+
+
 
 

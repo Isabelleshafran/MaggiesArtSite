@@ -18,7 +18,8 @@ class PaintingShow extends React.Component {
 
     componentDidMount(){
         this.props.fetchPainting(this.props.match.params.paintingId)
-        this.props.fetchPaintings()
+        this.props.fetchPaintings(this.props.match.params.category)
+        console.log(this.props)
         window.scrollTo(0, 0);
     }
 
@@ -27,13 +28,15 @@ class PaintingShow extends React.Component {
         //     artworks: this.props.paintings.filter(painting => painting.category === this.props.match.params.category), 
         //     activeProject: this.props.painting, 
         //     index: this.state.artworks.indexOf(this.state.activeProject)
+
+    
         // })
 
         let currentPainting = this.props.painting
-        let filtered = this.props.paintings.filter(painting => painting.category === this.props.match.params.category) 
-        let index = filtered.indexOf(currentPainting);
-        let newIndex = (index + 1) % filtered.length;
-        let newProj = filtered[newIndex]
+        let allPaintings = this.props.paintings
+        let index = allPaintings.indexOf(currentPainting);
+        let newIndex = (index + 1) % allPaintings.length;
+        let newProj = allPaintings[newIndex]
 
         this.props.history.push(`/${newProj.category}/${newProj.id}`)
     

@@ -852,14 +852,11 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this = this;
 
-      console.log(this.props);
-
       var paintingRender = function paintingRender() {
         return _this.props.paintings.map(function (painting) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_1__.default, {
             painting: painting,
-            key: painting.id,
-            paintings: _this.props.paintings
+            key: painting.id
           });
         });
       };
@@ -983,8 +980,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
         return _this.props.paintings.map(function (painting) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_1__.default, {
             painting: painting,
-            key: painting.id,
-            paintings: _this.props.paintings
+            key: painting.id
           });
         });
       };
@@ -1309,83 +1305,104 @@ var mdp = function mdp(dispatch) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ PaintingIndex)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_photo_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-photo-gallery */ "./node_modules/react-photo-gallery/dist/react-photo-gallery.esm.js");
 /* harmony import */ var array_move__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! array-move */ "./node_modules/array-move/index.js");
 /* harmony import */ var array_move__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(array_move__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_sortable_hoc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-sortable-hoc */ "./node_modules/react-sortable-hoc/dist/react-sortable-hoc.esm.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
 
 
 
- // class PaintingIndex extends React.Component {
-//     constructor(props) {
-//         super(props);
-//     }
-//     render() { 
-//         return ( 
-//             <div className="painting-index-container">
-//                 <div className="painting-index">
-//                     <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
-//                         <img className="painting-index-image" src={this.props.painting.imgUrl}/>
-//                     </Link>
-//                 </div>
-//             </div>
-//          );
-//     }
-// }
 
-var SortablePhoto = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_3__.SortableElement)(function (item) {
-  // debugger
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    className: "painting-index-image",
-    src: item.photo.imgUrl
-  });
-});
-var SortableGallery = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_3__.SortableContainer)(function (_ref) {
-  var items = _ref.items;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_photo_gallery__WEBPACK_IMPORTED_MODULE_1__.default, {
-    photos: items,
-    renderImage: function renderImage(props) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(SortablePhoto, props);
+
+var PaintingIndex = /*#__PURE__*/function (_React$Component) {
+  _inherits(PaintingIndex, _React$Component);
+
+  var _super = _createSuper(PaintingIndex);
+
+  function PaintingIndex(props) {
+    _classCallCheck(this, PaintingIndex);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(PaintingIndex, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "painting-index-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "painting-index"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+        to: "/".concat(this.props.painting.category, "/").concat(this.props.painting.id)
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "painting-index-image",
+        src: this.props.painting.imgUrl
+      }))));
     }
-  });
-});
-function PaintingIndex(_ref2) {
-  var paintings = _ref2.paintings;
+  }]);
 
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(paintings),
-      _useState2 = _slicedToArray(_useState, 2),
-      items = _useState2[0],
-      setItems = _useState2[1];
+  return PaintingIndex;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
-  var onSortEnd = function onSortEnd(_ref3) {
-    var oldIndex = _ref3.oldIndex,
-        newIndex = _ref3.newIndex;
-    setItems(array_move__WEBPACK_IMPORTED_MODULE_2___default()(items, oldIndex, newIndex));
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(SortableGallery // style={{ maxHeight: 800 }}
-  , {
-    items: items,
-    onSortEnd: onSortEnd,
-    axis: 'xy'
-  }));
-} // export default PaintingIndex;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PaintingIndex); // const SortablePhoto = SortableElement((item) => {
+//     return (
+//         <div className="painting-index-container">
+//             <div className="painting-index">
+//                 <Link to={`/${item.photo.category}/${item.photo.id}`}>
+//                     <img className="painting-index-image" src={item.photo.imgUrl}/>
+//                 </Link>
+//             </div>
+//         </div>
+//     )
+// });
+// const SortableGallery = SortableContainer(({ items }) => (
+//   <Gallery
+//     photos={items}
+//     renderImage={(props) => <SortablePhoto {...props} />}
+//   />
+// ));
+// export default function PaintingIndex({paintings}){
+//     const [items, setItems] = useState(paintings);
+//     const onSortEnd = ({ oldIndex, newIndex }) => {
+//         setItems(arrayMove(items, oldIndex, newIndex));
+//     };
+//     return (
+//         <div>
+//            <SortableGallery
+//                 items={items}
+//                 onSortEnd={onSortEnd}
+//                 axis={'xy'}
+//             /> 
+//         </div>
+//     )
+// }
 
 /***/ }),
 
@@ -1450,36 +1467,33 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       this.props.fetchPainting(this.props.match.params.paintingId);
-      this.props.fetchPaintings();
+      this.props.fetchPaintings(this.props.match.params.category);
+      console.log(this.props);
       window.scrollTo(0, 0);
     }
   }, {
     key: "clickForward",
     value: function clickForward() {
-      var _this2 = this;
-
       // this.setState({
       //     artworks: this.props.paintings.filter(painting => painting.category === this.props.match.params.category), 
       //     activeProject: this.props.painting, 
       //     index: this.state.artworks.indexOf(this.state.activeProject)
       // })
       var currentPainting = this.props.painting;
-      var filtered = this.props.paintings.filter(function (painting) {
-        return painting.category === _this2.props.match.params.category;
-      });
-      var index = filtered.indexOf(currentPainting);
-      var newIndex = (index + 1) % filtered.length;
-      var newProj = filtered[newIndex];
+      var allPaintings = this.props.paintings;
+      var index = allPaintings.indexOf(currentPainting);
+      var newIndex = (index + 1) % allPaintings.length;
+      var newProj = allPaintings[newIndex];
       this.props.history.push("/".concat(newProj.category, "/").concat(newProj.id));
     }
   }, {
     key: "clickBackward",
     value: function clickBackward() {
-      var _this3 = this;
+      var _this2 = this;
 
       var currentPainting = this.props.painting;
       var filtered = this.props.paintings.filter(function (painting) {
-        return painting.category === _this3.props.match.params.category;
+        return painting.category === _this2.props.match.params.category;
       });
       var index = filtered.indexOf(currentPainting);
       var newIndex;
@@ -1557,7 +1571,8 @@ __webpack_require__.r(__webpack_exports__);
 var msp = function msp(state, ownProps) {
   return {
     painting: state.paintings[ownProps.match.params.paintingId],
-    paintings: Object.values(state.paintings)
+    paintings: Object.values(state.paintings),
+    category: state.paintings[ownProps.match.params.category]
   };
 };
 
@@ -1566,8 +1581,8 @@ var mdp = function mdp(dispatch) {
     fetchPainting: function fetchPainting(id) {
       return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPainting)(id));
     },
-    fetchPaintings: function fetchPaintings() {
-      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)());
+    fetchPaintings: function fetchPaintings(category) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
     }
   };
 };
@@ -1639,8 +1654,7 @@ var Pets = /*#__PURE__*/function (_React$Component) {
         return _this.props.paintings.map(function (painting) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_1__.default, {
             painting: painting,
-            key: painting.id,
-            paintings: _this.props.paintings
+            key: painting.id
           });
         });
       };
@@ -2274,8 +2288,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../paintings/painting_index_item */ "./frontend/components/paintings/painting_index_item.jsx");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../paintings/painting_index_item */ "./frontend/components/paintings/painting_index_item.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2298,7 +2312,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-// import React from 'react';
+ // import React from 'react';
 
 
 
@@ -2326,28 +2340,27 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
 
       var paintingRender = function paintingRender() {
         return _this.props.paintings.map(function (painting) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_0__.default, {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_painting_index_item__WEBPACK_IMPORTED_MODULE_1__.default, {
             painting: painting,
-            key: painting.id,
-            paintings: _this.props.paintings
+            key: painting.id
           });
         });
       };
 
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "friendship_container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-header"
-      }, "Uninhabited Spaces"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+      }, "Uninhabited Spaces"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-description"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
       }, paintingRender()));
     }
   }]);
 
   return Uninhabited;
-}(react__WEBPACK_IMPORTED_MODULE_1__.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Uninhabited);
 

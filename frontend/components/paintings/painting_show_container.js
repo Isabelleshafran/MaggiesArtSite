@@ -7,14 +7,15 @@ import { withRouter } from "react-router-dom";
 const msp = (state, ownProps) => {
   return {
     painting: state.paintings[ownProps.match.params.paintingId],
-    paintings: Object.values(state.paintings)
+    paintings: Object.values(state.paintings), 
+    category: state.paintings[ownProps.match.params.category]
   };
 };
 
 const mdp = (dispatch) => {
   return {
     fetchPainting: (id) => dispatch(fetchPainting(id)),
-    fetchPaintings: () => dispatch(fetchPaintings()),
+    fetchPaintings: (category) => dispatch(fetchPaintings(category)),
   };
 };
 

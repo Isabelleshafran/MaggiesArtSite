@@ -15,7 +15,7 @@ class Pets extends React.Component {
 
         const paintingRender = () => {
             return this.props.paintings.map((painting) => {
-                return <PaintingIndexItem painting={painting} key={painting.id} paintings={this.props.paintings}/>
+                return <PaintingIndexItem painting={painting} key={painting.id}/>
             })
         }
          
