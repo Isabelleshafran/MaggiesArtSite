@@ -870,6 +870,7 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
         } else {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_sortable_gallery__WEBPACK_IMPORTED_MODULE_1__.default, {
             items: _this.props.paintings,
+            currentUser: _this.props.currentUser,
             onSortEnd: onSortEnd,
             axis: 'xy'
           });
@@ -1018,6 +1019,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
         } else {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_sortable_gallery__WEBPACK_IMPORTED_MODULE_1__.default, {
             items: _this.props.paintings,
+            currentUser: _this.props.currentUser,
             onSortEnd: onSortEnd,
             axis: 'xy'
           });
@@ -1285,6 +1287,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
         } else {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_sortable_gallery__WEBPACK_IMPORTED_MODULE_1__.default, {
             items: _this2.props.paintings,
+            currentUser: _this2.props.currentUser,
             onSortEnd: onSortEnd,
             axis: 'xy'
           });
@@ -1604,16 +1607,35 @@ var Photo = /*#__PURE__*/function (_React$Component) {
   _createClass(Photo, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "painting-index-container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "painting-index"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        to: "/".concat(this.props.painting.category, "/").concat(this.props.painting.id)
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-        className: "painting-index-image",
-        src: this.props.painting.imgUrl
-      }))));
+      var _this = this;
+
+      var photoRender = function photoRender() {
+        if (_this.props.currentUser) {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-index-container"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-index"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+            to: "/".concat(_this.props.item.photo.category, "/").concat(_this.props.item.photo.id)
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+            className: "painting-index-image",
+            src: _this.props.item.photo.imgUrl
+          }))));
+        } else {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-index-container"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-index"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+            to: "/".concat(_this.props.painting.category, "/").concat(_this.props.painting.id)
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+            className: "painting-index-image",
+            src: _this.props.painting.imgUrl
+          }))));
+        }
+      };
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, photoRender());
     }
   }]);
 
@@ -1647,13 +1669,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var SortablePhoto = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_3__.SortableElement)(function (item) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_photo__WEBPACK_IMPORTED_MODULE_4__.default, item);
+var SortablePhoto = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_3__.SortableElement)(function (item, currentUser) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_photo__WEBPACK_IMPORTED_MODULE_4__.default, {
+    item: item,
+    currentUser: currentUser
+  });
 });
 var SortableGallery = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_3__.SortableContainer)(function (_ref) {
-  var items = _ref.items;
+  var items = _ref.items,
+      currentUser = _ref.currentUser;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_photo_gallery__WEBPACK_IMPORTED_MODULE_1__.default, {
     photos: items,
+    currentUser: currentUser,
     renderImage: function renderImage(props) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(SortablePhoto, props);
     }
@@ -1740,6 +1767,7 @@ var Pets = /*#__PURE__*/function (_React$Component) {
         } else {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_sortable_gallery__WEBPACK_IMPORTED_MODULE_1__.default, {
             items: _this.props.paintings,
+            currentUser: _this.props.currentUser,
             onSortEnd: onSortEnd,
             axis: 'xy'
           });
@@ -2452,6 +2480,7 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
         } else {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_sortable_gallery__WEBPACK_IMPORTED_MODULE_1__.default, {
             items: _this.props.paintings,
+            currentUser: _this.props.currentUser,
             onSortEnd: onSortEnd,
             axis: 'xy'
           });

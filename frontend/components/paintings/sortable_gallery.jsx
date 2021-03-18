@@ -7,11 +7,12 @@ import { SortableContainer, SortableElement } from 'react-sortable-hoc';
 import Photo from './photo'
 
 
-const SortablePhoto = SortableElement((item) => <Photo {...item} />);
+const SortablePhoto = SortableElement((item, currentUser) => <Photo item={item} currentUser={currentUser} />);
 
-const SortableGallery = SortableContainer(({ items }) => (
+const SortableGallery = SortableContainer(({ items, currentUser }) => (
   <Gallery
     photos={items}
+    currentUser={currentUser}
     renderImage={(props) => <SortablePhoto {...props} />}
   />
 ));

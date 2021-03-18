@@ -28,7 +28,7 @@ class Other extends React.Component {
                     return <Photo painting={painting} key={painting.id}/>
                 })
             } else {
-                return <SortableGallery items={this.props.paintings} onSortEnd={onSortEnd} axis={'xy'} /> 
+                return <SortableGallery items={this.props.paintings} currentUser={this.props.currentUser} onSortEnd={onSortEnd} axis={'xy'} /> 
             }
         }
 
