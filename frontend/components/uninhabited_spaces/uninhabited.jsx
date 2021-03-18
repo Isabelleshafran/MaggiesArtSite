@@ -1,6 +1,9 @@
 import React from 'react';
 // import React from 'react';
-import PaintingIndexItem from '../paintings/painting_index_item';
+import SortableGallery from '../paintings/sortable_gallery';
+import arrayMove from 'array-move';
+import Photo from '../paintings/photo'
+
 
 import {Link} from 'react-router-dom';
 
@@ -14,12 +17,22 @@ class Uninhabited extends React.Component {
         this.props.fetchPaintings(this.props.category)
     }
 
-    render() {         
+    render() {        
         const paintingRender = () => {
-            return this.props.paintings.map((painting) => {
-                return <PaintingIndexItem painting={painting} key={painting.id}/>
-            })
+            if(this.props.currentUser.id === null){
+                return this.props.paintings.sort((a,b) => b.position-a.position).map((painting) => {
+                    return <Photo painting={painting} key={painting.id}/>
+                })
+            } else {
+                return <SortableGallery items={this.props.paintings} onSortEnd={onSortEnd} axis={'xy'} /> 
+            }
         }
+
+        const items = this.props.paintings;
+
+        const onSortEnd = ({ oldIndex, newIndex }) => {
+            setItems(arrayMove(items, oldIndex, newIndex));
+        };
          
         return ( 
             <div className="friendship_container">

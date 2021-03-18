@@ -5,6 +5,7 @@ import Uninhabited from "./uninhabited";
 const msp = (state, ownProps) => {
   return {
     paintings: Object.values(state.paintings),
+    currentUser: state.session,
     category: "uninhabited",
   };
 };

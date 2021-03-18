@@ -76,11 +76,11 @@ class PaintingShow extends React.Component {
 
                         <div className="icons">
                             <div className="icons-left">
-                                <button onClick={this.clickBackward}><i class="fas fa-angle-left"></i></button>
+                                <button onClick={this.clickBackward}><i className="fas fa-angle-left"></i></button>
                             </div>
                     
                             <div className="icons-right">
-                                <button onClick={this.clickForward}><i class="fas fa-angle-right"></i></button> 
+                                <button onClick={this.clickForward}><i className="fas fa-angle-right"></i></button> 
                             </div>
 
                         </div>

@@ -1,5 +1,7 @@
 import React from 'react';
-import PaintingIndexItem from '../paintings/painting_index_item'
+import SortableGallery from '../paintings/sortable_gallery';
+import arrayMove from 'array-move';
+import Photo from '../paintings/photo'
 import {Link} from 'react-router-dom';
 
 
@@ -20,12 +22,21 @@ class Other extends React.Component {
 
 
     render() { 
-
         const paintingRender = () => {
-            return this.props.paintings.map((painting) => {
-                return <PaintingIndexItem painting={painting} key={painting.id} paintings={this.props.paintings}/>
-            })
+            if(this.props.currentUser.id === null){
+                return this.props.paintings.sort((a,b) => b.position-a.position).map((painting) => {
+                    return <Photo painting={painting} key={painting.id}/>
+                })
+            } else {
+                return <SortableGallery items={this.props.paintings} onSortEnd={onSortEnd} axis={'xy'} /> 
+            }
         }
+
+        const items = this.props.paintings;
+
+        const onSortEnd = ({ oldIndex, newIndex }) => {
+            setItems(arrayMove(items, oldIndex, newIndex));
+        };
          
         return ( 
             <div className="friendship_container">

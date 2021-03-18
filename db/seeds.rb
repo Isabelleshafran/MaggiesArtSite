@@ -705,7 +705,8 @@ p52 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '12" x 18"',
-    category: "uninhabited"
+    category: "uninhabited", 
+    position: 1    
 )
 
 file52 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC01204.JPG')
@@ -715,7 +716,8 @@ p53 = Painting.create!(
     title: "Return",
     year: 2020,
     medium: "Projection || Light, Mirrors, Lenses, Acetate", 
-    category: "uninhabited"
+    category: "uninhabited", 
+    position: 2
 )
 
 file53 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/IMG_3420_1.JPG')
@@ -726,7 +728,8 @@ p54 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '12" x 18"',
-    category: "uninhabited"
+    category: "uninhabited", 
+    position: 3
 )
 
 file54 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC01184_1.JPG')
@@ -737,7 +740,8 @@ p55 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '12" x 18"',
-    category: "uninhabited"
+    category: "uninhabited", 
+    position: 4
 )
 
 file55 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC00968.JPG')
@@ -748,7 +752,8 @@ p56 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '12" x 18"',
-    category: "uninhabited"
+    category: "uninhabited", 
+    position: 5
 )
 
 file56 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC00938.JPG')
@@ -759,7 +764,8 @@ p57 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '12" x 18"',
-    category: "uninhabited"
+    category: "uninhabited", 
+    position: 6
 )
 file57 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/DSC00928.JPG')
 p57.photo.attach(io: file57, filename: 'return2.JPG')
@@ -769,7 +775,8 @@ p58 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '12" x 18"',
-    category: "uninhabited"
+    category: "uninhabited", 
+    position: 7
 )
 
 file58 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/2020-05-19+11.27.01.JPG')

@@ -5,6 +5,7 @@ import Pets from "./pets";
 const msp = (state) => {
   return {
     paintings: Object.values(state.paintings),
+   currentUser: state.session,
     category: "pets",
   };
 };
