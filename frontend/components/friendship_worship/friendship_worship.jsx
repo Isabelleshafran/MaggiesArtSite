@@ -14,6 +14,12 @@ class FriendshipWorship extends React.Component {
     }
 
     render() { 
+        const [items, setItems] = this.props.paintings;
+
+        const onSortEnd = ({ oldIndex, newIndex }) => {
+            setItems(arrayMove(items, oldIndex, newIndex));
+        };
+
         const paintingRender = () => {
             if(this.props.currentUser.id === null){
                 return this.props.paintings.sort((a,b) => b.position-a.position).map((painting) => {
@@ -24,13 +30,8 @@ class FriendshipWorship extends React.Component {
             }
         }
 
-        const items = this.props.paintings;
-
-        const onSortEnd = ({ oldIndex, newIndex }) => {
-            setItems(arrayMove(items, oldIndex, newIndex));
-        };
-         
-
+        
+        
         return ( 
             <div className="friendship_container">
                 <div className="project-index-header">Friendship Worship</div>

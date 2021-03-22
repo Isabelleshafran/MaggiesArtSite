@@ -21,7 +21,8 @@ p1 = Painting.create!(
     year: 2020,
     medium: "Pencil on Paper", 
     size: '32" x 42"',
-    category: "friendship_worship"
+    category: "friendship_worship", 
+    position: 1
 )
 
 file1 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/maia.JPG')
@@ -32,7 +33,8 @@ p2 = Painting.create!(
     year: 2017,
     medium: "Oil on Linen", 
     size: '24" x 30"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 2
 )
 
 file2 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/Neil.JPG')
@@ -42,7 +44,8 @@ p3 = Painting.create!(
     title: "Left Hand Whitney",
     year: 2015,
     medium: "Pen and Ink on Paper", 
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 3
 )
 
 file3 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_7517_1.JPG')
@@ -52,7 +55,8 @@ p4 = Painting.create!(
     title: "Whitney and Billie",
     year: 2015,
     medium: "Pen and Ink on Paper", 
-    category: "friendship_worship"
+    category: "friendship_worship", 
+        position: 4
 )
 
 file4 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_7410_1.JPG')
@@ -62,7 +66,8 @@ p5 = Painting.create!(
     title: "Whitney in Chair",
     year: 2015,
     medium: "Pen and Pencil on Paper", 
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 5
 )
 
 file5 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_7085_1.JPG')
@@ -72,7 +77,8 @@ p6 = Painting.create!(
     title: "Whit in our House",
     year: 2015,
     medium: "Mixed Media on Paper", 
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 6
 )
 
 file6 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_6879_1.JPG')
@@ -83,7 +89,8 @@ p7 = Painting.create!(
     year: 2016,
     medium: "Oil on Linen", 
     size: '24" x 35"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 7
 )
 
 file7 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_3350.JPG')
@@ -94,7 +101,8 @@ p8 = Painting.create!(
     year: 2016,
     medium: "Oil on Linen", 
     size: '24" x 30"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 8
 )
 
 file8 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_3164.JPG')
@@ -105,7 +113,8 @@ p9 = Painting.create!(
     year: 2016,
     medium: "Oil on Linen", 
     size: '36" x 60"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 9
 )
 
 file9 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_2608.jpg')
@@ -116,7 +125,8 @@ p10 = Painting.create!(
     year: 2016,
     medium: "Oil on Linen", 
     size: '48" x 60"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 10
 )
 
 file10 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_2060.JPG')
@@ -125,7 +135,8 @@ p10.photo.attach(io: file10, filename: 'josiebed.JPG')
 p11 = Painting.create!(
     title: "Jaya Strawberry",
     year: 2016,
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 11
 )
 
 file11 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_1698.JPG')
@@ -135,7 +146,8 @@ p12 = Painting.create!(
     title: "Josie Study",
     year: 2016,
     medium: "Watercolor", 
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 12
 )
 
 file12 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_1682.JPG')
@@ -146,7 +158,8 @@ p13 = Painting.create!(
     year: 2013,
     medium: "Oil on Canvas", 
     size: '42" x 60"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 13
 )
 
 file13 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_0747.JPG')
@@ -157,7 +170,8 @@ p14 = Painting.create!(
     year: 2013,
     medium: "Oil on Canvas", 
     size: '48" x 72"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 14
 )
 
 file14 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_0746.JPG')
@@ -168,7 +182,8 @@ p15 = Painting.create!(
     year: 2013,
     medium: "Oil on Canvas", 
     size: '48" x 48"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 15
 )
 
 file15 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_0744.JPG')
@@ -179,7 +194,8 @@ p16 = Painting.create!(
     year: 2019,
     medium: "Colored Pencil on Paper", 
     size: '8" x 10"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 16
 )
 
 file16 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_0260.JPG')
@@ -190,7 +206,8 @@ p17 = Painting.create!(
     year: 2019,
     medium: "Pencil on Paper", 
     size: '42" x 56"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 17
 )
 
 file17 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/famedited.JPG')
@@ -202,7 +219,8 @@ p18 = Painting.create!(
     year: 2017,
     medium: "Oil on Linen", 
     size: '36" x 48"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 18
 )
 
 file18 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1919.JPG')
@@ -214,7 +232,8 @@ p19 = Painting.create!(
     year: 2017,
     medium: "Oil on Linen", 
     size: '24" x 30"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 19
 )
 
 file19 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1619.JPG')
@@ -225,7 +244,8 @@ p20 = Painting.create!(
     year: 2012,
     medium: "Pencil on paper", 
     size: '36" x 42"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 20
 )
 
 file20 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1227_1.JPG')
@@ -237,7 +257,8 @@ p21 = Painting.create!(
     year: 2014,
     medium: "Pencil on paper", 
     size: '24" x 42"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 21
 )
 
 file21 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1226_2.JPG')
@@ -248,7 +269,8 @@ p22 = Painting.create!(
     year: 2014,
     medium: "Pencil on paper", 
     size: '42" x 63"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 22
 )
 
 file22 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1222_2.JPG')
@@ -259,7 +281,8 @@ p23 = Painting.create!(
     year: 2014,
     medium: "Pencil on paper", 
     size: '42" x 63"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 23
 )
 
 file23 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1214+2_1.JPG')
@@ -271,7 +294,8 @@ p24 = Painting.create!(
     year: 2018,
     medium: "Oil on Linen", 
     size: '24" x 36"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+    position: 24
 )
 
 file24 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_1193.jpg')
@@ -283,7 +307,8 @@ p25 = Painting.create!(
     year: 2018,
     medium: "Oil on Linen", 
     size: '24" x 36"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 25
 )
 
 file25 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0938.JPG')
@@ -294,7 +319,8 @@ p26 = Painting.create!(
     year: 2017,
     medium: "Oil on Linen", 
     size: '24" x 36"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 26
 )
 
 file26 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0921.JPG')
@@ -306,7 +332,8 @@ p27 = Painting.create!(
     year: 2016,
     medium: "Oil on Linen", 
     size: '24" x 30"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 27
 )
 
 file27 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0687_1.JPG')
@@ -317,7 +344,8 @@ p28 = Painting.create!(
     year: 2017,
     medium: "Oil on Linen", 
     size: '24" x 30"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 28
 )
 
 file28 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0503.jpg')
@@ -328,7 +356,8 @@ p29 = Painting.create!(
     year: 2017,
     medium: "Oil on Linen", 
     size: '24" x 36"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 29
 )
 
 file29 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0490.JPG')
@@ -340,7 +369,8 @@ p30 = Painting.create!(
     year: 2018,
     medium: "Oil on Linen", 
     size: '24" x 30"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 30
 )
 
 file30 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0424.JPG')
@@ -352,7 +382,9 @@ p31 = Painting.create!(
     year: 2013,
     medium: "Oil on Canvas", 
     size: '30" x 72"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 31
+    
 )
 
 file31 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0020.jpg')
@@ -363,7 +395,8 @@ p32 = Painting.create!(
     year: 2013,
     medium: "Oil on Canvas", 
     size: '30" x 72"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 32
 )
 
 file32 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/DSC_0008.jpg')
@@ -374,7 +407,8 @@ p33 = Painting.create!(
     year: 2015,
     medium: "Colored Pencil on Paper", 
     size: '11" x 14"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 33
 )
 
 file33 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/1001_1.JPG')
@@ -385,7 +419,8 @@ p34 = Painting.create!(
     year: 2015,
     medium: "Colored Pencil on Paper", 
     size: '11" x 14"',
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 34
 )
 
 file34 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_9094.jpg')
@@ -395,7 +430,8 @@ p35 = Painting.create!(
     title: "Camouflage Whitney",
     year: 2013,
     medium: "Oil on Canvas", 
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 35
 )
 
 file35 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/877.JPG')
@@ -406,7 +442,8 @@ p67 = Painting.create!(
     year: 2017,
     size: '24" x 36"',
     medium: "Oil on Linen", 
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 36
 )
 
 file67 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_5228.JPG')
@@ -417,7 +454,8 @@ p68 = Painting.create!(
     year: 2017,
     size: '42" x 52"',
     medium: "Graphite On Paper", 
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 37
 )
 
 file68 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_4121-edited.jpg')
@@ -428,7 +466,8 @@ p69 = Painting.create!(
     year: 2019,
     size: '24" x 30"',
     medium: "Oil On Linen", 
-    category: "friendship_worship"
+    category: "friendship_worship",
+        position: 38
 )
 
 file69 = open('https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/IMG_2633.jpg')
@@ -443,7 +482,8 @@ p36 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 1
 )
 
 file36 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/lighter.JPG')
@@ -455,7 +495,8 @@ p37 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 2
 )
 
 file37 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter7.JPG')
@@ -466,7 +507,8 @@ p38 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 3
 )
 
 file38 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter5.JPG')
@@ -478,7 +520,8 @@ p39 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 4
 )
 
 file39 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter2.JPG')
@@ -489,7 +532,8 @@ p40 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 5
 )
 
 file40 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter1.JPG')
@@ -502,7 +546,8 @@ p50 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 6
 )
 
 file50 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter4.JPG')
@@ -513,7 +558,8 @@ p41 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 7
 )
 
 file41 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Ligher6.JPG')
@@ -524,7 +570,8 @@ p66 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 8
 )
 
 file66 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4391+copy.JPG')
@@ -535,7 +582,8 @@ p65 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 9
 )
 
 file65 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4390.JPG')
@@ -546,7 +594,8 @@ p64 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 10
 )
 
 file64 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4389+copy.JPG')
@@ -558,7 +607,8 @@ p63 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 11
 )
 
 file63 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4388+copy.JPG')
@@ -570,7 +620,8 @@ p62 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 12
 )
 
 file62 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4387+copy.JPG')
@@ -581,7 +632,8 @@ p61 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 13
 )
 
 file61 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4385-2.JPG')
@@ -592,7 +644,8 @@ p60 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '22" x 24"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 14
 )
 
 file60 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4384+copy.JPG')
@@ -603,7 +656,8 @@ p42 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '22" x 24"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 15
 )
 
 file42 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4062.JPG')
@@ -614,7 +668,8 @@ p43 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 16
 )
 
 file43 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4383+copy.JPG')
@@ -625,7 +680,8 @@ p44 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 24"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 17
 )
 
 file44 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2947_1.JPG')
@@ -636,7 +692,8 @@ p45 = Painting.create!(
     year: 2020,
     medium: "Plaster, Cupcake Cosmo", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 18
 )
 
 file45 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2907_1.JPG')
@@ -647,7 +704,8 @@ p46 = Painting.create!(
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 19
 )
 
 file46 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2881small.jpg')
@@ -658,7 +716,8 @@ p47 = Painting.create!(
     year: 2020,
     medium: "Photographic Print", 
     size: '44" x 64"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 20
 )
 
 file47 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/FinalBig.jpg')
@@ -669,7 +728,8 @@ p49 = Painting.create!(
     year: 2020,
     medium: "Latex and Pins", 
     size: '44" x 64"',
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 21
 )
 
 file49 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/DSC01346_2.JPG')
@@ -679,7 +739,8 @@ p51 = Painting.create!(
     title: "Specimen, Installation Shot",
     year: 2020,
     medium: "Latex and Pins", 
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 22
 )
 
 file51 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/DSC01334.JPG')
@@ -689,7 +750,8 @@ p48 = Painting.create!(
     title: "Vanishing, Installation Shot",
     year: 2020,
     medium: "Light, Mirrors, Lenses and Cellophane", 
-    category: "little_pieces"
+    category: "little_pieces",
+        position: 23
 )
 
 file48 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_3932.JPG')

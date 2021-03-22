@@ -811,6 +811,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _paintings_photo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../paintings/photo */ "./frontend/components/paintings/photo.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -857,6 +869,16 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this = this;
 
+      var _this$props$paintings = _slicedToArray(this.props.paintings, 2),
+          items = _this$props$paintings[0],
+          setItems = _this$props$paintings[1];
+
+      var onSortEnd = function onSortEnd(_ref) {
+        var oldIndex = _ref.oldIndex,
+            newIndex = _ref.newIndex;
+        setItems(array_move__WEBPACK_IMPORTED_MODULE_2___default()(items, oldIndex, newIndex));
+      };
+
       var paintingRender = function paintingRender() {
         if (_this.props.currentUser.id === null) {
           return _this.props.paintings.sort(function (a, b) {
@@ -875,14 +897,6 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
             axis: 'xy'
           });
         }
-      };
-
-      var items = this.props.paintings;
-
-      var onSortEnd = function onSortEnd(_ref) {
-        var oldIndex = _ref.oldIndex,
-            newIndex = _ref.newIndex;
-        setItems(array_move__WEBPACK_IMPORTED_MODULE_2___default()(items, oldIndex, newIndex));
       };
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -1659,23 +1673,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_photo_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-photo-gallery */ "./node_modules/react-photo-gallery/dist/react-photo-gallery.esm.js");
-/* harmony import */ var array_move__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! array-move */ "./node_modules/array-move/index.js");
-/* harmony import */ var array_move__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(array_move__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_sortable_hoc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-sortable-hoc */ "./node_modules/react-sortable-hoc/dist/react-sortable-hoc.esm.js");
-/* harmony import */ var _photo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./photo */ "./frontend/components/paintings/photo.jsx");
+/* harmony import */ var react_sortable_hoc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-sortable-hoc */ "./node_modules/react-sortable-hoc/dist/react-sortable-hoc.esm.js");
+/* harmony import */ var _photo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./photo */ "./frontend/components/paintings/photo.jsx");
 
 
 
 
-
-
-var SortablePhoto = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_3__.SortableElement)(function (item, currentUser) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_photo__WEBPACK_IMPORTED_MODULE_4__.default, {
+var SortablePhoto = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_2__.SortableElement)(function (item, currentUser) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_photo__WEBPACK_IMPORTED_MODULE_3__.default, {
     item: item,
     currentUser: currentUser
   });
 });
-var SortableGallery = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_3__.SortableContainer)(function (_ref) {
+var SortableGallery = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_2__.SortableContainer)(function (_ref) {
   var items = _ref.items,
       currentUser = _ref.currentUser;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_photo_gallery__WEBPACK_IMPORTED_MODULE_1__.default, {

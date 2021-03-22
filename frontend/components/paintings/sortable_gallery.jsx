@@ -1,8 +1,5 @@
-import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react';
 import Gallery from 'react-photo-gallery';
-
-import arrayMove from 'array-move';
 import { SortableContainer, SortableElement } from 'react-sortable-hoc';
 import Photo from './photo'
 
