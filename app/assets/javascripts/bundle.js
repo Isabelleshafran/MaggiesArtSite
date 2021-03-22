@@ -114,17 +114,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "RECEIVE_PAINTINGS": () => (/* binding */ RECEIVE_PAINTINGS),
 /* harmony export */   "RECEIVE_PAINTING": () => (/* binding */ RECEIVE_PAINTING),
+/* harmony export */   "REMOVE_PAINTING": () => (/* binding */ REMOVE_PAINTING),
 /* harmony export */   "receivePaintings": () => (/* binding */ receivePaintings),
 /* harmony export */   "receivePainting": () => (/* binding */ receivePainting),
+/* harmony export */   "removePainting": () => (/* binding */ removePainting),
 /* harmony export */   "fetchPaintings": () => (/* binding */ fetchPaintings),
 /* harmony export */   "fetchPainting": () => (/* binding */ fetchPainting),
 /* harmony export */   "createPainting": () => (/* binding */ createPainting),
-/* harmony export */   "updatePainting": () => (/* binding */ updatePainting)
+/* harmony export */   "updatePainting": () => (/* binding */ updatePainting),
+/* harmony export */   "deletePainting": () => (/* binding */ deletePainting)
 /* harmony export */ });
 /* harmony import */ var _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/painting_api_util */ "./frontend/util/painting_api_util.js");
 
 var RECEIVE_PAINTINGS = "RECEIVE_PAINTINGS";
 var RECEIVE_PAINTING = "RECEIVE_PAINTING";
+var REMOVE_PAINTING = "REMOVE_PAINTING";
 var receivePaintings = function receivePaintings(paintings) {
   return {
     type: RECEIVE_PAINTINGS,
@@ -134,6 +138,12 @@ var receivePaintings = function receivePaintings(paintings) {
 var receivePainting = function receivePainting(painting) {
   return {
     type: RECEIVE_PAINTING,
+    painting: painting
+  };
+};
+var removePainting = function removePainting(painting) {
+  return {
+    type: REMOVE_PAINTING,
     painting: painting
   };
 };
@@ -162,6 +172,13 @@ var updatePainting = function updatePainting(painting) {
   return function (dispatch) {
     return _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__.updatePainting(painting).then(function (painting) {
       return dispatch(receivePainting(painting));
+    });
+  };
+};
+var deletePainting = function deletePainting(painting_id) {
+  return function (dispatch) {
+    return _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__.deletePainting(painting_id).then(function (painting) {
+      return dispatch(removePainting(painting));
     });
   };
 };
@@ -849,8 +866,8 @@ var msp = function msp(state) {
 
 var mdp = function mdp(dispatch) {
   return {
-    fetchPaintings: function fetchPaintings() {
-      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)());
+    fetchPaintings: function fetchPaintings(category) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
     },
     logout: function logout() {
       return dispatch((0,_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__.logout)());
@@ -930,11 +947,6 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "clickForward",
     value: function clickForward() {
-      // this.setState({
-      //     artworks: this.props.paintings.filter(painting => painting.category === this.props.match.params.category), 
-      //     activeProject: this.props.painting, 
-      //     index: this.state.artworks.indexOf(this.state.activeProject)
-      // })
       var currentPainting = this.props.painting;
       var allPaintings = this.props.paintings;
       var index = allPaintings.indexOf(currentPainting);
@@ -1174,19 +1186,26 @@ var UpdatePainting = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       position: null
     };
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    _this.handlePositionSubmit = _this.handlePositionSubmit.bind(_assertThisInitialized(_this));
+    _this.handleDeleteSubmit = _this.handleDeleteSubmit.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(UpdatePainting, [{
-    key: "handleSubmit",
-    value: function handleSubmit(e) {
+    key: "handlePositionSubmit",
+    value: function handlePositionSubmit(e) {
       e.preventDefault();
       var original = this.props.painting;
       original.position = this.state.position;
       this.props.updatePainting(original).then(function () {
         return alert('success');
       });
+    }
+  }, {
+    key: "handleDeleteSubmit",
+    value: function handleDeleteSubmit() {
+      var photo = this.props.painting;
+      this.props.deletePainting(photo.id);
     }
   }, {
     key: "handleChange",
@@ -1210,7 +1229,7 @@ var UpdatePainting = /*#__PURE__*/function (_React$Component) {
         className: "painting-index-image",
         src: this.props.painting.imgUrl
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
-        onSubmit: this.handleSubmit
+        onSubmit: this.handlePositionSubmit
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Position", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
         type: "text",
         placeholder: "current: ".concat(this.props.painting.position),
@@ -1218,7 +1237,9 @@ var UpdatePainting = /*#__PURE__*/function (_React$Component) {
         onChange: this.handleChange('position')
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
         type: "submit"
-      }, "Submit"))));
+      }, "Submit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+        onClick: this.handleDeleteSubmit
+      }, "Delete")));
     }
   }]);
 
@@ -1261,6 +1282,9 @@ var mdp = function mdp(dispatch) {
     },
     updatePainting: function updatePainting(painting) {
       return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.updatePainting)(painting));
+    },
+    deletePainting: function deletePainting(painting_id) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.deletePainting)(painting_id));
     }
   };
 };
@@ -1780,7 +1804,7 @@ var Success = /*#__PURE__*/function (_React$Component) {
       size: "",
       medium: "",
       category: "",
-      year: 0,
+      year: "",
       photoFile: null,
       position: null
     };
@@ -1819,7 +1843,7 @@ var Success = /*#__PURE__*/function (_React$Component) {
       formData.append('painting[category]', this.state.category);
       formData.append('painting[year]', this.state.year);
       formData.append('painting[photo]', this.state.photoFile);
-      formData.append('painting[position]', 100);
+      formData.append('painting[position]', 0);
       this.props.createPainting(formData).then(function () {
         return _this3.props.history.push("/projects");
       });
@@ -1849,6 +1873,9 @@ var Success = /*#__PURE__*/function (_React$Component) {
         value: this.state.category,
         onChange: this.handleChange('category')
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "",
+        disabled: true
+      }, "Please Select"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
         value: "friendship_worship"
       }, "Friendship Worship"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
         value: "little_pieces"
@@ -2171,6 +2198,11 @@ var PaintingsReducer = function PaintingsReducer() {
 
       return Object.assign({}, state, newPainting);
 
+    case _actions_painting_actions__WEBPACK_IMPORTED_MODULE_0__.REMOVE_PAINTING:
+      var nextState = Object.assign({}, state);
+      delete nextState[action.painting.id];
+      return nextState;
+
     default:
       return state;
   }
@@ -2292,7 +2324,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "fetchPaintings": () => (/* binding */ fetchPaintings),
 /* harmony export */   "fetchPainting": () => (/* binding */ fetchPainting),
 /* harmony export */   "createPainting": () => (/* binding */ createPainting),
-/* harmony export */   "updatePainting": () => (/* binding */ updatePainting)
+/* harmony export */   "updatePainting": () => (/* binding */ updatePainting),
+/* harmony export */   "deletePainting": () => (/* binding */ deletePainting)
 /* harmony export */ });
 var fetchPaintings = function fetchPaintings(category) {
   return $.ajax({
@@ -2319,13 +2352,18 @@ var createPainting = function createPainting(painting) {
   });
 };
 var updatePainting = function updatePainting(painting) {
-  debugger;
   return $.ajax({
     url: "/api/paintings/".concat(painting.id),
     method: "PATCH",
     data: {
       painting: painting
     }
+  });
+};
+var deletePainting = function deletePainting(productId) {
+  return $.ajax({
+    url: "/api/paintings/".concat(productId, "/"),
+    method: "DELETE"
   });
 };
 

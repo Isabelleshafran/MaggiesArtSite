@@ -24,13 +24,6 @@ class PaintingShow extends React.Component {
     }
 
     clickForward(){
-        // this.setState({
-        //     artworks: this.props.paintings.filter(painting => painting.category === this.props.match.params.category), 
-        //     activeProject: this.props.painting, 
-        //     index: this.state.artworks.indexOf(this.state.activeProject)
-
-    
-        // })
 
         let currentPainting = this.props.painting
         let allPaintings = this.props.paintings

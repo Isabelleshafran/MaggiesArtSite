@@ -8,15 +8,20 @@ class UpdatePainting extends React.Component {
             position: null
          }
 
-        this.handleSubmit = this.handleSubmit.bind(this);
-
+        this.handlePositionSubmit = this.handlePositionSubmit.bind(this);
+        this.handleDeleteSubmit = this.handleDeleteSubmit.bind(this);
     }
-    handleSubmit(e){
+    handlePositionSubmit(e){
         e.preventDefault();
 
         let original = this.props.painting;
         original.position = this.state.position
         this.props.updatePainting(original).then(() => alert('success'))
+    }
+
+    handleDeleteSubmit(){
+        const photo = this.props.painting
+        this.props.deletePainting(photo.id)
     }
 
      handleChange(field){
@@ -36,7 +41,7 @@ class UpdatePainting extends React.Component {
                                 <img className="painting-index-image" src={this.props.painting.imgUrl}/>
                             </Link>
                         </div>
-                        <form onSubmit={this.handleSubmit}>
+                        <form onSubmit={this.handlePositionSubmit}>
                 
                              <label>Position
                                 <input type="text" placeholder={`current: ${this.props.painting.position}`}value={this.state.position} onChange={this.handleChange('position')}/>
@@ -44,6 +49,8 @@ class UpdatePainting extends React.Component {
 
                             <button type="submit">Submit</button>
                         </form>
+
+                        <button onClick={this.handleDeleteSubmit}>Delete</button>
                     </div>
 
 

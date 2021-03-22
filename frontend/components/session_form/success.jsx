@@ -10,7 +10,7 @@ class Success extends React.Component {
             size: "",
             medium: "", 
             category: "", 
-            year: 0, 
+            year: "", 
             photoFile: null, 
             position: null
          }
@@ -37,7 +37,7 @@ class Success extends React.Component {
         formData.append('painting[category]', this.state.category)
         formData.append('painting[year]', this.state.year)
         formData.append('painting[photo]', this.state.photoFile)
-        formData.append('painting[position]', 100)
+        formData.append('painting[position]', 0)
 
         this.props.createPainting(formData).then(() => this.props.history.push(`/projects`))
     }   
@@ -79,6 +79,7 @@ class Success extends React.Component {
 
                 <label>Category
                     <select  value={this.state.category} onChange={this.handleChange('category')}>
+                        <option value="" disabled={true}>Please Select</option>
                         <option value="friendship_worship">Friendship Worship</option>
                         <option value="little_pieces">Little Pieces of Death</option>
                         <option value="uninhabited">Uninhabited Spaces</option>

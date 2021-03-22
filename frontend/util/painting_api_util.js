@@ -25,10 +25,16 @@ export const createPainting = (painting) => {
 };
 
 export const updatePainting = (painting) => {
-  debugger
     return $.ajax({
     url: `/api/paintings/${painting.id}`,
     method: "PATCH",
     data: { painting },
+  });
+}
+
+export const deletePainting = (productId) => {
+  return $.ajax({
+    url: `/api/paintings/${productId}/`,
+    method: "DELETE",
   });
 }
