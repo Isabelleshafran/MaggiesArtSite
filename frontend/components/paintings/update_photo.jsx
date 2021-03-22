@@ -38,7 +38,7 @@ class UpdatePainting extends React.Component {
                         <form onSubmit={this.handleSubmit}>
                 
                              <label>Position
-                                <input type="text" value={this.state.position} onChange={this.handleChange('position')}/>
+                                <input type="text" placeholder={`current: ${this.props.painting.position}`}value={this.state.position} onChange={this.handleChange('position')}/>
                             </label>
 
                             <button type="submit">Submit</button>

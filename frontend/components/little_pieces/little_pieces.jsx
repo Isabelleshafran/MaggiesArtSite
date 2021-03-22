@@ -1,6 +1,5 @@
 import React from 'react';
-import SortableGallery from '../paintings/sortable_gallery';
-import arrayMove from 'array-move';
+import UpdatePhoto from '../paintings/update_photo_container';
 import Photo from '../paintings/photo'
 
 
@@ -15,22 +14,17 @@ class LittlePieces extends React.Component {
     }
 
     render() { 
-
         const paintingRender = () => {
             if(this.props.currentUser.id === null){
-                return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
+                return this.props.paintings.sort((a,b) => b.position-a.position).map((painting) => {
                     return <Photo painting={painting} key={painting.id}/>
                 })
             } else {
-                return <SortableGallery items={this.props.paintings} currentUser={this.props.currentUser} onSortEnd={onSortEnd} axis={'xy'} /> 
+                return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
+                    return <UpdatePhoto painting={painting} key={painting.id}/>
+                })
             }
         }
-
-        const items = this.props.paintings;
-
-        const onSortEnd = ({ oldIndex, newIndex }) => {
-            setItems(arrayMove(items, oldIndex, newIndex));
-        };
         
         return ( 
             <div className="friendship_container">
