@@ -11,8 +11,10 @@ class Success extends React.Component {
             medium: "", 
             category: "", 
             year: 0, 
-            photoFile: null
+            photoFile: null, 
+            position: null
          }
+
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleFile = this.handleFile.bind(this);
     }
@@ -35,8 +37,9 @@ class Success extends React.Component {
         formData.append('painting[category]', this.state.category)
         formData.append('painting[year]', this.state.year)
         formData.append('painting[photo]', this.state.photoFile)
+        formData.append('painting[position]', 100)
 
-        this.props.createPainting(formData).then(() => this.props.history.push(`/${this.state.category}`))
+        this.props.createPainting(formData).then(() => this.props.history.push(`/projects`))
     }   
 
     render() { 
@@ -52,6 +55,9 @@ class Success extends React.Component {
     
             <form onSubmit={this.handleSubmit}>
                 <span>upload new artwork</span>
+                <br/>
+                <span>PHOTO MUST BE A .JPG</span>
+
                 <br/>
                 <label>Title
                     <input type="text" value={this.state.title} onChange={this.handleChange('title')}/>

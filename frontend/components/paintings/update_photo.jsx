@@ -27,6 +27,7 @@ class UpdatePainting extends React.Component {
     }
 
     render() { 
+
         return ( 
             <div>
                 <div className="painting-index-container">
