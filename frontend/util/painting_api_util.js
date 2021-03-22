@@ -23,3 +23,12 @@ export const createPainting = (painting) => {
     contentType: false,
   });
 };
+
+export const updatePainting = (painting) => {
+  debugger
+    return $.ajax({
+    url: `/api/paintings/${painting.id}`,
+    method: "PATCH",
+    data: { painting },
+  });
+}

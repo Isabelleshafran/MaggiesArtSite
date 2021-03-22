@@ -30,4 +30,8 @@ export const fetchPainting = (paintingId) => (dispatch) =>
     });
   };
 
+  export const updatePainting = (painting) => (dispatch) =>
+    APIUtil.updatePainting(painting).then((painting) =>
+      dispatch(receivePainting(painting))
+    );
 

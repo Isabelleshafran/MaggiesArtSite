@@ -3,6 +3,7 @@ import React from 'react';
 import SortableGallery from '../paintings/sortable_gallery';
 import arrayMove from 'array-move';
 import Photo from '../paintings/photo'
+import UpdatePhoto from '../paintings/update_photo_container'
 
 
 import {Link} from 'react-router-dom';
@@ -17,6 +18,8 @@ class Uninhabited extends React.Component {
         this.props.fetchPaintings(this.props.category)
     }
 
+
+
     render() {        
         const paintingRender = () => {
             if(this.props.currentUser.id === null){
@@ -24,7 +27,18 @@ class Uninhabited extends React.Component {
                     return <Photo painting={painting} key={painting.id}/>
                 })
             } else {
-                return <SortableGallery items={this.props.paintings} currentUser={this.props.currentUser} onSortEnd={onSortEnd} axis={'xy'}/> 
+                // return <SortableGallery items={this.props.paintings} currentUser={this.props.currentUser} onSortEnd={onSortEnd} axis={'xy'}/> 
+                return this.props.paintings.sort((a,b) => b.position-a.position).map((painting) => {
+                    return <UpdatePhoto painting={painting} key={painting.id}/>
+                })
+            }
+        }
+
+        const renderSubmitButton = () => {
+            if(this.props.currentUser.id !== null){
+                return (
+                    <button onClick={this.handleClick()}>Submit</button>
+                )
             }
         }
 
@@ -52,6 +66,7 @@ class Uninhabited extends React.Component {
 
                 <div className="painting-render">
                     {paintingRender()}
+                    {/* {renderSubmitButton()} */}
                 </div>
             </div>
          );

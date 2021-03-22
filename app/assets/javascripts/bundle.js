@@ -609,7 +609,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "receivePainting": () => (/* binding */ receivePainting),
 /* harmony export */   "fetchPaintings": () => (/* binding */ fetchPaintings),
 /* harmony export */   "fetchPainting": () => (/* binding */ fetchPainting),
-/* harmony export */   "createPainting": () => (/* binding */ createPainting)
+/* harmony export */   "createPainting": () => (/* binding */ createPainting),
+/* harmony export */   "updatePainting": () => (/* binding */ updatePainting)
 /* harmony export */ });
 /* harmony import */ var _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/painting_api_util */ "./frontend/util/painting_api_util.js");
 
@@ -645,6 +646,13 @@ var createPainting = function createPainting(painting) {
   return function (dispatch) {
     return _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__.createPainting(painting).then(function (painting) {
       dispatch(receivePainting(painting));
+    });
+  };
+};
+var updatePainting = function updatePainting(painting) {
+  return function (dispatch) {
+    return _util_painting_api_util__WEBPACK_IMPORTED_MODULE_0__.updatePainting(painting).then(function (painting) {
+      return dispatch(receivePainting(painting));
     });
   };
 };
@@ -1023,7 +1031,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
       var paintingRender = function paintingRender() {
         if (_this.props.currentUser.id === null) {
           return _this.props.paintings.sort(function (a, b) {
-            return b.position - a.position;
+            return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_3__.default, {
               painting: painting,
@@ -1697,6 +1705,154 @@ var SortableGallery = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_2__.Sortabl
   });
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SortableGallery);
+
+/***/ }),
+
+/***/ "./frontend/components/paintings/update_photo.jsx":
+/*!********************************************************!*\
+  !*** ./frontend/components/paintings/update_photo.jsx ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var UpdatePainting = /*#__PURE__*/function (_React$Component) {
+  _inherits(UpdatePainting, _React$Component);
+
+  var _super = _createSuper(UpdatePainting);
+
+  function UpdatePainting(props) {
+    var _this;
+
+    _classCallCheck(this, UpdatePainting);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      position: null
+    };
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(UpdatePainting, [{
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      e.preventDefault();
+      var original = this.props.painting;
+      original.position = this.state.position;
+      this.props.updatePainting(original).then(function () {
+        return alert('success');
+      });
+    }
+  }, {
+    key: "handleChange",
+    value: function handleChange(field) {
+      var _this2 = this;
+
+      return function (e) {
+        return _this2.setState(_defineProperty({}, field, e.currentTarget.value));
+      };
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "painting-index-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "painting-index"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/".concat(this.props.painting.category, "/").concat(this.props.painting.id)
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "painting-index-image",
+        src: this.props.painting.imgUrl
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+        onSubmit: this.handleSubmit
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Position", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: this.state.position,
+        onChange: this.handleChange('position')
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+        type: "submit"
+      }, "Submit"))));
+    }
+  }]);
+
+  return UpdatePainting;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UpdatePainting);
+
+/***/ }),
+
+/***/ "./frontend/components/paintings/update_photo_container.js":
+/*!*****************************************************************!*\
+  !*** ./frontend/components/paintings/update_photo_container.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../actions/painting_actions */ "./frontend/actions/painting_actions.js");
+/* harmony import */ var _update_photo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./update_photo */ "./frontend/components/paintings/update_photo.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+
+
+
+
+
+var msp = function msp(state, ownProps) {
+  return {// painting: state.paintings[ownProps.match.params.paintingId]
+  };
+};
+
+var mdp = function mdp(dispatch) {
+  return {
+    fetchPainting: function fetchPainting(id) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPainting)(id));
+    },
+    updatePainting: function updatePainting(painting) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.updatePainting)(painting));
+    }
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_router_dom__WEBPACK_IMPORTED_MODULE_3__.withRouter)((0,react_redux__WEBPACK_IMPORTED_MODULE_0__.connect)(msp, mdp)(_update_photo__WEBPACK_IMPORTED_MODULE_2__.default)));
 
 /***/ }),
 
@@ -2427,6 +2583,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var array_move__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! array-move */ "./node_modules/array-move/index.js");
 /* harmony import */ var array_move__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(array_move__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _paintings_photo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../paintings/photo */ "./frontend/components/paintings/photo.jsx");
+/* harmony import */ var _paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../paintings/update_photo_container */ "./frontend/components/paintings/update_photo_container.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2450,6 +2607,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
  // import React from 'react';
+
 
 
 
@@ -2488,12 +2646,23 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
             });
           });
         } else {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_sortable_gallery__WEBPACK_IMPORTED_MODULE_1__.default, {
-            items: _this.props.paintings,
-            currentUser: _this.props.currentUser,
-            onSortEnd: onSortEnd,
-            axis: 'xy'
+          // return <SortableGallery items={this.props.paintings} currentUser={this.props.currentUser} onSortEnd={onSortEnd} axis={'xy'}/> 
+          return _this.props.paintings.sort(function (a, b) {
+            return b.position - a.position;
+          }).map(function (painting) {
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_4__.default, {
+              painting: painting,
+              key: painting.id
+            });
           });
+        }
+      };
+
+      var renderSubmitButton = function renderSubmitButton() {
+        if (_this.props.currentUser.id !== null) {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+            onClick: _this.handleClick()
+          }, "Submit");
         }
       };
 
@@ -2554,6 +2723,9 @@ var mdp = function mdp(dispatch) {
   return {
     fetchPaintings: function fetchPaintings(category) {
       return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
+    },
+    updatePainting: function updatePainting(painting) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.updatePainting)(painting));
     }
   };
 };
@@ -2737,7 +2909,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "fetchPaintings": () => (/* binding */ fetchPaintings),
 /* harmony export */   "fetchPainting": () => (/* binding */ fetchPainting),
-/* harmony export */   "createPainting": () => (/* binding */ createPainting)
+/* harmony export */   "createPainting": () => (/* binding */ createPainting),
+/* harmony export */   "updatePainting": () => (/* binding */ updatePainting)
 /* harmony export */ });
 var fetchPaintings = function fetchPaintings(category) {
   return $.ajax({
@@ -2761,6 +2934,16 @@ var createPainting = function createPainting(painting) {
     data: painting,
     processData: false,
     contentType: false
+  });
+};
+var updatePainting = function updatePainting(painting) {
+  debugger;
+  return $.ajax({
+    url: "/api/paintings/".concat(painting.id),
+    method: "PATCH",
+    data: {
+      painting: painting
+    }
   });
 };
 

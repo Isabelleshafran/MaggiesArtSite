@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { fetchPaintings } from "../../actions/painting_actions";
+import { fetchPaintings, updatePainting } from "../../actions/painting_actions";
 import Uninhabited from "./uninhabited";
 
 const msp = (state, ownProps) => {
@@ -13,6 +13,7 @@ const msp = (state, ownProps) => {
 const mdp = (dispatch) => {
   return {
     fetchPaintings: (category) => dispatch(fetchPaintings(category)),
+    updatePainting: (painting) => dispatch(updatePainting(painting))
   };
 };
 
