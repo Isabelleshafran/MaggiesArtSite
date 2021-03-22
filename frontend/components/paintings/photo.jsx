@@ -7,7 +7,6 @@ class Photo extends React.Component {
     }
 
     render() { 
-        // console.log(this.props.painting.imgUrl)
             return (
                 <div className="painting-index-container">
                     <div className="painting-index">

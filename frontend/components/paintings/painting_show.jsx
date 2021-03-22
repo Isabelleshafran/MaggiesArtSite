@@ -19,7 +19,6 @@ class PaintingShow extends React.Component {
     componentDidMount(){
         this.props.fetchPainting(this.props.match.params.paintingId)
         this.props.fetchPaintings(this.props.match.params.category)
-        console.log(this.props)
         window.scrollTo(0, 0);
     }
 
