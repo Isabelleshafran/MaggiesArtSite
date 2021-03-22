@@ -1097,35 +1097,16 @@ var Photo = /*#__PURE__*/function (_React$Component) {
   _createClass(Photo, [{
     key: "render",
     value: function render() {
-      var _this = this;
-
-      var photoRender = function photoRender() {
-        if (_this.props.currentUser) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            className: "painting-index-container"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            className: "painting-index"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            to: "/".concat(_this.props.item.photo.category, "/").concat(_this.props.item.photo.id)
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-            className: "painting-index-image",
-            src: _this.props.item.photo.imgUrl
-          }))));
-        } else {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            className: "painting-index-container"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            className: "painting-index"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            to: "/".concat(_this.props.painting.category, "/").concat(_this.props.painting.id)
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-            className: "painting-index-image",
-            src: _this.props.painting.imgUrl
-          }))));
-        }
-      };
-
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, photoRender());
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "painting-index-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "painting-index"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/".concat(this.props.painting.category, "/").concat(this.props.painting.id)
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "painting-index-image",
+        src: this.props.painting.imgUrl
+      }))));
     }
   }]);
 

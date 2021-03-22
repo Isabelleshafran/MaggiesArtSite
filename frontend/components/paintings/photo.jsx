@@ -6,40 +6,18 @@ class Photo extends React.Component {
         super(props);
     }
 
-    render() {  
-    
-
-        const photoRender = () => {
-            if(this.props.currentUser){
-                return (
-                    <div className="painting-index-container">
-            
-                        <div className="painting-index">
-                            <Link to={`/${this.props.item.photo.category}/${this.props.item.photo.id}`}>
-                                <img className="painting-index-image" src={this.props.item.photo.imgUrl}/>
-                            </Link>
-                        </div>
+    render() { 
+            return (
+                <div className="painting-index-container">
+                    <div className="painting-index">
+                        <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
+                            <img className="painting-index-image" src={this.props.painting.imgUrl}/>
+                        </Link>
                     </div>
-                )
-            } else {
-                return (
-                    <div className="painting-index-container">
-                        <div className="painting-index">
-                            <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
-                                <img className="painting-index-image" src={this.props.painting.imgUrl}/>
-                            </Link>
-                        </div>
-                    </div>
-                )
-            }
+                </div>
+            )
         }
-        
-        return (
-            <div>
-                {photoRender()}
-            </div>
-        )
-    }
+
 }
 
 export default Photo;
