@@ -16,14 +16,14 @@ class Other extends React.Component {
 
 
     handleClick() {
-        this.props.logout()
+        this.props.logout().then(() => alert('logged out'))
     }
 
 
     render() { 
         const paintingRender = () => {
             if(this.props.currentUser.id === null){
-                return this.props.paintings.sort((a,b) => b.position-a.position).map((painting) => {
+                return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
                     return <Photo painting={painting} key={painting.id}/>
                 })
             } else {

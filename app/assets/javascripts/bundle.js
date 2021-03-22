@@ -374,7 +374,7 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
       var paintingRender = function paintingRender() {
         if (_this.props.currentUser.id === null) {
           return _this.props.paintings.sort(function (a, b) {
-            return b.position - a.position;
+            return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_1__.default, {
               painting: painting,
@@ -514,7 +514,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
       var paintingRender = function paintingRender() {
         if (_this.props.currentUser.id === null) {
           return _this.props.paintings.sort(function (a, b) {
-            return b.position - a.position;
+            return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_2__.default, {
               painting: painting,
@@ -763,7 +763,9 @@ var Other = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "handleClick",
     value: function handleClick() {
-      this.props.logout();
+      this.props.logout().then(function () {
+        return alert('logged out');
+      });
     }
   }, {
     key: "render",
@@ -773,7 +775,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
       var paintingRender = function paintingRender() {
         if (_this2.props.currentUser.id === null) {
           return _this2.props.paintings.sort(function (a, b) {
-            return b.position - a.position;
+            return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_2__.default, {
               painting: painting,
@@ -1330,7 +1332,7 @@ var Pets = /*#__PURE__*/function (_React$Component) {
       var paintingRender = function paintingRender() {
         if (_this.props.currentUser.id === null) {
           return _this.props.paintings.sort(function (a, b) {
-            return b.position - a.position;
+            return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_2__.default, {
               painting: painting,
@@ -2032,7 +2034,7 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
       var paintingRender = function paintingRender() {
         if (_this.props.currentUser.id === null) {
           return _this.props.paintings.sort(function (a, b) {
-            return b.position - a.position;
+            return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_1__.default, {
               painting: painting,

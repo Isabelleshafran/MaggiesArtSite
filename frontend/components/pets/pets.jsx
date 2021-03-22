@@ -15,7 +15,7 @@ class Pets extends React.Component {
     render() { 
         const paintingRender = () => {
             if(this.props.currentUser.id === null){
-                return this.props.paintings.sort((a,b) => b.position-a.position).map((painting) => {
+                return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
                     return <Photo painting={painting} key={painting.id}/>
                 })
             } else {
