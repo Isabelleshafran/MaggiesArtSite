@@ -513,7 +513,7 @@ p38 = Painting.create!(
         position: 3
 )
 
-file38 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4430+copy.JPG')
+file38 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4430+copy.png')
 p38.photo.attach(io: file38, filename: 'blue2.JPG')
 
 

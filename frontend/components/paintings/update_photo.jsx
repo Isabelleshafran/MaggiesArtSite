@@ -36,21 +36,18 @@ class UpdatePainting extends React.Component {
         return ( 
             <div>
                 <div className="painting-index-container">
+                        <form onSubmit={this.handlePositionSubmit}>
+                             <label>Position
+                                <input type="text" className="update-position"placeholder={`current: ${this.props.painting.position}`}value={this.state.position} onChange={this.handleChange('position')}/>
+                            </label>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <button onClick={this.handleDeleteSubmit}>Delete</button>
                         <div className="painting-index">
                             <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
                                 <img className="painting-index-image" src={this.props.painting.imgUrl}/>
                             </Link>
                         </div>
-                        <form onSubmit={this.handlePositionSubmit}>
-                
-                             <label>Position
-                                <input type="text" placeholder={`current: ${this.props.painting.position}`}value={this.state.position} onChange={this.handleChange('position')}/>
-                            </label>
-
-                            <button type="submit">Submit</button>
-                        </form>
-
-                        <button onClick={this.handleDeleteSubmit}>Delete</button>
                     </div>
 
 
