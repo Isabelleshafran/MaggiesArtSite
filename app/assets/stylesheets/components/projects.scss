@@ -32,6 +32,10 @@
         left: 21%;
     }
 
+    .proj1-container, .proj2-container, .proj3-container, .proj4-container, .proj5-container {
+        transition: opacity 0.3s ease;
+    }
+
     .proj1-container:hover {
         opacity: .8;
 
@@ -55,7 +59,6 @@
             opacity: 1;
         }
     }
-
 
      .middle3 {
          opacity: 0;
@@ -103,6 +106,22 @@
         opacity: .8;
 
         .middle5 {
+            opacity: 1;
+        }
+    }
+
+     .middle6 {
+        opacity: 0;
+        position: relative;
+        bottom: 55%;
+        left: 35%;
+    }
+
+
+    .proj6-container:hover {
+        opacity: .8;
+
+        .middle6 {
             opacity: 1;
         }
     }

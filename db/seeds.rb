@@ -844,1188 +844,1036 @@ p58 = Painting.create!(
 file58 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/2020-05-19+11.27.01.JPG')
 p58.photo.attach(io: file58, filename: 'runningaway.jpg')
 
+p67 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "uninhabited", 
+    position: 8
+)
+
+file67 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/IMG_9022.JPG')
+p67.photo.attach(io: file67, filename: 'barbie.jpg')
+
+p68 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "uninhabited", 
+    position: 9
+)
+
+file68 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/IMG_9010.JPG')
+p68.photo.attach(io: file68, filename: 'barbie2.jpg')
+
+p69 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "uninhabited", 
+    position: 10
+)
+
+file69 = open('https://maggieshafran-seeds.s3.amazonaws.com/uninhabited_spaces/IMG_9009.JPG')
+p69.photo.attach(io: file69, filename: 'barbiehouse.jpg')
+
+
+# OTHER 
+
+p70 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 1
+)
+
+file70 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/2020-06-24+15.06.31.JPG')
+p70.photo.attach(io: file70, filename: 'other1.jpg')
+
+p71 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 2
+)
+
+file71 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/DSC_0450.JPG')
+p71.photo.attach(io: file71, filename: 'annrand.jpg')
+
+
+p72 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 3
+)
+
+file72 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/DSC00646edit1.jpg')
+p72.photo.attach(io: file72, filename: 'other3.jpg')
+
+
+p73 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 4
+)
+
+file73 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/DSC01362.JPG')
+p73.photo.attach(io: file73, filename: 'other4.jpg')
+
+p74 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 5
+)
+
+file74 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_0237-edited.jpg')
+p74.photo.attach(io: file74, filename: 'other5.jpg')
+
+p75 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 6
+)
+
+file75 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_0607.JPG')
+p75.photo.attach(io: file75, filename: 'other6.jpg')
+
+
+p76 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 7
+)
+
+file76 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_0736.JPG')
+p76.photo.attach(io: file76, filename: 'other7.jpg')
+
+
+p77 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 8
+)
+
+file77 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_1510.jpg')
+p77.photo.attach(io: file77, filename: 'other8.jpg')
+
+
+p78 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 9
+)
+
+file78 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_2023.jpg')
+p78.photo.attach(io: file78, filename: 'other9.jpg')
+
+p79 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 10
+)
+
+file79 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_2808.JPG')
+p79.photo.attach(io: file79, filename: 'other10.jpg')
+
+p80 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 11
+)
+
+file80 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_3932.JPG')
+p80.photo.attach(io: file80, filename: 'other11.jpg')
+
+
+p81 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 12
+)
+
+file81 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_7292.JPG')
+p81.photo.attach(io: file81, filename: 'other12.jpg')
+
+
+p82 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 13
+)
+
+file82 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_7339.JPG')
+p82.photo.attach(io: file82, filename: 'other13.jpg')
+
+
+p83 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 14
+)
+
+file83 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_8261.JPG')
+p83.photo.attach(io: file83, filename: 'other14.jpg')
+
+
+p84 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 15
+)
+
+file84 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_8298.jpg')
+p84.photo.attach(io: file84, filename: 'other15.jpg')
+
+p85 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 16
+)
+
+file85 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_8351.jpg')
+p85.photo.attach(io: file85, filename: 'other16.jpg')
+
+
+p86 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 17
+)
+
+file86 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_8541.jpg')
+p86.photo.attach(io: file86, filename: 'other17.jpg')
+
+
+p87 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 18
+)
+
+file87 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_9023+2.JPG')
+p87.photo.attach(io: file87, filename: 'other18.jpg')
+
+p88 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 19
+)
+
+file88 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_9298.jpg')
+p88.photo.attach(io: file88, filename: 'other19.jpg')
+
+p89 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 20
+)
+
+file89 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_9406+2.JPG')
+p89.photo.attach(io: file89, filename: 'other20.jpg')
+
+
+p90 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 21
+)
+
+file90 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_9499.jpg')
+p90.photo.attach(io: file90, filename: 'other21.jpg')
+
+p91 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 22
+)
+
+file91 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/Screenshot+2020-07-13+16.56.42.png')
+p91.photo.attach(io: file91, filename: 'other22.jpg')
+
+
+p92 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 23
+)
+
+file92 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/SKM_1016-WC20031912140_0001+2.JPEG')
+p92.photo.attach(io: file92, filename: 'other23.jpg')
+
+p93 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 24
+)
+
+file93 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/SKM_1016-WC20031912140_0001.JPEG')
+p93.photo.attach(io: file93, filename: 'other24.jpg')
+
+
+p94 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 25
+)
+
+file94 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/SKM-1022-WC20031816390_1.JPG')
+p94.photo.attach(io: file94, filename: 'other25.jpg')
+
+
+p95 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 26
+)
+
+file95 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/SKM-1022-WC20031816410_1.JPG')
+p95.photo.attach(io: file95, filename: 'other26.jpg')
+
+p96 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 27
+)
+
+file96 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/SKM-1022-WC20031816430+copy_1.JPG')
+p96.photo.attach(io: file96, filename: 'other27.jpg')
+
+p97 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 28
+)
+
+file97 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/SKM-1022-WC20031816430_1.JPG')
+p97.photo.attach(io: file97, filename: 'other28.jpg')
+
+p98 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 29
+)
+
+file98 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/SKM-1022-WC20031816471_1.JPG')
+p98.photo.attach(io: file98, filename: 'other29.jpg')
+
+p99 = Painting.create!(
+    title: "",
+    year: 2020,
+    medium: "", 
+    size: '',
+    category: "other", 
+    position: 30
+)
+
+file99 = open('https://maggieshafran-seeds.s3.amazonaws.com/other_activities/IMG_2484.JPG')
+p99.photo.attach(io: file99, filename: 'other30.jpg')
+
+
 
 # PETS
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "1.JPG",
-#     category: "pets"
-# )
+p100 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 1
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "2.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "3.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "4.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "5.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "6.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "7.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "8.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "9.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "10.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "11.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "12.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "13.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "14.JPG",
-#     category: "pets"
-# )
+file100 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/1010.JPG')
+p100.photo.attach(io: file100, filename: 'pets1.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "15.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "16.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "17.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "18.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "19.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "20.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "21.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "22.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "23.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "24.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "25.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "26.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "27.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "28.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "29.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "30.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "31.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "32.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "33.JPG",
-#     category: "pets"
-# )
+p101 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 2
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "34.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "35.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "36.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "37.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "38.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "39.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "40.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "41.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "42.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "43.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "44.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "45.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "46.JPG",
-#     category: "pets"
-# )
+file101 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+(1).JPG')
+p101.photo.attach(io: file101, filename: 'pets2.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "47.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "48.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "49.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "50.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "51.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "52.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "53.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "54.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "55.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "56.JPG",
-#     category: "pets"
-# )
+p102 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 3
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "57.JPG",
-#     category: "pets"
-# )
+file102 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+18.JPG')
+p102.photo.attach(io: file102, filename: 'pets3.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "58.JPG",
-#     category: "pets"
-# )
+p103 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 4
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "59.JPG",
-#     category: "pets"
-# )
+file103 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+19.JPG')
+p103.photo.attach(io: file103, filename: 'pets4.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "60.JPG",
-#     category: "pets"
-# )
+p104 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 5
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "61.JPG",
-#     category: "pets"
-# )
+file104 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+22.JPG')
+p104.photo.attach(io: file104, filename: 'pets5.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "62.JPG",
-#     category: "pets"
-# )
+p105 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 6
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "63.JPG",
-#     category: "pets"
-# )
+file105 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+26.JPG')
+p105.photo.attach(io: file105, filename: 'pets6.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "64.JPG",
-#     category: "pets"
-# )
+p106 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 7
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "65.JPG",
-#     category: "pets"
-# )
+file106 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+28.JPG')
+p106.photo.attach(io: file106, filename: 'pets7.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "66.JPG",
-#     category: "pets"
-# )
+p107 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 8
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "67.JPG",
-#     category: "pets"
-# )
+file107 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+30.JPG')
+p107.photo.attach(io: file107, filename: 'pets8.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "68.JPG",
-#     category: "pets"
-# )
+p108 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 9
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "69.JPG",
-#     category: "pets"
-# )
+file108 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0142.JPG')
+p108.photo.attach(io: file108, filename: 'pets9.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "70.JPG",
-#     category: "pets"
-# )
+p109 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 10
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "71.JPG",
-#     category: "pets"
-# )
+file109 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0144.JPG')
+p109.photo.attach(io: file109, filename: 'pets10.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "72.JPG",
-#     category: "pets"
-# )
+p110 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 11
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "73.JPG",
-#     category: "pets"
-# )
+file110 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0711.JPG')
+p110.photo.attach(io: file110, filename: 'pets11.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "74.JPG",
-#     category: "pets"
-# )
+p111 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 12
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "75.JPG",
-#     category: "pets"
-# )
+file111 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0716.JPG')
+p111.photo.attach(io: file111, filename: 'pets12.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "76.JPG",
-#     category: "pets"
-# )
+p112 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 13
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "77.JPG",
-#     category: "pets"
-# )
+file112 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0718.JPG')
+p112.photo.attach(io: file112, filename: 'pets13.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "78.JPG",
-#     category: "pets"
-# )
+p113 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 14
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "79.JPG",
-#     category: "pets"
-# )
+file113 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0720.JPG')
+p113.photo.attach(io: file113, filename: 'pets14.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "80.JPG",
-#     category: "pets"
-# )
+p114 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 15
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "81.JPG",
-#     category: "pets"
-# )
+file114 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0765.JPG')
+p114.photo.attach(io: file114, filename: 'pets15.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "82.JPG",
-#     category: "pets"
-# )
+p115 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 16
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "83.JPG",
-#     category: "pets"
-# )
+file115 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0818.JPG')
+p115.photo.attach(io: file115, filename: 'pets16.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "84.JPG",
-#     category: "pets"
-# )
+p116 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 17
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "85.JPG",
-#     category: "pets"
-# )
+file116 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0955.JPG')
+p116.photo.attach(io: file116, filename: 'pets17.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "86.JPG",
-#     category: "pets"
-# )
+p117 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 18
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "87.JPG",
-#     category: "pets"
-# )
+file117 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_2492.JPG')
+p117.photo.attach(io: file117, filename: 'pets18.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "88.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "89.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "90.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "91.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "92.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "93.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "94.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "95.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "96.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "97.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "98.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "99.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "100.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "101.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "102.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "103.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "104.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "105.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "106.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "107.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "108.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "109.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "110.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "111.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "112.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "113.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "114.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "115.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "116.JPG",
-#     category: "pets"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "117.JPG",
-#     category: "pets"
-# )
+p118 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 19
+)
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "1.JPG",
-#     category: "other"
-# )
+file118 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3092.JPG')
+p118.photo.attach(io: file118, filename: 'pets19.jpg')
 
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "2.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "4.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "5.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "6.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "7.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "8.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "9.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "10.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "11.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "12.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "13.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "14.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "15.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "16.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "17.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "18.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "19.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "20.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "21.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "22.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "23.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "24.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "25.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "26.JPG",
-#     category: "other"
-# )
-# p60 = Painting.create!(
-#     title: "na",
-#     year: 2020,
-#     medium: "na", 
-#     size: 'na',
-#     img_url: "27.JPG",
-#     category: "other"
-# )
+p119 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 20
+)
+
+file119 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3102.JPG')
+p119.photo.attach(io: file119, filename: 'pets20.jpg')
+
+p120 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 21
+)
+
+file120 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3225.JPG')
+p120.photo.attach(io: file120, filename: 'pets21.jpg')
+
+p121 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 22
+)
+
+file121 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3234.JPG')
+p121.photo.attach(io: file121, filename: 'pets22.jpg')
+
+p122 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 23
+)
+
+file122 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_4188.JPG')
+p122.photo.attach(io: file122, filename: 'pets23.jpg')
+
+p123 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 24
+)
+
+file123 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_7898+2.JPG')
+p123.photo.attach(io: file123, filename: 'pets24.jpg')
+
+p124 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 25
+)
+
+file124 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8116.JPG')
+p124.photo.attach(io: file124, filename: 'pets25.jpg')
+
+p125 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 26
+)
+
+file125 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8127.JPG')
+p125.photo.attach(io: file125, filename: 'pets26.jpg')
+
+p126 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 27
+)
+
+file126 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8244.JPG')
+p126.photo.attach(io: file126, filename: 'pets27.jpg')
+
+p127 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 28
+)
+
+file127 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8343.JPG')
+p127.photo.attach(io: file127, filename: 'pets28.jpg')
+
+p128 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 29
+)
+
+file128 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8838.JPG')
+p128.photo.attach(io: file128, filename: 'pets29.jpg')
+
+p129 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 30
+)
+
+file129 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9025.JPG')
+p129.photo.attach(io: file129, filename: 'pets30.jpg')
+
+p130 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 31
+)
+
+file130 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9271.JPG')
+p130.photo.attach(io: file130, filename: 'pets31.jpg')
+
+p131 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 32
+)
+
+file131 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9341.JPG')
+p131.photo.attach(io: file131, filename: 'pets32.jpg')
+
+p132 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 33
+)
+
+file132 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9382.JPG')
+p132.photo.attach(io: file132, filename: 'pets33.jpg')
+
+p133 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 34
+)
+
+file133 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9567.JPG')
+p133.photo.attach(io: file133, filename: 'pets34.jpg')
+
+p134 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 35
+)
+
+file134 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9721.JPG')
+p134.photo.attach(io: file134, filename: 'pets35.jpg')
+
+p135 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 36
+)
+
+file135 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9847.JPG')
+p135.photo.attach(io: file135, filename: 'pets36.jpg')
+
+p136 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 37
+)
+
+file136 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9931.JPG')
+p136.photo.attach(io: file136, filename: 'pets37.jpg')
+
+# NATURE MORTE
+
+p137 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 1
+)
+
+file137 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03538.JPG')
+p137.photo.attach(io: file137, filename: 'nature1.jpg')
+
+p138 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 2
+)
+
+file138 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03539.JPG')
+p138.photo.attach(io: file138, filename: 'nature2.jpg')
+
+p139 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 3
+)
+
+file139 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03540.JPG')
+p139.photo.attach(io: file139, filename: 'nature3.jpg')
+
+p140 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 4
+)
+
+file140 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03541.JPG')
+p140.photo.attach(io: file140, filename: 'nature4.jpg')
+
+p141 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 5
+)
+
+file141 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03542.JPG')
+p141.photo.attach(io: file141, filename: 'nature5.jpg')
+
+p142 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 6
+)
+
+file142 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03543.JPG')
+p142.photo.attach(io: file142, filename: 'nature6.jpg')
+
+p143 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 7
+)
+
+file143 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8637.JPG')
+p143.photo.attach(io: file143, filename: 'nature7.jpg')
+
+p144 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 8
+)
+
+file144 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8983_1_1.JPG')
+p144.photo.attach(io: file144, filename: 'nature8.jpg')
+
+p145 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 9
+)
+
+file145 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8986.JPG')
+p145.photo.attach(io: file145, filename: 'nature9.jpg')
+
+p146 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 10
+)
+
+file146 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8988_2.JPG')
+p146.photo.attach(io: file146, filename: 'nature10.jpg')
+
+p147 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 11
+)
+
+file147 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8991.JPG')
+p147.photo.attach(io: file147, filename: 'nature11.jpg')
+
+p148 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 12
+)
+
+file148 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8994.JPG')
+p148.photo.attach(io: file148, filename: 'nature12.jpg')
+
+p149 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 13
+)
+
+file149 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8996_1.JPG')
+p149.photo.attach(io: file149, filename: 'nature13.jpg')
+
+
+p150 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "nature_morte", 
+    position: 14
+)
+
+file150 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_9072.JPG')
+p150.photo.attach(io: file150, filename: 'nature14.jpg')
+

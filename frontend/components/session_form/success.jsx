@@ -84,6 +84,7 @@ class Success extends React.Component {
                         <option value="little_pieces">Little Pieces of Death</option>
                         <option value="uninhabited">Uninhabited Spaces</option>
                         <option value="pets">Pets</option>
+                        <option value="nature_morte">Nature Morte</option>
                         <option value="other">Sketchbook & Other</option>
                     </select>
                     <br/>
