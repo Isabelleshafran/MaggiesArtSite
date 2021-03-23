@@ -514,7 +514,7 @@ p38 = Painting.create!(
 )
 
 file38 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4430+copy.png')
-p38.photo.attach(io: file38, filename: 'blue2.JPG')
+p38.photo.attach(io: file38, filename: 'blue2.png')
 
 
 p39 = Painting.create!(
@@ -693,7 +693,7 @@ p45 = Painting.create!(
     title: "Residual Death, Installation Shot",
     year: 2020,
     medium: "Plaster, Cupcake Cosmo", 
-    size: '18" x 18"',
+    size: '',
     category: "little_pieces",
         position: 18
 )
