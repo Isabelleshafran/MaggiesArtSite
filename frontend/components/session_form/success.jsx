@@ -57,28 +57,28 @@ class Success extends React.Component {
             <br/>
             <br/>
             <br/>
-            welcome magus 
-    
-            <form onSubmit={this.handleSubmit}>
+            <h1>welcome magus</h1> 
+               <button className="logout" onClick={() => this.handleClick()}>logout</button>
+            <form className="upload-form" onSubmit={this.handleSubmit}>
                 <span>upload new artwork</span>
                 <br/>
                 <span>PHOTO MUST BE A .JPG</span>
 
                 <br/>
                 <label>Title
-                    <input type="text" value={this.state.title} onChange={this.handleChange('title')}/>
+                    <input className="upload-insert" type="text" value={this.state.title} onChange={this.handleChange('title')}/>
                 </label>
                 <br/>
                 <label>Size
-                    <input type="text" value={this.state.size} onChange={this.handleChange('size')}/>
+                    <input className="upload-insert" type="text" value={this.state.size} onChange={this.handleChange('size')}/>
                 </label>
                 <br/>
                 <label>Year
-                    <input type="text" value={this.state.year} onChange={this.handleChange('year')}/>
+                    <input className="upload-insert" type="text" value={this.state.year} onChange={this.handleChange('year')}/>
                 </label>
                 <br/>
                 <label>Medium
-                    <input type="text" value={this.state.medium} onChange={this.handleChange('medium')}/>
+                    <input className="upload-insert" type="text" value={this.state.medium} onChange={this.handleChange('medium')}/>
                 </label>
                 <br/>
 
@@ -95,17 +95,13 @@ class Success extends React.Component {
                     </select>
                     <br/>
                 </label>
-
-               <label>Upload Image
+                <br/>
+               <label>Upload Image 
                    <input type="file" onChange={this.handleFile} />
                </label>
                <br/>
-                <input type="submit" value="create"/>
+                <input className="create" type="submit" value="create"/>
             </form>
-
-
-
-            <button onClick={() => this.handleClick()}>logout</button>
 
         </div>
 
