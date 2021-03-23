@@ -13,6 +13,7 @@ import PaintingShowContainer from './paintings/painting_show_container'
 import SignInContainer from './session_form/sign_in_container';
 import SuccessContainer from './session_form/success_container';
 import NatureMorteContainer from './nature_morte/nature_morte_container'
+import CV from './cv/cv'
 
 
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route exact path="/pets" component={PetsContainer} />
             <Route exact path="/other" component={OtherContainer} />
             <Route exact path="/nature_morte" component={NatureMorteContainer} />
+            <Route exact path="/cv" component={CV} />
             <Route exact path="/:category/:paintingId" component={PaintingShowContainer} />
             <Route exact path="/adminlogin" component={SignInContainer} />
             <Route exact path="/success" component={SuccessContainer} />

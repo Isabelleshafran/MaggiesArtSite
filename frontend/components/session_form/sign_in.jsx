@@ -41,7 +41,7 @@ class SignInForm extends React.Component {
         return (
             <div className="signin-form-container">
                 <form onSubmit={this.handleSubmit} className="signin-form-box">
-                    <span>Sign in</span>
+                    <span className="sign-in">Sign in</span>
                     <br/>
                     <div className="signin-form">
                         <label>
@@ -50,7 +50,7 @@ class SignInForm extends React.Component {
                             value={this.state.username} 
                             placeholder="Username"
                             onChange={this.handleChange('username')} 
-                            className=""/>
+                            className="sigin-text"/>
                         </label>
                         <label>
                    
@@ -58,11 +58,11 @@ class SignInForm extends React.Component {
                             value={this.state.password} 
                             placeholder="Password"
                             onChange={this.handleChange('password')} 
-                            className=""/>
+                            className="sigin-text"/>
                         </label>
                         {/* <div className="">{this.renderErrors()}</div> */}
                         <br/>
-                        <button>login</button>
+                        <button className="login">login</button>
                     </div>
                     <br/>
                 </form>
