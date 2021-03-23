@@ -1,6 +1,5 @@
 import { connect } from "react-redux";
 import { fetchPaintings } from "../../actions/painting_actions";
-import { logout } from "../../actions/session_actions";
 import Other from "./other";
 
 const msp = (state) => {
@@ -13,8 +12,7 @@ const msp = (state) => {
 
 const mdp = (dispatch) => {
   return {
-    fetchPaintings: (category) => dispatch(fetchPaintings(category)),
-    logout: () => dispatch(logout()),
+    fetchPaintings: (category) => dispatch(fetchPaintings(category))
   };
 };
 

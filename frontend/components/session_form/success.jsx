@@ -17,6 +17,7 @@ class Success extends React.Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleFile = this.handleFile.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleChange(field){
@@ -26,6 +27,11 @@ class Success extends React.Component {
     handleFile(e){
         const img = e.currentTarget.files[0]
        this.setState({photoFile: img})
+    }
+
+     handleClick() {
+        this.props.logout()
+        .then(() => this.props.history.push('/adminlogin'))
     }
 
     handleSubmit(e) {
@@ -96,6 +102,11 @@ class Success extends React.Component {
                <br/>
                 <input type="submit" value="create"/>
             </form>
+
+
+
+            <button onClick={() => this.handleClick()}>logout</button>
+
         </div>
 
     )

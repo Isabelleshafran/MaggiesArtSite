@@ -10,7 +10,6 @@ import ReactLoading from "react-loading";
 class Other extends React.Component {
     constructor(props) {
         super(props);
-        this.handleClick = this.handleClick.bind(this);
 
         this.state = {
             loading: true
@@ -22,11 +21,6 @@ class Other extends React.Component {
             this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
         },3000)
     }
-
-    handleClick() {
-        this.props.logout().then(() => alert('logged out'))
-    }
-
 
     render() { 
         const paintingRender = () => {
@@ -70,7 +64,6 @@ class Other extends React.Component {
 
                 <div>
                     <Link to={"/adminlogin"}>log in</Link>
-                    <button onClick={() => this.handleClick()}>logout</button>
                 </div>
             </div>
             );

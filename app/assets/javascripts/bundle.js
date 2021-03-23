@@ -1004,7 +1004,6 @@ var Other = /*#__PURE__*/function (_React$Component) {
     _classCallCheck(this, Other);
 
     _this = _super.call(this, props);
-    _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));
     _this.state = {
       loading: true
     };
@@ -1023,13 +1022,6 @@ var Other = /*#__PURE__*/function (_React$Component) {
           });
         });
       }, 3000);
-    }
-  }, {
-    key: "handleClick",
-    value: function handleClick() {
-      this.props.logout().then(function () {
-        return alert('logged out');
-      });
     }
   }, {
     key: "render",
@@ -1080,11 +1072,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
         className: "painting-render"
       }, loadingTrue()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
         to: "/adminlogin"
-      }, "log in"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-        onClick: function onClick() {
-          return _this3.handleClick();
-        }
-      }, "logout")));
+      }, "log in")));
     }
   }]);
 
@@ -1108,9 +1096,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../actions/painting_actions */ "./frontend/actions/painting_actions.js");
-/* harmony import */ var _actions_session_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions/session_actions */ "./frontend/actions/session_actions.js");
-/* harmony import */ var _other__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./other */ "./frontend/components/other/other.jsx");
-
+/* harmony import */ var _other__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./other */ "./frontend/components/other/other.jsx");
 
 
 
@@ -1127,14 +1113,11 @@ var mdp = function mdp(dispatch) {
   return {
     fetchPaintings: function fetchPaintings(category) {
       return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
-    },
-    logout: function logout() {
-      return dispatch((0,_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__.logout)());
     }
   };
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_0__.connect)(msp, mdp)(_other__WEBPACK_IMPORTED_MODULE_3__.default));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_0__.connect)(msp, mdp)(_other__WEBPACK_IMPORTED_MODULE_2__.default));
 
 /***/ }),
 
@@ -2107,6 +2090,7 @@ var Success = /*#__PURE__*/function (_React$Component) {
     };
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     _this.handleFile = _this.handleFile.bind(_assertThisInitialized(_this));
+    _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -2128,9 +2112,18 @@ var Success = /*#__PURE__*/function (_React$Component) {
       });
     }
   }, {
+    key: "handleClick",
+    value: function handleClick() {
+      var _this3 = this;
+
+      this.props.logout().then(function () {
+        return _this3.props.history.push('/adminlogin');
+      });
+    }
+  }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      var _this3 = this;
+      var _this4 = this;
 
       e.preventDefault();
       var formData = new FormData();
@@ -2142,12 +2135,14 @@ var Success = /*#__PURE__*/function (_React$Component) {
       formData.append('painting[photo]', this.state.photoFile);
       formData.append('painting[position]', 0);
       this.props.createPainting(formData).then(function () {
-        return _this3.props.history.push("/projects");
+        return _this4.props.history.push("/projects");
       });
     }
   }, {
     key: "render",
     value: function render() {
+      var _this5 = this;
+
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "welcome magus", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
         onSubmit: this.handleSubmit
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "upload new artwork"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "PHOTO MUST BE A .JPG"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Title", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
@@ -2190,7 +2185,11 @@ var Success = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
         type: "submit",
         value: "create"
-      })));
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+        onClick: function onClick() {
+          return _this5.handleClick();
+        }
+      }, "logout"));
     }
   }]);
 
@@ -2214,7 +2213,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../actions/painting_actions */ "./frontend/actions/painting_actions.js");
-/* harmony import */ var _success__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./success */ "./frontend/components/session_form/success.jsx");
+/* harmony import */ var _actions_session_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions/session_actions */ "./frontend/actions/session_actions.js");
+/* harmony import */ var _success__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./success */ "./frontend/components/session_form/success.jsx");
+
 
 
 
@@ -2230,11 +2231,14 @@ var mdp = function mdp(dispatch) {
   return {
     createPainting: function createPainting(painting) {
       return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.createPainting)(painting));
+    },
+    logout: function logout() {
+      return dispatch((0,_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__.logout)());
     }
   };
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_0__.connect)(msp, mdp)(_success__WEBPACK_IMPORTED_MODULE_2__.default));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_0__.connect)(msp, mdp)(_success__WEBPACK_IMPORTED_MODULE_3__.default));
 
 /***/ }),
 
