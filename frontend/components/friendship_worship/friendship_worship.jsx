@@ -34,9 +34,14 @@ class FriendshipWorship extends React.Component {
             }
         }
 
-        if(this.state.loading === true){
-            return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
-        } else {
+        const loadingTrue = () => {
+            if(this.state.loading === true){
+                return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
+            } else {
+                return paintingRender()
+            }
+        }
+
             return ( 
                 <div className="friendship_container">
                     <div className="project-index-header">Friendship Worship</div>
@@ -54,11 +59,13 @@ class FriendshipWorship extends React.Component {
                     </div>
     
                     <div className="painting-render">
-                        {paintingRender()}
+                        {loadingTrue()}
                     </div>
                 </div>
              );
-        }
+
+
+        // }
         
     }
 }

@@ -60,7 +60,7 @@ class Projects extends React.Component {
                     <Link to={"/other"}>
                         <img className="project-home-image" src={window.project5} />
                         <div className="middle5">
-                            <div className="text">SKETCHBOOK & OTHER ACTIVITIES</div>
+                            <div className="text">SKETCHBOOK</div>
                         </div>
                     </Link>
                 </div>

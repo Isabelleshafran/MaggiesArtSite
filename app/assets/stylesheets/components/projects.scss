@@ -14,43 +14,48 @@
 
     .text {
         font-size: 28px;
-        color: rgba(168, 168, 168, 0.699);
+        color: rgba(0, 0, 0, 0.699);
         font-family: 'Open Sans', sans-serif;
+        z-index: 1;
+        font-weight: bold;
     }
 
-    .proj1-container:hover .middle1 {
-        opacity: 1;
-    }
+    // .proj1-container:hover .middle1 {
+    //     opacity: 1;
+    // }
 
-    .proj2-container:hover .middle2 {
-        opacity: 1;
-    }
-
-     .proj3-container:hover .middle3 {
-        opacity: 1;
-    }
-
-     .proj4-container:hover .middle4 {
-        opacity: 1;
-    }
-
-      .proj5-container:hover .middle5 {
-        opacity: 1;
-    }
 
     .middle1 {
-         opacity: 0;
+        opacity: 0;
         position: relative;
         bottom: 55%;
         left: 21%;
     }
 
+    .proj1-container:hover {
+        opacity: .8;
+
+        .middle1 {
+            opacity: 1;
+        }
+    }
+
     .middle2 {
-         opacity: 0;
+        opacity: 0;
         position: relative;
         bottom: 55%;
         left: 18%;
     }
+
+
+    .proj2-container:hover {
+        opacity: .8;
+
+        .middle2 {
+            opacity: 1;
+        }
+    }
+
 
      .middle3 {
          opacity: 0;
@@ -59,6 +64,16 @@
         left: 21%;
     }
 
+
+    .proj3-container:hover {
+        opacity: .8;
+
+        .middle3 {
+            opacity: 1;
+        }
+    }
+
+
      .middle4 {
         opacity: 0;
         position: relative;
@@ -66,25 +81,40 @@
         left: 40%;
     }
 
+
+    .proj4-container:hover {
+        opacity: .8;
+
+        .middle4 {
+            opacity: 1;
+        }
+    }
+
+
     .middle5 {
         opacity: 0;
         position: relative;
         bottom: 55%;
-        left: 5%;
+        left: 35%;
     }
 
+
+    .proj5-container:hover {
+        opacity: .8;
+
+        .middle5 {
+            opacity: 1;
+        }
+    }
+
+
     img {
-         margin-bottom: 10%;
+        margin-bottom: 10%;
         opacity: 1;
         width: 100%;
         height: auto;
         backface-visibility: hidden;
     }
-
-    img:hover {
-        cursor: pointer;
-        opacity: 0.6;
-    } 
 
 }
 
