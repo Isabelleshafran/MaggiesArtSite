@@ -4,7 +4,7 @@
     justify-content: center;
     color: rgba(168, 168, 168, 0.856);
     font-family: 'Open Sans', sans-serif;
-    margin-top: 85px;    
+    margin-top: 100px;    
 }
 
 
@@ -16,9 +16,6 @@
     object-fit: contain;
     transform: none;
     max-width: 55%;
-
-
-
 }
 
 .painting-show-text {
@@ -27,7 +24,6 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 20px;
 }
 
 .icons {
@@ -51,7 +47,12 @@ i:hover {
 }
 
 .painting-show-image {
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
+    
+        max-width: 500px;
+        max-height: 600px;
+        object-fit: contain;
+
 }
 
 

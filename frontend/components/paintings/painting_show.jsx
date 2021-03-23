@@ -59,13 +59,7 @@ class PaintingShow extends React.Component {
             return (
                 <div className="painting-show-container">
                     <div className="painting-show">
-                        <div className="painting-show-text">
-                            <div>{this.props.painting.title}</div>
-                            <div>{this.props.painting.year}</div>
-                            <div>{this.props.painting.medium}</div>
-                            <div>{this.props.painting.size}</div>
-                        </div>
-
+                    
                         <div className="icons">
                             <div className="icons-left">
                                 <button onClick={this.clickBackward}><i className="fas fa-angle-left"></i></button>
@@ -80,7 +74,12 @@ class PaintingShow extends React.Component {
                      
                         <img className="painting-show-image" src={this.props.painting.imgUrl}/>
             
-
+                        <div className="painting-show-text">
+                            <div>{this.props.painting.title}</div>
+                            <div>{this.props.painting.year}</div>
+                            <div>{this.props.painting.medium}</div>
+                            <div>{this.props.painting.size}</div>
+                        </div>
     
                     </div>
                 </div>
