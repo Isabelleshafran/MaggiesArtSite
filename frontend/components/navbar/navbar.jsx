@@ -5,13 +5,24 @@ import { Link } from 'react-router-dom'
 class NavBar extends React.Component {
     constructor(props) {
         super(props);  
+
+        this.state = {
+            selected: false
+        }
+
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick(){
+        this.setState({selected: !this.state.selected})
     }
 
     render() { 
         const url = this.props.location.pathname
         return ( 
-            <div className="navbar-container">
-            <div className="navbar-items">
+        <div className="navbar-container mobile-menu">
+            <div onClick={this.handleClick} className="hamburger"><i className="fas fa-bars"></i></div>
+            <div className={this.state.selected === true ? "selected-nav" : "navbar-items"}>
                 <Link to="/"><div className={url === "/" ? "selected" : "item"}>MAGGIE SHAFRAN</div></Link>
                 <Link to="/projects"><div className={url === "/projects" ? "project-selected" : "project-item"}>PROJECTS</div></Link>
                 <Link to="/cv"><div className={url === "/shows" ? "selected" : "item"}>C.V.</div></Link>

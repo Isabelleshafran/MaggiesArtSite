@@ -5,10 +5,16 @@
          
     }
 
+
+
     
     .splash-container {
         background-image: url('https://maggieshafran-seeds.s3.amazonaws.com/splash/E5D3AE1D-6359-4105-96DA-76ABFA63F3AF.jpg');
-        height: 100%;
+        // background-image: url('');
+        height: 750px;
+        // max-width: 900px;
+
+         background-size: cover;
 
         .splash-text {
             margin-top: 20%;
@@ -42,9 +48,37 @@
 
     // navbar 
 
-    .navbar-container {
+    .mobile-menu {
         // display: none;
         height: 50px;
+        display: flex;
+        flex-direction: column;
+
+
+        .hamburger {
+           display: flex;
+           position: fixed;
+           margin-left: 5%;
+           margin-top: 3%;
+        }
+
+        .navbar-items {
+            //  transition: opacity 0.3s ease;
+            display: none;
+            
+        }
+        
+        .selected-nav {
+            margin-top: 8%;
+            margin-left: 8%;
+            width: 15%;
+            height: 1334px;
+            background-color: white;
+            border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     }
      
 }
