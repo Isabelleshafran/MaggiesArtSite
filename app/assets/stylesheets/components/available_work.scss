@@ -1,0 +1,62 @@
+.available-container {
+    width: 68%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 250px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.available-text-container {
+    width: 20%;
+
+    .available-text {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .pdf-text, .commission-text{
+        font-family: sans-serif;
+        font-weight: lighter;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .selected-text-ac {
+        font-family: sans-serif;
+        font-weight:normal;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+    }
+}
+
+.pdf-text:hover, .commission-text:hover {
+    cursor: pointer;
+}
+
+.available-sub-categories {
+     width: 50%;
+
+    .selected {
+        display: block;
+    }
+
+    > div {
+        display: none;
+
+    }
+
+    .email:hover {
+        font-weight: bold;
+    }
+
+    .pdf {
+        color: blue;
+    }
+}
+
+
+
