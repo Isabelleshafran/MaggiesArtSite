@@ -485,7 +485,7 @@ p36 = Painting.create!(
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
     category: "little_pieces",
-        position: 1
+    position: 1
 )
 
 file36 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter.JPG')
@@ -493,7 +493,7 @@ p36.photo.attach(io: file36, filename: 'blue1.JPG')
 
 
 p37 = Painting.create!(
-    title: "Blue 7",
+    title: "Blue 6",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -501,11 +501,11 @@ p37 = Painting.create!(
         position: 2
 )
 
-file37 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter7.JPG')
+file37 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter7_1.JPG')
 p37.photo.attach(io: file37, filename: 'blue7.JPG')
 
 p38 = Painting.create!(
-    title: "Blue 2",
+    title: "Blue 8",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -513,12 +513,12 @@ p38 = Painting.create!(
         position: 3
 )
 
-file38 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4430+copy.png')
+file38 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4430+copy.JPG')
 p38.photo.attach(io: file38, filename: 'blue2.png')
 
 
 p39 = Painting.create!(
-    title: "Blue 4",
+    title: "Blue 5",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -526,11 +526,11 @@ p39 = Painting.create!(
         position: 4
 )
 
-file39 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter2.JPG')
+file39 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter2_1.JPG')
 p39.photo.attach(io: file39, filename: 'blue4.JPG')
 
 p40 = Painting.create!(
-    title: "Blue 5",
+    title: "Blue 4",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -538,7 +538,7 @@ p40 = Painting.create!(
         position: 5
 )
 
-file40 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter1.JPG')
+file40 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Lighter1_1.JPG')
 p40.photo.attach(io: file40, filename: 'blue5.JPG')
 
 
@@ -556,7 +556,7 @@ file50 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_dea
 p50.photo.attach(io: file50, filename: 'blue3.JPG')
 
 p41 = Painting.create!(
-    title: "Blue 6",
+    title: "Blue 2",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -564,11 +564,11 @@ p41 = Painting.create!(
         position: 7
 )
 
-file41 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Ligher6.JPG')
+file41 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/Ligher6_1.JPG')
 p41.photo.attach(io: file41, filename: 'blue6.JPG')
 
 p66 = Painting.create!(
-    title: "Red 8",
+    title: "Red 7",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -576,11 +576,11 @@ p66 = Painting.create!(
         position: 8
 )
 
-file66 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4391+copy.JPG')
+file66 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4391+copy_1.JPG')
 p66.photo.attach(io: file66, filename: 'red8.JPG')
 
 p65 = Painting.create!(
-    title: "Red 7",
+    title: "Red 8",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -588,7 +588,7 @@ p65 = Painting.create!(
         position: 9
 )
 
-file65 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4390+copy.JPG')
+file65 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4390+copy_1.JPG')
 p65.photo.attach(io: file65, filename: 'red7.JPG')
 
 p64 = Painting.create!(
@@ -600,12 +600,12 @@ p64 = Painting.create!(
         position: 10
 )
 
-file64 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4389+copy.JPG')
+file64 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4389+copy_1.JPG')
 p64.photo.attach(io: file64, filename: 'red6.JPG')
 
 
 p63 = Painting.create!(
-    title: "Red 5",
+    title: "Red 3",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -613,12 +613,12 @@ p63 = Painting.create!(
         position: 11
 )
 
-file63 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4388+copy.JPG')
+file63 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4388+copy_1.JPG')
 p63.photo.attach(io: file63, filename: 'red5.JPG')
 
 
 p62 = Painting.create!(
-    title: "Red 4",
+    title: "Red 5",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -626,11 +626,11 @@ p62 = Painting.create!(
         position: 12
 )
 
-file62 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4387+copy_1.JPG')
+file62 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4387+copy_1_1.JPG')
 p62.photo.attach(io: file62, filename: 'red4.JPG')
 
 p61 = Painting.create!(
-    title: "Red 3",
+    title: "Red 2",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -638,11 +638,11 @@ p61 = Painting.create!(
         position: 13
 )
 
-file61 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4385-2+copy.JPG')
+file61 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4385-2+copy_1.JPG')
 p61.photo.attach(io: file61, filename: 'red3.JPG')
 
 p60 = Painting.create!(
-    title: "Red 2",
+    title: "Red 4",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '22" x 24"',
@@ -650,11 +650,11 @@ p60 = Painting.create!(
         position: 14
 )
 
-file60 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4384+copy.JPG')
+file60 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4384+copy_1.JPG')
 p60.photo.attach(io: file60, filename: 'red2.JPG')
 
 p42 = Painting.create!(
-    title: "Layered Blue Death",
+    title: "Layered Blue",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '22" x 24"',
@@ -662,11 +662,11 @@ p42 = Painting.create!(
         position: 15
 )
 
-file42 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4062.JPG')
+file42 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4062_1.JPG')
 p42.photo.attach(io: file42, filename: 'layeredblue.JPG')
 
 p43 = Painting.create!(
-    title: "Red",
+    title: "Red 1",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -674,7 +674,7 @@ p43 = Painting.create!(
         position: 16
 )
 
-file43 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4383+copy.JPG')
+file43 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4383+copy_1.JPG')
 p43.photo.attach(io: file43, filename: 'red.JPG')
 
 p44 = Painting.create!(
@@ -686,7 +686,7 @@ p44 = Painting.create!(
         position: 17
 )
 
-file44 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2947_1.JPG')
+file44 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2947_1_1.JPG')
 p44.photo.attach(io: file44, filename: 'fleshy.JPG')
 
 p45 = Painting.create!(
@@ -698,7 +698,7 @@ p45 = Painting.create!(
         position: 18
 )
 
-file45 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2907_1.JPG')
+file45 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_2907_1_1.JPG')
 p45.photo.attach(io: file45, filename: 'residualdeath.JPG')
 
 p46 = Painting.create!(
@@ -710,19 +710,19 @@ p46 = Painting.create!(
         position: 19
 )
 
-file46 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_.JPG')
+file46 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG__1.JPG')
 p46.photo.attach(io: file46, filename: 'residue.JPG')
 
 p47 = Painting.create!(
     title: "Delft Blue Death",
     year: 2020,
-    medium: "Photographic Print", 
+    medium: "Archival Pigment Print", 
     size: '44" x 64"',
     category: "little_pieces",
         position: 20
 )
 
-file47 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/FinalBig.jpg')
+file47 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/FinalBig_1.JPG')
 p47.photo.attach(io: file47, filename: 'delft.JPG')
 
 p49 = Painting.create!(
@@ -745,11 +745,11 @@ p51 = Painting.create!(
         position: 22
 )
 
-file51 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/DSC01334.JPG')
+file51 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/DSC01334_1.JPG')
 p51.photo.attach(io: file51, filename: 'specimen.JPG')
 
 p151= Painting.create!(
-   title: "Blue",
+   title: "Blue 7",
     year: 2020,
     medium: "Archival Pigment Print", 
     size: '18" x 18"',
@@ -757,7 +757,7 @@ p151= Painting.create!(
     position: 23
 )
 
-file151 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4420+copy.png')
+file151 = open('https://maggieshafran-seeds.s3.amazonaws.com/little_pieces_of_death/IMG_4420+copy.JPG')
 p151.photo.attach(io: file151, filename: 'blue.JPG')
 
 
@@ -1731,7 +1731,7 @@ p137 = Painting.create!(
     position: 1
 )
 
-file137 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03538.JPG')
+file137 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03538_1.JPG')
 p137.photo.attach(io: file137, filename: 'nature1.jpg')
 
 p138 = Painting.create!(
@@ -1743,7 +1743,7 @@ p138 = Painting.create!(
     position: 2
 )
 
-file138 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03539.JPG')
+file138 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03539_1.JPG')
 p138.photo.attach(io: file138, filename: 'nature2.jpg')
 
 p139 = Painting.create!(
@@ -1755,7 +1755,7 @@ p139 = Painting.create!(
     position: 3
 )
 
-file139 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03540.JPG')
+file139 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03540_1.JPG')
 p139.photo.attach(io: file139, filename: 'nature3.jpg')
 
 p140 = Painting.create!(
@@ -1767,7 +1767,7 @@ p140 = Painting.create!(
     position: 4
 )
 
-file140 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03541.JPG')
+file140 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03541_1.JPG')
 p140.photo.attach(io: file140, filename: 'nature4.jpg')
 
 p141 = Painting.create!(
@@ -1779,7 +1779,7 @@ p141 = Painting.create!(
     position: 5
 )
 
-file141 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03542.JPG')
+file141 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03542_1.JPG')
 p141.photo.attach(io: file141, filename: 'nature5.jpg')
 
 p142 = Painting.create!(
@@ -1791,7 +1791,7 @@ p142 = Painting.create!(
     position: 6
 )
 
-file142 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03543.JPG')
+file142 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/DSC03543_1.JPG')
 p142.photo.attach(io: file142, filename: 'nature6.jpg')
 
 p143 = Painting.create!(
@@ -1803,7 +1803,7 @@ p143 = Painting.create!(
     position: 7
 )
 
-file143 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8637.JPG')
+file143 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8637_1.JPG')
 p143.photo.attach(io: file143, filename: 'nature7.jpg')
 
 p144 = Painting.create!(
@@ -1851,7 +1851,7 @@ p147 = Painting.create!(
     position: 11
 )
 
-file147 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8991.JPG')
+file147 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8991_1.JPG')
 p147.photo.attach(io: file147, filename: 'nature11.jpg')
 
 p148 = Painting.create!(
@@ -1863,7 +1863,7 @@ p148 = Painting.create!(
     position: 12
 )
 
-file148 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8994.JPG')
+file148 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_8994_1.JPG')
 p148.photo.attach(io: file148, filename: 'nature12.jpg')
 
 p149 = Painting.create!(
@@ -1888,6 +1888,6 @@ p150 = Painting.create!(
     position: 14
 )
 
-file150 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_9072.JPG')
+file150 = open('https://maggieshafran-seeds.s3.amazonaws.com/nature_morte/IMG_9072_1.JPG')
 p150.photo.attach(io: file150, filename: 'nature14.jpg')
 

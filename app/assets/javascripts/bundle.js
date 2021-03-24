@@ -508,7 +508,7 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
             loading: false
           });
         });
-      }, 3000);
+      }, 2000);
     }
   }, {
     key: "render",
@@ -677,7 +677,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
             loading: false
           });
         });
-      }, 3000);
+      }, 2000);
     }
   }, {
     key: "render",
@@ -846,7 +846,7 @@ var NatureMorte = /*#__PURE__*/function (_React$Component) {
             loading: false
           });
         });
-      }, 3000);
+      }, 2000);
     }
   }, {
     key: "render",
@@ -1068,7 +1068,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../paintings/update_photo_container */ "./frontend/components/paintings/update_photo_container.js");
 /* harmony import */ var _paintings_photo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../paintings/photo */ "./frontend/components/paintings/photo.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_loading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-loading */ "./node_modules/react-loading/dist/react-loading.js");
 /* harmony import */ var react_loading__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_loading__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -1127,7 +1126,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
             loading: false
           });
         });
-      }, 3000);
+      }, 2000);
     }
   }, {
     key: "render",
@@ -1176,9 +1175,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
         className: "project-index-description"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
-      }, loadingTrue()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
-        to: "/adminlogin"
-      }, "log in")));
+      }, loadingTrue()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null));
     }
   }]);
 
@@ -1711,7 +1708,7 @@ var Pets = /*#__PURE__*/function (_React$Component) {
             loading: false
           });
         });
-      }, 3000);
+      }, 2000);
     }
   }, {
     key: "render",
@@ -2492,7 +2489,7 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
             loading: false
           });
         });
-      }, 3000);
+      }, 2000);
     }
   }, {
     key: "render",
