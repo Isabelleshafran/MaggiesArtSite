@@ -17,7 +17,7 @@ class NatureMorte extends React.Component {
     componentDidMount(){
         setTimeout(() => {
             this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
-        },3000)
+        },2000)
 
     }
 

@@ -1264,6 +1264,18 @@ p99.photo.attach(io: file99, filename: 'other30.jpg')
 
 # PETS
 
+p153 = Painting.create!(
+    title: "",
+    year: "",
+    medium: "", 
+    size: '',
+    category: "pets", 
+    position: 0
+)
+
+file153 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9932_1.JPG')
+p153.photo.attach(io: file153, filename: 'pets40.jpg')
+
 p100 = Painting.create!(
     title: "",
     year: "",
@@ -1273,7 +1285,7 @@ p100 = Painting.create!(
     position: 1
 )
 
-file100 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/1010.JPG')
+file100 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/1010_1.JPG')
 p100.photo.attach(io: file100, filename: 'pets1.jpg')
 
 p101 = Painting.create!(
@@ -1285,7 +1297,7 @@ p101 = Painting.create!(
     position: 2
 )
 
-file101 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+(1).JPG')
+file101 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+(1)_1.JPG')
 p101.photo.attach(io: file101, filename: 'pets2.jpg')
 
 p102 = Painting.create!(
@@ -1309,7 +1321,7 @@ p103 = Painting.create!(
     position: 4
 )
 
-file103 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+19.JPG')
+file103 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+19_1.JPG')
 p103.photo.attach(io: file103, filename: 'pets4.jpg')
 
 p104 = Painting.create!(
@@ -1321,7 +1333,7 @@ p104 = Painting.create!(
     position: 5
 )
 
-file104 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+22.JPG')
+file104 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+22_1.JPG')
 p104.photo.attach(io: file104, filename: 'pets5.jpg')
 
 p105 = Painting.create!(
@@ -1345,7 +1357,7 @@ p106 = Painting.create!(
     position: 7
 )
 
-file106 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+28.JPG')
+file106 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+28_1.JPG')
 p106.photo.attach(io: file106, filename: 'pets7.jpg')
 
 p107 = Painting.create!(
@@ -1357,7 +1369,7 @@ p107 = Painting.create!(
     position: 8
 )
 
-file107 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+30.JPG')
+file107 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/FullSizeRender+30_1.JPG')
 p107.photo.attach(io: file107, filename: 'pets8.jpg')
 
 p108 = Painting.create!(
@@ -1369,7 +1381,7 @@ p108 = Painting.create!(
     position: 9
 )
 
-file108 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0142.JPG')
+file108 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0142_1.JPG')
 p108.photo.attach(io: file108, filename: 'pets9.jpg')
 
 p109 = Painting.create!(
@@ -1381,7 +1393,7 @@ p109 = Painting.create!(
     position: 10
 )
 
-file109 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0144.JPG')
+file109 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0144_1.JPG')
 p109.photo.attach(io: file109, filename: 'pets10.jpg')
 
 p110 = Painting.create!(
@@ -1393,7 +1405,7 @@ p110 = Painting.create!(
     position: 11
 )
 
-file110 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0711.JPG')
+file110 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0711_1.JPG')
 p110.photo.attach(io: file110, filename: 'pets11.jpg')
 
 p111 = Painting.create!(
@@ -1405,7 +1417,7 @@ p111 = Painting.create!(
     position: 12
 )
 
-file111 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0716.JPG')
+file111 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0716_1.JPG')
 p111.photo.attach(io: file111, filename: 'pets12.jpg')
 
 p112 = Painting.create!(
@@ -1417,7 +1429,7 @@ p112 = Painting.create!(
     position: 13
 )
 
-file112 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0718.JPG')
+file112 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0718_1.JPG')
 p112.photo.attach(io: file112, filename: 'pets13.jpg')
 
 p113 = Painting.create!(
@@ -1429,7 +1441,7 @@ p113 = Painting.create!(
     position: 14
 )
 
-file113 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0720.JPG')
+file113 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0720_1.JPG')
 p113.photo.attach(io: file113, filename: 'pets14.jpg')
 
 p114 = Painting.create!(
@@ -1441,7 +1453,7 @@ p114 = Painting.create!(
     position: 15
 )
 
-file114 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0765.JPG')
+file114 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0765_1.JPG')
 p114.photo.attach(io: file114, filename: 'pets15.jpg')
 
 p115 = Painting.create!(
@@ -1453,7 +1465,7 @@ p115 = Painting.create!(
     position: 16
 )
 
-file115 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0818.JPG')
+file115 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0818_1.JPG')
 p115.photo.attach(io: file115, filename: 'pets16.jpg')
 
 p116 = Painting.create!(
@@ -1465,7 +1477,7 @@ p116 = Painting.create!(
     position: 17
 )
 
-file116 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0955.JPG')
+file116 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_0955_1.JPG')
 p116.photo.attach(io: file116, filename: 'pets17.jpg')
 
 p117 = Painting.create!(
@@ -1477,7 +1489,7 @@ p117 = Painting.create!(
     position: 18
 )
 
-file117 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_2492.JPG')
+file117 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_2492_1.JPG')
 p117.photo.attach(io: file117, filename: 'pets18.jpg')
 
 p118 = Painting.create!(
@@ -1489,7 +1501,7 @@ p118 = Painting.create!(
     position: 19
 )
 
-file118 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3092.JPG')
+file118 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3092_1.JPG')
 p118.photo.attach(io: file118, filename: 'pets19.jpg')
 
 p119 = Painting.create!(
@@ -1501,7 +1513,7 @@ p119 = Painting.create!(
     position: 20
 )
 
-file119 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3102.JPG')
+file119 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3102_1.JPG')
 p119.photo.attach(io: file119, filename: 'pets20.jpg')
 
 p120 = Painting.create!(
@@ -1513,7 +1525,7 @@ p120 = Painting.create!(
     position: 21
 )
 
-file120 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3225.JPG')
+file120 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3225_1.JPG')
 p120.photo.attach(io: file120, filename: 'pets21.jpg')
 
 p121 = Painting.create!(
@@ -1525,7 +1537,7 @@ p121 = Painting.create!(
     position: 22
 )
 
-file121 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3234.JPG')
+file121 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_3234_1.JPG')
 p121.photo.attach(io: file121, filename: 'pets22.jpg')
 
 p122 = Painting.create!(
@@ -1537,7 +1549,7 @@ p122 = Painting.create!(
     position: 23
 )
 
-file122 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_4188.JPG')
+file122 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_4188_1.JPG')
 p122.photo.attach(io: file122, filename: 'pets23.jpg')
 
 p123 = Painting.create!(
@@ -1549,7 +1561,7 @@ p123 = Painting.create!(
     position: 24
 )
 
-file123 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_7898+2.JPG')
+file123 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_7898+2_1.JPG')
 p123.photo.attach(io: file123, filename: 'pets24.jpg')
 
 p124 = Painting.create!(
@@ -1561,7 +1573,7 @@ p124 = Painting.create!(
     position: 25
 )
 
-file124 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8116.JPG')
+file124 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8116_1.JPG')
 p124.photo.attach(io: file124, filename: 'pets25.jpg')
 
 p125 = Painting.create!(
@@ -1573,7 +1585,7 @@ p125 = Painting.create!(
     position: 26
 )
 
-file125 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8127.JPG')
+file125 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8127_1.JPG')
 p125.photo.attach(io: file125, filename: 'pets26.jpg')
 
 p126 = Painting.create!(
@@ -1585,7 +1597,7 @@ p126 = Painting.create!(
     position: 27
 )
 
-file126 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8244.JPG')
+file126 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8244_1.JPG')
 p126.photo.attach(io: file126, filename: 'pets27.jpg')
 
 p127 = Painting.create!(
@@ -1597,7 +1609,7 @@ p127 = Painting.create!(
     position: 28
 )
 
-file127 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8343.JPG')
+file127 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_8343_1.JPG')
 p127.photo.attach(io: file127, filename: 'pets28.jpg')
 
 p128 = Painting.create!(
@@ -1621,7 +1633,7 @@ p129 = Painting.create!(
     position: 30
 )
 
-file129 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9025.JPG')
+file129 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9025_1.JPG')
 p129.photo.attach(io: file129, filename: 'pets30.jpg')
 
 p130 = Painting.create!(
@@ -1633,7 +1645,7 @@ p130 = Painting.create!(
     position: 31
 )
 
-file130 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9271.JPG')
+file130 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9271_1.JPG')
 p130.photo.attach(io: file130, filename: 'pets31.jpg')
 
 p131 = Painting.create!(
@@ -1645,7 +1657,7 @@ p131 = Painting.create!(
     position: 32
 )
 
-file131 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9341.JPG')
+file131 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9341_1.JPG')
 p131.photo.attach(io: file131, filename: 'pets32.jpg')
 
 p132 = Painting.create!(
@@ -1657,7 +1669,7 @@ p132 = Painting.create!(
     position: 33
 )
 
-file132 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9382.JPG')
+file132 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9382_1.JPG')
 p132.photo.attach(io: file132, filename: 'pets33.jpg')
 
 p133 = Painting.create!(
@@ -1669,7 +1681,7 @@ p133 = Painting.create!(
     position: 34
 )
 
-file133 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9567.JPG')
+file133 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9567_1.JPG')
 p133.photo.attach(io: file133, filename: 'pets34.jpg')
 
 p134 = Painting.create!(
@@ -1681,7 +1693,7 @@ p134 = Painting.create!(
     position: 35
 )
 
-file134 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9721.JPG')
+file134 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9721_1.JPG')
 p134.photo.attach(io: file134, filename: 'pets35.jpg')
 
 p135 = Painting.create!(
@@ -1693,7 +1705,7 @@ p135 = Painting.create!(
     position: 36
 )
 
-file135 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9847.JPG')
+file135 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9847_1.JPG')
 p135.photo.attach(io: file135, filename: 'pets36.jpg')
 
 p136 = Painting.create!(
@@ -1705,7 +1717,7 @@ p136 = Painting.create!(
     position: 37
 )
 
-file136 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9931.JPG')
+file136 = open('https://maggieshafran-seeds.s3.amazonaws.com/pets/IMG_9931_1.JPG')
 p136.photo.attach(io: file136, filename: 'pets37.jpg')
 
 # NATURE MORTE
