@@ -1,19 +1,9 @@
 
-@media only screen and (max-width : 900px) {
-    body {
-        //  background-color: olive;
-         
-    }
+@media only screen and (max-width : 750px) {
 
-
-
-    
     .splash-container {
         background-image: url('https://maggieshafran-seeds.s3.amazonaws.com/splash/E5D3AE1D-6359-4105-96DA-76ABFA63F3AF.jpg');
-        // background-image: url('');
         height: 100vmax;
-        // max-width: 900px;
-
         background-size: cover;
 
         .splash-text {
@@ -28,6 +18,8 @@
 
     .about-section {
         margin-top: 50px;
+        margin-bottom: 50px;
+        height: 500px;
         display: flex;
         justify-content: center;
         background-color: white;
@@ -36,20 +28,28 @@
     .about-text {
           width: 90%;
           margin-top: 10px;
-          margin-bottom: 10px;
+
+          .lives {
+              font-size: 15px;
+          }
+
+          .bio {
+              font-size: 20px;
+
+          }
+          
     }
 
     .contact-container {
-        color: white;
+        color: rgba(168, 168, 168, 0.856);
         margin-bottom: 0px;
-        margin-top: 10px;
+        margin-top: 130px;
     }
 
 
     // navbar 
 
     .mobile-menu {
-        // display: none;
         height: 50px;
         display: flex;
         flex-direction: column;
@@ -58,32 +58,58 @@
         .hamburger {
            display: flex;
            position: fixed;
-           margin-left: 5%;
+           margin-left: 3%;
            margin-top: 3%;
+            color: rgba(168, 168, 168, 0.856);
+            font-size: 30px;
+
         }
 
         .navbar-items {
-            //  transition: opacity 0.3s ease;
             display: none;
             
         }
         
         .selected-nav {
-            margin-top: 8%;
-            margin-left: 8%;
-            width: 15%;
-            // height: 100vmax;
-            background-color: white;
-            border: 1px solid green;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            position: absolute;
+            height: 100%;
+            display: block;
+            overflow-y: auto;
+            box-sizing: border-box;
+            min-height: 100vh;
+            background-color: rgb(255, 255, 255);
+            border-right: 1px solid rgb(224, 224, 224);
+            left: 0px;
+            top: 50px;
+
+            .item {
+                font-size: 20px;
+                 color: rgba(168, 168, 168, 0.856);
+                 margin-left: 10px;
+
+                 padding: 15px;
+
+            }
+
+            .selected {
+                font-size: 20px;
+                 color: rgba(168, 168, 168, 0.856);
+                 margin-left: 10px;
+
+                 padding: 15px;
+
+        
+
+
+            }
+
+        
         }
     }
 
     .painting-render {
         margin-top: 25px;
-        width: 600px;
+        max-width: 400px;
         column-count: 1;
         column-gap: 1em;
 
@@ -92,16 +118,30 @@
     .icons {
         display: flex;
         flex-direction: row;
-        width: 650px;
+        width: 300px;
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        margin-top: 200px;
+        margin-top: 50px;
 
     }
 
     .text {
         display: none;
+    }
+
+    .projects-container {
+        margin-top: 80px;
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-index-description {
+        margin-top: 15px;
+        display: flex;
+        min-width: 400px;
+       
     }
      
 }

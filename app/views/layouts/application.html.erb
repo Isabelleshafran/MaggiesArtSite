@@ -4,6 +4,7 @@
     <title>MAGGIE SHAFRAN</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
 
     <script type="text/javascript"> window.project1 = "<%= image_url('project1.png') %>"</script>
     <script type="text/javascript"> window.project2 = "<%= image_url('project2.png') %>"</script>
@@ -29,9 +30,8 @@
     
     <%= favicon_link_tag 'favicon.png' %>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
