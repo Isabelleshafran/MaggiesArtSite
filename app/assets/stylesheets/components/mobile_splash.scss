@@ -27,6 +27,7 @@
             justify-content: center;
             background-color: white;
             width: 100%;
+            margin-top: 150px;
 
             .headshot {
                 display: none;
@@ -38,7 +39,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin-top: 10px;
+                    margin-top: 5px;
                     margin-bottom: 50px;
                     margin-left: 5%;
 
@@ -61,7 +62,9 @@
         .contact-container {
             width: 100%;
             bottom: 0;
-            font-family: 'MarzoW00-Regular';
+            font-family: 'Lato', sans-serif;
+            font-weight: 200;
+
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -216,7 +219,8 @@
 @media only screen and (max-width : 400px) {
     .maggie-splash {
         color: white;
-        font-family: 'MarzoW00-Regular';
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
         font-size: 38px;
     }
 }

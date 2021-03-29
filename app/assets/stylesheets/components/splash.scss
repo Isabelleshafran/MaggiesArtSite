@@ -2,13 +2,15 @@
 
 .maggie-splash {
     color: white;
-    font-family: 'MarzoW00-Regular';
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
     font-size: 44px;
 }
 
 .artist-type {
     color: white;
     font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
     font-size: 20px;
 }
 
@@ -65,7 +67,8 @@
                 margin-left: 5%;
 
             .about{
-                font-family: 'MarzoW00-Regular';
+                font-family: 'Lato', sans-serif;
+                font-weight: 200;
                 font-size: 36px;
             }
 
@@ -87,7 +90,8 @@
 
     .contact-container {
         width: 100%;
-        font-family: 'MarzoW00-Regular';
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
         color: rgba(168, 168, 168, 0.856);
         background-color: white;
         padding-bottom: 20px;
