@@ -38,16 +38,10 @@ const Splash = () => {
             </div>
               <div className="contact-container">
                     <span className="contact">CONTACT</span>
-                    <br/>
-                    <br/>
                     <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
                     <a className="email" target="_blank" rel="noreferrer" href="https://www.instagram.com/maggie_shafran_art/?hl=en">@maggie_shafran_art <i className="fab fa-instagram"></i></a>
-                    <br/>
-                    <br/>
               </div>
-
               <div>
-               
               </div>
         </div>
     )

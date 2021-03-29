@@ -1,11 +1,5 @@
 
 
-
-.splash-image {
-    margin-top: 50px;
-    height: 100vh;
-}
-
 .maggie-splash {
     color: white;
     font-family: 'MarzoW00-Regular';
@@ -31,57 +25,90 @@
     align-items: center;
     flex-direction: column; 
 
-    .splash-text {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 350px;
-
-    }
-
     background-image: url('https://maggieshafran-seeds.s3.amazonaws.com/splash/E5D3AE1D-6359-4105-96DA-76ABFA63F3AF.jpg');
     position: absolute;
-    top: 0px;
+    margin-top: 90px;
     width: 100%;
     object-position: 50% 50%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vmax;
     background-attachment: fixed;
 
+
+    .splash-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 280px;
+
+    }
+
+    .about-section {
+        margin-top: 340px;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        // height: 60%;
+
+            .headshot {
+                margin-bottom: 50px;
+            }
+
+            .about-text {
+                color: rgba(168, 168, 168, 0.856);
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+                margin-left: 5%;
+
+            .about{
+                font-family: 'MarzoW00-Regular';
+                font-size: 36px;
+            }
+
+            .lives, .bio {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+            }
+
+            .lives {
+                font-style: italic;
+            }
+        }
+
+    }
+
+    .contact-container {
+        width: 100%;
+        bottom: 0;
+        font-family: 'MarzoW00-Regular';
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 16px;
+        // margin-bottom: 50x;
+
+
+        .contact {
+            font-size: 36px;
+        }
+
+        .email {
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+
+    
 }
 
-.about-text {
-    color: rgba(168, 168, 168, 0.856);
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-       margin-left: 5%;
 
-       .about{
-           font-family: 'MarzoW00-Regular';
-           font-size: 36px;
-       }
 
-       .lives, .bio {
-           font-family: 'Open Sans', sans-serif;
-           font-size: 14px;
-       }
-
-       .lives {
-           font-style: italic;
-       }
-}
-
-.about-section {
-    margin-top: 340px;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-}
 
 .headshot {
     height: 500px; 
@@ -89,23 +116,5 @@
     margin-top: 50px;
 }
 
-.contact-container {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-family: 'MarzoW00-Regular';
-    color: rgba(168, 168, 168, 0.856);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
-
-    .contact {
-        font-size: 36px;
-    }
-
-    .email {
-        font-size: 20px;
-        font-family: 'Open Sans', sans-serif;
-    }
-}
 
