@@ -50,7 +50,6 @@
         display: flex;
         justify-content: center;
         background-color: white;
-        // height: 60%;
 
             .headshot {
                 margin-bottom: 50px;
@@ -75,6 +74,10 @@
                 font-size: 14px;
             }
 
+            .bio {
+                font-size: 18px;
+            }
+
             .lives {
                 font-style: italic;
             }
@@ -84,22 +87,25 @@
 
     .contact-container {
         width: 100%;
-        bottom: 0;
         font-family: 'MarzoW00-Regular';
-        color: white;
+        color: rgba(168, 168, 168, 0.856);
+        background-color: white;
+        padding-bottom: 20px;
+
+
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 16px;
-        // margin-bottom: 50x;
-
 
         .contact {
             font-size: 36px;
+            padding: 7px;
         }
 
         .email {
             font-size: 20px;
+            padding: 7px;
+
             font-family: 'Open Sans', sans-serif;
         }
     }
