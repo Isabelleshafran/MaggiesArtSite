@@ -1105,6 +1105,7 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
       selected: false
     };
     _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));
+    _this.handleItemClick = _this.handleItemClick.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -1113,6 +1114,13 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
     value: function handleClick() {
       this.setState({
         selected: !this.state.selected
+      });
+    }
+  }, {
+    key: "handleItemClick",
+    value: function handleItemClick() {
+      this.setState({
+        selected: false
       });
     }
   }, {
@@ -1131,18 +1139,22 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: this.handleItemClick,
         className: url === "/" ? "selected" : "item"
       }, "MAGGIE SHAFRAN")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/projects"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: this.handleItemClick,
         className: url === "/projects" ? "selected" : "item"
       }, "PROJECTS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/cv"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: this.handleItemClick,
         className: url === "/cv" ? "selected" : "item"
       }, "C.V.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/availablework"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: this.handleItemClick,
         className: url === "/availablework" ? "selected" : "item"
       }, "AVAILABLE WORK"))));
     }
