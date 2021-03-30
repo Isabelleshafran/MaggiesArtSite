@@ -6,7 +6,8 @@
         align-items: center;
         flex-direction: column; 
 
-        background-image: url('https://maggieshafran-seeds.s3.amazonaws.com/splash/mobile_splash.jpg');
+        background-image: url('');
+        background-color: rgb(185, 168, 155);
         position: absolute;
         margin-top: 50px;
         width: 100%;
@@ -18,8 +19,7 @@
         background-attachment: fixed;
 
         .splash-text {
-            // margin-top: 100px;
-            // margin-bottom: 100px;
+            margin-top: 100px;
         }
 
         .about-section {
@@ -39,12 +39,12 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    margin-top: 5px;
+                    margin-top: 8px;
                     margin-bottom: 50px;
                     margin-left: 5%;
 
                     .about {
-                        font-size: 40px;
+                        font-size: 45px;
 
                     }
         
