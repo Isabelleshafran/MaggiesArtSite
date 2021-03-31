@@ -3,7 +3,8 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 250px;
+    margin-top: 320px;
+    height: 50%;
 
     display: flex;
     justify-content: space-between;
@@ -11,11 +12,12 @@
 }
 
 .available-text-container {
-    width: 20%;
+    width: 30%;
 
     .available-text {
         font-weight: bold;
         text-decoration: underline;
+
     }
 
     .pdf-text, .commission-text{
@@ -42,15 +44,21 @@
 
     .selected {
         display: block;
+        font-family: sans-serif;
+        font-weight:200;
     }
 
     > div {
         display: none;
 
     }
+    
+    .email {
+        font-weight: bold;
+    }
 
     .email:hover {
-        font-weight: bold;
+        cursor: pointer;
     }
 
     .pdf {

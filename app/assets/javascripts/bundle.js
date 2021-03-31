@@ -425,13 +425,18 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
         className: "available-sub-categories"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: this.state.selected === "commission-text" ? "selected" : "comission"
-      }, "COMISSION INFORMATION", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "info", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "some more stuff info info", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), ".......", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "more comission stuff"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Pricing for commissions is as follows:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "$1,000 for 9\u201D x 12\u201D Portraits (excluding horses)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,250 for 13\u201D x 18\u201D (Small size horse or full body of dog)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,500 for 18\u201D x 24\u201D (Horse)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$2,250 for 20\" x 18\" (two dogs together, size varies)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Please inquire further for pricing on larger or custom sizes", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To request a commission or if you have any further inquires please contact ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        className: "email",
+        target: "_blank",
+        rel: "noreferrer",
+        href: "mailto:maggieshafran@gmail.com"
+      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: this.state.selected === "pdf-text" ? "selected" : "pdf"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
         className: "pdf",
         href: window.pdf,
         download: "SamplePDF"
-      }, "Click here to download pdf "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Contact Information: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      }, " here "), "to download catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Contact Information: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
         className: "email",
         target: "_blank",
         rel: "noreferrer",

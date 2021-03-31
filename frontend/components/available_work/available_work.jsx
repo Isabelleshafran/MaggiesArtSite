@@ -26,20 +26,29 @@ class AvailableWork extends React.Component {
 
                 <div className="available-sub-categories">
                     <div className={this.state.selected === "commission-text" ? "selected" : "comission"}>
-                        COMISSION INFORMATION
+                        <div>Pricing for commissions is as follows:</div> 
                         <br/>
-                        info   
-                        <br/>
-                        some more stuff
-                        info info 
-                        <br/>
-                        .......   
-                        <br/>
-                        more comission stuff
+                        <div>
+                            $1,000 for 9” x 12” Portraits (excluding horses) 
+                            <br/>
+                            $1,250 for 13” x 18” (Small size horse or full body of dog)
+                            <br/>
+                            $1,500 for 18” x 24” (Horse)
+                            <br/>
+                            $2,250 for 20" x 18" (two dogs together, size varies) 
+                            <br/>
+                            <br/>
+
+                            Please inquire further for pricing on larger or custom sizes
+                            <br/>
+                            To request a commission or if you have any further inquires please contact <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
+                            <br/>
+                    </div>
+                        
                     </div>
 
                     <div className={this.state.selected === "pdf-text" ? "selected" : "pdf"}>
-                        <a className="pdf" href={window.pdf} download="SamplePDF">Click here to download pdf </a>
+                        <div>Click <a className="pdf" href={window.pdf} download="SamplePDF"> here </a>to download catalogue</div>
                         <br/> 
                         <span>Contact Information: </span>     
                         <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
