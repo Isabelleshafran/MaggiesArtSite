@@ -27,37 +27,44 @@ class CV extends React.Component {
 
                 <div className="sub-categories">
                     <div className={this.state.selected === "shows-text" ? "selected" : "shows"}>
-                        GROUP SHOWS
+                        <div>GROUP SHOWS</div>
                         <br/>
-                        2014   
+                        <div className="yr">2014</div>   
                         <br/>
-                        Trilateral 2014 The Continuum, Da Gallery, Pomona, CA
-                        (dis)order Senior Thesis Show, Nichols Gallery, Claremont, CA
+                        <div>
+                            Trilateral 2014 The Continuum, Da Gallery, Pomona, CA
+                            (dis)order Senior Thesis Show, Nichols Gallery, Claremont, CA
+                        </div>
                         <br/>
-                        2015   
+                        <div className="yr">2015</div>   
                         <br/>
-
-                        The Ambry, Ketchum, ID
+                        <div>
+                            The Ambry, Ketchum, ID
+                        </div>
                     </div>
 
                     <div className={this.state.selected === "education-text" ? "selected" : "education"}>
-                        2010-2014   
+                        <div className="yr">2010-2014</div> 
                         <br/>      
-                        Bachelor of Fine Arts
+                        <div>Bachelor of Fine Arts</div>
                         <br/>      
-                        Pitzer College, Claremont, CA
+                        <div>Pitzer College, Claremont, CA</div>
                     </div>
 
                     <div className={this.state.selected === "press-text" ? "selected" : "press"}>
-                        2015      
+                        <div className="yr">2014</div> 
                         <br/>  
-                        Anneliese Turck, "Alumni: Creative Arts" CS Magazine
+                        <div>Liset Marquez, “Mural in Ontario Promotes Healthy Eating Initiative” Daily Bulletin</div>
                         <br/>  
-                        Julie Bramowitz, "This is Our Youth" Idaho Mountain Express
+                        <div className="yr">2015</div> 
                         <br/>  
-                        2016
+                        <div>Anneliese Turck, "Alumni: Creative Arts" CS Magazine</div>
                         <br/>  
-                        Kevin Wade, "Emerging Artists" Big LIfe
+                        <div>Julie Bramowitz, "This is Our Youth" Idaho Mountain Express</div>
+                        <br/>  
+                        <div className="yr">2016</div>
+                        <br/>  
+                        <div>Kevin Wade, "Emerging Artists" Big Life</div>
                     </div>
                 </div>
         </div>

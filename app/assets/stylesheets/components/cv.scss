@@ -3,8 +3,8 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 250px;
-
+    margin-top: 320px;
+    height: 50%;
     display: flex;
     justify-content: space-between;
 
@@ -44,9 +44,15 @@
 
     .selected {
         display: block;
+        font-family: sans-serif;
+        font-weight:200;
+
+        .yr {
+            font-weight: bold;
+        }
     }
 
-    > div {
+    > .press, .education, .shows {
         display: none;
 
     }

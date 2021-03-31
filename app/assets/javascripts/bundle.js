@@ -530,11 +530,23 @@ var CV = /*#__PURE__*/function (_React$Component) {
         className: "sub-categories"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: this.state.selected === "shows-text" ? "selected" : "shows"
-      }, "GROUP SHOWS", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "2014", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Trilateral 2014 The Continuum, Da Gallery, Pomona, CA (dis)order Senior Thesis Show, Nichols Gallery, Claremont, CA", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "2015", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "The Ambry, Ketchum, ID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "GROUP SHOWS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "yr"
+      }, "2014"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Trilateral 2014 The Continuum, Da Gallery, Pomona, CA (dis)order Senior Thesis Show, Nichols Gallery, Claremont, CA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "yr"
+      }, "2015"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "The Ambry, Ketchum, ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: this.state.selected === "education-text" ? "selected" : "education"
-      }, "2010-2014", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Bachelor of Fine Arts", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Pitzer College, Claremont, CA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "yr"
+      }, "2010-2014"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Bachelor of Fine Arts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Pitzer College, Claremont, CA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: this.state.selected === "press-text" ? "selected" : "press"
-      }, "2015", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Anneliese Turck, \"Alumni: Creative Arts\" CS Magazine", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Julie Bramowitz, \"This is Our Youth\" Idaho Mountain Express", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "2016", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Kevin Wade, \"Emerging Artists\" Big LIfe")));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "yr"
+      }, "2014"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Liset Marquez, \u201CMural in Ontario Promotes Healthy Eating Initiative\u201D Daily Bulletin"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "yr"
+      }, "2015"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Anneliese Turck, \"Alumni: Creative Arts\" CS Magazine"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Julie Bramowitz, \"This is Our Youth\" Idaho Mountain Express"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "yr"
+      }, "2016"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Kevin Wade, \"Emerging Artists\" Big Life"))));
     }
   }]);
 
