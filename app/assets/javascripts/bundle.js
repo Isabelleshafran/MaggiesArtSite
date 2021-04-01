@@ -625,24 +625,18 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
   _createClass(FriendshipWorship, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
-      setTimeout(function () {
-        _this2.props.fetchPaintings(_this2.props.category).then(function () {
-          return _this2.setState({
-            loading: false
-          });
-        });
-      }, 2000);
+      this.props.fetchPaintings(this.props.category); // setTimeout(() => {
+      //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
+      // },2000)
     }
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this2 = this;
 
       var paintingRender = function paintingRender() {
-        if (_this3.props.currentUser.id === null) {
-          return _this3.props.paintings.sort(function (a, b) {
+        if (_this2.props.currentUser.id === null) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -651,7 +645,7 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
             });
           });
         } else {
-          return _this3.props.paintings.sort(function (a, b) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_2__.default, {
@@ -660,19 +654,14 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
             });
           });
         }
-      };
+      }; // const loadingTrue = () => {
+      //     if(this.state.loading === true){
+      //         return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
+      //     } else {
+      //         return paintingRender()
+      //     }
+      // }
 
-      var loadingTrue = function loadingTrue() {
-        if (_this3.state.loading === true) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_loading__WEBPACK_IMPORTED_MODULE_3___default()), {
-            type: "bubbles",
-            color: "rgba(168, 168, 168, 0.699)",
-            className: "react-bars"
-          });
-        } else {
-          return paintingRender();
-        }
-      };
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "friendship_container"
@@ -682,7 +671,7 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
         className: "project-index-description"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
-      }, loadingTrue())); // }
+      }, paintingRender())); // }
     }
   }]);
 
@@ -794,24 +783,18 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
   _createClass(LittlePieces, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
-      setTimeout(function () {
-        _this2.props.fetchPaintings(_this2.props.category).then(function () {
-          return _this2.setState({
-            loading: false
-          });
-        });
-      }, 2000);
+      this.props.fetchPaintings(this.props.category); // setTimeout(() => {
+      //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
+      // },2000)
     }
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this2 = this;
 
       var paintingRender = function paintingRender() {
-        if (_this3.props.currentUser.id === null) {
-          return _this3.props.paintings.sort(function (a, b) {
+        if (_this2.props.currentUser.id === null) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_2__.default, {
@@ -820,7 +803,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
             });
           });
         } else {
-          return _this3.props.paintings.sort(function (a, b) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -829,19 +812,14 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
             });
           });
         }
-      };
+      }; //  const loadingTrue = () => {
+      //     if(this.state.loading === true){
+      //         return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
+      //     } else {
+      //         return paintingRender()
+      //     }
+      // }
 
-      var loadingTrue = function loadingTrue() {
-        if (_this3.state.loading === true) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_loading__WEBPACK_IMPORTED_MODULE_3___default()), {
-            type: "bubbles",
-            color: "rgba(168, 168, 168, 0.699)",
-            className: "react-bars"
-          });
-        } else {
-          return paintingRender();
-        }
-      };
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "friendship_container"
@@ -851,7 +829,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
         className: "project-index-description"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
-      }, loadingTrue()));
+      }, paintingRender()));
     }
   }]);
 
@@ -963,24 +941,18 @@ var NatureMorte = /*#__PURE__*/function (_React$Component) {
   _createClass(NatureMorte, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
-      setTimeout(function () {
-        _this2.props.fetchPaintings(_this2.props.category).then(function () {
-          return _this2.setState({
-            loading: false
-          });
-        });
-      }, 2000);
+      this.props.fetchPaintings(this.props.category); // setTimeout(() => {
+      //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
+      // },2000)
     }
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this2 = this;
 
       var paintingRender = function paintingRender() {
-        if (_this3.props.currentUser.id === null) {
-          return _this3.props.paintings.sort(function (a, b) {
+        if (_this2.props.currentUser.id === null) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_2__.default, {
@@ -989,7 +961,7 @@ var NatureMorte = /*#__PURE__*/function (_React$Component) {
             });
           });
         } else {
-          return _this3.props.paintings.sort(function (a, b) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -998,19 +970,14 @@ var NatureMorte = /*#__PURE__*/function (_React$Component) {
             });
           });
         }
-      };
+      }; //  const loadingTrue = () => {
+      //     if(this.state.loading === true){
+      //         return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
+      //     } else {
+      //         return paintingRender()
+      //     }
+      // }
 
-      var loadingTrue = function loadingTrue() {
-        if (_this3.state.loading === true) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_loading__WEBPACK_IMPORTED_MODULE_3___default()), {
-            type: "bubbles",
-            color: "rgba(168, 168, 168, 0.699)",
-            className: "react-bars"
-          });
-        } else {
-          return paintingRender();
-        }
-      };
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "friendship_container"
@@ -1020,7 +987,7 @@ var NatureMorte = /*#__PURE__*/function (_React$Component) {
         className: "project-index-description"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
-      }, loadingTrue()));
+      }, paintingRender()));
     }
   }]);
 
@@ -1278,24 +1245,18 @@ var Other = /*#__PURE__*/function (_React$Component) {
   _createClass(Other, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
-      setTimeout(function () {
-        _this2.props.fetchPaintings(_this2.props.category).then(function () {
-          return _this2.setState({
-            loading: false
-          });
-        });
-      }, 2000);
+      this.props.fetchPaintings(this.props.category); // setTimeout(() => {
+      //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
+      // },2000)
     }
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this2 = this;
 
       var paintingRender = function paintingRender() {
-        if (_this3.props.currentUser.id === null) {
-          return _this3.props.paintings.sort(function (a, b) {
+        if (_this2.props.currentUser.id === null) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_2__.default, {
@@ -1304,7 +1265,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
             });
           });
         } else {
-          return _this3.props.paintings.sort(function (a, b) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -1313,19 +1274,14 @@ var Other = /*#__PURE__*/function (_React$Component) {
             });
           });
         }
-      };
+      }; //  const loadingTrue = () => {
+      //     if(this.state.loading === true){
+      //         return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
+      //     } else {
+      //         return paintingRender()
+      //     }
+      // }
 
-      var loadingTrue = function loadingTrue() {
-        if (_this3.state.loading === true) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_loading__WEBPACK_IMPORTED_MODULE_3___default()), {
-            type: "bubbles",
-            color: "rgba(168, 168, 168, 0.699)",
-            className: "react-bars"
-          });
-        } else {
-          return paintingRender();
-        }
-      };
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "friendship_container"
@@ -1335,7 +1291,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
         className: "project-index-description"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
-      }, loadingTrue()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null));
+      }, paintingRender()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null));
     }
   }]);
 
@@ -1461,22 +1417,18 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "clickBackward",
     value: function clickBackward() {
-      var _this2 = this;
-
       var currentPainting = this.props.painting;
-      var filtered = this.props.paintings.filter(function (painting) {
-        return painting.category === _this2.props.match.params.category;
-      });
-      var index = filtered.indexOf(currentPainting);
+      var allPaintings = this.props.paintings;
+      var index = allPaintings.indexOf(currentPainting);
       var newIndex;
 
       if (index === 0) {
-        newIndex = filtered.length - 1;
+        newIndex = allPaintings.length - 1;
       } else {
         newIndex = index - 1;
       }
 
-      var newProj = filtered[newIndex];
+      var newProj = allPaintings[newIndex];
       this.props.history.push("/".concat(newProj.category, "/").concat(newProj.id));
     }
   }, {
@@ -1860,24 +1812,18 @@ var Pets = /*#__PURE__*/function (_React$Component) {
   _createClass(Pets, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
-      setTimeout(function () {
-        _this2.props.fetchPaintings(_this2.props.category).then(function () {
-          return _this2.setState({
-            loading: false
-          });
-        });
-      }, 2000);
+      this.props.fetchPaintings(this.props.category); // setTimeout(() => {
+      //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
+      // },2000)
     }
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this2 = this;
 
       var paintingRender = function paintingRender() {
-        if (_this3.props.currentUser.id === null) {
-          return _this3.props.paintings.sort(function (a, b) {
+        if (_this2.props.currentUser.id === null) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_2__.default, {
@@ -1886,7 +1832,7 @@ var Pets = /*#__PURE__*/function (_React$Component) {
             });
           });
         } else {
-          return _this3.props.paintings.sort(function (a, b) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -1895,19 +1841,14 @@ var Pets = /*#__PURE__*/function (_React$Component) {
             });
           });
         }
-      };
+      }; // const loadingTrue = () => {
+      //     if(this.state.loading === true){
+      //         return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
+      //     } else {
+      //         return paintingRender()
+      //     }
+      // }
 
-      var loadingTrue = function loadingTrue() {
-        if (_this3.state.loading === true) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_loading__WEBPACK_IMPORTED_MODULE_3___default()), {
-            type: "bubbles",
-            color: "rgba(168, 168, 168, 0.699)",
-            className: "react-bars"
-          });
-        } else {
-          return paintingRender();
-        }
-      };
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "friendship_container"
@@ -1917,7 +1858,7 @@ var Pets = /*#__PURE__*/function (_React$Component) {
         className: "project-index-description"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
-      }, loadingTrue()));
+      }, paintingRender()));
     }
   }]);
 
@@ -2641,24 +2582,18 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
   _createClass(Uninhabited, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
-      setTimeout(function () {
-        _this2.props.fetchPaintings(_this2.props.category).then(function () {
-          return _this2.setState({
-            loading: false
-          });
-        });
-      }, 2000);
+      this.props.fetchPaintings(this.props.category); // setTimeout(() => {
+      //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
+      // },2000)
     }
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this2 = this;
 
       var paintingRender = function paintingRender() {
-        if (_this3.props.currentUser.id === null) {
-          return _this3.props.paintings.sort(function (a, b) {
+        if (_this2.props.currentUser.id === null) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -2667,7 +2602,7 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
             });
           });
         } else {
-          return _this3.props.paintings.sort(function (a, b) {
+          return _this2.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_2__.default, {
@@ -2676,19 +2611,14 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
             });
           });
         }
-      };
+      }; //  const loadingTrue = () => {
+      //     if(this.state.loading === true){
+      //         return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
+      //     } else {
+      //         return paintingRender()
+      //     }
+      // }
 
-      var loadingTrue = function loadingTrue() {
-        if (_this3.state.loading === true) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_loading__WEBPACK_IMPORTED_MODULE_3___default()), {
-            type: "bubbles",
-            color: "rgba(168, 168, 168, 0.699)",
-            className: "react-bars"
-          });
-        } else {
-          return paintingRender();
-        }
-      };
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "friendship_container"
@@ -2698,7 +2628,7 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
         className: "project-index-description"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Duis aute dolor in reprehenderit in reprehenderit in voluptate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-render"
-      }, loadingTrue())));
+      }, paintingRender())));
     }
   }]);
 

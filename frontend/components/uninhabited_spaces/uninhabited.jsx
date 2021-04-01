@@ -15,9 +15,10 @@ class Uninhabited extends React.Component {
     }
 
     componentDidMount(){
-        setTimeout(() => {
-            this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
-        },2000)
+        this.props.fetchPaintings(this.props.category)
+        // setTimeout(() => {
+        //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
+        // },2000)
 
     }
 
@@ -34,13 +35,13 @@ class Uninhabited extends React.Component {
             }
         }
 
-         const loadingTrue = () => {
-            if(this.state.loading === true){
-                return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
-            } else {
-                return paintingRender()
-            }
-        }
+        //  const loadingTrue = () => {
+        //     if(this.state.loading === true){
+        //         return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
+        //     } else {
+        //         return paintingRender()
+        //     }
+        // }
 
         return ( 
             <div>
@@ -61,8 +62,7 @@ class Uninhabited extends React.Component {
                     </div>
 
                     <div className="painting-render">
-                        {loadingTrue()}
-                        
+                        {paintingRender()}
                     </div>
                 </div>
             </div>

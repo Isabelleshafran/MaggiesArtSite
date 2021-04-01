@@ -36,17 +36,17 @@ class PaintingShow extends React.Component {
     
     clickBackward(){
         let currentPainting = this.props.painting
-        let filtered = this.props.paintings.filter(painting => painting.category === this.props.match.params.category) 
-        let index = filtered.indexOf(currentPainting);
+        let allPaintings = this.props.paintings
+        let index = allPaintings.indexOf(currentPainting);
         let newIndex;
 
         if(index === 0){
-            newIndex = filtered.length - 1
+            newIndex = allPaintings.length - 1
         } else {
             newIndex = (index - 1)
         }
 
-        let newProj = filtered[newIndex]
+        let newProj = allPaintings[newIndex]
 
         this.props.history.push(`/${newProj.category}/${newProj.id}`)
     
