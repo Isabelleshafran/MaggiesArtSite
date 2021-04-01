@@ -7,11 +7,15 @@ class AvailableWork extends React.Component {
         this.state = { 
             selected: "commission-text"
          }
+
+        //  add clicked boolean to make sure you cant double click 
         this.selectTab = this.selectTab.bind(this);
     }
 
     selectTab(e){
+       
         this.setState({selected: e.target.className})
+
     }
 
     render() { 

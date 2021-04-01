@@ -394,7 +394,8 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
     _this.state = {
       selected: "commission-text"
-    };
+    }; //  add clicked boolean to make sure you cant double click 
+
     _this.selectTab = _this.selectTab.bind(_assertThisInitialized(_this));
     return _this;
   }
@@ -1354,6 +1355,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -1388,12 +1391,14 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      artworks: [],
-      activeProject: {},
-      index: 0
+      title: "",
+      year: "",
+      medium: "",
+      size: ""
     };
     _this.clickForward = _this.clickForward.bind(_assertThisInitialized(_this));
     _this.clickBackward = _this.clickBackward.bind(_assertThisInitialized(_this));
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -1432,35 +1437,105 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       this.props.history.push("/".concat(newProj.category, "/").concat(newProj.id));
     }
   }, {
+    key: "handleChange",
+    value: function handleChange(field) {
+      var _this2 = this;
+
+      return function (e) {
+        return _this2.setState(_defineProperty({}, field, e.currentTarget.value));
+      };
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      e.preventDefault();
+      var updated = Object.assign({}, this.state);
+      debugger;
+      this.props.updatePainting(updated).then(function () {
+        return alert('updated');
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       if (!this.props.painting) {
         return null;
       } else {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-          className: "painting-show-container"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-          className: "painting-show"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-          className: "icons"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-          className: "icons-left"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-          onClick: this.clickBackward
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
-          className: "fas fa-angle-left"
-        }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-          className: "icons-right"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-          onClick: this.clickForward
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
-          className: "fas fa-angle-right"
-        })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-          className: "painting-show-image",
-          src: this.props.painting.imgUrl
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-          className: "painting-show-text"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.year), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size))));
+        if (this.props.currentUser.id !== null) {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-show-container"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-show"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "icons"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "icons-left"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+            onClick: this.clickBackward
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+            className: "fas fa-angle-left"
+          }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "icons-right"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+            onClick: this.clickForward
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+            className: "fas fa-angle-right"
+          })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+            className: "painting-show-image",
+            src: this.props.painting.imgUrl
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+            onSubmit: this.handleSubmit
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Update Artwork Info"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-show-text-update"
+          }, "Title: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+            type: "text",
+            className: "update-show-input",
+            onChange: this.handleChange('title'),
+            value: this.state.title
+          }), "Year: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+            type: "text",
+            className: "update-show-input",
+            onChange: this.handleChange('year'),
+            value: this.state.year
+          }), "Size: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+            type: "text",
+            className: "update-show-input",
+            onChange: this.handleChange('size'),
+            value: this.state.size
+          }), "Medium:  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+            type: "text",
+            className: "update-show-input",
+            onChange: this.handleChange('medium'),
+            value: this.state.medium
+          })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+            type: "submit"
+          }, "Submit"))));
+        } else {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-show-container"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-show"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "icons"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "icons-left"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+            onClick: this.clickBackward
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+            className: "fas fa-angle-left"
+          }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "icons-right"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+            onClick: this.clickForward
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("i", {
+            className: "fas fa-angle-right"
+          })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+            className: "painting-show-image",
+            src: this.props.painting.imgUrl
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-show-text"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.year), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size))));
+        }
       }
     }
   }]);
@@ -1496,7 +1571,8 @@ var msp = function msp(state, ownProps) {
   return {
     painting: state.paintings[ownProps.match.params.paintingId],
     paintings: Object.values(state.paintings),
-    category: state.paintings[ownProps.match.params.category]
+    category: state.paintings[ownProps.match.params.category],
+    currentUser: state.session
   };
 };
 
@@ -1507,6 +1583,9 @@ var mdp = function mdp(dispatch) {
     },
     fetchPaintings: function fetchPaintings(category) {
       return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
+    },
+    updatePainting: function updatePainting(painting) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.updatePainting)(painting));
     }
   };
 };

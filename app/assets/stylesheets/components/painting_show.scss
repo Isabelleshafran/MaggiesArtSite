@@ -26,6 +26,15 @@
 
 }
 
+.painting-show-text-update {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .icons {
     display: flex;
     flex-direction: row;
@@ -52,6 +61,12 @@ i:hover {
         max-height: 600px;
         object-fit: contain;
 
+}
+
+.update-show-input {
+    border: 1px solid rgba(168, 168, 168, 0.856);
+    padding: 3px;
+    margin-top: 2px;
 }
 
 
