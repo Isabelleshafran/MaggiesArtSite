@@ -1394,7 +1394,8 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       title: "",
       year: "",
       medium: "",
-      size: ""
+      size: "",
+      id: ""
     };
     _this.clickForward = _this.clickForward.bind(_assertThisInitialized(_this));
     _this.clickBackward = _this.clickBackward.bind(_assertThisInitialized(_this));
@@ -1405,9 +1406,39 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   _createClass(PaintingShow, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.props.fetchPainting(this.props.match.params.paintingId);
-      this.props.fetchPaintings(this.props.match.params.category);
+      var _this2 = this;
+
       window.scrollTo(0, 0);
+      this.props.fetchPaintings(this.props.match.params.category);
+      this.props.fetchPainting(this.props.match.params.paintingId).then(function () {
+        _this2.setState({
+          title: _this2.props.painting.title || "",
+          year: _this2.props.painting.year || "",
+          medium: _this2.props.painting.medium || "",
+          size: _this2.props.painting.size || "",
+          id: _this2.props.painting.id
+        });
+      });
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      var _this3 = this;
+
+      window.scrollTo(0, 0);
+
+      if (prevProps.match.url !== this.props.match.url) {
+        this.props.fetchPaintings(this.props.match.params.category);
+        this.props.fetchPainting(this.props.match.params.paintingId).then(function () {
+          _this3.setState({
+            title: _this3.props.painting.title || "",
+            year: _this3.props.painting.year || "",
+            medium: _this3.props.painting.medium || "",
+            size: _this3.props.painting.size || "",
+            id: _this3.props.painting.id
+          });
+        });
+      }
     }
   }, {
     key: "clickForward",
@@ -1416,7 +1447,8 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       var allPaintings = this.props.paintings;
       var index = allPaintings.indexOf(currentPainting);
       var newIndex = (index + 1) % allPaintings.length;
-      var newProj = allPaintings[newIndex];
+      var newProj = allPaintings[newIndex]; // debugger
+
       this.props.history.push("/".concat(newProj.category, "/").concat(newProj.id));
     }
   }, {
@@ -1439,20 +1471,29 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "handleChange",
     value: function handleChange(field) {
-      var _this2 = this;
+      var _this4 = this;
 
       return function (e) {
-        return _this2.setState(_defineProperty({}, field, e.currentTarget.value));
+        return _this4.setState(_defineProperty({}, field, e.currentTarget.value));
       };
     }
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
+      var _this5 = this;
+
       e.preventDefault();
       var updated = Object.assign({}, this.state);
-      debugger;
       this.props.updatePainting(updated).then(function () {
-        return alert('updated');
+        return _this5.props.fetchPaintings(_this5.props.match.params.category);
+      }).then(function () {
+        _this5.setState({
+          title: _this5.props.painting.title,
+          year: _this5.props.painting.year,
+          medium: _this5.props.painting.medium,
+          size: _this5.props.painting.size,
+          id: _this5.props.painting.id
+        });
       });
     }
   }, {
@@ -1678,7 +1719,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _painting_show_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./painting_show_container */ "./frontend/components/paintings/painting_show_container.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -1702,6 +1744,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 
 
 
@@ -1769,7 +1812,7 @@ var UpdatePainting = /*#__PURE__*/function (_React$Component) {
         onClick: this.handleDeleteSubmit
       }, "Delete"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-index"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
         to: "/".concat(this.props.painting.category, "/").concat(this.props.painting.id)
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         className: "painting-index-image",
@@ -2810,9 +2853,10 @@ var PaintingsReducer = function PaintingsReducer() {
       return action.paintings;
 
     case _actions_painting_actions__WEBPACK_IMPORTED_MODULE_0__.RECEIVE_PAINTING:
-      var newPainting = _defineProperty({}, action.painting.id, action.painting);
+      var newPainting = _defineProperty({}, action.painting.id, action.painting); // debugger
 
-      return Object.assign({}, state, newPainting);
+
+      return Object.assign({}, newPainting);
 
     case _actions_painting_actions__WEBPACK_IMPORTED_MODULE_0__.REMOVE_PAINTING:
       var nextState = Object.assign({}, state);

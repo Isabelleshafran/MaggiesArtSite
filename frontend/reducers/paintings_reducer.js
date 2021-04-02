@@ -8,7 +8,8 @@ const PaintingsReducer = (state = {}, action) => {
       return action.paintings;
     case RECEIVE_PAINTING:
       const newPainting = { [action.painting.id]: action.painting };
-      return Object.assign({}, state, newPainting);
+      // debugger
+      return Object.assign({}, newPainting);
     case REMOVE_PAINTING: 
       let nextState = Object.assign({}, state)
       delete nextState[action.painting.id];

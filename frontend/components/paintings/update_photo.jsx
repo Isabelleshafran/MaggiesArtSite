@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+import PaintingShowContainer from './painting_show_container'
+
 class UpdatePainting extends React.Component {
     constructor(props) {
         super(props);
@@ -13,7 +15,6 @@ class UpdatePainting extends React.Component {
     }
     handlePositionSubmit(e){
         e.preventDefault();
-
         let original = this.props.painting;
         original.position = this.state.position
         this.props.updatePainting(original).then(() => alert('success'))
@@ -47,6 +48,13 @@ class UpdatePainting extends React.Component {
                             <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
                                 <img className="painting-index-image" src={this.props.painting.imgUrl}/>
                             </Link>
+
+                            {/* <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
+                                <PaintingShowContainer title={this.props.painting.title}>
+                                    <img className="painting-index-image" src={this.props.painting.imgUrl}/>
+                                </PaintingShowContainer>
+                            </Link> */}
+                            
                         </div>
                     </div>
 

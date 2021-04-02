@@ -4,12 +4,13 @@ import React from 'react';
 class PaintingShow extends React.Component {
     constructor(props) {
         super(props); 
-         
+    
         this.state = {
             title: "", 
             year: "",
             medium: "", 
-            size: ""
+            size: "", 
+            id: ""
         }
 
         this.clickForward = this.clickForward.bind(this)
@@ -18,9 +19,33 @@ class PaintingShow extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchPainting(this.props.match.params.paintingId)
-        this.props.fetchPaintings(this.props.match.params.category)
         window.scrollTo(0, 0);
+        this.props.fetchPaintings(this.props.match.params.category)
+        this.props.fetchPainting(this.props.match.params.paintingId).then(() => {
+             this.setState({
+                title: this.props.painting.title || "", 
+                year: this.props.painting.year || "",
+                medium: this.props.painting.medium|| "", 
+                size: this.props.painting.size || "", 
+                id: this.props.painting.id
+            })
+        })
+    }
+
+    componentDidUpdate(prevProps){
+        window.scrollTo(0, 0);
+        if(prevProps.match.url !== this.props.match.url) {
+            this.props.fetchPaintings(this.props.match.params.category)
+            this.props.fetchPainting(this.props.match.params.paintingId).then(() => {
+                    this.setState({
+                    title: this.props.painting.title || "", 
+                    year: this.props.painting.year|| "",
+                    medium: this.props.painting.medium || "", 
+                    size: this.props.painting.size || "", 
+                    id: this.props.painting.id
+                })
+            })
+        }
     }
 
     clickForward(){
@@ -29,9 +54,8 @@ class PaintingShow extends React.Component {
         let index = allPaintings.indexOf(currentPainting);
         let newIndex = (index + 1) % allPaintings.length;
         let newProj = allPaintings[newIndex]
-
+        // debugger
         this.props.history.push(`/${newProj.category}/${newProj.id}`)
-    
     }
     
     clickBackward(){
@@ -57,8 +81,17 @@ class PaintingShow extends React.Component {
     handleSubmit(e){
         e.preventDefault();
         let updated = Object.assign({}, this.state);
-        debugger
-        this.props.updatePainting(updated).then(() => alert('updated'))
+        this.props.updatePainting(updated)
+            .then(() => this.props.fetchPaintings(this.props.match.params.category))
+            .then(() => {
+                this.setState({
+                    title: this.props.painting.title, 
+                    year: this.props.painting.year,
+                    medium: this.props.painting.medium, 
+                    size: this.props.painting.size, 
+                    id: this.props.painting.id
+                })
+            })
     }
 
 
