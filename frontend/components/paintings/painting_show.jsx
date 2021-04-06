@@ -92,6 +92,7 @@ class PaintingShow extends React.Component {
                     id: this.props.painting.id
                 })
             })
+            .then(() => alert('udpate successful'))
     }
 
 

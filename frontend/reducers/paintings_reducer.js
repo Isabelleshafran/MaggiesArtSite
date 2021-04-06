@@ -2,14 +2,12 @@ import { RECEIVE_PAINTINGS, RECEIVE_PAINTING, REMOVE_PAINTING} from "../actions/
 
 const PaintingsReducer = (state = {}, action) => {
   Object.freeze(state);
-  // let newState = Object.assign({}, state);
   switch (action.type) {
     case RECEIVE_PAINTINGS:
       return action.paintings;
     case RECEIVE_PAINTING:
       const newPainting = { [action.painting.id]: action.painting };
-      // debugger
-      return Object.assign({}, newPainting);
+      return Object.assign({}, state, newPainting);
     case REMOVE_PAINTING: 
       let nextState = Object.assign({}, state)
       delete nextState[action.painting.id];

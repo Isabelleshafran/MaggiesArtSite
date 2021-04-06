@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import PaintingShowContainer from './painting_show_container'
 
 class UpdatePainting extends React.Component {
     constructor(props) {
@@ -13,11 +12,13 @@ class UpdatePainting extends React.Component {
         this.handlePositionSubmit = this.handlePositionSubmit.bind(this);
         this.handleDeleteSubmit = this.handleDeleteSubmit.bind(this);
     }
+
     handlePositionSubmit(e){
         e.preventDefault();
         let original = this.props.painting;
         original.position = this.state.position
-        this.props.updatePainting(original).then(() => alert('success'))
+        this.props.updatePainting(original)
+
     }
 
     handleDeleteSubmit(){
@@ -33,13 +34,12 @@ class UpdatePainting extends React.Component {
     }
 
     render() { 
-
         return ( 
             <div>
                 <div className="painting-index-container">
                         <form onSubmit={this.handlePositionSubmit}>
                              <label>Position
-                                <input type="text" className="update-position"placeholder={`current: ${this.props.painting.position}`}value={this.state.position} onChange={this.handleChange('position')}/>
+                                <input type="text" className="update-position"placeholder={`current: ${this.props.painting.position}`} value={this.state.position} onChange={this.handleChange('position')}/>
                             </label>
                             <button type="submit">Submit</button>
                         </form>
