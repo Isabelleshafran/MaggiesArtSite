@@ -612,32 +612,27 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
   var _super = _createSuper(FriendshipWorship);
 
   function FriendshipWorship(props) {
-    var _this;
-
     _classCallCheck(this, FriendshipWorship);
 
-    _this = _super.call(this, props);
-    _this.state = {
-      loading: true
-    };
-    return _this;
+    return _super.call(this, props); // this.state = {
+    //     loading: true
+    // }
   }
 
   _createClass(FriendshipWorship, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.props.fetchPaintings(this.props.category); // setTimeout(() => {
-      //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
-      // },2000)
+      window.scrollTo(0, 0);
+      this.props.fetchPaintings(this.props.category);
     }
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this = this;
 
       var paintingRender = function paintingRender() {
-        if (_this2.props.currentUser.id === null) {
-          return _this2.props.paintings.sort(function (a, b) {
+        if (_this.props.currentUser.id === null) {
+          return _this.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -646,7 +641,7 @@ var FriendshipWorship = /*#__PURE__*/function (_React$Component) {
             });
           });
         } else {
-          return _this2.props.paintings.sort(function (a, b) {
+          return _this.props.paintings.sort(function (a, b) {
             return a.position - b.position;
           }).map(function (painting) {
             return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_2__.default, {
@@ -784,6 +779,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
   _createClass(LittlePieces, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      window.scrollTo(0, 0);
       this.props.fetchPaintings(this.props.category); // setTimeout(() => {
       //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
       // },2000)
@@ -942,6 +938,7 @@ var NatureMorte = /*#__PURE__*/function (_React$Component) {
   _createClass(NatureMorte, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      window.scrollTo(0, 0);
       this.props.fetchPaintings(this.props.category); // setTimeout(() => {
       //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
       // },2000)
@@ -1246,6 +1243,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
   _createClass(Other, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      window.scrollTo(0, 0);
       this.props.fetchPaintings(this.props.category); // setTimeout(() => {
       //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
       // },2000)
@@ -1934,6 +1932,7 @@ var Pets = /*#__PURE__*/function (_React$Component) {
   _createClass(Pets, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      window.scrollTo(0, 0);
       this.props.fetchPaintings(this.props.category); // setTimeout(() => {
       //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
       // },2000)
@@ -2655,8 +2654,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _paintings_photo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../paintings/photo */ "./frontend/components/paintings/photo.jsx");
 /* harmony import */ var _paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../paintings/update_photo_container */ "./frontend/components/paintings/update_photo_container.js");
-/* harmony import */ var react_loading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-loading */ "./node_modules/react-loading/dist/react-loading.js");
-/* harmony import */ var react_loading__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_loading__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2683,7 +2680,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-
 var Uninhabited = /*#__PURE__*/function (_React$Component) {
   _inherits(Uninhabited, _React$Component);
 
@@ -2704,6 +2700,7 @@ var Uninhabited = /*#__PURE__*/function (_React$Component) {
   _createClass(Uninhabited, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      window.scrollTo(0, 0);
       this.props.fetchPaintings(this.props.category); // setTimeout(() => {
       //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
       // },2000)

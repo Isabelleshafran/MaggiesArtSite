@@ -9,17 +9,14 @@ class FriendshipWorship extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            loading: true
-        }
+        // this.state = {
+        //     loading: true
+        // }
     }
 
      componentDidMount(){
-         this.props.fetchPaintings(this.props.category)
-        // setTimeout(() => {
-        //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
-        // },2000)
-
+        window.scrollTo(0, 0);
+        this.props.fetchPaintings(this.props.category)
     }
 
     render() { 

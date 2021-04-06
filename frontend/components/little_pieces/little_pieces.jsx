@@ -15,6 +15,7 @@ class LittlePieces extends React.Component {
     }
 
     componentDidMount(){
+        window.scrollTo(0, 0);
         this.props.fetchPaintings(this.props.category)
         // setTimeout(() => {
         //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
