@@ -16,23 +16,19 @@ const Splash = () => {
                 <div className="about-text">
                     <span className='about'>ABOUT</span>
                     <br/>
+                    <span className="lives">Maggie Shafran b. 1992</span>
                     <span className="lives">Lives and works in Ketchum, ID</span>
                     <br/>
                     <span className="bio"> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                        dolore eu fugiat nulla pariatur. 
-                        <br/>
-                        <br/>
-                        Excepteur sint occaecat cupidatat non proident, sunt in 
-                        culpa qui officia deserunt mollit anim id est laborum.
-                        <br/>
-                        <br/>
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                        dolore eu fugiat nulla pariatur. 
+                        Maggie Shafran is a Los Angeles and Sun Valley, ID based artist who received her BA at Pitzer College. 
+                        In school her emphasis was on painting and drawing, with a focus in portraiture and figurative work. 
+                        She has been specifically studying the art of capturing and documenting personality and the human 
+                        form for eight years and continues to bring this interest into her work as a post-graduate. 
+                        She draws her inspiration from the people close to her and strives to capture a sense of friendship 
+                        and intimacy in her portraits.
+                        More recently she has been applying her skill of preserving personality in drawings to her 
+                        commissioned work, with a renewed focus on animal portraiture. Her long developed practice of 
+                        bringing emotion and life to her portraits allows her to capture the spirit of her subject in each drawing.
                     </span>
                 </div>
             </div>
