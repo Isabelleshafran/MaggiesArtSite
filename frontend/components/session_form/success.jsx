@@ -50,13 +50,7 @@ class Success extends React.Component {
 
     render() { 
         return (
-        <div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+        <div className="success-container">
             <h1>welcome magus</h1> 
                <button className="logout" onClick={() => this.handleClick()}>logout</button>
             <form className="upload-form" onSubmit={this.handleSubmit}>

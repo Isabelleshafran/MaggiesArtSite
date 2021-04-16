@@ -3,9 +3,7 @@
      display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-
 
 .sign-in {
     font-size: 25px;
@@ -16,6 +14,19 @@
     border: 1px solid rgb(167, 167, 167);
     margin-left: 8px;
     padding: 3px;
+}
+
+.success-container {
+    border-radius: 25px;
+    width: 50%;
+    background-color: lavender;
+    position: absolute;
+    left: 50%; 
+    top: 120px;
+    transform: translate(-50%);
+    padding: 10px;
+
+    font-family: sans-serif;
 }
 
 .login {
@@ -30,7 +41,7 @@
 
 .create {
     font-size: 30px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(179, 179, 182);
     padding: 4px;
 }
 
