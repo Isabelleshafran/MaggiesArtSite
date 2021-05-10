@@ -19,6 +19,10 @@
 
         .splash-text {
             margin-top: 100px;
+
+            .maggie-splash, .artist-work {
+                color: rgba(168, 168, 168, 0.856);;
+            }
         }
 
         .about-section {
@@ -89,7 +93,6 @@
            display: flex;
            position: fixed;
            margin-left: 3%;
-        //    margin-top: 3%;
             color: rgba(168, 168, 168, 0.856);
             font-size: 30px;
 
@@ -113,10 +116,10 @@
             top: 50px;
 
             .item {
+                 font-family: 'Inter', sans-serif;
                 font-size: 20px;
                  color: rgba(168, 168, 168, 0.856);
                  margin-left: 10px;
-
                  padding: 15px;
 
             }
@@ -127,9 +130,6 @@
                  margin-left: 10px;
 
                  padding: 15px;
-
-        
-
 
             }
 

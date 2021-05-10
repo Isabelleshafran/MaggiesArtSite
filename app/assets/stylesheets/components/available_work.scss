@@ -15,21 +15,21 @@
     width: 30%;
 
     .available-text {
-        font-weight: bold;
+        font-weight: 700;
         text-decoration: underline;
+        font-family: 'Inter', sans-serif;
 
     }
 
     .pdf-text, .commission-text{
-        font-family: sans-serif;
-        font-weight: lighter;
+        font-family: 'Hind', sans-serif;
         padding: 20px;
         border-bottom: 1px solid lightgray;
     }
 
     .selected-text-ac {
-        font-family: sans-serif;
-        font-weight:normal;
+        font-family: 'Hind', sans-serif;
+        font-weight: 700;
         padding: 20px;
         border-bottom: 1px solid lightgray;
     }
@@ -44,8 +44,7 @@
 
     .selected {
         display: block;
-        font-family: sans-serif;
-        font-weight:200;
+        font-family: 'Hind', sans-serif;
     }
 
     > div {
