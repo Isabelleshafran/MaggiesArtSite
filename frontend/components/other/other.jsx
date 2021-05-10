@@ -41,7 +41,7 @@ class Other extends React.Component {
                     Some pieces may become part of a larger body of work, others simply had my attention 
                     for a moment, but never became fully realized.  
                 </div>
-                <div className="painting-render">
+                <div className="painting-render-3">
                         {paintingRender()}
                 </div>
 

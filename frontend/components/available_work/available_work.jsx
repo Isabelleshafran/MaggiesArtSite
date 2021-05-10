@@ -24,7 +24,7 @@ class AvailableWork extends React.Component {
         <div className="available-container">
                 <div className="available-text-container">
                     <div className='available-text'>AVAILABLE WORK</div>
-                    <div onClick={this.selectTab} className={this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"}>Commission Info</div>
+                    <div onClick={this.selectTab} className={this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"}>Commissions</div>
                     <div onClick={this.selectTab} className={this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"}>Download Catalogue</div>
                 </div>
 

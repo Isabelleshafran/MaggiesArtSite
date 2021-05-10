@@ -419,7 +419,7 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
       }, "AVAILABLE WORK"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: this.selectTab,
         className: this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"
-      }, "Commission Info"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "Commissions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: this.selectTab,
         className: this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"
       }, "Download Catalogue")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -1217,7 +1217,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
       }, "Selected Sketchbook and Activities"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-description"
       }, "This section gives a look into my processes and artistic activities and a glimpse of what goes on behind the scenes of my larger bodies of work and the things I make just for myself. It contains a collection of sketchbook pages, photos I\u2019ve taken, experiments, investigations, unfinished pieces, commissions and work made long ago. Some pieces may become part of a larger body of work, others simply had my attention for a moment, but never became fully realized."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "painting-render"
+        className: "painting-render-3"
       }, paintingRender()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null));
     }
   }]);
@@ -1893,7 +1893,7 @@ var Pets = /*#__PURE__*/function (_React$Component) {
       }, "Pets"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-description"
       }, "This is a selection of commissioned pet portraits done over my career. As a young child my first obsession and passion was horses. I drew them constantly, so it is no wonder they, along with other beloved animals, have resurfaced in my artistic journey. I did my first pet portrait of our family dog; a funny, slightly overweight cavalier named Teddy. What began as a gift, has grown into a significant part of my business and life as an artist. Utilizing my long developed practice of bringing emotion and life to portraits, I capture the spirit of each subject in a drawing. It is a great joy of mine to see the delight on my clients faces when they see their cherished pet as a work of art. I continue to accept commissions so please feel free to reach out via my contact information if you are interested in a pet portrait."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "painting-render"
+        className: "painting-render-3"
       }, paintingRender()));
     }
   }]);
@@ -2010,65 +2010,53 @@ var Projects = /*#__PURE__*/function (_React$Component) {
         className: "project-home-image",
         src: window.project1
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "middle1"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "text"
-      }, "FRIENDSHIP WORSHIP")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "proj2-container"
+      }, "FRIENDSHIP WORSHIP"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "proj1-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/little_pieces_of_death"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         className: "project-home-image",
         src: window.project2
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "middle2"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "text"
-      }, "LITTLE PIECES OF DEATH")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "proj3-container"
+      }, "LITTLE PIECES OF DEATH"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "proj1-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/uninhabited_spaces"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         className: "project-home-image",
         src: window.project3
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "middle3"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "text"
-      }, "UNINHABITED SPACES")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "proj4-container"
+      }, "UNINHABITED SPACES"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "proj1-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/pets"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         className: "project-home-image",
         src: window.project4
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "middle4"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "text"
-      }, "PETS")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "proj5-container"
+      }, "PETS"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "proj1-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/other"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         className: "project-home-image",
         src: window.project5
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "middle5"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "text"
-      }, "SKETCHBOOK")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "proj6-container"
+      }, "SKETCHBOOK"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "proj1-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/nature_morte"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         className: "project-home-image",
         src: window.project6
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "middle6"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "text"
-      }, "NATURE MORTE"))))));
+      }, "NATURE MORTE")))));
     }
   }]);
 

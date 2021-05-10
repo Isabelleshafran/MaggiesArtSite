@@ -45,7 +45,7 @@ class Pets extends React.Component {
                         please feel free to reach out via my contact information if you are interested in a pet portrait. 
                     </div>
 
-                <div className="painting-render">
+                <div className="painting-render-3">
                     {paintingRender()}
                 </div>
             </div>

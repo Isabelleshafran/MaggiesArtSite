@@ -1,8 +1,5 @@
 
-.project-home-image {
-    max-width: 500px;
-    max-height: 500px;
-}
+
 
 .projects-container {
     margin-top: 150px;
@@ -12,122 +9,37 @@
     margin-left: 8%;
     margin-right: 8%;
 
-    .text {
-        font-size: 28px;
-        color: rgba(0, 0, 0, 0.699);
-        font-family: 'Open Sans', sans-serif;
-        z-index: 1;
-        font-weight: bold;
-    }
+   .proj1-container:hover {
+       
+       .project-home-image {
+           opacity: .4;
+       }
 
-    .middle1 {
-        opacity: 0;
-        position: relative;
-        bottom: 55%;
-        left: 21%;
-    }
+       .text {
+            width: 100%;
+            font-size: 35px;
+            color: #6d88b8;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+        }
+   }
 
-    .proj1-container, .proj2-container, .proj3-container, .proj4-container, .proj5-container {
+    .proj1-container {
         transition: opacity 0.3s ease;
-    }
-
-    .proj1-container:hover {
-        opacity: .8;
-
-        .middle1 {
-            opacity: 1;
-        }
-    }
-
-    .middle2 {
-        opacity: 0;
+        margin-bottom: 50px;
+        max-width: 500px;
+        max-height: 500px;
         position: relative;
-        bottom: 55%;
-        left: 18%;
-    }
-
-
-    .proj2-container:hover {
-        opacity: .8;
-
-        .middle2 {
-            opacity: 1;
+        text-align: center;
+        
+        .text {
+            opacity: 0;
         }
-    }
-
-     .middle3 {
-         opacity: 0;
-        position: relative;
-        bottom: 55%;
-        left: 21%;
-    }
-
-
-    .proj3-container:hover {
-        opacity: .8;
-
-        .middle3 {
-            opacity: 1;
-        }
-    }
-
-
-     .middle4 {
-        opacity: 0;
-        position: relative;
-        bottom: 55%;
-        left: 40%;
-    }
-
-
-    .proj4-container:hover {
-        opacity: .8;
-
-        .middle4 {
-            opacity: 1;
-        }
-    }
-
-
-    .middle5 {
-        opacity: 0;
-        position: relative;
-        bottom: 55%;
-        left: 35%;
-    }
-
-
-    .proj5-container:hover {
-        opacity: .8;
-
-        .middle5 {
-            opacity: 1;
-        }
-    }
-
-     .middle6 {
-        opacity: 0;
-        position: relative;
-        bottom: 55%;
-        left: 35%;
-    }
-
-
-    .proj6-container:hover {
-        opacity: .8;
-
-        .middle6 {
-            opacity: 1;
-        }
-    }
-
-
-    img {
-        margin-bottom: 10%;
-        opacity: 1;
-        width: 100%;
-        height: auto;
-        backface-visibility: hidden;
     }
 
 }
