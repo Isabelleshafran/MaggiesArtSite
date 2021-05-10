@@ -7,7 +7,6 @@
         flex-direction: column; 
 
         background-image: url('mobilesplash.JPG');
-        // background-color: rgb(185, 168, 155);
         position: absolute;
         margin-top: 50px;
         width: 100%;
@@ -165,6 +164,32 @@
         margin-top: 80px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+
+        .proj1-container {
+            margin-bottom: 50px;
+            max-width: 500px;
+            max-height: 500px;
+            position: relative;
+            text-align: center;
+            
+                .project-home-image {
+                    opacity: .6;
+                }
+
+                .text {
+                    width: 100%;
+                    font-size: 100px;
+                    color: #6d88b8;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: bold;
+                    position: absolute;
+            
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                
+            }
     }
 
     .project-index-description {
