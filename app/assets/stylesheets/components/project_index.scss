@@ -1,12 +1,4 @@
-.react-bars {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); 
 
-}
 
 .friendship_container {
     margin-top: 100px;
@@ -18,17 +10,20 @@
 
     .project-index-header {
         font-size: 30px;
+        text-transform: uppercase;
     }
 
 
     .project-index-description {
         margin-top: 15px;
-        display: flex;
-        width: 60%;
-        div {
-            width: 50%;
-            padding: 3px;
-        }
+        width: 75%;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
     }
 }
 

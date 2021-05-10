@@ -33,17 +33,23 @@ class NatureMorte extends React.Component {
             <div className="friendship_container">
                 <div className="project-index-header">Nature Morte</div>
                     <div className="project-index-description">
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                        Duis aute dolor in reprehenderit in reprehenderit in voluptate
+                        This is a work in progress. In it I fragment, draw and reassemble an image of a dutch flower 
+                        painting by Jan Van Huysm. I dissect, and make anew his vibrant and detailed paintings of 
+                        imaginary bouquets. Already far separated from their original form, the flowers and 
+                        insects living in the work were first drawn by the artist, then amassed in a painting. 
+                        Centuries later the work is photographed and widely disseminated via the internet as digital 
+                        images. I add another filter, turning myself into a machine for reproduction, distorting 
+                        the size and material as I process the latest iteration of the image through myself. 
+                        It is not the doomed flowers I endeavour to preserve, forever stilled and hovering at the 
+                        brink of decay, nor the painting which trapped them. My pencil does not record nature's curves 
+                        and shadows, or an artist’s brush strokes, but pixels on a screen. 
+
+                        As I work on this piece, I continue research into the Dutch golden age, seeking a fuller 
+                        understanding of the world which created so many still life paintings. The work will 
+                        evolve as my knowledge deepens. I hope to address the layer of decay not directly pointed 
+                        to by Vanitas; the destruction wrought by the colonization, which fueled the rise in 
+                        wealth and the change in still life painting from the modest table to the overspilling banquet. 
                     </div>
-                    <div>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                        dolore eu fugiat nulla pariatur. 
-                        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </div>
-                </div>
 
                 <div className="painting-render">
                     {paintingRender()}

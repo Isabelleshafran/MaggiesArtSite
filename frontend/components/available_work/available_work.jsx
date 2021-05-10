@@ -30,7 +30,7 @@ class AvailableWork extends React.Component {
 
                 <div className="available-sub-categories">
                     <div className={this.state.selected === "commission-text" ? "selected" : "comission"}>
-                        <div>Pricing for commissions is as follows:</div> 
+                        <div>Pricing for animal commissions is as follows:</div> 
                         <br/>
                         <div>
                             $1,000 for 9” x 12” Portraits (excluding horses) 
@@ -42,17 +42,19 @@ class AvailableWork extends React.Component {
                             $2,250 for 20" x 18" (two dogs together, size varies) 
                             <br/>
                             <br/>
-
-                            Please inquire further for pricing on larger or custom sizes
+                            Please email me for pricing on other custom pieces outside of pet portraits. 
+                            I take on select projects and would be happy to discuss your ideas via email or over the phone.
+                            Please see below to view previous such projects. 
                             <br/>
-                            To request a commission or if you have any further inquires please contact <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
+                            <br/>
+                            To request a commission or if you have any further inquires please contact Maggie at <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
                             <br/>
                     </div>
                         
                     </div>
 
                     <div className={this.state.selected === "pdf-text" ? "selected" : "pdf"}>
-                        <div>Click <a className="pdf" href={window.pdf} download="SamplePDF"> here </a>to download catalogue</div>
+                        <div>Click <a className="pdf" href={window.pdf} download="AvailableArt"> here </a>to download catalogue</div>
                         <br/> 
                         <span>Contact Information: </span>     
                         <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>

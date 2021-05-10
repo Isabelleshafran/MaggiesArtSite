@@ -32,18 +32,14 @@ class Other extends React.Component {
 
         return ( 
             <div className="friendship_container">
-                <div className="project-index-header">Other</div>
+                <div className="project-index-header">Selected Sketchbook and Activities</div>
                 <div className="project-index-description">
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                        Duis aute dolor in reprehenderit in reprehenderit in voluptate
-                    </div>
-                    <div>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                        dolore eu fugiat nulla pariatur. 
-                        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </div>
+                    This section gives a look into my processes and artistic activities and a glimpse 
+                    of what goes on behind the scenes of my larger bodies of work and the things I make 
+                    just for myself. It contains a collection of sketchbook pages, photos I’ve taken, 
+                    experiments, investigations, unfinished pieces, commissions and work made long ago. 
+                    Some pieces may become part of a larger body of work, others simply had my attention 
+                    for a moment, but never became fully realized.  
                 </div>
                 <div className="painting-render">
                         {paintingRender()}

@@ -27,18 +27,23 @@ class FriendshipWorship extends React.Component {
 
         return ( 
             <div className="friendship_container">
-                <div className="project-index-header">Friendship Worship</div>
+                <div className="project-index-header">FRIENDSHIP WORSHIP</div>
                 <div className="project-index-description">
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                        Duis aute dolor in reprehenderit in reprehenderit in voluptate
-                    </div>
-                    <div>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                        dolore eu fugiat nulla pariatur. 
-                        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </div>
+                        This series is my longest running body of work and will likely continue throughout my life. 
+                        I began making portraits of friends after our family moved as a way to feel close to people I left behind.
+                        I found joy in this examination of friendship and it became fundamental to my practice. Through the years 
+                        I’ve investigated different ways to engage in representation. My earlier work focused on material, and how 
+                        different textures and colors represented personality. I’ve also moved through how spaces and objects around a 
+                        person act as signifiers and basis for judgments - an activity that harkens back to early portraiture in which people 
+                        posed with their possessions to signify status or occupation. I moved to using nudity with the intention to humanize, 
+                        rather than sexualize the naked body. I want to show the person who is left after being stripped of exterior indicators. 
+                        Elements of humor and playfulness entangle with confrontational vulnerability. 
+                        The whole practice has centralized on lending my perspective to the viewer and the subject. As a person who has 
+                        often felt insecure in relationships, I’ve found making art of someone to be a grounding way to meditate on who 
+                        that person is to me, the expectations I’ve put on them, and consider my role in their life and theirs in mine. 
+                        It's a declaration of love, and granting of grace. It's about understanding that people can’t always be who they 
+                        are in a piece of art, and letting them see what I see; a person worthy of the worship of making art. Art isn’t perfect, 
+                        but it takes work, effort, time, patience and the result is hopefully something worthwhile. 
                 </div>
 
                 <div className="painting-render">

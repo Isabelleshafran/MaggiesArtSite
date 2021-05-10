@@ -33,17 +33,17 @@ class Pets extends React.Component {
             <div className="friendship_container">
                 <div className="project-index-header">Pets</div>
                     <div className="project-index-description">
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                        Duis aute dolor in reprehenderit in reprehenderit in voluptate
+                        This is a selection of commissioned pet portraits done over my career. 
+                        As a young child my first obsession and passion was horses. I drew them constantly, 
+                        so it is no wonder they, along with other beloved animals, have resurfaced in my 
+                        artistic journey. I did my first pet portrait of our family dog; a funny, 
+                        slightly overweight cavalier named Teddy. What began as a gift, has grown into a 
+                        significant part of my business and life as an artist. Utilizing my long developed 
+                        practice of bringing emotion and life to portraits, I capture the spirit of each 
+                        subject in a drawing. It is a great joy of mine to see the delight on my clients faces 
+                        when they see their cherished pet as a work of art. I continue to accept commissions so 
+                        please feel free to reach out via my contact information if you are interested in a pet portrait. 
                     </div>
-                    <div>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                        dolore eu fugiat nulla pariatur. 
-                        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </div>
-                </div>
 
                 <div className="painting-render">
                     {paintingRender()}
