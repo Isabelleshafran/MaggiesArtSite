@@ -100,6 +100,8 @@
 
         .navbar-items {
             display: none;
+
+            
             
         }
         
@@ -114,6 +116,10 @@
             border-right: 1px solid rgb(224, 224, 224);
             left: 0px;
             top: 50px;
+
+            .splash-logo {
+                display: none;
+            }
 
             .item {
                  font-family: 'Inter', sans-serif;
@@ -156,9 +162,6 @@
 
     }
 
-    .text {
-        display: none;
-    }
 
     .projects-container {
         margin-top: 80px;
@@ -172,23 +175,22 @@
             position: relative;
             text-align: center;
             
-                .project-home-image {
-                    opacity: .6;
-                }
-
-                .text {
-                    width: 100%;
-                    font-size: 100px;
-                    color: #6d88b8;
-                    font-family: 'Open Sans', sans-serif;
-                    font-weight: bold;
-                    position: absolute;
+            .text {
+                position: absolute;
+                width: 100%;
+                font-size: 30px;
+                color: #6d88b8;
+                font-family: 'Open Sans', sans-serif;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
             
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-                
+            .project-home-image {
+                opacity: .4;
+            }
+
             }
     }
 
