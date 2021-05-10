@@ -8,18 +8,11 @@ import ReactLoading from "react-loading";
 class NatureMorte extends React.Component {
         constructor(props) {
         super(props);
-
-        this.state = {
-            loading: true
-        }
     }
 
     componentDidMount(){
         window.scrollTo(0, 0);
         this.props.fetchPaintings(this.props.category)
-        // setTimeout(() => {
-        //     this.props.fetchPaintings(this.props.category).then(() => this.setState({loading: false}))
-        // },2000)
 
     }
 
@@ -36,15 +29,6 @@ class NatureMorte extends React.Component {
             }
         }
 
-        //  const loadingTrue = () => {
-        //     if(this.state.loading === true){
-        //         return <ReactLoading type={"bubbles"} color={"rgba(168, 168, 168, 0.699)"} className={"react-bars"}/>
-        //     } else {
-        //         return paintingRender()
-        //     }
-        // }
-
-      
         return ( 
             <div className="friendship_container">
                 <div className="project-index-header">Nature Morte</div>
@@ -66,8 +50,6 @@ class NatureMorte extends React.Component {
                 </div>
             </div>
             );
-    
-        
     }
 
 }
