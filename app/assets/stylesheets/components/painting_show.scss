@@ -2,20 +2,28 @@
 .painting-show-container {
     display: flex;
     justify-content: center;
+    // align-items: center;
     color: rgba(168, 168, 168, 0.856);
     font-family: 'Hind', sans-serif;
-    margin-top: 100px;    
+    margin-top: 100px;  
+    height: 100vh;
+    
+    // border: 1px solid green;
 }
 
 
 .painting-show {
+
 
     display: flex;
     align-items: center;
     flex-direction: column;
     object-fit: contain;
     transform: none;
+
+    justify-content: center;
     max-width: 55%;
+
 }
 
 .painting-show-text {
@@ -42,7 +50,6 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    margin-top: 200px;
 
 }
 

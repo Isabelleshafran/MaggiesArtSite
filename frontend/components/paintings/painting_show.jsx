@@ -10,12 +10,14 @@ class PaintingShow extends React.Component {
             year: "",
             medium: "", 
             size: "", 
-            id: ""
+            id: "", 
+            carouselOpen: true
         }
 
         this.clickForward = this.clickForward.bind(this)
         this.clickBackward = this.clickBackward.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.exitCarousel = this.exitCarousel.bind(this)
     }
 
     componentDidMount(){
@@ -54,7 +56,7 @@ class PaintingShow extends React.Component {
         let index = allPaintings.indexOf(currentPainting);
         let newIndex = (index + 1) % allPaintings.length;
         let newProj = allPaintings[newIndex]
-        this.props.history.push(`/${newProj.category}/${newProj.id}`)
+       this.props.history.push(`/${newProj.category}/${newProj.id}`)
     }
     
     clickBackward(){
@@ -94,6 +96,17 @@ class PaintingShow extends React.Component {
             .then(() => alert('udpate successful'))
     }
 
+    exitCarousel(e){
+
+        if(this.props.match.params.category === "uninhabited"){
+            return e => this.props.history.push(`/uninhabited_spaces`)
+        } else if(this.props.match.params.category === "little_pieces"){
+            return e => this.props.history.push(`/little_pieces_of_death`)
+        } else {
+            return e => this.props.history.push(`/${this.props.match.params.category}`)
+        }
+    }
+
 
     render() { 
         if(!this.props.painting){
@@ -101,7 +114,7 @@ class PaintingShow extends React.Component {
         } else {
             if(this.props.currentUser.id !== null){
                 return (
-                     <div className="painting-show-container">
+                     <div className="painting-show-container" onClick={this.exitCarousel()}>
                         <div className="painting-show">
                         
                             <div className="icons">
@@ -133,6 +146,7 @@ class PaintingShow extends React.Component {
             } else {
                 return (
                     <div className="painting-show-container">
+                        <div onClick={this.exitCarousel()} style={{height: "100vh", width: "25%", zIndex: 0}}></div>
                         <div className="painting-show">
                         
                             <div className="icons">
@@ -153,8 +167,8 @@ class PaintingShow extends React.Component {
                                 <div>{this.props.painting.medium}</div>
                                 <div>{this.props.painting.size}</div>
                             </div>
-        
                         </div>
+                        <div onClick={this.exitCarousel()} style={{height: "100vh", width: "25%", zIndex: 0}}></div>
                     </div>
                 )
             }

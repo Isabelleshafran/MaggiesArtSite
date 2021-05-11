@@ -1333,11 +1333,13 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       year: "",
       medium: "",
       size: "",
-      id: ""
+      id: "",
+      carouselOpen: true
     };
     _this.clickForward = _this.clickForward.bind(_assertThisInitialized(_this));
     _this.clickBackward = _this.clickBackward.bind(_assertThisInitialized(_this));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    _this.exitCarousel = _this.exitCarousel.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -1436,6 +1438,25 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       });
     }
   }, {
+    key: "exitCarousel",
+    value: function exitCarousel(e) {
+      var _this6 = this;
+
+      if (this.props.match.params.category === "uninhabited") {
+        return function (e) {
+          return _this6.props.history.push("/uninhabited_spaces");
+        };
+      } else if (this.props.match.params.category === "little_pieces") {
+        return function (e) {
+          return _this6.props.history.push("/little_pieces_of_death");
+        };
+      } else {
+        return function (e) {
+          return _this6.props.history.push("/".concat(_this6.props.match.params.category));
+        };
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       if (!this.props.painting) {
@@ -1443,7 +1464,8 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       } else {
         if (this.props.currentUser.id !== null) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            className: "painting-show-container"
+            className: "painting-show-container",
+            onClick: this.exitCarousel()
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -1494,6 +1516,13 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show-container"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            onClick: this.exitCarousel(),
+            style: {
+              height: "100vh",
+              width: "25%",
+              zIndex: 0
+            }
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "icons"
@@ -1514,7 +1543,14 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
             src: this.props.painting.imgUrl
           }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show-text"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.year), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size))));
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.year), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            onClick: this.exitCarousel(),
+            style: {
+              height: "100vh",
+              width: "25%",
+              zIndex: 0
+            }
+          }));
         }
       }
     }
