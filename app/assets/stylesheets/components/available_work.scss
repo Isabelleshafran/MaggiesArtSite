@@ -15,7 +15,6 @@
     .available-text {
         font-weight: 700;
         color: rgba(119, 119, 119, 0.856);
-        
         font-family: 'Inter', sans-serif;
 
     }
@@ -42,6 +41,7 @@
 
 .available-sub-categories {
      width: 70%;
+     text-align: justify;
 
     .selected {
         display: block;
@@ -53,7 +53,6 @@
         margin-top: 30px;
         display: flex;
         flex-direction: row;
-        align-items: center;
         margin-left: -43%;
 
 
@@ -70,19 +69,12 @@
             }
         }
         .ann {
-            height: 350px;
-            width: 350px;
-            // margin-top: 5%;
+            width: 400px;
         }
     }
 
     .reclining {
             // margin-top: 5%;
-        width: 400px;
-        height: 320px;
-    }
-
-    .maia {
         width: 400px;
         height: 320px;
     }

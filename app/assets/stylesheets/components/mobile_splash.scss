@@ -218,7 +218,7 @@
     .cv-container {
         width: 80%;
         height: 500px;
-        margin-top: 320px;
+        margin-top: 100px;
 
         .shows-text,  .education-text, .press-text{
             width: 55px;
@@ -232,21 +232,34 @@
     // available work 
 
     .available-container {
-         width: 80%;
+         width: 87%;
         height: 500px;
-        margin-top: 320px;
+        margin-top: 100px;
 
+    .available-text-container {
+        margin-left: -5%;
+        width: 35%;
+
+    .available-text {
+        font-weight: 700;
+        color: rgba(119, 119, 119, 0.856);
+        font-family: 'Inter', sans-serif;
+        }
+
+    }
 
         .pdf-text , .commission-text {
-            width: 55px;
+            width: 70%;
         }
 
         .selected-text-ac {
-            width: 55px;
-
+            width: 70%;
         }
 
-
+        .ann-container {
+            display: flex; 
+            flex-direction: column;
+        }
 
     }
 }
