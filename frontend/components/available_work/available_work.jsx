@@ -28,9 +28,9 @@ class AvailableWork extends React.Component {
 
                 <div className="available-sub-categories">
                     <div className={this.state.selected === "commission-text" ? "selected" : "comission"}>
-                        <div>Pricing for animal commissions is as follows:</div> 
+                        <div className="animal-pricing">Pricing for animal commissions is as follows:</div> 
                         <br/>
-                        <div>
+                        <div className="animal-pricing">
                             $1,000 for 9” x 12” Portraits (excluding horses) 
                             <br/>
                             $1,250 for 13” x 18” (Small size horse or full body of dog)

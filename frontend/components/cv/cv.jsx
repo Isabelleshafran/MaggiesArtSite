@@ -54,6 +54,7 @@ class CV extends React.Component {
                     </div>
 
                     <div className={this.state.selected === "press-text" ? "selected" : "press"}>
+                        <ul>“Puppy Portraiture: Sun Valley’s Maggie Shafran”<em>Idahome Magazine (Issue 8)</em> 2019</ul>
                         <ul>Leslie McMorrow “Animal Portraits by Maggie Shafran” <em>Au Courant</em> 2018</ul>
                         <ul>Kevin Wade, "Emerging Artists" <em>Big Life</em> 2016</ul>
                         <ul>Anneliese Turck, "Alumni: Creative Arts" <em>CS Magazine</em> 2015</ul>

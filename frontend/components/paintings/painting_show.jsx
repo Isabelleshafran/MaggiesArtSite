@@ -98,13 +98,19 @@ class PaintingShow extends React.Component {
 
     exitCarousel(e){
 
-        if(this.props.match.params.category === "uninhabited"){
-            return e => this.props.history.push(`/uninhabited_spaces`)
-        } else if(this.props.match.params.category === "little_pieces"){
-            return e => this.props.history.push(`/little_pieces_of_death`)
-        } else {
-            return e => this.props.history.push(`/${this.props.match.params.category}`)
+        let arrowLeft = document.getElementsByClassName("fas fa-angle-left")[0]
+        let arrowRight = document.getElementsByClassName("fas fa-angle-right")[0]
+
+        if(e.target !== arrowLeft && e.target !== arrowRight) {
+            if(this.props.match.params.category === "uninhabited"){
+                return this.props.history.push(`/uninhabited_spaces`)
+            } else if(this.props.match.params.category === "little_pieces"){
+                return this.props.history.push(`/little_pieces_of_death`)
+            } else {
+                return this.props.history.push(`/${this.props.match.params.category}`)
+            }
         }
+
     }
 
 
@@ -114,12 +120,12 @@ class PaintingShow extends React.Component {
         } else {
             if(this.props.currentUser.id !== null){
                 return (
-                     <div className="painting-show-container" onClick={this.exitCarousel()}>
+                     <div>
                         <div className="painting-show">
                         
                             <div className="icons">
                                 <div className="icons-left">
-                                    <button onClick={this.clickBackward}><i className="fas fa-angle-left"></i></button>
+                                    <button onClick={this.clickBackward} ><i className="fas fa-angle-left"></i></button>
                                 </div>
                         
                                 <div className="icons-right">
@@ -145,8 +151,7 @@ class PaintingShow extends React.Component {
                 )
             } else {
                 return (
-                    <div className="painting-show-container">
-                        <div onClick={this.exitCarousel()} style={{height: "100vh", width: "25%", zIndex: 0}}></div>
+                    <div className="painting-show-container" onClick={this.exitCarousel}>
                         <div className="painting-show">
                         
                             <div className="icons">
@@ -168,7 +173,6 @@ class PaintingShow extends React.Component {
                                 <div>{this.props.painting.size}</div>
                             </div>
                         </div>
-                        <div onClick={this.exitCarousel()} style={{height: "100vh", width: "25%", zIndex: 0}}></div>
                     </div>
                 )
             }

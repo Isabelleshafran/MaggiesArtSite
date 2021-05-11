@@ -426,7 +426,11 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
         className: "available-sub-categories"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: this.state.selected === "commission-text" ? "selected" : "comission"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Pricing for animal commissions is as follows:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "$1,000 for 9\u201D x 12\u201D Portraits (excluding horses)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,250 for 13\u201D x 18\u201D (Small size horse or full body of dog)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,500 for 18\u201D x 24\u201D (Horse)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$2,250 for 20\" x 18\" (two dogs together, size varies)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Please email me for pricing on other custom pieces outside of pet portraits. I take on select projects and would be happy to discuss your ideas via email or over the phone. Please see below to view previous such projects.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To request a commission or if you have any further inquires please contact Maggie at ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "animal-pricing"
+      }, "Pricing for animal commissions is as follows:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "animal-pricing"
+      }, "$1,000 for 9\u201D x 12\u201D Portraits (excluding horses)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,250 for 13\u201D x 18\u201D (Small size horse or full body of dog)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,500 for 18\u201D x 24\u201D (Horse)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$2,250 for 20\" x 18\" (two dogs together, size varies)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Please email me for pricing on other custom pieces outside of pet portraits. I take on select projects and would be happy to discuss your ideas via email or over the phone. Please see below to view previous such projects.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To request a commission or if you have any further inquires please contact Maggie at ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
         className: "email",
         target: "_blank",
         rel: "noreferrer",
@@ -552,7 +556,7 @@ var CV = /*#__PURE__*/function (_React$Component) {
         className: this.state.selected === "education-text" ? "selected" : "education"
       }, "Bachelor of Fine Arts", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Pitzer College"), ", Claremont, CA", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "2010-2014", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Graduate Diploma (Fine Art)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Royal College of Art"), ", London, England", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "2020"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: this.state.selected === "press-text" ? "selected" : "press"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Leslie McMorrow \u201CAnimal Portraits by Maggie Shafran\u201D ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Au Courant"), " 2018"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Kevin Wade, \"Emerging Artists\" ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Big Life"), " 2016"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Anneliese Turck, \"Alumni: Creative Arts\" ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "CS Magazine"), " 2015"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Julie Bramowitz, \"This is Our Youth\" ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Idaho Mountain Express"), " 2015"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Liset Marquez, \u201CMural in Ontario Promotes Healthy Eating Initiative\u201D ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Daily Bulletin"), " 2014"))));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "\u201CPuppy Portraiture: Sun Valley\u2019s Maggie Shafran\u201D", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Idahome Magazine (Issue 8)"), " 2019"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Leslie McMorrow \u201CAnimal Portraits by Maggie Shafran\u201D ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Au Courant"), " 2018"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Kevin Wade, \"Emerging Artists\" ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Big Life"), " 2016"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Anneliese Turck, \"Alumni: Creative Arts\" ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "CS Magazine"), " 2015"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Julie Bramowitz, \"This is Our Youth\" ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Idaho Mountain Express"), " 2015"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, "Liset Marquez, \u201CMural in Ontario Promotes Healthy Eating Initiative\u201D ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Daily Bulletin"), " 2014"))));
     }
   }]);
 
@@ -1440,20 +1444,17 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "exitCarousel",
     value: function exitCarousel(e) {
-      var _this6 = this;
+      var arrowLeft = document.getElementsByClassName("fas fa-angle-left")[0];
+      var arrowRight = document.getElementsByClassName("fas fa-angle-right")[0];
 
-      if (this.props.match.params.category === "uninhabited") {
-        return function (e) {
-          return _this6.props.history.push("/uninhabited_spaces");
-        };
-      } else if (this.props.match.params.category === "little_pieces") {
-        return function (e) {
-          return _this6.props.history.push("/little_pieces_of_death");
-        };
-      } else {
-        return function (e) {
-          return _this6.props.history.push("/".concat(_this6.props.match.params.category));
-        };
+      if (e.target !== arrowLeft && e.target !== arrowRight) {
+        if (this.props.match.params.category === "uninhabited") {
+          return this.props.history.push("/uninhabited_spaces");
+        } else if (this.props.match.params.category === "little_pieces") {
+          return this.props.history.push("/little_pieces_of_death");
+        } else {
+          return this.props.history.push("/".concat(this.props.match.params.category));
+        }
       }
     }
   }, {
@@ -1463,10 +1464,7 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
         return null;
       } else {
         if (this.props.currentUser.id !== null) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            className: "painting-show-container",
-            onClick: this.exitCarousel()
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "icons"
@@ -1514,15 +1512,9 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
           }, "Submit"))));
         } else {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            className: "painting-show-container"
+            className: "painting-show-container",
+            onClick: this.exitCarousel
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            onClick: this.exitCarousel(),
-            style: {
-              height: "100vh",
-              width: "25%",
-              zIndex: 0
-            }
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "icons"
@@ -1543,14 +1535,7 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
             src: this.props.painting.imgUrl
           }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show-text"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.year), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            onClick: this.exitCarousel(),
-            style: {
-              height: "100vh",
-              width: "25%",
-              zIndex: 0
-            }
-          }));
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.year), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.medium), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, this.props.painting.size))));
         }
       }
     }
