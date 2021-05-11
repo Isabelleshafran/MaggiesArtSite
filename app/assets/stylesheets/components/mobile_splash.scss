@@ -52,7 +52,7 @@
                     align-items: center;
                     margin-top: 8px;
                     margin-bottom: 50px;
-                    margin-left: 5%;
+                    margin-left: -3%;
 
                     .about {
                         font-size: 45px;
@@ -156,7 +156,13 @@
         max-width: 400px;
         column-count: 1;
         column-gap: 1em;
+    }
 
+    .painting-render-3 {
+        margin-top: 25px;
+        max-width: 400px;
+        column-count: 1;
+        column-gap: 1em;
     }
 
     .icons {
