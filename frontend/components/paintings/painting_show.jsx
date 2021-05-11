@@ -120,7 +120,7 @@ class PaintingShow extends React.Component {
         } else {
             if(this.props.currentUser.id !== null){
                 return (
-                     <div>
+                     <div className="painting-show-container" onClick={this.exitCarousel}>
                         <div className="painting-show">
                             <img className="painting-show-image" src={this.props.painting.imgUrl}/>
                 
@@ -164,6 +164,7 @@ class PaintingShow extends React.Component {
                             <div className="icons-left">
                                 <button onClick={this.clickBackward}><i className="fas fa-angle-left"></i></button>
                             </div>
+
                             <div className="icons-right">
                                 <button onClick={this.clickForward}><i className="fas fa-angle-right"></i></button> 
                             </div>

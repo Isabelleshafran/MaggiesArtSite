@@ -1464,7 +1464,10 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
         return null;
       } else {
         if (this.props.currentUser.id !== null) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "painting-show-container",
+            onClick: this.exitCarousel
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
             className: "painting-show-image",
