@@ -1,18 +1,16 @@
 .available-container {
-    width: 68%;
+    width: 80%;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 320px;
-    height: 50%;
-
+    transform: translate(-50%, 0);
+    margin-top: 120px;
     display: flex;
     justify-content: space-between;
-
+ 
 }
 
 .available-text-container {
-    width: 30%;
+    width: 20%;
 
     .available-text {
         font-weight: 700;
@@ -40,11 +38,45 @@
 }
 
 .available-sub-categories {
-     width: 50%;
+     width: 70%;
 
     .selected {
         display: block;
         font-family: 'Hind', sans-serif;
+    }
+
+
+    .ann-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+
+        p {
+            margin-left: 10px;
+            // width: 500px;
+
+            span {
+                font-weight: 700;
+                font-family: 'Inter', sans-serif;
+
+            }
+        }
+        .ann {
+            height: 350px;
+            width: 350px;
+            // margin-top: 5%;
+        }
+    }
+
+    .reclining {
+            // margin-top: 5%;
+        width: 400px;
+        height: 320px;
+    }
+
+    .maia {
+        width: 400px;
+        height: 320px;
     }
 
     > div {

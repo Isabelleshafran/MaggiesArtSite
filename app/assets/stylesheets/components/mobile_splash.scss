@@ -162,7 +162,7 @@
     .icons {
         display: flex;
         flex-direction: row;
-        width: 300px;
+        min-width: 75%;
         justify-content: space-between;
         align-items: center;
         position: absolute;
@@ -183,21 +183,21 @@
             position: relative;
             text-align: center;
             
-            .text {
-                position: absolute;
-                width: 100%;
-                font-size: 30px;
-                color: #6d88b8;
-                font-family: 'Open Sans', sans-serif;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                opacity: 1;
-            }
-            
-            .project-home-image {
-                opacity: .4;
-            }
+                .text {
+                    position: absolute;
+                    width: 100%;
+                    font-size: 35px;
+                    color: #666666;
+                    font-family: 'Inter', sans-serif;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                }
+                
+                .project-home-image {
+                    opacity: .4;
+                }
 
             }
     }
@@ -205,8 +205,7 @@
     .project-index-description {
         margin-top: 15px;
         display: flex;
-        min-width: 250px;   
-        margin-left: 15px;    
+        width: 80%; 
     }
 
     .friendship_container {
@@ -218,6 +217,7 @@
 
     .cv-container {
         width: 80%;
+        height: 500px;
         margin-top: 320px;
 
         .shows-text,  .education-text, .press-text{
@@ -232,15 +232,17 @@
     // available work 
 
     .available-container {
-        width: 80%;
+         width: 80%;
+        height: 500px;
         margin-top: 320px;
 
+
         .pdf-text , .commission-text {
-            width: 65px;
+            width: 55px;
         }
 
         .selected-text-ac {
-            width: 65px;
+            width: 55px;
 
         }
 
@@ -250,11 +252,11 @@
 }
 
 
-@media only screen and (max-width : 400px) {
-    .maggie-splash {
-        color: white;
-        font-family: 'Lato', sans-serif;
-        font-weight: 200;
-        font-size: 38px;
-    }
-}
+// @media only screen and (max-width : 400px) {
+//     .maggie-splash {
+//         color: white;
+//         font-family: 'Lato', sans-serif;
+//         font-weight: 200;
+//         font-size: 38px;
+//     }
+// }

@@ -54,7 +54,6 @@ class PaintingShow extends React.Component {
         let index = allPaintings.indexOf(currentPainting);
         let newIndex = (index + 1) % allPaintings.length;
         let newProj = allPaintings[newIndex]
-        // debugger
         this.props.history.push(`/${newProj.category}/${newProj.id}`)
     }
     
