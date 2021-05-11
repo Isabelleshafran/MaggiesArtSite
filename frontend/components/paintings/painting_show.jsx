@@ -122,17 +122,6 @@ class PaintingShow extends React.Component {
                 return (
                      <div>
                         <div className="painting-show">
-                        
-                            <div className="icons">
-                                <div className="icons-left">
-                                    <button onClick={this.clickBackward} ><i className="fas fa-angle-left"></i></button>
-                                </div>
-                        
-                                <div className="icons-right">
-                                    <button onClick={this.clickForward}><i className="fas fa-angle-right"></i></button> 
-                                </div>
-    
-                            </div>
                             <img className="painting-show-image" src={this.props.painting.imgUrl}/>
                 
                         <form onSubmit={this.handleSubmit}>
@@ -145,7 +134,16 @@ class PaintingShow extends React.Component {
                             </div>
                             <button type="submit">Submit</button>
                         </form>
-        
+                        </div>
+
+                        <div className="icons">
+                                <div className="icons-left">
+                                    <button onClick={this.clickBackward} ><i className="fas fa-angle-left"></i></button>
+                                </div>
+                        
+                                <div className="icons-right">
+                                    <button onClick={this.clickForward}><i className="fas fa-angle-right"></i></button> 
+                                </div>
                         </div>
                     </div>
                 )
@@ -153,24 +151,21 @@ class PaintingShow extends React.Component {
                 return (
                     <div className="painting-show-container" onClick={this.exitCarousel}>
                         <div className="painting-show">
-                        
-                            <div className="icons">
-                                <div className="icons-left">
-                                    <button onClick={this.clickBackward}><i className="fas fa-angle-left"></i></button>
-                                </div>
-                        
-                                <div className="icons-right">
-                                    <button onClick={this.clickForward}><i className="fas fa-angle-right"></i></button> 
-                                </div>
-    
-                            </div>
                             <img className="painting-show-image" src={this.props.painting.imgUrl}/>
-                
                             <div className="painting-show-text">
                                 <div>{this.props.painting.title}</div>
                                 <div>{this.props.painting.year}</div>
                                 <div>{this.props.painting.medium}</div>
                                 <div>{this.props.painting.size}</div>
+                            </div>
+                        </div>
+
+                        <div className="icons">
+                            <div className="icons-left">
+                                <button onClick={this.clickBackward}><i className="fas fa-angle-left"></i></button>
+                            </div>
+                            <div className="icons-right">
+                                <button onClick={this.clickForward}><i className="fas fa-angle-right"></i></button> 
                             </div>
                         </div>
                     </div>
