@@ -68,6 +68,7 @@ class AvailableWork extends React.Component {
                         </div>
 
                     <div className="ann-container">
+                            <img src="https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/1.jpg" alt="annrand" className="reclining"/>
                             <p>
                                 <span>RECLINING NUDES </span>
                                 <br/>
@@ -81,16 +82,6 @@ class AvailableWork extends React.Component {
                                      many hours of work and a beautiful custom frame job done by a local framer, I was able to hand deliver this 
                                      piece and see it in her stunning home. Her trust in my vision and our mutual love of timeless figurative art, 
                                      florals and antiques made this a piece special to us both.  
-                            </p>
-                            <img src="https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/1.jpg" alt="annrand" className="reclining"/>
-                        </div>
-
-                        <div className="ann-container">
-                            <img src="https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/2.JPG" alt="annrand" className="maia"/>
-                            <p>
-                                <span>MAIA</span>
-                                <br/>
-                                I was honored to be approached by a close friend to do a piece of her for her fiance. 
                             </p>
                         </div>
                     </div>

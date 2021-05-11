@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: rgba(168, 168, 168, 0.856);
+    color: rgba(168, 168, 168, 0.671);
 
     .project-index-header {
         font-size: 30px;
@@ -15,9 +15,13 @@
 
 
     .project-index-description {
+        color: rgba(82, 80, 80, 0.671);
         font-family: 'Hind', sans-serif;
         margin-top: 15px;
         max-width: 1100px;
+
+        text-align: justify;
+        text-justify: inter-word;
    
         -webkit-column-count: 2;
         -moz-column-count: 2;

@@ -17,10 +17,7 @@
     display: flex;
     align-items: center;
     flex-direction: column; 
-
     background-image: url('https://maggieshafran-seeds.s3.amazonaws.com/splash/splashimage.JPG');
-
-    // background-image: url('https://maggieshafran-seeds.s3.amazonaws.com/splash/E5D3AE1D-6359-4105-96DA-76ABFA63F3AF.jpg');
     position: absolute;
     margin-top: 90px;
     width: 100%;
@@ -45,6 +42,8 @@
         display: flex;
         justify-content: center;
         background-color: white;
+        text-align: justify;
+                text-justify: inter-word;
 
             .headshot {
                 margin-bottom: 50px;
@@ -69,6 +68,8 @@
                 font-family: 'Hind', sans-serif;
                 font-size: 17px;
                 margin-bottom: 18px;
+                
+   
             }
         }
 

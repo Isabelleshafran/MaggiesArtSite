@@ -14,7 +14,8 @@
 
     .available-text {
         font-weight: 700;
-        text-decoration: underline;
+        color: rgba(119, 119, 119, 0.856);
+        
         font-family: 'Inter', sans-serif;
 
     }
@@ -28,6 +29,8 @@
     .selected-text-ac {
         font-family: 'Hind', sans-serif;
         font-weight: 700;
+        color: rgba(94, 93, 93, 0.856);
+
         padding: 20px;
         border-bottom: 1px solid lightgray;
     }
@@ -50,14 +53,19 @@
         margin-top: 30px;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        margin-left: -43%;
+
 
         p {
             margin-left: 10px;
-            // width: 500px;
+            text-align: justify;
+            text-justify: inter-word;
 
             span {
                 font-weight: 700;
                 font-family: 'Inter', sans-serif;
+                color: rgba(119, 119, 119, 0.856);
 
             }
         }
