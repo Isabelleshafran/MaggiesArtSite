@@ -375,6 +375,7 @@
 
         .ann-container {
             margin-left: 0;
+            max-width: 90%;
             display: flex; 
             flex-direction: column;
             align-items: center;
@@ -385,6 +386,15 @@
 
             .ann, .reclining {
                 margin-bottom: 10px;
+            }
+
+            .ann {
+                max-width: 300px;
+            }
+
+            .reclining {
+                max-height: 250px;
+                max-width: 300px;
             }
         }
 
