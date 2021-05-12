@@ -18,6 +18,10 @@
     justify-content: center;
 }
 
+.next, .previous {
+    display: none;
+}
+
 .painting-show-image {
     min-width: 1200px;
     max-width: 1200px;

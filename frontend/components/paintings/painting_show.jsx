@@ -103,8 +103,14 @@ class PaintingShow extends React.Component {
         let icon = document.getElementsByClassName("icons")[0];
         let paintingShowBox = document.getElementsByClassName("painting-show")[0];
 
+        let next = document.getElementsByClassName("next")[0];
+        let prev = document.getElementsByClassName("previous")[0];
+        let mobileIcon = document.getElementsByClassName("mobile-icons")[0];
 
-        if(e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon && e.target !== paintingShowBox) {
+
+
+        if(e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon && e.target !== paintingShowBox
+            && e.target !== next && e.target !== prev && e.target !== mobileIcon) {
             if(this.props.match.params.category === "uninhabited"){
                 return this.props.history.push(`/uninhabited_spaces`)
             } else if(this.props.match.params.category === "little_pieces"){
@@ -155,6 +161,13 @@ class PaintingShow extends React.Component {
                 return (
                     <div className="painting-show-container" onClick={this.exitCarousel}>
                         <div className="painting-show">
+
+                            <div className="mobile-icons">
+                                <button className="previous" onClick={this.clickBackward}>Previous</button>
+                                <button className="next" onClick={this.clickForward}>Next</button>
+                            </div>
+
+
                             <img className="painting-show-image" src={this.props.painting.imgUrl}/>
                             <div className="painting-show-text">
                                 <div>{this.props.painting.title}</div>

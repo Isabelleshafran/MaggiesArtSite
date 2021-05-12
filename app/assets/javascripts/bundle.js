@@ -1457,8 +1457,11 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       var arrowRight = document.getElementsByClassName("fas fa-angle-right")[0];
       var icon = document.getElementsByClassName("icons")[0];
       var paintingShowBox = document.getElementsByClassName("painting-show")[0];
+      var next = document.getElementsByClassName("next")[0];
+      var prev = document.getElementsByClassName("previous")[0];
+      var mobileIcon = document.getElementsByClassName("mobile-icons")[0];
 
-      if (e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon && e.target !== paintingShowBox) {
+      if (e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon && e.target !== paintingShowBox && e.target !== next && e.target !== prev && e.target !== mobileIcon) {
         if (this.props.match.params.category === "uninhabited") {
           return this.props.history.push("/uninhabited_spaces");
         } else if (this.props.match.params.category === "little_pieces") {
@@ -1532,7 +1535,15 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
             onClick: this.exitCarousel
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+            className: "mobile-icons"
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+            className: "previous",
+            onClick: this.clickBackward
+          }, "Previous"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+            className: "next",
+            onClick: this.clickForward
+          }, "Next")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
             className: "painting-show-image",
             src: this.props.painting.imgUrl
           }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {

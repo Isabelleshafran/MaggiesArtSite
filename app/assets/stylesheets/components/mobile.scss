@@ -226,7 +226,30 @@
     }
 
     .icons {
-        min-width: 86%;
+        // min-width: 95%;
+        display: none;
+    }
+
+    .mobile-icons {
+        color: #666666;
+        display: flex;
+        flex-direction: row;
+        min-width: 70%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px; 
+        padding-bottom: 20px;
+
+        button {
+            color: #666666;
+        }
+    }
+
+    .next, .previous {
+        display: flex;
+
     }
 
     .friendship_container {
