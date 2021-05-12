@@ -100,10 +100,11 @@ class PaintingShow extends React.Component {
 
         let arrowLeft = document.getElementsByClassName("fas fa-angle-left")[0]
         let arrowRight = document.getElementsByClassName("fas fa-angle-right")[0]
-
         let icon = document.getElementsByClassName("icons")[0];
+        let paintingShowBox = document.getElementsByClassName("painting-show")[0];
 
-        if(e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon) {
+
+        if(e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon && e.target !== paintingShowBox) {
             if(this.props.match.params.category === "uninhabited"){
                 return this.props.history.push(`/uninhabited_spaces`)
             } else if(this.props.match.params.category === "little_pieces"){
@@ -122,7 +123,7 @@ class PaintingShow extends React.Component {
         } else {
             if(this.props.currentUser.id !== null){
                 return (
-                     <div className="painting-show-container" onClick={this.exitCarousel}>
+                     <div className="painting-show-container">
                         <div className="painting-show">
                             <img className="painting-show-image" src={this.props.painting.imgUrl}/>
                 
@@ -134,7 +135,7 @@ class PaintingShow extends React.Component {
                                 Size: <input type="text" className="update-show-input" onChange={this.handleChange('size')} value={this.state.size}/>
                                 Medium:  <input type="text" className="update-show-input" onChange={this.handleChange('medium')} value={this.state.medium}/>
                             </div>
-                            <button type="submit">Submit</button>
+                            <button type="submit" className="submit">Submit</button>
                         </form>
                         </div>
 

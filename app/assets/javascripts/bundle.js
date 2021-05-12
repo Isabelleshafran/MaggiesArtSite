@@ -1456,8 +1456,9 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       var arrowLeft = document.getElementsByClassName("fas fa-angle-left")[0];
       var arrowRight = document.getElementsByClassName("fas fa-angle-right")[0];
       var icon = document.getElementsByClassName("icons")[0];
+      var paintingShowBox = document.getElementsByClassName("painting-show")[0];
 
-      if (e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon) {
+      if (e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon && e.target !== paintingShowBox) {
         if (this.props.match.params.category === "uninhabited") {
           return this.props.history.push("/uninhabited_spaces");
         } else if (this.props.match.params.category === "little_pieces") {
@@ -1475,8 +1476,7 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
       } else {
         if (this.props.currentUser.id !== null) {
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-            className: "painting-show-container",
-            onClick: this.exitCarousel
+            className: "painting-show-container"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
@@ -1507,7 +1507,8 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
             onChange: this.handleChange('medium'),
             value: this.state.medium
           })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-            type: "submit"
+            type: "submit",
+            className: "submit"
           }, "Submit"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "icons"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
