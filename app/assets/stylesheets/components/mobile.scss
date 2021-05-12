@@ -25,11 +25,11 @@
             }
 
             .artist-work {
-                font-size: 30px;
+                font-size: 24px;
             }
 
             .maggie-splash, .artist-work {
-                color: rgba(168, 168, 168, 0.856);;
+                color: rgba(119, 119, 119, 0.856);
             }
         }
 
@@ -220,6 +220,13 @@
     }
 
 
+    .painting-show-image {
+        width: 300px;
+    }
+
+    .icons {
+        min-width: 86%;
+    }
 
     .friendship_container {
         margin-top: 80px;
@@ -347,8 +354,7 @@
         }
 
     .available-text-container {
-        // margin-left: -5%;
-        width: 35%;
+        width: 70%;
 
     .available-text {
         display: flex;

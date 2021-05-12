@@ -125,6 +125,7 @@ class PaintingShow extends React.Component {
                 return (
                      <div className="painting-show-container">
                         <div className="painting-show">
+                            <button onClick={this.exitCarousel}>Exit Carousel</button>
                             <img className="painting-show-image" src={this.props.painting.imgUrl}/>
                 
                         <form onSubmit={this.handleSubmit}>

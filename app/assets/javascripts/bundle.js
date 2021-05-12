@@ -1479,7 +1479,9 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
             className: "painting-show-container"
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
             className: "painting-show"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+            onClick: this.exitCarousel
+          }, "Exit Carousel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
             className: "painting-show-image",
             src: this.props.painting.imgUrl
           }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
