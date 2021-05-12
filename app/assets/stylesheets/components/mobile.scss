@@ -214,6 +214,13 @@
         width: 80%; 
     }
 
+    .sketchbook {
+        display: flex; 
+        text-align: center;
+    }
+
+
+
     .friendship_container {
         margin-top: 80px;
     }
@@ -238,34 +245,74 @@
     // available work 
 
     .available-container {
-         width: 87%;
-        height: 500px;
         margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+         width: 95%;
+        align-items: center;
 
-    .available-text-container {
-        margin-left: -5%;
-        width: 35%;
+        .available-sub-categories {
+            width: 90%;
 
-    .available-text {
-        font-weight: 700;
-        color: rgba(119, 119, 119, 0.856);
-        font-family: 'Inter', sans-serif;
         }
 
-    }
-
-        .pdf-text , .commission-text {
-            width: 70%;
+        .selected-text-ac, .pdf-text, .commission-text {
+            display: none;
         }
 
-        .selected-text-ac {
-            width: 70%;
+        .pdf-mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Hind', sans-serif;
+            color: rgba(119, 119, 119, 0.856);
+            
+
+        }
+
+        .commissions-mobile, .download-mobile {
+            display: inline-block;
+            font-weight: 700;
+            color: rgba(119, 119, 119, 0.856);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .animal-pricing {
+            width: 100%;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
         }
 
         .ann-container {
+            margin-left: auto;
             display: flex; 
             flex-direction: column;
+            align-items: center;
+
+            p {
+                margin-left: auto;
+            }
+
+            .ann, .reclining {
+                margin-bottom: 10px;
+            }
         }
+
+    .available-text-container {
+        // margin-left: -5%;
+        width: 35%;
+
+    .available-text {
+        display: flex;
+        justify-content: center;
+        }
+
+    }
 
     }
 }

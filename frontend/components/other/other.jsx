@@ -32,7 +32,7 @@ class Other extends React.Component {
 
         return ( 
             <div className="friendship_container">
-                <div className="project-index-header">Selected Sketchbook and Activities</div>
+                <div className="project-index-header sketchbook">Selected Sketchbook and Activities</div>
                 <div className="project-index-description">
                     This section gives a look into my processes and artistic activities and a glimpse 
                     of what goes on behind the scenes of my larger bodies of work and the things I make 

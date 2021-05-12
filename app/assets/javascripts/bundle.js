@@ -394,8 +394,7 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
     _this.state = {
       selected: "commission-text"
-    }; //  add clicked boolean to make sure you cant double click 
-
+    };
     _this.selectTab = _this.selectTab.bind(_assertThisInitialized(_this));
     return _this;
   }
@@ -422,7 +421,9 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
       }, "Commissions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: this.selectTab,
         className: this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"
-      }, "Download Catalogue")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "Download Catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "commissions-mobile"
+      }, "Commissions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "available-sub-categories"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: this.state.selected === "commission-text" ? "selected" : "comission"
@@ -448,7 +449,9 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
         alt: "annrand",
         className: "reclining"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "RECLINING NUDES "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "This life size drawing was done for a client in Los Angeles who I initially met with for pet portraits. Upon seeing my figurative work, she told me of her love of nudes and portraits and asked if I would make something custom. For a while I had been wanting to do a piece with two women in an intimate setting, a concept she was on board with. She was drawn to my intricate pencil work of patterned fabrics, so we decided to incorporate antique textiles from her own impressive collection. I was given free reign to choose models (close friends of mine) and create the scene after discussing style and feel, and exchanging a few inspirational images. I did a photoshoot to get a source image and after a bit of photoshopping, I had a picture we were both excited about. After many, many hours of work and a beautiful custom frame job done by a local framer, I was able to hand deliver this piece and see it in her stunning home. Her trust in my vision and our mutual love of timeless figurative art, florals and antiques made this a piece special to us both."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: this.state.selected === "pdf-text" ? "selected" : "pdf"
+        className: "download-mobile"
+      }, "Download Catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: this.state.selected === "pdf-text" ? "selected" : "pdf pdf-mobile"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
         className: "pdf",
         href: window.pdf,
@@ -1229,7 +1232,7 @@ var Other = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "friendship_container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "project-index-header"
+        className: "project-index-header sketchbook"
       }, "Selected Sketchbook and Activities"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-description"
       }, "This section gives a look into my processes and artistic activities and a glimpse of what goes on behind the scenes of my larger bodies of work and the things I make just for myself. It contains a collection of sketchbook pages, photos I\u2019ve taken, experiments, investigations, unfinished pieces, commissions and work made long ago. Some pieces may become part of a larger body of work, others simply had my attention for a moment, but never became fully realized."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {

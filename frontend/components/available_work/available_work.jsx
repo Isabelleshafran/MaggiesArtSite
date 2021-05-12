@@ -7,8 +7,6 @@ class AvailableWork extends React.Component {
         this.state = { 
             selected: "commission-text"
          }
-
-        //  add clicked boolean to make sure you cant double click 
         this.selectTab = this.selectTab.bind(this);
     }
 
@@ -24,6 +22,9 @@ class AvailableWork extends React.Component {
                     <div className='available-text'>AVAILABLE WORK</div>
                     <div onClick={this.selectTab} className={this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"}>Commissions</div>
                     <div onClick={this.selectTab} className={this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"}>Download Catalogue</div>
+
+                    <div className="commissions-mobile">Commissions</div>
+
                 </div>
 
                 <div className="available-sub-categories">
@@ -86,8 +87,10 @@ class AvailableWork extends React.Component {
                         </div>
                     </div>
 
-                    <div className={this.state.selected === "pdf-text" ? "selected" : "pdf"}>
-                        <div>Click <a className="pdf" href={window.pdf} download="AvailableArt"> here </a>to download catalogue</div>
+                    <div className="download-mobile">Download Catalogue</div>
+
+                    <div className={this.state.selected === "pdf-text" ? "selected" : "pdf pdf-mobile"}>
+                        <div >Click <a className="pdf" href={window.pdf} download="AvailableArt"> here </a>to download catalogue</div>
                         <br/> 
                         <span>Contact Information: </span>     
                         <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
