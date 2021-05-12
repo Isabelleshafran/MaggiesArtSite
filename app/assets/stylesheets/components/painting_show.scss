@@ -16,7 +16,11 @@
     object-fit: contain;
     transform: none;
     justify-content: center;
-    max-width: 55%;
+}
+
+.painting-show-image {
+    min-width: 1200px;
+    max-width: 1200px;
 }
 
 .painting-show-text {
