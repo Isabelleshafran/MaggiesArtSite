@@ -44,6 +44,10 @@
 .sub-categories {
     width: 50%;
 
+    .shows-mobile, .education-mobile, .press-mobile {
+        display: none;
+    }
+
     .selected {
         display: block;
         font-family: 'Hind', sans-serif;

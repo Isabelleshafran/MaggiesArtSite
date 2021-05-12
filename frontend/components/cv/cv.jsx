@@ -26,7 +26,8 @@ class CV extends React.Component {
                 </div>
 
                 <div className="sub-categories">
-                    <div className={this.state.selected === "shows-text" ? "selected" : "shows"}>
+                    <div className="shows-mobile">Shows</div>
+                    <div className={this.state.selected === "shows-text" ? "selected" : "shows showsBody-mobile"}>
                         <ul>Client Sponsored Evening, <em>Hotel Ketchum</em>, Ketchum, ID - 2019</ul>
                         <ul>Pop Up! <em>Fernando Rd. Studios</em>, Los Angeles, CA - 2018</ul>
                         <ul>Maggie Shafran, <em>Hermannus</em>, Ketchum, ID - 2017</ul>
@@ -38,7 +39,8 @@ class CV extends React.Component {
                         <ul>(dis)order Senior Thesis Show, <em>Nichols Gallery</em>, Claremont, CA  2014</ul>
                     </div>
 
-                    <div className={this.state.selected === "education-text" ? "selected" : "education"}>
+                    <div className="education-mobile">Education</div>
+                    <div className={this.state.selected === "education-text" ? "selected" : "education educationBody-mobile"}>
                         Bachelor of Fine Arts
                         <br/>
                         <em>Pitzer College</em>, Claremont, CA 
@@ -52,7 +54,7 @@ class CV extends React.Component {
                         <br/>
                         2020 
                     </div>
-
+                    <div className="press-mobile">Press</div>
                     <div className={this.state.selected === "press-text" ? "selected" : "press"}>
                         <ul>“Puppy Portraiture: Sun Valley’s Maggie Shafran”<em>Idahome Magazine (Issue 8)</em> 2019</ul>
                         <ul>Leslie McMorrow “Animal Portraits by Maggie Shafran” <em>Au Courant</em> 2018</ul>
