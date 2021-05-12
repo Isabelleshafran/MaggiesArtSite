@@ -1455,8 +1455,9 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
     value: function exitCarousel(e) {
       var arrowLeft = document.getElementsByClassName("fas fa-angle-left")[0];
       var arrowRight = document.getElementsByClassName("fas fa-angle-right")[0];
+      var icon = document.getElementsByClassName("icons")[0];
 
-      if (e.target !== arrowLeft && e.target !== arrowRight) {
+      if (e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon) {
         if (this.props.match.params.category === "uninhabited") {
           return this.props.history.push("/uninhabited_spaces");
         } else if (this.props.match.params.category === "little_pieces") {

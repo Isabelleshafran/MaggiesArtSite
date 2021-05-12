@@ -101,7 +101,9 @@ class PaintingShow extends React.Component {
         let arrowLeft = document.getElementsByClassName("fas fa-angle-left")[0]
         let arrowRight = document.getElementsByClassName("fas fa-angle-right")[0]
 
-        if(e.target !== arrowLeft && e.target !== arrowRight) {
+        let icon = document.getElementsByClassName("icons")[0];
+
+        if(e.target !== arrowLeft && e.target !== arrowRight && e.target !== icon) {
             if(this.props.match.params.category === "uninhabited"){
                 return this.props.history.push(`/uninhabited_spaces`)
             } else if(this.props.match.params.category === "little_pieces"){
