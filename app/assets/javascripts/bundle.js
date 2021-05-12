@@ -393,7 +393,7 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      selected: "commission-text"
+      selected: "pdf-text"
     };
     _this.selectTab = _this.selectTab.bind(_assertThisInitialized(_this));
     return _this;
@@ -417,16 +417,29 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
         className: "available-text"
       }, "AVAILABLE WORK"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: this.selectTab,
-        className: this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"
-      }, "Commissions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        onClick: this.selectTab,
         className: this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"
       }, "Download Catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "commissions-mobile"
+        onClick: this.selectTab,
+        className: this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"
       }, "Commissions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "available-sub-categories"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: this.state.selected === "commission-text" ? "selected" : "comission"
+        className: "download-mobile"
+      }, "Download Catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: this.state.selected === "pdf-text" ? "selected-cata" : "pdf pdf-mobile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        className: "pdf",
+        href: window.pdf,
+        download: "AvailableArt"
+      }, " here "), "to download catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Contact Information: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        className: "email",
+        target: "_blank",
+        rel: "noreferrer",
+        href: "mailto:maggieshafran@gmail.com"
+      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "commissions-mobile"
+      }, "Commissions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: this.state.selected === "commission-text" ? "selected" : "comission commission-mobile"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "animal-pricing"
       }, "Pricing for animal commissions is as follows:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -448,20 +461,7 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
         src: "https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/1.jpg",
         alt: "annrand",
         className: "reclining"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "RECLINING NUDES "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "This life size drawing was done for a client in Los Angeles who I initially met with for pet portraits. Upon seeing my figurative work, she told me of her love of nudes and portraits and asked if I would make something custom. For a while I had been wanting to do a piece with two women in an intimate setting, a concept she was on board with. She was drawn to my intricate pencil work of patterned fabrics, so we decided to incorporate antique textiles from her own impressive collection. I was given free reign to choose models (close friends of mine) and create the scene after discussing style and feel, and exchanging a few inspirational images. I did a photoshoot to get a source image and after a bit of photoshopping, I had a picture we were both excited about. After many, many hours of work and a beautiful custom frame job done by a local framer, I was able to hand deliver this piece and see it in her stunning home. Her trust in my vision and our mutual love of timeless figurative art, florals and antiques made this a piece special to us both."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "download-mobile"
-      }, "Download Catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: this.state.selected === "pdf-text" ? "selected" : "pdf pdf-mobile"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-        className: "pdf",
-        href: window.pdf,
-        download: "AvailableArt"
-      }, " here "), "to download catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Contact Information: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-        className: "email",
-        target: "_blank",
-        rel: "noreferrer",
-        href: "mailto:maggieshafran@gmail.com"
-      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null))));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "RECLINING NUDES "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "This life size drawing was done for a client in Los Angeles who I initially met with for pet portraits. Upon seeing my figurative work, she told me of her love of nudes and portraits and asked if I would make something custom. For a while I had been wanting to do a piece with two women in an intimate setting, a concept she was on board with. She was drawn to my intricate pencil work of patterned fabrics, so we decided to incorporate antique textiles from her own impressive collection. I was given free reign to choose models (close friends of mine) and create the scene after discussing style and feel, and exchanging a few inspirational images. I did a photoshoot to get a source image and after a bit of photoshopping, I had a picture we were both excited about. After many, many hours of work and a beautiful custom frame job done by a local framer, I was able to hand deliver this piece and see it in her stunning home. Her trust in my vision and our mutual love of timeless figurative art, florals and antiques made this a piece special to us both.")))));
     }
   }]);
 

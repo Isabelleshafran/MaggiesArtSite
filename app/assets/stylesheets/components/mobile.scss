@@ -12,7 +12,8 @@
         width: 100%;
         object-position: 50% 50%;
         background-size: cover;
-        background-position: center center;
+        background-position: top center;
+        background-size: 800px 500px;
         background-repeat: no-repeat;
         height: 100vmax;
         background-attachment: fixed;
@@ -142,7 +143,6 @@
                 font-size: 20px;
                  color: rgba(168, 168, 168, 0.856);
                  margin-left: 10px;
-
                  padding: 15px;
 
             }
@@ -335,15 +335,24 @@
             display: none;
         }
 
-        .pdf-mobile {
+        
+        .pdf-mobile, .commission-mobile {
             display: flex;
             flex-direction: column;
             align-items: center;
             font-family: 'Hind', sans-serif;
             color: rgba(119, 119, 119, 0.856);
             
-
+            
         }
+        
+        .selected-cata {
+            text-align: center;
+            margin-left: 0;
+            color: rgba(119, 119, 119, 0.856);
+            margin-top:0;
+        }
+
 
         .commissions-mobile, .download-mobile {
             font-weight: 700;
@@ -351,7 +360,8 @@
             font-family: 'Inter', sans-serif;
             display: flex;
             justify-content: center;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
 
         .animal-pricing {
@@ -360,10 +370,11 @@
             display: flex;
             flex-direction: column;
             text-align: center;
+
         }
 
         .ann-container {
-            margin-left: auto;
+            margin-left: 0;
             display: flex; 
             flex-direction: column;
             align-items: center;

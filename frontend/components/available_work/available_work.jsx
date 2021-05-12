@@ -5,7 +5,7 @@ class AvailableWork extends React.Component {
         super(props);
 
         this.state = { 
-            selected: "commission-text"
+            selected: "pdf-text"
          }
         this.selectTab = this.selectTab.bind(this);
     }
@@ -20,15 +20,29 @@ class AvailableWork extends React.Component {
         <div className="available-container">
                 <div className="available-text-container">
                     <div className='available-text'>AVAILABLE WORK</div>
-                    <div onClick={this.selectTab} className={this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"}>Commissions</div>
                     <div onClick={this.selectTab} className={this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"}>Download Catalogue</div>
+                    <div onClick={this.selectTab} className={this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"}>Commissions</div>
 
-                    <div className="commissions-mobile">Commissions</div>
+                    {/* <div className="commissions-mobile">Commissions</div> */}
 
                 </div>
 
                 <div className="available-sub-categories">
-                    <div className={this.state.selected === "commission-text" ? "selected" : "comission"}>
+
+
+                    <div className="download-mobile">Download Catalogue</div>
+
+                    <div className={this.state.selected === "pdf-text" ? "selected-cata" : "pdf pdf-mobile"}>
+                        <div >Click <a className="pdf" href={window.pdf} download="AvailableArt"> here </a>to download catalogue</div>
+                        <br/> 
+                        <span>Contact Information: </span>     
+                        <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
+                        <br/>      
+                    </div>
+
+                    <div className="commissions-mobile">Commissions</div>
+
+                    <div className={this.state.selected === "commission-text" ? "selected" : "comission commission-mobile"}>
                         <div className="animal-pricing">Pricing for animal commissions is as follows:</div> 
                         <br/>
                         <div className="animal-pricing">
@@ -87,15 +101,15 @@ class AvailableWork extends React.Component {
                         </div>
                     </div>
 
-                    <div className="download-mobile">Download Catalogue</div>
+                    {/* <div className="download-mobile">Download Catalogue</div>
 
-                    <div className={this.state.selected === "pdf-text" ? "selected" : "pdf pdf-mobile"}>
+                    <div className={this.state.selected === "pdf-text" ? "selected-cata" : "pdf pdf-mobile"}>
                         <div >Click <a className="pdf" href={window.pdf} download="AvailableArt"> here </a>to download catalogue</div>
                         <br/> 
                         <span>Contact Information: </span>     
                         <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
                         <br/>      
-                    </div>
+                    </div> */}
 
                 </div>
         </div>
