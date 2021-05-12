@@ -269,7 +269,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _available_work_available_work__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./available_work/available_work */ "./frontend/components/available_work/available_work.jsx");
 
 
- // import PaintingIndexContainer from './paintings/painting_index_container'
 
 
 
@@ -338,6 +337,8 @@ var App = function App() {
     exact: true,
     path: "/success",
     component: _session_form_success_container__WEBPACK_IMPORTED_MODULE_11__.default
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Redirect, {
+    to: "/"
   })));
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 import NavBarContainer from './navbar/navbar_container'
-// import PaintingIndexContainer from './paintings/painting_index_container'
 import Splash from './splash/splash'
 import Projects from './projects/projects'
 import FriendshipWorshipContainer from './friendship_worship/friendship_worship_contianer'
@@ -37,6 +36,7 @@ const App = () => (
             <Route exact path="/:category/:paintingId" component={PaintingShowContainer} />
             <Route exact path="/adminlogin" component={SignInContainer} />
             <Route exact path="/success" component={SuccessContainer} />
+            <Redirect to="/" />
         </Switch>
     </div>
 )
