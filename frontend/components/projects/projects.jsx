@@ -60,6 +60,13 @@ class Projects extends React.Component {
                         <div className="text">NATURE MORTE</div>
                     </Link>
                 </div>
+
+                <div className="proj1-container">
+                    <Link to={"/commissions"}>
+                        <img className="project-home-image" src={window.project6} />
+                        <div className="text">COMMISSIONS</div>
+                    </Link>
+                </div>
         
             </div>
         </div>

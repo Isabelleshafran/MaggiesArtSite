@@ -31,7 +31,7 @@ class NavBar extends React.Component {
             <div className={this.state.selected === true ? "selected-nav" : "navbar-items"}>
                 <Link to="/"><div onClick={this.handleItemClick} className={url === "/" ? "selected" : "item"}>MAGGIE SHAFRAN</div></Link>
                 <Link to="/projects"><div onClick={this.handleItemClick} className={url === "/projects" ? "selected" : "item"}>PROJECTS</div></Link>
-                <Link to="/availablework"><div onClick={this.handleItemClick} className={url === "/availablework" ? "selected" : "item"}>AVAILABLE WORK</div></Link>
+                <Link to="/purchasinginfo"><div onClick={this.handleItemClick} className={url === "/purchasinginfo" ? "selected" : "item"}>PURCHASING INFO</div></Link>
                 <Link to="/cv"><div onClick={this.handleItemClick} className={url === "/cv" ? "selected" : "item"}>C.V.</div></Link>
             </div>
         </div>
