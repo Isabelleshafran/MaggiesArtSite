@@ -1,11 +1,12 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 class AvailableWork extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = { 
-            selected: "pdf-text"
+            selected: "commission-text"
          }
         this.selectTab = this.selectTab.bind(this);
     }
@@ -19,8 +20,8 @@ class AvailableWork extends React.Component {
         <div className="available-container">
                 <div className="available-text-container">
                     <div className='available-text'>AVAILABLE WORK</div>
-                    <div onClick={this.selectTab} className={this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"}>Download Catalogue</div>
                     <div onClick={this.selectTab} className={this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"}>Commissions</div>
+                    <div onClick={this.selectTab} className={this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"}>Download Catalogue</div>
 
                 </div>
 
@@ -55,6 +56,10 @@ class AvailableWork extends React.Component {
                             Please see below to view previous such projects. 
                             <br/>
                             <br/>
+                            To view examples of such projects <Link to={"/commissions"} style={{fontWeight: "bold"}}> click here</Link>
+                            <br/>
+                            <br/>
+
                             To request a commission or if you have any further inquires please contact Maggie at <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
                             <br/>
                         </div>

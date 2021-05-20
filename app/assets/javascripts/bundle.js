@@ -364,6 +364,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -388,6 +389,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
 var AvailableWork = /*#__PURE__*/function (_React$Component) {
   _inherits(AvailableWork, _React$Component);
 
@@ -400,7 +402,7 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      selected: "pdf-text"
+      selected: "commission-text"
     };
     _this.selectTab = _this.selectTab.bind(_assertThisInitialized(_this));
     return _this;
@@ -424,11 +426,11 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
         className: "available-text"
       }, "AVAILABLE WORK"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: this.selectTab,
-        className: this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"
-      }, "Download Catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        onClick: this.selectTab,
         className: this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"
-      }, "Commissions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "Commissions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: this.selectTab,
+        className: this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"
+      }, "Download Catalogue")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "available-sub-categories"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "download-mobile"
@@ -451,7 +453,12 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
         className: "animal-pricing"
       }, "Pricing for animal commissions is as follows:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "animal-pricing"
-      }, "$1,000 for 9\u201D x 12\u201D - Dogs and Cats", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,500 for 18\u201D x 24\u201D - Horses", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$2,250 for 18\u201D x 24\u201D - Two dogs or cats together", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Please email me for pricing on other custom pieces outside of pet portraits. I take on select projects and would be happy to discuss your ideas via email or over the phone. Please see below to view previous such projects.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To request a commission or if you have any further inquires please contact Maggie at ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+      }, "$1,000 for 9\u201D x 12\u201D - Dogs and Cats", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,500 for 18\u201D x 24\u201D - Horses", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$2,250 for 18\u201D x 24\u201D - Two dogs or cats together", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Please email me for pricing on other custom pieces outside of pet portraits. I take on select projects and would be happy to discuss your ideas via email or over the phone. Please see below to view previous such projects.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To view examples of such projects ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/commissions",
+        style: {
+          fontWeight: "bold"
+        }
+      }, " click here"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To request a commission or if you have any further inquires please contact Maggie at ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
         className: "email",
         target: "_blank",
         rel: "noreferrer",
@@ -528,7 +535,8 @@ var Commissions = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "For information on prices and requesting a commission,", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/purchasinginfo",
         style: {
-          color: "rgba(75, 75, 75, 0.856)"
+          color: "rgba(75, 75, 75, 0.856)",
+          fontWeight: "bold"
         }
       }, " click here")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "ann-container"
