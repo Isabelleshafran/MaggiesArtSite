@@ -44,13 +44,11 @@ class AvailableWork extends React.Component {
                         <div className="animal-pricing">Pricing for animal commissions is as follows:</div> 
                         <br/>
                         <div className="animal-pricing">
-                            $1,000 for 9” x 12” Portraits (excluding horses) 
+                            $1,000 for 9” x 12” - Dogs and Cats 
                             <br/>
-                            $1,250 for 13” x 18” (Small size horse or full body of dog)
+                            $1,500 for 18” x 24” - Horses 
                             <br/>
-                            $1,500 for 18” x 24” (Horse)
-                            <br/>
-                            $2,250 for 20" x 18" (two dogs together, size varies) 
+                            $2,250 for 18” x 24” - Two dogs or cats together 
                             <br/>
                             <br/>
                             Please email me for pricing on other custom pieces outside of pet portraits. 

@@ -33,22 +33,25 @@ class NatureMorte extends React.Component {
             <div className="friendship_container">
                 <div className="project-index-header">Nature Morte</div>
                     <div className="project-index-description">
-                        This is a work in progress. In it I fragment, draw and reassemble an image of a dutch flower 
-                        painting by Jan Van Huysm. I dissect, and make anew his vibrant and detailed paintings of 
-                        imaginary bouquets. Already far separated from their original form, the flowers and 
-                        insects living in the work were first drawn by the artist, then amassed in a painting. 
-                        Centuries later the work is photographed and widely disseminated via the internet as digital 
-                        images. I add another filter, turning myself into a machine for reproduction, distorting 
-                        the size and material as I process the latest iteration of the image through myself. 
-                        It is not the doomed flowers I endeavour to preserve, forever stilled and hovering at the 
-                        brink of decay, nor the painting which trapped them. My pencil does not record nature's curves 
-                        and shadows, or an artist’s brush strokes, but pixels on a screen. 
-
-                        As I work on this piece, I continue research into the Dutch golden age, seeking a fuller 
-                        understanding of the world which created so many still life paintings. The work will 
-                        evolve as my knowledge deepens. I hope to address the layer of decay not directly pointed 
-                        to by Vanitas; the destruction wrought by the colonization, which fueled the rise in 
-                        wealth and the change in still life painting from the modest table to the overspilling banquet. 
+                       The title for body of work is inspired by the french term for still life, which directly translated 
+                        means dead nature. I am intrigued by Dutch golden age still life paintings, and how despite the 
+                        vibrancy and life-like quality, they are intrinsically linked to decay. Still life and Vanitas 
+                        are meant to serve as a reminder of the transience of life, yet the paintings themselves are far 
+                        less subject to the ravages of time than the subjects they portray. In this work in progress I fragment, draw and reassemble an image of a dutch flower painting 
+                        by Jan Van Huysm titled Still Life with Flowers and Fruit. The flowers, fruit and insects in 
+                        the work were first drawn by the artist, then amassed in a painting; bringing together elements 
+                        which could never have existed simultaneously in the 1700s. The painting is dynamic and detailed, 
+                        yet imaginary. The physical work lives at the National Gallery of Art in Washington DC but, since 
+                        it was photographed, it also exists as widely disseminated digital images. These forms have the 
+                        potential to exist indefinitely. 
+            
+                        By drawing the piece from such an image, I turn myself into a machine for reproduction and add another 
+                        filter through which the work is processed, as I dissect, distort and make it anew. Although Still 
+                        Life with Flowers and Fruit may look like a real bouquet, it is a painting in which the artist traps 
+                        doomed flowers into a new, longer lasting form. My drawing may look like it is of flowers, or a painting, 
+                        but my pencil does not record nature's curves and shadows, or an artist’s brush strokes, but pixels on a 
+                        screen. Drawing it returns the image to less permanent form, longer lasting than petals, but far more 
+                        precarious than it's digital or even painted forms. 
                     </div>
 
                 <div className="painting-render">
