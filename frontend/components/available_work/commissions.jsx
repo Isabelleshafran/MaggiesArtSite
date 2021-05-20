@@ -7,11 +7,16 @@ class Commissions extends React.Component {
         super(props);
         this.state = {  }
     }
+
+    componentDidMount(){
+        window.scrollTo(0, 0);
+    }
+
     render() { 
         return ( 
             <div className="commissions-container">
                 <div>For information on prices and requesting a commission, 
-                    <Link to={"/purchasinginfo"} style={{color: "rgba(75, 75, 75, 0.856)", fontWeight: "bold"}}> click here</Link>
+                    <Link to={"/purchasinginfo"} style={{fontWeight: "bold"}}> click here</Link>
                     </div>
                 <div className="ann-container">
                             <img src="https://maggieshafran-seeds.s3.amazonaws.com/other_activities/DSC_0450.JPG" alt="annrand" className="ann"/>

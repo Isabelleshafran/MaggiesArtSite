@@ -19,7 +19,7 @@ class CV extends React.Component {
         return ( 
         <div className="cv-container">
                 <div className="cv-text-container">
-                    <div className='cv-text'>CV</div>
+                    <div className='cv-text'>C.V.</div>
                     <div onClick={this.selectTab} className={this.state.selected === "press-text" ? "selected-text" : "press-text"}>Press</div>
                     <div onClick={this.selectTab} className={this.state.selected === "shows-text" ? "selected-text" : "shows-text"}>Shows</div>
                     <div onClick={this.selectTab} className={this.state.selected === "education-text" ? "selected-text" : "education-text"}>Education</div>

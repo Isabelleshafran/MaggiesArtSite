@@ -419,23 +419,11 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "available-container"
+        className: "purchasing-info-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "available-text-container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "available-text"
-      }, "AVAILABLE WORK"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        onClick: this.selectTab,
-        className: this.state.selected === "commission-text" ? "selected-text-ac" : "commission-text"
-      }, "Commissions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        onClick: this.selectTab,
-        className: this.state.selected === "pdf-text" ? "selected-text-ac" : "pdf-text"
-      }, "Download Catalogue")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "available-sub-categories"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "download-mobile"
-      }, "Download Catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: this.state.selected === "pdf-text" ? "selected-cata" : "pdf pdf-mobile"
+        className: "purchasing-header"
+      }, "DOWNLOAD CATALOGUE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "catalogue-body"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
         className: "pdf",
         href: window.pdf,
@@ -446,9 +434,9 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
         rel: "noreferrer",
         href: "mailto:maggieshafran@gmail.com"
       }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "commissions-mobile"
-      }, "Commissions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: this.state.selected === "commission-text" ? "selected" : "comission commission-mobile"
+        className: "purchasing-header"
+      }, "COMMISSIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "commissions-body"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "animal-pricing"
       }, "Pricing for animal commissions is as follows:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -463,7 +451,7 @@ var AvailableWork = /*#__PURE__*/function (_React$Component) {
         target: "_blank",
         rel: "noreferrer",
         href: "mailto:maggieshafran@gmail.com"
-      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)))));
+      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null))));
     }
   }]);
 
@@ -528,6 +516,11 @@ var Commissions = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(Commissions, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -535,7 +528,6 @@ var Commissions = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "For information on prices and requesting a commission,", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/purchasinginfo",
         style: {
-          color: "rgba(75, 75, 75, 0.856)",
           fontWeight: "bold"
         }
       }, " click here")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -631,7 +623,7 @@ var CV = /*#__PURE__*/function (_React$Component) {
         className: "cv-text-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "cv-text"
-      }, "CV"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "C.V."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: this.selectTab,
         className: this.state.selected === "press-text" ? "selected-text" : "press-text"
       }, "Press"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {

@@ -1,119 +1,27 @@
-.available-container {
-    width: 80%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-top: 120px;
-    display: flex;
-    justify-content: space-between;
-
-    .commissions-mobile {
-        display: none;
-    }
-
-    .download-mobile {
-        display: none;
-    }
- 
-}
-
-.available-text-container {
-    width: 20%;
+.purchasing-info-container {
+    width: 60%;
     color: rgba(119, 119, 119, 0.856);
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Hind', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
 
-    .available-text {
+
+    .purchasing-header {
         font-weight: 700;
-        color: rgba(119, 119, 119, 0.856);
         font-family: 'Inter', sans-serif;
-
-    }
-
-    .pdf-text, .commission-text{
-        font-family: 'Hind', sans-serif;
-        padding: 20px;
-        border-bottom: 1px solid lightgray;
-    }
-
-    .selected-text-ac {
-        font-family: 'Hind', sans-serif;
-        font-weight: 700;
-        color: rgba(94, 93, 93, 0.856);
-
-        padding: 20px;
-        border-bottom: 1px solid lightgray;
-    }
-}
-
-.pdf-text:hover, .commission-text:hover {
-    cursor: pointer;
-}
-
-.available-sub-categories {
-     width: 70%;
-     text-align: justify;
-
-    .selected {
-        display: block;
-        font-family: 'Hind', sans-serif;
         color: rgba(119, 119, 119, 0.856);
-        // margin-left: 11%;
-    }
-
-    .selected-cata {
-         display: block;
-        font-family: 'Hind', sans-serif;
-        margin-left: 11%;
-            color: rgba(119, 119, 119, 0.856);
-
-    }
-
-    .selected, .selected-cata {
-        margin-top: 40px;
-    }
-
-    .animal-pricing {
-        margin-left: 11%;
-    }
-
-
-
-
-    .ann-container {
         margin-top: 30px;
-        display: flex;
-        flex-direction: row;
-        margin-left: -43%;
-
-
-        p {
-            margin-left: 30px;
-            text-align: justify;
-            text-justify: inter-word;
-
-            span {
-                font-weight: 700;
-                font-family: 'Inter', sans-serif;
-                color: rgba(119, 119, 119, 0.856);
-
-            }
-        }
-        .ann {
-            max-width: 400px;
-            max-height: 450px;
-        }
     }
 
-    .reclining {
-        width: 400px;
-        height: 320px;
+    .commissions-body, .catalogue-body {
+        margin-top: 15px;
     }
 
-    > div {
-        display: none;
 
-    }
-    
-    .email {
+    .email, .pdf {
         font-weight: bold;
     }
 
@@ -121,10 +29,116 @@
         cursor: pointer;
     }
 
-    .pdf {
-        color: blue;
-    }
 }
+
+// .available-text-container {
+//     width: 20%;
+//     color: rgba(119, 119, 119, 0.856);
+
+//     .available-text {
+//         font-weight: 700;
+//         color: rgba(119, 119, 119, 0.856);
+//         font-family: 'Inter', sans-serif;
+
+//     }
+
+//     .pdf-text, .commission-text{
+//         font-family: 'Hind', sans-serif;
+//         padding: 20px;
+//         border-bottom: 1px solid lightgray;
+//     }
+
+//     .selected-text-ac {
+//         font-family: 'Hind', sans-serif;
+//         font-weight: 700;
+//         color: rgba(94, 93, 93, 0.856);
+
+//         padding: 20px;
+//         border-bottom: 1px solid lightgray;
+//     }
+// }
+
+// .pdf-text:hover, .commission-text:hover {
+//     cursor: pointer;
+// }
+
+// .available-sub-categories {
+//      width: 70%;
+//      text-align: justify;
+
+//     .selected {
+//         display: block;
+//         font-family: 'Hind', sans-serif;
+//         color: rgba(119, 119, 119, 0.856);
+//         // margin-left: 11%;
+//     }
+
+//     .selected-cata {
+//          display: block;
+//         font-family: 'Hind', sans-serif;
+//         margin-left: 11%;
+//             color: rgba(119, 119, 119, 0.856);
+
+//     }
+
+//     .selected, .selected-cata {
+//         margin-top: 40px;
+//     }
+
+//     .animal-pricing {
+//         margin-left: 11%;
+//     }
+
+
+
+
+//     .ann-container {
+//         margin-top: 30px;
+//         display: flex;
+//         flex-direction: row;
+//         margin-left: -43%;
+
+
+//         p {
+//             margin-left: 30px;
+//             text-align: justify;
+//             text-justify: inter-word;
+
+//             span {
+//                 font-weight: 700;
+//                 font-family: 'Inter', sans-serif;
+//                 color: rgba(119, 119, 119, 0.856);
+
+//             }
+//         }
+//         .ann {
+//             max-width: 400px;
+//             max-height: 450px;
+//         }
+//     }
+
+//     .reclining {
+//         width: 400px;
+//         height: 320px;
+//     }
+
+//     > div {
+//         display: none;
+
+//     }
+    
+//     .email {
+//         font-weight: bold;
+//     }
+
+//     .email:hover {
+//         cursor: pointer;
+//     }
+
+//     .pdf {
+//         color: blue;
+//     }
+// }
 
 
 
