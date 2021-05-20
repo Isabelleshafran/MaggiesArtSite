@@ -1,3 +1,3 @@
 # README
 
-Live site: [MaggieShafran](https://maggieshafran.com/#/)
+Live site: [MaggieShafran](https://www.maggieshafran.com/#/)
