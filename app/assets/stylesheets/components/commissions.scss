@@ -14,19 +14,23 @@
         margin-top: 30px;
         display: flex;
         flex-direction: row;
-    
 
+        .mobile-span {
+            display: none;
+        }
+        
         p {
             margin-left: 30px;
             text-align: justify;
             text-justify: inter-word;
-
+            
             span {
-                font-weight: 700;
-                font-family: 'Inter', sans-serif;
-                color: rgba(119, 119, 119, 0.856);
-
-            }
+                text-align: auto;
+                 font-weight: 700;
+                 font-family: 'Inter', sans-serif;
+                 color: rgba(119, 119, 119, 0.856);
+             }
+        
         }
         .ann {
             max-width: 400px;

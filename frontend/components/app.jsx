@@ -13,7 +13,7 @@ import SignInContainer from './session_form/sign_in_container';
 import SuccessContainer from './session_form/success_container';
 import NatureMorteContainer from './nature_morte/nature_morte_container'
 import CV from './cv/cv'
-import AvailableWork from './available_work/available_work'
+import PurchasingInfo from './available_work/purchasing_info'
 import Commmissions from './available_work/commissions'
 
 
@@ -31,7 +31,7 @@ const App = () => (
             <Route exact path="/other" component={OtherContainer} />
             <Route exact path="/nature_morte" component={NatureMorteContainer} />
             <Route exact path="/cv" component={CV} />
-            <Route exact path="/purchasinginfo" component={AvailableWork} />
+            <Route exact path="/purchasinginfo" component={PurchasingInfo} />
             <Route exact path="/commissions" component={Commmissions} />
             <Route exact path="/:category/:paintingId" component={PaintingShowContainer} />
             <Route exact path="/adminlogin" component={SignInContainer} />

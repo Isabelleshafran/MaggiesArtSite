@@ -266,7 +266,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _session_form_success_container__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./session_form/success_container */ "./frontend/components/session_form/success_container.js");
 /* harmony import */ var _nature_morte_nature_morte_container__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./nature_morte/nature_morte_container */ "./frontend/components/nature_morte/nature_morte_container.js");
 /* harmony import */ var _cv_cv__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./cv/cv */ "./frontend/components/cv/cv.jsx");
-/* harmony import */ var _available_work_available_work__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./available_work/available_work */ "./frontend/components/available_work/available_work.jsx");
+/* harmony import */ var _available_work_purchasing_info__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./available_work/purchasing_info */ "./frontend/components/available_work/purchasing_info.jsx");
 /* harmony import */ var _available_work_commissions__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./available_work/commissions */ "./frontend/components/available_work/commissions.jsx");
 
 
@@ -326,7 +326,7 @@ var App = function App() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
     exact: true,
     path: "/purchasinginfo",
-    component: _available_work_available_work__WEBPACK_IMPORTED_MODULE_14__.default
+    component: _available_work_purchasing_info__WEBPACK_IMPORTED_MODULE_14__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
     exact: true,
     path: "/commissions",
@@ -349,116 +349,6 @@ var App = function App() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
-
-/***/ }),
-
-/***/ "./frontend/components/available_work/available_work.jsx":
-/*!***************************************************************!*\
-  !*** ./frontend/components/available_work/available_work.jsx ***!
-  \***************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-
-
-var AvailableWork = /*#__PURE__*/function (_React$Component) {
-  _inherits(AvailableWork, _React$Component);
-
-  var _super = _createSuper(AvailableWork);
-
-  function AvailableWork(props) {
-    var _this;
-
-    _classCallCheck(this, AvailableWork);
-
-    _this = _super.call(this, props);
-    _this.state = {
-      selected: "commission-text"
-    };
-    _this.selectTab = _this.selectTab.bind(_assertThisInitialized(_this));
-    return _this;
-  }
-
-  _createClass(AvailableWork, [{
-    key: "selectTab",
-    value: function selectTab(e) {
-      this.setState({
-        selected: e.target.className
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "purchasing-info-container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "purchasing-header"
-      }, "DOWNLOAD CATALOGUE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "catalogue-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-        className: "pdf",
-        href: window.pdf,
-        download: "AvailableArt"
-      }, " here "), "to download catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Contact Information: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-        className: "email",
-        target: "_blank",
-        rel: "noreferrer",
-        href: "mailto:maggieshafran@gmail.com"
-      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "purchasing-header"
-      }, "COMMISSIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "commissions-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "animal-pricing"
-      }, "Pricing for animal commissions is as follows:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "animal-pricing"
-      }, "$1,000 for 9\u201D x 12\u201D - Dogs and Cats", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,500 for 18\u201D x 24\u201D - Horses", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$2,250 for 18\u201D x 24\u201D - Two dogs or cats together", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Please email me for pricing on other custom pieces outside of pet portraits. I take on select projects and would be happy to discuss your ideas via email or over the phone. Please see below to view previous such projects.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To view examples of such projects ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        to: "/commissions",
-        style: {
-          fontWeight: "bold"
-        }
-      }, " click here"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To request a commission or if you have any further inquires please contact Maggie at ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-        className: "email",
-        target: "_blank",
-        rel: "noreferrer",
-        href: "mailto:maggieshafran@gmail.com"
-      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null))));
-    }
-  }]);
-
-  return AvailableWork;
-}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AvailableWork);
 
 /***/ }),
 
@@ -536,13 +426,17 @@ var Commissions = /*#__PURE__*/function (_React$Component) {
         src: "https://maggieshafran-seeds.s3.amazonaws.com/other_activities/DSC_0450.JPG",
         alt: "annrand",
         className: "ann"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "AYN RAND"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "This 4\u2019 x 4\u2019 mixed media piece was created for a client in Sun Valley. Upon hearing he was looking to have a portrait of Ayn Rand, I realized it would be crucial to the piece to have an understanding of her and her work, as my portraits rely on my emotional connection to the subjects. After reading Atlas Shrugged and The Fountainhead I began collecting images which related to the themes of the books. I scoured second hand shops and flea markets for old photographs of industrialization, architectural structures, government buildings and more. I used these, some monopoly money, and a few printed images to make the background. Throughout the creation of the piece I met with the client to discuss Ayn Rand's books and ideas, and show him my material tests and mock-ups so we could make decisions about the overall look together. We were both extremely pleased with the result; our many conversations and mutual investment in deepening my understanding of Ayn\u2019s philosophies led to a work which exceeded both of our expectations.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "mobile-span"
+      }, "AYN RAND"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "AYN RAND"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "This 4\u2019 x 4\u2019 mixed media piece was created for a client in Sun Valley. Upon hearing he was looking to have a portrait of Ayn Rand, I realized it would be crucial to the piece to have an understanding of her and her work, as my portraits rely on my emotional connection to the subjects. After reading Atlas Shrugged and The Fountainhead I began collecting images which related to the themes of the books. I scoured second hand shops and flea markets for old photographs of industrialization, architectural structures, government buildings and more. I used these, some monopoly money, and a few printed images to make the background. Throughout the creation of the piece I met with the client to discuss Ayn Rand's books and ideas, and show him my material tests and mock-ups so we could make decisions about the overall look together. We were both extremely pleased with the result; our many conversations and mutual investment in deepening my understanding of Ayn\u2019s philosophies led to a work which exceeded both of our expectations.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "ann-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         src: "https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/1.jpg",
         alt: "annrand",
         className: "reclining"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "RECLINING NUDES "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "This life size drawing was done for a client in Los Angeles who I initially met with for pet portraits. Upon seeing my figurative work, she told me of her love of nudes and portraits and asked if I would make something custom. For a while I had been wanting to do a piece with two women in an intimate setting, a concept she was on board with. She was drawn to my intricate pencil work of patterned fabrics, so we decided to incorporate antique textiles from her own impressive collection. I was given free reign to choose models (close friends of mine) and create the scene after discussing style and feel, and exchanging a few inspirational images. I did a photoshoot to get a source image and after a bit of photoshopping, I had a picture we were both excited about. After many, many hours of work and a beautiful custom frame job done by a local framer, I was able to hand deliver this piece and see it in her stunning home. Her trust in my vision and our mutual love of timeless figurative art, florals and antiques made this a piece special to us both.")));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "mobile-span"
+      }, "RECLINING NUDES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "RECLINING NUDES "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "This life size drawing was done for a client in Los Angeles who I initially met with for pet portraits. Upon seeing my figurative work, she told me of her love of nudes and portraits and asked if I would make something custom. For a while I had been wanting to do a piece with two women in an intimate setting, a concept she was on board with. She was drawn to my intricate pencil work of patterned fabrics, so we decided to incorporate antique textiles from her own impressive collection. I was given free reign to choose models (close friends of mine) and create the scene after discussing style and feel, and exchanging a few inspirational images. I did a photoshoot to get a source image and after a bit of photoshopping, I had a picture we were both excited about. After many, many hours of work and a beautiful custom frame job done by a local framer, I was able to hand deliver this piece and see it in her stunning home. Her trust in my vision and our mutual love of timeless figurative art, florals and antiques made this a piece special to us both.")));
     }
   }]);
 
@@ -550,6 +444,122 @@ var Commissions = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Commissions);
+
+/***/ }),
+
+/***/ "./frontend/components/available_work/purchasing_info.jsx":
+/*!****************************************************************!*\
+  !*** ./frontend/components/available_work/purchasing_info.jsx ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+var PurchasingInfo = /*#__PURE__*/function (_React$Component) {
+  _inherits(PurchasingInfo, _React$Component);
+
+  var _super = _createSuper(PurchasingInfo);
+
+  function PurchasingInfo(props) {
+    var _this;
+
+    _classCallCheck(this, PurchasingInfo);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      selected: "commission-text"
+    };
+    _this.selectTab = _this.selectTab.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(PurchasingInfo, [{
+    key: "selectTab",
+    value: function selectTab(e) {
+      this.setState({
+        selected: e.target.className
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "purchasing-info-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "purchasing-info-text"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "purchasing-header"
+      }, "DOWNLOAD CATALOGUE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "catalogue-body"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        className: "pdf",
+        href: window.pdf,
+        download: "AvailableArt"
+      }, " here "), "to download catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Contact Information: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        className: "email",
+        target: "_blank",
+        rel: "noreferrer",
+        href: "mailto:maggieshafran@gmail.com"
+      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "purchasing-header-commissions"
+      }, "COMMISSIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "commissions-body"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "animal-pricing"
+      }, "Pricing for animal commissions is as follows:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "animal-pricing"
+      }, "$1,000 for 9\u201D x 12\u201D - Dogs and Cats", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$1,500 for 18\u201D x 24\u201D - Horses", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "$2,250 for 18\u201D x 24\u201D - Two dogs or cats together", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Please email me for pricing on other custom pieces outside of pet portraits. I take on select projects and would be happy to discuss your ideas via email or over the phone. Please see below to view previous such projects.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To view examples of such projects ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/commissions",
+        style: {
+          fontWeight: "bold"
+        }
+      }, " click here"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "To request a commission or if you have any further inquires please contact Maggie at ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        className: "email",
+        target: "_blank",
+        rel: "noreferrer",
+        href: "mailto:maggieshafran@gmail.com"
+      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: window.purchasing_info,
+        alt: "purchasing info image",
+        className: "purchasing-info-image"
+      }));
+    }
+  }]);
+
+  return PurchasingInfo;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PurchasingInfo);
 
 /***/ }),
 
@@ -2202,7 +2212,7 @@ var Projects = /*#__PURE__*/function (_React$Component) {
         to: "/commissions"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         className: "project-home-image",
-        src: window.project6
+        src: window.project7
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "text"
       }, "COMMISSIONS")))));

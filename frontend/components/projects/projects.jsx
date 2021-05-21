@@ -63,7 +63,7 @@ class Projects extends React.Component {
 
                 <div className="proj1-container">
                     <Link to={"/commissions"}>
-                        <img className="project-home-image" src={window.project6} />
+                        <img className="project-home-image" src={window.project7} />
                         <div className="text">COMMISSIONS</div>
                     </Link>
                 </div>

@@ -226,7 +226,6 @@
     }
 
     .icons {
-        // min-width: 95%;
         display: none;
     }
 
@@ -254,6 +253,54 @@
 
     .friendship_container {
         margin-top: 80px;
+    }
+
+    // commissions project page 
+
+    .commissions-container {
+        margin-top: 100px;
+        max-width: 95%;
+        padding-left: auto;
+        padding-right: auto;
+        align-items: center;
+        text-align: center;
+
+        .ann-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            p {
+                margin-left: auto;
+                text-align: justify;
+            }
+
+            .mobile-span {
+                display: block;
+                 font-weight: 700;
+                 font-family: 'Inter', sans-serif;
+                 color: rgba(119, 119, 119, 0.856);
+            }
+
+            span {
+                display: none;
+            }
+
+
+            .ann, .reclining {
+                margin-bottom: 10px;
+            }
+
+            .ann {
+                max-width: 300px;
+            }
+
+            .reclining {
+                max-height: 250px;
+                max-width: 300px;
+            }
+        }
     }
 
 
@@ -317,98 +364,4 @@
         }
     }
 
-    // available work 
-
-    .available-container {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-         width: 95%;
-        align-items: center;
-
-        .available-sub-categories {
-            width: 90%;
-
-        }
-
-        .selected-text-ac, .pdf-text, .commission-text {
-            display: none;
-        }
-
-        
-        .pdf-mobile, .commission-mobile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: 'Hind', sans-serif;
-            color: rgba(119, 119, 119, 0.856);
-            
-            
-        }
-        
-        .selected-cata {
-            text-align: center;
-            margin-left: 0;
-            color: rgba(119, 119, 119, 0.856);
-            margin-top:0;
-        }
-
-
-        .commissions-mobile, .download-mobile {
-            font-weight: 700;
-            color: rgba(119, 119, 119, 0.856);
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-
-        .animal-pricing {
-            width: 100%;
-            margin-left: auto;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-
-        }
-
-        .ann-container {
-            margin-left: 0;
-            max-width: 90%;
-            display: flex; 
-            flex-direction: column;
-            align-items: center;
-
-            p {
-                margin-left: auto;
-            }
-
-            .ann, .reclining {
-                margin-bottom: 10px;
-            }
-
-            .ann {
-                max-width: 300px;
-            }
-
-            .reclining {
-                max-height: 250px;
-                max-width: 300px;
-            }
-        }
-
-    .available-text-container {
-        width: 70%;
-
-    .available-text {
-        display: flex;
-        justify-content: center;
-        font-size: 18px;
-        margin-bottom: 10px;
-        }
-
-    }
-
-    }
 }

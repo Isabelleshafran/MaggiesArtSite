@@ -1,0 +1,47 @@
+.purchasing-info-container {
+    color: rgba(119, 119, 119, 0.856);
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Hind', sans-serif;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-right: 8%;
+
+    .purchasing-info-text {
+        width: 40%;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .purchasing-info-image {
+        height: 450px;
+        width: 600px;
+    }
+
+
+    .purchasing-header, .purchasing-header-commissions {
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        color: rgba(119, 119, 119, 0.856);
+    }
+
+    .purchasing-header-commissions {
+        margin-top: 30px;
+    }
+
+    .commissions-body, .catalogue-body {
+        margin-top: 15px;
+    }
+
+
+    .email, .pdf {
+        font-weight: bold;
+    }
+
+    .email:hover {
+        cursor: pointer;
+    }
+
+}
+

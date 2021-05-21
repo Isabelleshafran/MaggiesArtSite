@@ -17,9 +17,10 @@ class Commissions extends React.Component {
             <div className="commissions-container">
                 <div>For information on prices and requesting a commission, 
                     <Link to={"/purchasinginfo"} style={{fontWeight: "bold"}}> click here</Link>
-                    </div>
+                </div>
                 <div className="ann-container">
                             <img src="https://maggieshafran-seeds.s3.amazonaws.com/other_activities/DSC_0450.JPG" alt="annrand" className="ann"/>
+                            <div className="mobile-span">AYN RAND</div>
                             <p>
                                 <span>AYN RAND</span>
                                 <br/>
@@ -34,10 +35,11 @@ class Commissions extends React.Component {
                                 about the overall look together. We were both extremely pleased with the result; our many conversations and 
                                 mutual investment in deepening my understanding of Ayn’s philosophies led to a work which exceeded both of our expectations. 
                             </p>
-                        </div>
+                    </div>
 
                     <div className="ann-container">
                             <img src="https://maggieshafran-seeds.s3.amazonaws.com/friendship_worship/1.jpg" alt="annrand" className="reclining"/>
+                            <div className="mobile-span">RECLINING NUDES</div>
                             <p>
                                 <span>RECLINING NUDES </span>
                                 <br/>
