@@ -151,20 +151,6 @@
         }
     }
 
-    .painting-render {
-        margin-top: 25px;
-        max-width: 400px;
-        column-count: 1;
-        column-gap: 1em;
-    }
-
-    .painting-render-3 {
-        margin-top: 25px;
-        max-width: 400px;
-        column-count: 1;
-        column-gap: 1em;
-    }
-
     .icons {
         display: flex;
         flex-direction: row;
@@ -253,12 +239,54 @@
 
     .friendship_container {
         margin-top: 80px;
+        max-width: 100%;
+
+        .project-index-header {
+            font-size: 26px;
+        }
+
+        .painting-render {
+            margin-top: 25px;
+            max-width: 95%;
+            column-count: 1;
+            column-gap: 1em;
+        }
+
+    }
+
+    .painting-render-3 {
+        margin-top: 25px;
+        max-width: 95%;
+        column-count: 1;
+        column-gap: 1em;
+    }
+
+    // purchasing info 
+
+    .purchasing-info-container {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .purchasing-info-text {
+            width: 93%;
+            max-width: 93%;
+            text-align: center;
+        }
+
+        .purchasing-info-image {
+            display: none;
+        }
     }
 
     // commissions project page 
 
     .commissions-container {
-        margin-top: 100px;
+        margin-top: 80px;
         max-width: 95%;
         padding-left: auto;
         padding-right: auto;
@@ -308,7 +336,7 @@
 
     .cv-container {
         width: 80%;
-        margin-top: 100px;
+        margin-top: 80px;
         text-align: center;
         display: flex;
         flex-direction: column;

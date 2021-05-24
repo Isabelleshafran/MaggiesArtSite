@@ -519,19 +519,6 @@ var PurchasingInfo = /*#__PURE__*/function (_React$Component) {
         className: "purchasing-info-text"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "purchasing-header"
-      }, "DOWNLOAD CATALOGUE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "catalogue-body"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-        className: "pdf",
-        href: window.pdf,
-        download: "AvailableArt"
-      }, " here "), "to download catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Contact Information: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-        className: "email",
-        target: "_blank",
-        rel: "noreferrer",
-        href: "mailto:maggieshafran@gmail.com"
-      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "purchasing-header-commissions"
       }, "COMMISSIONS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "commissions-body"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -548,7 +535,20 @@ var PurchasingInfo = /*#__PURE__*/function (_React$Component) {
         target: "_blank",
         rel: "noreferrer",
         href: "mailto:maggieshafran@gmail.com"
-      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "purchasing-header-cata"
+      }, "AVAILABLE WORK"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "catalogue-body"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        className: "pdf",
+        href: window.pdf,
+        download: "AvailableArt"
+      }, " here "), "to download catalogue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Contact Information: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        className: "email",
+        target: "_blank",
+        rel: "noreferrer",
+        href: "mailto:maggieshafran@gmail.com"
+      }, "maggieshafran@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         src: window.purchasing_info,
         alt: "purchasing info image",
         className: "purchasing-info-image"
