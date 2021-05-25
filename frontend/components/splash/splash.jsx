@@ -16,21 +16,23 @@ const Splash = () => {
                     <span className='about'>ABOUT</span>
                     <br/>
                     <span className="bio"> 
-                    Maggie Shafran is an artist whose work relies on her intimate and personal connections to her subjects and materials. 
-                    Vulnerability, humanity, life and death are underlying themes throughout her practice. Her own hand and body are ever present, 
-                    even when the form of the figure is absent. Her work is concerned with lending the perspective through which she views the 
-                    world and the objects and people she encounters. She is driven by a desire to preserve, record, copy and control.
-                    <br/>
-                    <br/>
-                    Working in a variety of mediums and processes; including, oils, plaster casting, graphite, photography and collage, 
-                    Maggie’s practice is experiment based and evolving. Her practice is led by the curiosity and critical eye she 
-                    brings to encounters in her daily life. With a dedication to representation and loyalty to technique, she explores 
-                    and teases her viewpoint to life within her work. 
-                    <br/>
-                    <br/>
-                    Maggie earned her undergraduate BA in Fine Art at Pitzer College in 2014 and recently completed the Graduate Diploma 
-                    program at The Royal College of Art in London, where she received a distinction. She works out of her studio in Ketchum, Idaho 
-                    where she continues to mature her practice and show her work. 
+                        Maggie Shafran is a multidisciplinary artist whose work examines themes of vulnerability, 
+                        humanity, the impermanence of life and the transformational quality of death. She is driven 
+                        by a desire to preserve and examine objects and relationships. Taking cues from classic portraiture, 
+                        appropriation art and still life tradition, Maggie explores different approaches in order to present 
+                        her subjects through her own lens. Her practice relies on an intimate connection to her subjects and 
+                        experiment-based knowledge of her materials to create acutely personal work. Her own hand and body are 
+                        ever present, even when the figure is absent. 
+                        <br/>
+                        <br/>
+                        Working in a variety of mediums and processes; including, oils, plaster casting, graphite, photography and collage, 
+                        Maggie’s practice is ever evolving. It is led by the curiosity and critical eye she brings to encounters in her 
+                        daily life. She explores and teases her viewpoint to life with a dedication to representation and loyalty to technique. 
+                        <br/>
+                        <br/>
+                        Maggie earned her undergraduate BA in Fine Art at Pitzer College in 2014 and recently completed the Graduate Diploma 
+                        program at The Royal College of Art in London, with distinction. She works out of her studio in Ketchum, Idaho where she 
+                        continues to mature her practice and show her work. 
                     </span>
                 </div>
             </div>
