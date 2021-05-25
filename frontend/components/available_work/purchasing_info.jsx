@@ -41,7 +41,7 @@ class PurchasingInfo extends React.Component {
                                 To view examples of such projects <Link to={"/commissions"} style={{fontWeight: "bold"}}> click here</Link>
                                 <br/>
                                 <br/>
-                                To request a commission or if you have any further inquires please contact Maggie at <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
+                                To request a commission or if you have any further inquires please contact Maggie at <a className="email" target="_blank" rel="noreferrer" href="mailto:mshafranart@gmail.com">mshafranart@gmail.com</a>
                                 <br/>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ class PurchasingInfo extends React.Component {
                             <div >Click <a className="pdf" href={window.pdf} download="AvailableArt"> here </a>to download catalogue</div>
                             <br/> 
                             <span>Contact Information: </span>     
-                            <a className="email" target="_blank" rel="noreferrer" href="mailto:maggieshafran@gmail.com">maggieshafran@gmail.com</a>
+                            <a className="email" target="_blank" rel="noreferrer" href="mailto:mshafranart@gmail.com">mshafranart@gmail.com</a>
                             <br/>      
                         </div>
                 </div>
