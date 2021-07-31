@@ -9,7 +9,8 @@ class Success extends React.Component {
             title: "", 
             size: "",
             medium: "", 
-            category: "", 
+            category: "",
+            subcategory: "", 
             year: "", 
             photoFile: null, 
             position: null
@@ -41,10 +42,10 @@ class Success extends React.Component {
         formData.append('painting[size]', this.state.size)
         formData.append('painting[medium]', this.state.medium)
         formData.append('painting[category]', this.state.category)
+        formData.append('painting[subcategory]', this.state.subcategory)
         formData.append('painting[year]', this.state.year)
         formData.append('painting[photo]', this.state.photoFile)
         formData.append('painting[position]', 0)
-
         this.props.createPainting(formData).then(() => this.props.history.push(`/projects`))
     }   
 
@@ -86,6 +87,21 @@ class Success extends React.Component {
                         <option value="pets">Pets</option>
                         <option value="nature_morte">Nature Morte</option>
                         <option value="other">Sketchbook & Other</option>
+                    </select>
+                    <br/>
+                </label>
+                <br/>
+                <label>Subcategory - for little pieces
+                    <select  value={this.state.subcategory} onChange={this.handleChange('subcategory')}>
+                        <option value="" disabled={true}>Please Select</option>
+                        <option value="blue">Blue</option>
+                        <option value="pink">Pink</option>
+                        <option value="green">Green</option>
+                        <option value="red">red</option>
+                        <option value="honey">wine</option>
+                        <option value="rust">rust</option>
+                        <option value="latex">latex</option>
+                        <option value="residue">residue</option>
                     </select>
                     <br/>
                 </label>

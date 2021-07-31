@@ -15,6 +15,7 @@ import NatureMorteContainer from './nature_morte/nature_morte_container'
 import CV from './cv/cv'
 import PurchasingInfo from './available_work/purchasing_info'
 import Commmissions from './available_work/commissions'
+import BlueContainer from './subcategories/blue_container'
 
 
 
@@ -36,6 +37,9 @@ const App = () => (
             <Route exact path="/:category/:paintingId" component={PaintingShowContainer} />
             <Route exact path="/adminlogin" component={SignInContainer} />
             <Route exact path="/success" component={SuccessContainer} />
+
+            <Route exact path="/blue" component={BlueContainer} />
+
             <Redirect to="/" />
         </Switch>
     </div>

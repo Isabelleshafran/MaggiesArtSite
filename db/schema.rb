@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_12_184451) do
+ActiveRecord::Schema.define(version: 2021_07_30_171848) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 2021_03_12_184451) do
     t.integer "year"
     t.string "title"
     t.string "medium"
+    t.string "subcategory"
   end
 
   create_table "users", force: :cascade do |t|

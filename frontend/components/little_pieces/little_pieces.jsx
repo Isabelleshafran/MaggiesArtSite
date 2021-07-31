@@ -1,6 +1,8 @@
 import React from 'react';
 import UpdatePhoto from '../paintings/update_photo_container';
 import Photo from '../paintings/photo'
+import { Link } from 'react-router-dom'
+import Blue from '../subcategories/blue'
 
 
 
@@ -11,21 +13,21 @@ class LittlePieces extends React.Component {
 
     componentDidMount(){
         window.scrollTo(0, 0);
-        this.props.fetchPaintings(this.props.category)
+        // this.props.fetchPaintings(this.props.category)
     }
 
     render() { 
-        const paintingRender = () => {
-            if(this.props.currentUser.id === null){
-                return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
-                    return <Photo painting={painting} key={painting.id}/>
-                })
-            } else {
-                return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
-                    return <UpdatePhoto painting={painting} key={painting.id}/>
-                })
-            }
-        }
+        // const paintingRender = () => {
+        //     if(this.props.currentUser.id === null){
+        //         return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
+        //             return <Photo painting={painting} key={painting.id}/>
+        //         })
+        //     } else {
+        //         return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
+        //             return <UpdatePhoto painting={painting} key={painting.id}/>
+        //         })
+        //     }
+        // }
         return ( 
             <div className="friendship_container">
                 <div className="project-index-header">Little Pieces of Death</div>
@@ -58,7 +60,13 @@ class LittlePieces extends React.Component {
                         irie appearance of human skin which cannot decay. Lively, yet not alive. 
                     </div>
                 <div className="painting-render">
-                    {paintingRender()}
+
+                    <div className="proj1-container">
+                        <Link to="/blue">
+                            <img className="project-home-image" src={window.project2} />
+                            <div className="text">BLUE</div>
+                        </Link>
+                    </div>
                 </div>
             </div>
             );

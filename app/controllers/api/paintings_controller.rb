@@ -38,7 +38,7 @@ class Api::PaintingsController < ApplicationController
     end
 
     def painting_params
-        params.require(:painting).permit(:title, :category, :size, :year, :medium, :photo, :position)
+        params.require(:painting).permit(:title, :category, :size, :year, :medium, :photo, :position, :subcategory)
     end
 
 end

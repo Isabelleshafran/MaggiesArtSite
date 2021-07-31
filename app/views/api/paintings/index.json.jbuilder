@@ -9,7 +9,7 @@
 @paintings.each do |painting|
   if painting.photo.attached?
     json.set! painting.id do
-      json.extract! painting, :id, :title, :size, :medium, :year, :category, :position
+      json.extract! painting, :id, :title, :size, :medium, :year, :category, :position, :subcategory
       json.imgUrl url_for(painting.photo)
     end
   end
