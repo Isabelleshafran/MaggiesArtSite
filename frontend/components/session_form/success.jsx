@@ -95,7 +95,7 @@ class Success extends React.Component {
                     <select  value={this.state.subcategory} onChange={this.handleChange('subcategory')}>
                         <option value="" disabled={true}>Please Select</option>
                         <option value="blue">Blue</option>
-                        <option value="pink">Pink</option>
+                        <option value="hot">Hot</option>
                         <option value="green">Green</option>
                         <option value="red">red</option>
                         <option value="honey">wine</option>

@@ -3,7 +3,7 @@ import UpdatePhoto from '../paintings/update_photo_container';
 import Photo from '../paintings/photo'
 
 
-class Blue extends React.Component {
+class Subcategory extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -17,18 +17,23 @@ class Blue extends React.Component {
         this.props.history.push('/little_pieces_of_death')
     }
 
+    paintingUrl(){
+        const paintingUrl = this.props.match.path;
+        return paintingUrl.slice(1)
+    }
+
 
     render() { 
         const paintingRender = () => {
             if(this.props.currentUser.id === null){
                 return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
-                    if(painting.subcategory === "blue"){
+                    if(painting.subcategory === this.paintingUrl()){
                         return <Photo painting={painting} key={painting.id}/>
                     }
                 })
             } else {
                 return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
-                    if(painting.subcategory === "blue"){
+                    if(painting.subcategory === this.paintingUrl()){
                         return <UpdatePhoto painting={painting} key={painting.id}/>
                     }
                 })
@@ -46,4 +51,4 @@ class Blue extends React.Component {
     }
 }
  
-export default Blue;
+export default Subcategory;

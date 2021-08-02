@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { fetchPaintings } from "../../actions/painting_actions";
-import Blue from "./blue";
+import Subcategory from "./subcategory";
 
 const msp = (state) => {
   return {
@@ -16,4 +16,4 @@ const mdp = (dispatch) => {
   };
 };
 
-export default connect(msp, mdp)(Blue);
+export default connect(msp, mdp)(Subcategory);
