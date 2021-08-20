@@ -98,7 +98,8 @@ class Success extends React.Component {
                         <option value="hot">Hot</option>
                         <option value="green">Green</option>
                         <option value="red">red</option>
-                        <option value="honey">wine</option>
+                        <option value="wine">wine</option>
+                        <option value="honey">honey</option>
                         <option value="rust">rust</option>
                         <option value="latex">latex</option>
                         <option value="residue">residue</option>

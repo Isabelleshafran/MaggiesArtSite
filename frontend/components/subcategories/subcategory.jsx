@@ -42,7 +42,7 @@ class Subcategory extends React.Component {
 
         return ( 
             <div className="friendship_container">
-                <button onClick={() => this.handleClick()}>return to little pieces</button>
+                <button className="return-to-little" onClick={() => this.handleClick()}>RETURN TO LITTLE PIECES</button>
                 <div className="painting-render">
                     {paintingRender()}
                 </div>
