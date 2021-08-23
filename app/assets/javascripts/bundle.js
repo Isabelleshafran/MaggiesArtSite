@@ -252,12 +252,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _navbar_navbar_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar/navbar_container */ "./frontend/components/navbar/navbar_container.js");
 /* harmony import */ var _splash_splash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./splash/splash */ "./frontend/components/splash/splash.jsx");
 /* harmony import */ var _projects_projects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./projects/projects */ "./frontend/components/projects/projects.jsx");
 /* harmony import */ var _friendship_worship_friendship_worship_contianer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./friendship_worship/friendship_worship_contianer */ "./frontend/components/friendship_worship/friendship_worship_contianer.js");
-/* harmony import */ var _little_pieces_little_pieces_container__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./little_pieces/little_pieces_container */ "./frontend/components/little_pieces/little_pieces_container.js");
+/* harmony import */ var _little_pieces_little_pieces__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./little_pieces/little_pieces */ "./frontend/components/little_pieces/little_pieces.jsx");
 /* harmony import */ var _uninhabited_spaces_uninhabited_container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./uninhabited_spaces/uninhabited_container */ "./frontend/components/uninhabited_spaces/uninhabited_container.js");
 /* harmony import */ var _pets_pets_container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pets/pets_container */ "./frontend/components/pets/pets_container.js");
 /* harmony import */ var _other_other_container__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./other/other_container */ "./frontend/components/other/other_container.js");
@@ -268,6 +268,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cv_cv__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./cv/cv */ "./frontend/components/cv/cv.jsx");
 /* harmony import */ var _available_work_purchasing_info__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./available_work/purchasing_info */ "./frontend/components/available_work/purchasing_info.jsx");
 /* harmony import */ var _available_work_commissions__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./available_work/commissions */ "./frontend/components/available_work/commissions.jsx");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
 
 
 
@@ -287,63 +289,99 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_navbar_navbar_container__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_navbar_navbar_container__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Switch, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/",
     component: _splash_splash__WEBPACK_IMPORTED_MODULE_2__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/projects",
     component: _projects_projects__WEBPACK_IMPORTED_MODULE_3__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/friendship_worship",
     component: _friendship_worship_friendship_worship_contianer__WEBPACK_IMPORTED_MODULE_4__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/little_pieces_of_death",
-    component: _little_pieces_little_pieces_container__WEBPACK_IMPORTED_MODULE_5__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+    component: _little_pieces_little_pieces__WEBPACK_IMPORTED_MODULE_5__.default
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/uninhabited_spaces",
     component: _uninhabited_spaces_uninhabited_container__WEBPACK_IMPORTED_MODULE_6__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/pets",
     component: _pets_pets_container__WEBPACK_IMPORTED_MODULE_7__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/other",
     component: _other_other_container__WEBPACK_IMPORTED_MODULE_8__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/nature_morte",
     component: _nature_morte_nature_morte_container__WEBPACK_IMPORTED_MODULE_12__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/cv",
     component: _cv_cv__WEBPACK_IMPORTED_MODULE_13__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/purchasinginfo",
     component: _available_work_purchasing_info__WEBPACK_IMPORTED_MODULE_14__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/commissions",
     component: _available_work_commissions__WEBPACK_IMPORTED_MODULE_15__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/:category/:paintingId",
     component: _paintings_painting_show_container__WEBPACK_IMPORTED_MODULE_9__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/adminlogin",
     component: _session_form_sign_in_container__WEBPACK_IMPORTED_MODULE_10__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/success",
     component: _session_form_success_container__WEBPACK_IMPORTED_MODULE_11__.default
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Redirect, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+    exact: true,
+    path: "/blue",
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+    exact: true,
+    path: "/hot",
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+    exact: true,
+    path: "/green",
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+    exact: true,
+    path: "/red",
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+    exact: true,
+    path: "/honey",
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+    exact: true,
+    path: "/wine",
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+    exact: true,
+    path: "/rust",
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+    exact: true,
+    path: "/latex",
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
+    exact: true,
+    path: "/residue",
+    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Redirect, {
     to: "/"
   })));
 };
@@ -820,8 +858,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../paintings/update_photo_container */ "./frontend/components/paintings/update_photo_container.js");
-/* harmony import */ var _paintings_photo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../paintings/photo */ "./frontend/components/paintings/photo.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -847,7 +884,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-
 var LittlePieces = /*#__PURE__*/function (_React$Component) {
   _inherits(LittlePieces, _React$Component);
 
@@ -863,35 +899,10 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       window.scrollTo(0, 0);
-      this.props.fetchPaintings(this.props.category);
     }
   }, {
     key: "render",
     value: function render() {
-      var _this = this;
-
-      var paintingRender = function paintingRender() {
-        if (_this.props.currentUser.id === null) {
-          return _this.props.paintings.sort(function (a, b) {
-            return a.position - b.position;
-          }).map(function (painting) {
-            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_2__.default, {
-              painting: painting,
-              key: painting.id
-            });
-          });
-        } else {
-          return _this.props.paintings.sort(function (a, b) {
-            return a.position - b.position;
-          }).map(function (painting) {
-            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_1__.default, {
-              painting: painting,
-              key: painting.id
-            });
-          });
-        }
-      };
-
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "friendship_container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -899,8 +910,89 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
       }, "Little Pieces of Death"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-description"
       }, "This is a series of photos and installations made from plaster and latex casts of flowers. I make silicone molds from cosmo flowers cut from the garden and use the molds to make casts. I began this body of work while staying at a farm in the English countryside during the first Covid lockdown. Overwhelmed by the floral beauty I encountered I obsessively photographed the garden flowers daily. There was a manic quality to my desire to record each bit of beauty I came across, knowing it would be gone soon. This activity connected to my love of still life, and how historically, paintings of flower bouquets serve as symbols of the fleetingness of life. A cut flower, while lovely to look at, has a short time to bloom before it inevitably wilts and dies. My interest in collecting and preserving short-lived beauty led me to explore the indexical relationship between original and reproduction, and the process of transformation. Wanting to find ways to preserve beyond photographing, I use the flowers to make molds. This process is necessarily destructive; the casts made from these molds become a death shroud, their existence is proof of the flower\u2019s demise. Fragments of petals are left in it's hard, plaster copy; residue and traces of past life. My desire to flout the ravages of time on delicate existence, creates lasting little pieces of death; a flower that cannot wilt, yet has nothing alive within it. With each copy made, the original flower further decays and the plaster casts become empty and bonelike. Dripping color into these porous objects, transforms them into a record of the slow movement of the bright liquid through its body. Photographing and printing these variations, changes their scale and dimension. This gives them new life and a new kind of beauty, obscured from the distant original into something fresh, but not entirely new. The latex versions, void of living matter, recall a true flower in their reactions to light and air. Pinned to the wall as a collection of specimens, they are uncanny imitations of the original, with the irie appearance of human skin which cannot decay. Lively, yet not alive."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "painting-render"
-      }, paintingRender()));
+        className: "little-pieces-render"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sub-image-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/blue"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "sub-image",
+        src: window.BlueBanner
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "little-text"
+      }, "BLUE"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sub-image-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/hot"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "sub-image",
+        src: window.HotBanner
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "little-text"
+      }, "HOT"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sub-image-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/green"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "sub-image",
+        src: window.GreenBanner
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "little-text"
+      }, "GREEN"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sub-image-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/red"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "sub-image",
+        src: window.RedBanner
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "little-text"
+      }, "RED"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sub-image-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/honey"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "sub-image",
+        src: window.HoneyBanner
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "little-text"
+      }, "HONEY"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sub-image-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/wine"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "sub-image",
+        src: window.WineBanner
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "little-text"
+      }, "WINE"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sub-image-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/rust"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "sub-image",
+        src: window.RustBanner
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "little-text"
+      }, "RUST"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sub-image-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/latex"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "sub-image",
+        src: window.LatexBanner
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "little-text"
+      }, "LATEX"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sub-image-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/residue"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        className: "sub-image",
+        src: window.ResidueBanner
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "little-text"
+      }, "RESIDUE")))));
     }
   }]);
 
@@ -908,44 +1000,6 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LittlePieces);
-
-/***/ }),
-
-/***/ "./frontend/components/little_pieces/little_pieces_container.js":
-/*!**********************************************************************!*\
-  !*** ./frontend/components/little_pieces/little_pieces_container.js ***!
-  \**********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../actions/painting_actions */ "./frontend/actions/painting_actions.js");
-/* harmony import */ var _little_pieces__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./little_pieces */ "./frontend/components/little_pieces/little_pieces.jsx");
-
-
-
-
-var msp = function msp(state) {
-  return {
-    paintings: Object.values(state.paintings),
-    currentUser: state.session,
-    category: "little_pieces"
-  };
-};
-
-var mdp = function mdp(dispatch) {
-  return {
-    fetchPaintings: function fetchPaintings(category) {
-      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
-    }
-  };
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_0__.connect)(msp, mdp)(_little_pieces__WEBPACK_IMPORTED_MODULE_2__.default));
 
 /***/ }),
 
@@ -1487,8 +1541,24 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "clickForward",
     value: function clickForward() {
+      var _this4 = this;
+
+      var newArray = [];
+      this.props.paintings.forEach(function (painting) {
+        if (painting.subcategory === _this4.props.painting.subcategory) {
+          newArray.push(painting);
+        }
+      });
       var currentPainting = this.props.painting;
-      var allPaintings = this.props.paintings;
+      var subcategory = this.props.painting.subcategory;
+      var allPaintings;
+
+      if (subcategory === null) {
+        allPaintings = this.props.paintings;
+      } else {
+        allPaintings = newArray;
+      }
+
       var index = allPaintings.indexOf(currentPainting);
       var newIndex = (index + 1) % allPaintings.length;
       var newProj = allPaintings[newIndex];
@@ -1497,8 +1567,24 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "clickBackward",
     value: function clickBackward() {
+      var _this5 = this;
+
+      var newArray = [];
+      this.props.paintings.forEach(function (painting) {
+        if (painting.subcategory === _this5.props.painting.subcategory) {
+          newArray.push(painting);
+        }
+      });
       var currentPainting = this.props.painting;
-      var allPaintings = this.props.paintings;
+      var subcategory = this.props.painting.subcategory;
+      var allPaintings;
+
+      if (subcategory === null) {
+        allPaintings = this.props.paintings;
+      } else {
+        allPaintings = newArray;
+      }
+
       var index = allPaintings.indexOf(currentPainting);
       var newIndex;
 
@@ -1514,28 +1600,28 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "handleChange",
     value: function handleChange(field) {
-      var _this4 = this;
+      var _this6 = this;
 
       return function (e) {
-        return _this4.setState(_defineProperty({}, field, e.currentTarget.value));
+        return _this6.setState(_defineProperty({}, field, e.currentTarget.value));
       };
     }
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      var _this5 = this;
+      var _this7 = this;
 
       e.preventDefault();
       var updated = Object.assign({}, this.state);
       this.props.updatePainting(updated).then(function () {
-        return _this5.props.fetchPaintings(_this5.props.match.params.category);
+        return _this7.props.fetchPaintings(_this7.props.match.params.category);
       }).then(function () {
-        _this5.setState({
-          title: _this5.props.painting.title,
-          year: _this5.props.painting.year,
-          medium: _this5.props.painting.medium,
-          size: _this5.props.painting.size,
-          id: _this5.props.painting.id
+        _this7.setState({
+          title: _this7.props.painting.title,
+          year: _this7.props.painting.year,
+          medium: _this7.props.painting.medium,
+          size: _this7.props.painting.size,
+          id: _this7.props.painting.id
         });
       }).then(function () {
         return alert('udpate successful');
@@ -2476,6 +2562,7 @@ var Success = /*#__PURE__*/function (_React$Component) {
       size: "",
       medium: "",
       category: "",
+      subcategory: "",
       year: "",
       photoFile: null,
       position: null
@@ -2523,6 +2610,7 @@ var Success = /*#__PURE__*/function (_React$Component) {
       formData.append('painting[size]', this.state.size);
       formData.append('painting[medium]', this.state.medium);
       formData.append('painting[category]', this.state.category);
+      formData.append('painting[subcategory]', this.state.subcategory);
       formData.append('painting[year]', this.state.year);
       formData.append('painting[photo]', this.state.photoFile);
       formData.append('painting[position]', 0);
@@ -2583,7 +2671,31 @@ var Success = /*#__PURE__*/function (_React$Component) {
         value: "nature_morte"
       }, "Nature Morte"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
         value: "other"
-      }, "Sketchbook & Other")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Upload Image", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+      }, "Sketchbook & Other")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Subcategory - for little pieces", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("select", {
+        value: this.state.subcategory,
+        onChange: this.handleChange('subcategory')
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "",
+        disabled: true
+      }, "Please Select"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "blue"
+      }, "Blue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "hot"
+      }, "Hot"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "green"
+      }, "Green"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "red"
+      }, "red"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "wine"
+      }, "wine"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "honey"
+      }, "honey"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "rust"
+      }, "rust"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "latex"
+      }, "latex"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+        value: "residue"
+      }, "residue")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Upload Image", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
         type: "file",
         onChange: this.handleFile
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
