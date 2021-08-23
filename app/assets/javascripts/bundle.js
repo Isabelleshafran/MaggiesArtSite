@@ -1541,8 +1541,24 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "clickForward",
     value: function clickForward() {
+      var _this4 = this;
+
+      var newArray = [];
+      this.props.paintings.forEach(function (painting) {
+        if (painting.subcategory === _this4.props.painting.subcategory) {
+          newArray.push(painting);
+        }
+      });
       var currentPainting = this.props.painting;
-      var allPaintings = this.props.paintings;
+      var subcategory = this.props.painting.subcategory;
+      var allPaintings;
+
+      if (subcategory === null) {
+        allPaintings = this.props.paintings;
+      } else {
+        allPaintings = newArray;
+      }
+
       var index = allPaintings.indexOf(currentPainting);
       var newIndex = (index + 1) % allPaintings.length;
       var newProj = allPaintings[newIndex];
@@ -1551,8 +1567,24 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "clickBackward",
     value: function clickBackward() {
+      var _this5 = this;
+
+      var newArray = [];
+      this.props.paintings.forEach(function (painting) {
+        if (painting.subcategory === _this5.props.painting.subcategory) {
+          newArray.push(painting);
+        }
+      });
       var currentPainting = this.props.painting;
-      var allPaintings = this.props.paintings;
+      var subcategory = this.props.painting.subcategory;
+      var allPaintings;
+
+      if (subcategory === null) {
+        allPaintings = this.props.paintings;
+      } else {
+        allPaintings = newArray;
+      }
+
       var index = allPaintings.indexOf(currentPainting);
       var newIndex;
 
@@ -1568,28 +1600,28 @@ var PaintingShow = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "handleChange",
     value: function handleChange(field) {
-      var _this4 = this;
+      var _this6 = this;
 
       return function (e) {
-        return _this4.setState(_defineProperty({}, field, e.currentTarget.value));
+        return _this6.setState(_defineProperty({}, field, e.currentTarget.value));
       };
     }
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      var _this5 = this;
+      var _this7 = this;
 
       e.preventDefault();
       var updated = Object.assign({}, this.state);
       this.props.updatePainting(updated).then(function () {
-        return _this5.props.fetchPaintings(_this5.props.match.params.category);
+        return _this7.props.fetchPaintings(_this7.props.match.params.category);
       }).then(function () {
-        _this5.setState({
-          title: _this5.props.painting.title,
-          year: _this5.props.painting.year,
-          medium: _this5.props.painting.medium,
-          size: _this5.props.painting.size,
-          id: _this5.props.painting.id
+        _this7.setState({
+          title: _this7.props.painting.title,
+          year: _this7.props.painting.year,
+          medium: _this7.props.painting.medium,
+          size: _this7.props.painting.size,
+          id: _this7.props.painting.id
         });
       }).then(function () {
         return alert('udpate successful');
