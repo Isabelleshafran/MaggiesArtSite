@@ -162,20 +162,19 @@
 
     }
 
-
-    .projects-container {
+    .projects-container, .little-pieces-render {
         margin-top: 80px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
-        .proj1-container {
+        .proj1-container, .sub-image-container {
             margin-bottom: 50px;
             max-width: 500px;
             max-height: 500px;
             position: relative;
             text-align: center;
             
-                .text {
+                .text, .little-text {
                     position: absolute;
                     width: 100%;
                     font-size: 35px;
@@ -187,11 +186,15 @@
                     opacity: 1;
                 }
                 
-                .project-home-image {
+                .project-home-image, .sub-image {
                     opacity: .4;
                 }
 
             }
+    }
+
+    .little-pieces-render {
+        margin-top: 10px;
     }
 
     .project-index-description {

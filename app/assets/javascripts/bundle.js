@@ -268,7 +268,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cv_cv__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./cv/cv */ "./frontend/components/cv/cv.jsx");
 /* harmony import */ var _available_work_purchasing_info__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./available_work/purchasing_info */ "./frontend/components/available_work/purchasing_info.jsx");
 /* harmony import */ var _available_work_commissions__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./available_work/commissions */ "./frontend/components/available_work/commissions.jsx");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./subcategories/subcategory_container */ "./frontend/components/subcategories/subcategory_container.js");
 
 
 
@@ -348,39 +348,39 @@ var App = function App() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/blue",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/hot",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/green",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/red",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/honey",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/wine",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/rust",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/latex",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Route, {
     exact: true,
     path: "/residue",
-    component: Object(function webpackMissingModule() { var e = new Error("Cannot find module './subcategories/subcategory_container'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    component: _subcategories_subcategory_container__WEBPACK_IMPORTED_MODULE_16__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_17__.Redirect, {
     to: "/"
   })));
@@ -2809,6 +2809,163 @@ var Splash = function Splash() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Splash);
+
+/***/ }),
+
+/***/ "./frontend/components/subcategories/subcategory.jsx":
+/*!***********************************************************!*\
+  !*** ./frontend/components/subcategories/subcategory.jsx ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../paintings/update_photo_container */ "./frontend/components/paintings/update_photo_container.js");
+/* harmony import */ var _paintings_photo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../paintings/photo */ "./frontend/components/paintings/photo.jsx");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+var Subcategory = /*#__PURE__*/function (_React$Component) {
+  _inherits(Subcategory, _React$Component);
+
+  var _super = _createSuper(Subcategory);
+
+  function Subcategory(props) {
+    _classCallCheck(this, Subcategory);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(Subcategory, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+      this.props.fetchPaintings(this.props.category);
+    }
+  }, {
+    key: "handleClick",
+    value: function handleClick() {
+      this.props.history.push('/little_pieces_of_death');
+    }
+  }, {
+    key: "paintingUrl",
+    value: function paintingUrl() {
+      var paintingUrl = this.props.match.path;
+      return paintingUrl.slice(1);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      var paintingRender = function paintingRender() {
+        if (_this.props.currentUser.id === null) {
+          return _this.props.paintings.sort(function (a, b) {
+            return a.position - b.position;
+          }).map(function (painting) {
+            if (painting.subcategory === _this.paintingUrl()) {
+              return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_photo__WEBPACK_IMPORTED_MODULE_2__.default, {
+                painting: painting,
+                key: painting.id
+              });
+            }
+          });
+        } else {
+          return _this.props.paintings.sort(function (a, b) {
+            return a.position - b.position;
+          }).map(function (painting) {
+            if (painting.subcategory === _this.paintingUrl()) {
+              return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_paintings_update_photo_container__WEBPACK_IMPORTED_MODULE_1__.default, {
+                painting: painting,
+                key: painting.id
+              });
+            }
+          });
+        }
+      };
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "friendship_container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+        className: "return-to-little",
+        onClick: function onClick() {
+          return _this.handleClick();
+        }
+      }, "RETURN TO LITTLE PIECES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "painting-render"
+      }, paintingRender()));
+    }
+  }]);
+
+  return Subcategory;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Subcategory);
+
+/***/ }),
+
+/***/ "./frontend/components/subcategories/subcategory_container.js":
+/*!********************************************************************!*\
+  !*** ./frontend/components/subcategories/subcategory_container.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../actions/painting_actions */ "./frontend/actions/painting_actions.js");
+/* harmony import */ var _subcategory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./subcategory */ "./frontend/components/subcategories/subcategory.jsx");
+
+
+
+
+var msp = function msp(state) {
+  return {
+    paintings: Object.values(state.paintings),
+    currentUser: state.session,
+    category: "little_pieces"
+  };
+};
+
+var mdp = function mdp(dispatch) {
+  return {
+    fetchPaintings: function fetchPaintings(category) {
+      return dispatch((0,_actions_painting_actions__WEBPACK_IMPORTED_MODULE_1__.fetchPaintings)(category));
+    }
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_0__.connect)(msp, mdp)(_subcategory__WEBPACK_IMPORTED_MODULE_2__.default));
 
 /***/ }),
 
