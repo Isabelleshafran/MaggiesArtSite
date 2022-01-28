@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-
+import Photo from '../paintings/photo';
+import UpdatePhoto from '../paintings/update_photo_container';
 
 
 class LittlePieces extends React.Component {
@@ -10,9 +10,22 @@ class LittlePieces extends React.Component {
 
     componentDidMount(){
         window.scrollTo(0, 0);
+        this.props.fetchPaintings(this.props.category)
     }
 
     render() { 
+        const paintingRender = () => {
+            if(this.props.currentUser.id === null){
+                return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
+                    return <Photo painting={painting} key={painting.id}/>
+                })
+            } else {
+                return this.props.paintings.sort((a,b) => a.position-b.position).map((painting) => {
+                    return <UpdatePhoto painting={painting} key={painting.id}/>
+                })
+            }
+        }
+
         return ( 
             <div className="friendship_container">
                 <div className="project-index-header">Little Pieces of Death</div>
@@ -45,72 +58,7 @@ class LittlePieces extends React.Component {
                         irie appearance of human skin which cannot decay. Lively, yet not alive. 
                     </div>
                 <div className="little-pieces-render">
-
-                    <div className="sub-image-container">
-                        <Link to="/blue">
-                            <img className="sub-image" src={window.BlueBanner} />
-                            <div className="little-text">BLUE</div>
-                        </Link>
-                    </div>
-
-                    <div className="sub-image-container">
-                        <Link to="/hot">
-                            <img className="sub-image" src={window.HotBanner} />
-                            <div className="little-text">HOT</div>
-                        </Link>
-                    </div>
-
-                    <div className="sub-image-container">
-                        <Link to="/green">
-                            <img className="sub-image" src={window.GreenBanner} />
-                            <div className="little-text">GREEN</div>
-                        </Link>
-                    </div>
-
-                    <div className="sub-image-container">
-                        <Link to="/red">
-                            <img className="sub-image" src={window.RedBanner} />
-                            <div className="little-text">RED</div>
-                        </Link>
-                    </div>
-
-
-                    <div className="sub-image-container">
-                        <Link to="/honey">
-                            <img className="sub-image" src={window.HoneyBanner} />
-                            <div className="little-text">HONEY</div>
-                        </Link>
-                    </div>
-
-                    <div className="sub-image-container">
-                        <Link to="/wine">
-                            <img className="sub-image" src={window.WineBanner} />
-                            <div className="little-text">WINE</div>
-                        </Link>
-                    </div>
-
-                    <div className="sub-image-container">
-                        <Link to="/rust">
-                            <img className="sub-image" src={window.RustBanner} />
-                            <div className="little-text">RUST</div>
-                        </Link>
-                    </div>
-
-                    <div className="sub-image-container">
-                        <Link to="/latex">
-                            <img className="sub-image" src={window.LatexBanner} />
-                            <div className="little-text">LATEX</div>
-                        </Link>
-                    </div>
-
-                      <div className="sub-image-container">
-                        <Link to="/residue">
-                            <img className="sub-image" src={window.ResidueBanner} />
-                            <div className="little-text">RESIDUE</div>
-                        </Link>
-                    </div>
-
-
+                    {paintingRender()}
                 </div>
             </div>
             );

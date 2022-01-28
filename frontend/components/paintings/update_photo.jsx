@@ -44,7 +44,7 @@ class UpdatePainting extends React.Component {
                             <button type="submit">Submit</button>
                         </form>
                         <button onClick={this.handleDeleteSubmit}>Delete</button>
-                        <div className="painting-index">
+                        <div className="painting-index sub-image-container">
                             <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
                                 <img className="painting-index-image" src={this.props.painting.imgUrl}/>
                             </Link>

@@ -51,55 +51,35 @@ class PaintingShow extends React.Component {
     }
 
     clickForward(){
-        let newArray = [];
-        this.props.paintings.forEach((painting) => {
-            if(painting.subcategory === this.props.painting.subcategory){
-                newArray.push(painting);
-            }
-        });
+        let sortedPaintings = [];
+        this.props.paintings.sort((a, b) => a.position-b.position).map((painting) => {
+            sortedPaintings.push(painting)
+        })
 
-        let currentPainting = this.props.painting
-        let subcategory = this.props.painting.subcategory;
-        let allPaintings;
-        if(subcategory === null){
-            allPaintings = this.props.paintings
-        } else {
-            allPaintings = newArray;
-        }
-        let index = allPaintings.indexOf(currentPainting);
-        let newIndex = (index + 1) % allPaintings.length;
-        let newProj = allPaintings[newIndex]
-        this.props.history.push(`/${newProj.category}/${newProj.id}`)
-
-    
+        let currentPainting = this.props.painting;
+        let index = sortedPaintings.indexOf(currentPainting);
+        let newIndex = (index + 1) % sortedPaintings.length;
+        let newProj = sortedPaintings[newIndex];
+        this.props.history.push(`/${newProj.category}/${newProj.id}`);
     }
     
     clickBackward(){
-        let newArray = [];
-        this.props.paintings.forEach((painting) => {
-            if(painting.subcategory === this.props.painting.subcategory){
-                newArray.push(painting);
-            }
-        });
+        let sortedPaintings = [];
+        this.props.paintings.sort((a, b) => a.position-b.position).map((painting) => {
+            sortedPaintings.push(painting)
+        })
 
-        let currentPainting = this.props.painting
-        let subcategory = this.props.painting.subcategory;
-        let allPaintings;
-        if(subcategory === null){
-            allPaintings = this.props.paintings
-        } else {
-            allPaintings = newArray;
-        }
-        let index = allPaintings.indexOf(currentPainting);
+        let currentPainting = this.props.painting;
+        let index = sortedPaintings.indexOf(currentPainting);
         let newIndex;
-
+        
         if(index === 0){
-            newIndex = allPaintings.length - 1
+            newIndex = sortedPaintings.length - 1
         } else {
             newIndex = (index - 1)
         }
 
-        let newProj = allPaintings[newIndex]
+        let newProj = sortedPaintings[newIndex]
         this.props.history.push(`/${newProj.category}/${newProj.id}`)
     }
 

@@ -12,42 +12,9 @@
         margin-bottom: 50px;
         margin-left: 25px;
         margin-right: 25px;
-        max-width: 500px;
-        max-height: 500px;
+        max-width: 450px;
+        max-height: 450px;
         position: relative;
         text-align: center;
-
-        .little-text {
-            opacity: 0;
-        }
     }
-
-    .sub-image-container:hover {
-
-        .sub-image {
-            opacity: .4;
-        }
-
-        .little-text {
-            width: 100%;
-            font-size: 35px;
-            color: #7c7c7c;
-            font-family: 'Inter', sans-serif;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 1;
-        }
-
-    }
-}
-
-.return-to-little {
-    color: rgba(82, 80, 80, 0.671);
-    font-family: 'Inter', sans-serif;
-}
-
-.return-to-little:hover {
-    color: black;
 }
