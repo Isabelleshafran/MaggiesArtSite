@@ -17,20 +17,15 @@
     .project-index-description {
         color: rgba(82, 80, 80, 0.671);
         font-family: 'Hind', sans-serif;
-        margin-top: 15px;
-        max-width: 1100px;
+        margin-top: 20px;
 
-         text-align: justify;
-            text-justify: inter-word;
-
-   
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
         column-count: 2;
-
-        -webkit-column-gap: 20px;
-        -moz-column-gap: 20px;
         column-gap: 20px;
+        max-width: 1150px;
+
+        text-justify: distribute;
+
+        text-align: justify;
     }
 }
 
