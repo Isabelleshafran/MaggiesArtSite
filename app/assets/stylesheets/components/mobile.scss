@@ -248,16 +248,7 @@
             font-size: 26px;
         }
 
-        .painting-render {
-            margin-top: 25px;
-            max-width: 95%;
-            column-count: 1;
-            column-gap: 1em;
-        }
-
-        .painting-render-3 {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
+        .painting-render, .painting-render-3 {
             margin-top: 25px;
             max-width: 95%;
             column-count: 1;
