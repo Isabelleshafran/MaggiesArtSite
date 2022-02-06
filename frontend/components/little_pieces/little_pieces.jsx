@@ -52,7 +52,7 @@ class LittlePieces extends React.Component {
                          <br />
                             Below is a selection of pieces from the series, to view the full collection please see my catalogue.
                     </div>
-                <div className="little-pieces-render">
+                <div className="painting-render-3">
                     {paintingRender()}
                 </div>
                 <div className="flower-catalogue">Click <a className="pdf" href={window.flower_pdf} download="AvailableFlowerArt"> here </a>to download full collection</div>

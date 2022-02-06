@@ -899,7 +899,7 @@ var LittlePieces = /*#__PURE__*/function (_React$Component) {
       }, "Little Pieces of Death"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "project-index-description"
       }, "This is a series of photos and installations made from plaster and latex casts of flowers. I make silicone molds from cosmo flowers cut from the garden and use the molds to make casts. I began this body of work while staying at a farm in the English countryside during the first Covid lockdown. Overwhelmed by the floral beauty I encountered I obsessively photographed the garden flowers daily. There was a manic quality to my desire to record each bit of beauty I came across, knowing it would be gone soon. This activity connected to my love of still life, and how historically, paintings of flower bouquets serve as symbols of the fleetingness of life. A cut flower, while lovely to look at, has a short time to bloom before it inevitably wilts and dies.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "My interest in collecting and preserving short-lived beauty led me to explore the indexical relationship between original and reproduction, and the process of transformation. Wanting to find ways to preserve beyond photographing, I use the flowers to make molds. This process is necessarily destructive; the casts made from these molds become a death shroud, their existence is proof of the flower\u2019s demise. My desire to flout the ravages of time on delicate existence, creates lasting little pieces of death; a flower that cannot wilt, but contains no life.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "I drip color into these bonelike, porous objects, transforming them into a record of the slow movement of the bright liquid through its body. Photographing and printing these variations, changes their scale and dimension. This gives them new life and a new kind of beauty, obscured from the distant original into something fresh, but not entirely new.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Below is a selection of pieces from the series, to view the full collection please see my catalogue."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "little-pieces-render"
+        className: "painting-render-3"
       }, paintingRender()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "flower-catalogue"
       }, "Click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
@@ -1784,7 +1784,7 @@ var Photo = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "painting-index-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "painting-index sub-image-container"
+        className: "painting-index"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
         to: "/".concat(this.props.painting.category, "/").concat(this.props.painting.id)
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {

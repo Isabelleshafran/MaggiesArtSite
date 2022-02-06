@@ -9,7 +9,7 @@ class Photo extends React.Component {
     render() { 
             return (
                 <div className="painting-index-container">
-                    <div className="painting-index sub-image-container">
+                    <div className="painting-index">
                         <Link to={`/${this.props.painting.category}/${this.props.painting.id}`}>
                             <img className="painting-index-image" src={this.props.painting.imgUrl}/>
                         </Link>
